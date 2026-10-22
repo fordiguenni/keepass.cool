@@ -1,0 +1,290 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 7.7.0.519">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>R&eacute;parer les bases de donn&eacute;es</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="R&eacute;parer les bases de donn&eacute;es">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="R&eacute;parer les bases de donn&eacute;es" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass 1.40" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass 1.40</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Reparerlesbasesdedonnees"
+		  data-hnd-context="23"
+		  data-hnd-title="Réparer les bases de données"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Lesparametressubstituables.html" title="Les param&egrave;tres substituables" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Rechercher.html" title="Rechercher" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>R&eacute;parer les bases de donn&eacute;es</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" border="2" cellpadding="0" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <p class="rvps3"><img width="64" height="64" alt="Repair" style="vertical-align: middle;" src="lib/imagesb64x64_kcmdrkonqi.png"></p>
+  </td>
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">La réparation des bases de données</span></span></h1>
+   <p class="rvps3"><span class="rvts19">KeePass peut réparer des bases de données corrompues dans certains cas.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<p class="rvps7"><span class="rvts13">KeePass possède de nombreuses fonctionnalités pour éviter la corruption des fichiers de base de données (écriture de base de données transactionnelle, vidage de la mémoire tampon du périphérique, etc.). Cependant, la corruption des donnés peut toujours être causée par d'autres programmes, le système ou des périphériques de stockage cassés (remarquez que KeePass par défaut vérifie l'intégrité des fichiers de base de données immédiatement après les avoir écrits, c'est-à-dire qu'à ce stade, KeePass garantit l'intégrité des fichiers&nbsp;; cependant, KeePass ne peut bien sûr rien faire lorsque les données deviennent corrompues/illisibles à un moment ultérieur).</span></p>
+<p class="rvps7"><span class="rvts13">Dans ces cas, la fonctionnalité de réparation de la base de données peut vous aider. Ici, KeePass essaie de lire autant de données que possible à partir du fichier corrompu.</span></p>
+<p class="rvps7"><img width="13" height="13" alt="Warning" style="vertical-align: middle;" src="lib/imagesb16x16_warning.png"><span class="rvts13"> En mode réparation, l'intégrité des données n'est pas vérifiée (afin de récupérer autant de données que possible). Lorsque aucune vérification d'intégrité n'est effectuée, des données corrompues/malveillantes peuvent être incorporées dans la base de données. Ainsi, la fonctionnalité de réparation ne doit être utilisée que lorsqu'il n'y a vraiment aucune autre solution. Si vous l'utilisez, vous devez ensuite vérifier soigneusement toute votre base de données pour les données corrompues/malveillantes.</span></p>
+<p class="rvps3"><span class="rvts13">Dans KeePass 1.x, la fonctionnalité de réparation se trouve dans </span><span class="rvts17">'Outils'</span><span class="rvts13"> → </span><span class="rvts17">'Réparer le fichier de base de données...'</span><span class="rvts13">.</span></p>
+<p class="rvps7"><span class="rvts13">Quoi qu'il en soit, si vous avez perdu la clé principale de la base de données, la fonctionnalité de réparation ne peut pas vous aider. De plus, si l'en-tête de la base de données (les premiers octets) est corrompu, alors vous n'avez également pas de chance&nbsp;: la fonctionnalité de réparation ne pourra pas restaurer les entrées (car l'en-tête contient les informations nécessaires pour déchiffrer la base de données).</span></p>
+<p class="rvps7"><span class="rvts13">La fonctionnalité de réparation doit être considérée comme le dernier espoir. Faire des sauvegardes régulières de vos bases de données est bien mieux et doit être préféré. Les sauvegardes </span><span class="rvts17">n</span><span class="rvts13">'ont </span><span class="rvts17">aucune</span><span class="rvts13"> incidence sur la sécurité cryptographique. Il existe des greffons qui automatisent le processus de sauvegarde, cf. la page des greffons de KeePass.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="hdr"></a><img alt="Repair" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_kcmdrkonqi.png"><span class="rvts0"><span class="rvts22"> En-tête/signature de fichier</span></span></h2>
+<p class="rvps7"><span class="rvts13">Si votre fichier de base de données a été supprimé et que vous souhaitez essayer de le récupérer à l'aide d'un outil qui prend en charge une détection d'en-tête/signature de fichier&nbsp;: alors vous trouverez ci-dessous les premiers octets (en notation hexadécimale) par lesquels tous les fichiers de base de données commencent.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts13">Fichier KDB de KeePass 1.x&nbsp;:</span><br/><span class="rvts21">03 D9 A2 9A 65 FB 4B B5</span></li>
+ <li class="rvps3"><span class="rvts13">Fichier KDBX de KeePass 2.x&nbsp;:</span><br/><span class="rvts21">03 D9 A2 9A 67 FB 4B B5</span></li>
+</ul>
+<p class="rvps7"><span class="rvts13">L'en-tête du fichier ne contient pas de champ qui spécifie la longueur du fichier. Si la longueur ne peut pas être déterminée à partir du système de fichiers, alors essayez de récupérer suffisamment de données (c'est-à-dire les données du fichier de base de données et peut-être des données ultérieures inutiles) et utilisez la fonctionnalité de réparation ci-dessus, qui ignorera simplement toutes les données suivantes.</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2022 par Dominik Reichl &amp; Ronan Plantec. Tous droits r&eacute;serv&eacute;s.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 7.9.0.612">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Les options de la ligne de commande</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Les options de la ligne de commande">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Les options de la ligne de commande" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.56" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.56</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Lesoptionsdelalignedecommande"
+		  data-hnd-context="16"
+		  data-hnd-title="Les options de la ligne de commande"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Lobfuscationdelasaisieautomatiqu.html" title="L'obfuscation de la saisie automatique" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Laconfiguration.html" title="La configuration" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Les options de la ligne de commande</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" border="2" cellpadding="0" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <p class="rvps3"><img width="64" height="64" alt="" style="vertical-align: middle;" src="lib/imagesb64x64_konsole.png"></p>
+  </td>
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">Les options de la ligne de commande</span></span></h1>
+   <p class="rvps3"><span class="rvts19">Les options de la ligne de commande pour automatiser les tâches de KeePass.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><a class="rvts15" href="Lesoptionsdelalignedecommande.html#gen">Général</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesoptionsdelalignedecommande.html#ex">Exemples d'utilisation</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesoptionsdelalignedecommande.html#batch">Démarrer KeePass en utilisant un fichier batch</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesoptionsdelalignedecommande.html#close">Fermeture/Verrouillage de KeePass en utilisant un fichier batch</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesoptionsdelalignedecommande.html#urloverride">L'édition des remplacement d'adresse (URL) (2.x)</a></li>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="gen"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_openterm2.png"><span class="rvts0"><span class="rvts23"> Général</span></span></h2>
+<p class="rvps7"><span class="rvts13">Vous pouvez passer un chemin de fichier dans la ligne de commande pour dire à KeePass d'ouvrir immédiatement ce fichier après un démarrage.</span></p>
+<p class="rvps7"><span class="rvts13">Les paramètres peuvent être soit préfixés en utilisant un tiret (</span><span class="rvts22">-</span><span class="rvts13">) soit deux tirets (</span><span class="rvts22">--</span><span class="rvts13">). Sous Windows, une barre oblique (</span><span class="rvts22">/</span><span class="rvts13">) est une alternative. Les préfixes sont équivalents&nbsp;; qu'importe celui que vous utilisez.</span></p>
+<p class="rvps7"><span class="rvts20">Le fichier de la base de données.</span><span class="rvts13"> L'emplacement du fichier de la base de données est passé comme argument. Seulement un fichier de base de données est permis. Si le chemin contient un espace, alors il doit être entouré entre doubles quotes (").</span></p>
+<p class="rvps7"><span class="rvts20">Le mot de passe.</span><span class="rvts13"> Le mot de passe peut être passé en utilisant l'option </span><span class="rvts22">-pw:</span><span class="rvts13">. Afin de passer 'abc' comme mot de passe, vous ajouteriez l'argument suivant à la ligne de commande&nbsp;: </span><span class="rvts22">-pw:abc</span><span class="rvts13">. Remarquez qu'il ne doit pas y avoir d'espace entre le '</span><span class="rvts22">:</span><span class="rvts13">' et le mot de passe. Si votre mot de passe contient un espace, alors vous devez l'entourer entre des doubles quotes. Par exemple&nbsp;: </span><span class="rvts22">-pw:"mon mot de passe secret"</span><span class="rvts13">.</span></p>
+<p class="rvps7"><span class="rvts13">L'utilisation de l'option </span><span class="rvts22">-pw:</span><span class="rvts13"> n'est pas recommandée pour des raisons de sécurité (le système d'exploitation permet la lecture des options de la ligne de commande d'autres applications).</span></p>
+<p class="rvps7"><span class="rvts13">En passant l'option </span><span class="rvts22">-pw-stdin</span><span class="rvts13">, KeePass lit le mot de passe depuis le flux d'entrée standard (StdIn). Cette option est censée passer en programmation le mot de passe à KeePass. Pour saisir un mot de passe à la main, il est recommandé d'utiliser plutôt la boîte de dialogue normale de la clé principale (parce que dans cette boîte de dialogue, le mot de passe est caché par des puces/astérisques et il est chiffré par la protection de la mémoire du processus).</span></p>
+<p class="rvps7"><span class="rvts20">Fichier clé.</span><span class="rvts13"> Pour prendre en charge l'emplacement du fichier clé, le paramètre </span><span class="rvts22">-keyfile:</span><span class="rvts13"> existe. Les mêmes règles qu'au-dessus s'appliquent, spécifiez juste l'emplacement du fichier clé&nbsp;: </span><span class="rvts22">-keyfile:D:\pwsafe.key</span><span class="rvts13">. Vous devez également mettre entre doubles quotes la valeur, si elle contient des caractères d'espace, tabulation ou autres </span><a class="rvts15" href="https://en.wikipedia.org/wiki/Whitespace_character">whitespace</a><span class="rvts13">.</span></p>
+<p class="rvps7"><span class="rvts20">Présélection.</span><span class="rvts13"> Afin de juste présélectionner un fichier clé, utilisez l'option </span><span class="rvts22">-preselect:</span><span class="rvts13">. Par exemple&nbsp;: si vous verrouillez votre base de données avec un mot de passe </span><span class="rvts17">et</span><span class="rvts13"> un fichier clé, mais que vous souhaitez simplement saisir votre mot de passe (donc, sans sélectionner manuellement le fichier clé), votre ligne de commande ressemblerait à ceci&nbsp;:</span></p>
+<p class="rvps12"><span class="rvts22">KeePass.exe "C:\My Documents\MaBaseDeDonnees.kdbx" -preselect:C:\pwsafe.key</span></p>
+<p class="rvps7"><span class="rvts13">KeePass montrerait alors une invite pour le mot de passe de la base de données, mais dans la liste de fichiers clé, le fichier </span><span class="rvts22">C:\pwsafe.key</span><span class="rvts13"> est déjà sélectionné. Quand on utilise le paramètre </span><span class="rvts22">-preselect:</span><span class="rvts13">, KeePass par défaut active le paramètre de fichier clé et positionne le focus sur la fenêtre d'édition du mot de passe.</span></p>
+<p class="rvps7"><span class="rvts13">Remarquez la différence&nbsp;! Le paramètre </span><span class="rvts22">-preselect:</span><span class="rvts13"> présélectionne juste le fichier clé pour vous et affiche l'invite de connexion (ouverture de session). En revanche, le paramètre </span><span class="rvts22">-keyfile:</span><span class="rvts13"> ne vous invite pas à saisir le mot de passe (peut-être manquant).</span></p>
+<p class="rvps7"><span class="rvts20">Autre.</span><span class="rvts13"> L'argument </span><span class="rvts22">-minimize</span><span class="rvts13"> de la ligne de commande fait que KeePass démarre réduit. Cette option peut ne pas fonctionner quand KeePass s'exécute avec Mono (dû à un bogue dans Mono).</span></p>
+<p class="rvps7"><span class="rvts13">L'argument </span><span class="rvts22">-auto-type</span><span class="rvts13"> de la ligne de commande engendre que les autres instances de KeePass déjà ouvertes accomplissent une saisie automatique globale.</span></p>
+<p class="rvps7"><span class="rvts13">De plus, le paramètre </span><span class="rvts22">-useraccount</span><span class="rvts13"> est pris en charge. S'il est spécifié, l'accréditation (credentials) du compte utilisateur courant sera utilisée. L'accréditation, ce n'est pas seulement le mot de passe. Vous pouvez penser à sa clé cryptographique qui est chiffrée que l'utilisateur fourni pour son logon (mot de passe, carte à puce, etc.).</span><br/><span class="rvts13"></span><br/><span class="rvts13">Le paramètre </span><span class="rvts22">-iocredfromrecent</span><span class="rvts13"> engendre que KeePass charge le fichier des mots de passe système (pas la clé de la base de données) depuis la plus récente liste de fichiers utilisés. Autrement, le fichier des mots de passe système peut être spécifié en utilisant les paramètres </span><span class="rvts22">-iousername:</span><span class="rvts13"> et </span><span class="rvts22">-iopassword:</span><span class="rvts13">. Le paramètre optionnel </span><span class="rvts22">-ioiscomplete</span><span class="rvts13"> indique à KeePass que le chemin et le fichier des mots de passe système sont complets (la boîte de dialogue 'Ouvrir adresse (URL)' ne sera alors pas affichée).</span></p>
+<p class="rvps7"><span class="rvts13">"Complete" signifie simplement ici que toutes les parties (URL, nom d'utilisateur et mot de passe) sont présentes. C'est par exemple pour permettre de différencier entre un mot de passe vide et un mot de passe encore manquant (que KeePass a besoin de demander dans une boîte de dialogue).</span></p>
+<p class="rvps7"><span class="rvts13">Le paramètre </span><span class="rvts22">-pw-enc:</span><span class="rvts13"> est similaire à </span><span class="rvts22">-pw:</span><span class="rvts13">, mais il nécessite que le mot de passe soit chiffré. Des mots de passe chiffrés peuvent être générés en utilisant le paramètre substituable (placeholder) </span><a class="rvts27" href="Lesparametressubstituables.html#passwordenc">{PASSWORD_ENC}</a><span class="rvts13">.</span><br/><span class="rvts13"></span><br/><span class="rvts13">L'option </span><span class="rvts22">-entry-url-open</span><span class="rvts13"> engendre que les autres instances de KeePass ouvertes cherchent une entrée et ouvre son adresse (URL). L'entrée est identifiée par son UUID, que vous pouvez passer comme paramètre </span><span class="rvts22">-uuid:</span><span class="rvts13"> de ligne de commande.</span><br/><span class="rvts13"></span><br/><span class="rvts13">L'option </span><span class="rvts22">-auto-type-password</span><span class="rvts13"> est similaire à </span><span class="rvts22">-auto-type</span><span class="rvts13">, mais saisit automatiquement seulement le mot de passe de l'entrée correspondante. </span><span class="rvts22">-auto-type-selected</span><span class="rvts13"> accompli la saisie automatique pour l'entrée en cours de sélection.</span></p>
+<p class="rvps7"><span class="rvts13">Dans le premier cas, KeePass recherche une entrée correspondante (basée sur le titre de la fenêtre cible) et saisit automatiquement seulement son mot de passe (indépendant de toute séquence de saisie automatique associée avec la fenêtre). Dans le second cas, l'entrée actuellement sélectionnée (dans la liste des entrées de la fenêtre principale) est utilisée, et la même logique pour la détermination de la séquence automatique est utilisée comme une saisie automatique régulière.</span></p>
+<p class="rvps7"><span class="rvts13"></span><br/><span class="rvts13">L'option </span><span class="rvts22">-cancel</span><span class="rvts13"> implique que toutes les autres instances de KeePass annulent l'ouverture/enregistrement d'un fichier base de données.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Le chemin du fichier de la </span><a class="rvts15" href="Laconfiguration.html">configuration</a><span class="rvts13"> locale peut être modifié en utilisant le paramètre </span><span class="rvts22">-cfg-local:</span><span class="rvts13"> de la ligne de commande.</span></p>
+<p class="rvps7"><span class="rvts13">L'ordre des arguments est arbitraire.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="ex"></a><img alt="Terminal" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_openterm1.png"><span class="rvts0"><span class="rvts23"> Exemple d'utilisation</span></span></h2>
+<p class="rvps7"><span class="rvts13">Ouvrez le fichier de la base de données </span><span class="rvts17">'C:\My Documents\MaBaseDeDonnees.kdbx'</span><span class="rvts13"> (KeePass vous demandera de lui fournir le mot de passe et/ou le chemin de l'emplacement du fichier clé)&nbsp;:</span></p>
+<p class="rvps12"><span class="rvts22">KeePass.exe "C:\My Documents\MaBaseDeDonnees.kdbx"</span></p>
+<p class="rvps7"><span class="rvts13">Si vous avez une base de données verrouillée avec le mot de passe 'abc', alors vous pouvez l'ouvrir comme ceci&nbsp;:</span></p>
+<p class="rvps12"><span class="rvts22">KeePass.exe "C:\My Documents\MaBaseDeDonnees.kdbx" -pw:abc</span></p>
+<p class="rvps7"><span class="rvts13">Si votre clé USB se monte toujours sur le lecteur F: et que vous avez verrouillé votre base de données avec un fichier clé sur la clé USB, alors vous pouvez ouvrir la base de données comme ceci&nbsp;:</span></p>
+<p class="rvps12"><span class="rvts22">KeePass.exe "C:\My Documents\MaBaseDeDonneesAvecFichier.kdbx" -keyfile:F:\pwsafe.key</span></p>
+<p class="rvps7"><span class="rvts13">Si vous avez verrouillé votre base de données en utilisant un mot de passe </span><span class="rvts17">et</span><span class="rvts13"> un fichier clé, alors vous pouvez combiner les deux paramètres et ouvrir votre base de données comme suit&nbsp;:</span></p>
+<p class="rvps12"><span class="rvts22">KeePass.exe "C:\My Documents\MaBaseDeDonneesAvecDeux.kdbx" -pw:abc -keyfile:F:\pwsafe.key</span></p>
+<p class="rvps7"><span class="rvts13">Vous avez verrouillé votre base de données en utilisant un mot de passe </span><span class="rvts17">et</span><span class="rvts13"> un fichier clé, mais vous souhaitez uniquement que le fichier clé soit présélectionné (c'est-à-dire que vous souhaitez obtenir l'invite pour le mot de passe), votre ligne de commande ressemblerait à ceci&nbsp;:</span></p>
+<p class="rvps12"><span class="rvts22">KeePass.exe "C:\My Documents\MaBaseDeDonneesAvecDeux.kdbx" -preselect:F:\pwsafe.key</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="batch"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_konsole1.png"><span class="rvts0"><span class="rvts23"> Démarrer KeePass en utilisant un fichier batch</span></span></h2>
+<p class="rvps7"><span class="rvts13">Les fichiers batch peuvent être utilisés pour démarrer KeePass. Généralement, vous souhaitez spécifier certains des paramètres répertoriés ci-dessus. Vous pouvez théoriquement simplement mettre la ligne de commande (c'est-à-dire le chemin de l'application et les paramètres) à l'intérieur d'un fichier batch, mais ceci n'est pas recommandé, car la fenêtre de commande restera ouverte jusqu'à ce que KeePass soit fermé. La méthode suivante est recommandée à la place&nbsp;:</span></p>
+<p class="rvps12"><span class="rvts22">START "" KeePass.exe ..\MaBdd.kdbx -pw:MonMDPSecret</span></p>
+<p class="rvps7"><span class="rvts13">Cette commande </span><span class="rvts22">START</span><span class="rvts13"> exécutera KeePass (qui ouvre le fichier </span><span class="rvts22">..\MaBdd.kdbx</span><span class="rvts13"> en utilisant le mot de passe </span><span class="rvts22">MonMDPSecret</span><span class="rvts13">). KeePass est censé être dans le même répertoire (répertoire de travail) que le fichier batch, sinon vous devez spécifier un chemin différent.</span></p>
+<p class="rvps7"><span class="rvts22">START</span><span class="rvts13"> exécute la ligne de commande donnée et se ferme aussitôt, c'est-à-dire qu'elle n'attend pas jusqu'à ce que l'application soit terminée. Par conséquent, la fenêtre de commande disparaîtra après que KeePass a été démarré.</span></p>
+<p class="rvps7"><span class="rvts13">Veuillez remarquer les deux doubles quotes (</span><span class="rvts22">"</span><span class="rvts13">) après la commande </span><span class="rvts22">START</span><span class="rvts13">. Ces doubles quotes sont nécessaires si le chemin de l'application contient des doubles quotes (dans l'exemple ci-dessus, les doubles quotes peuvent également être supprimées). Si vous souhaitez en apprendre davantage à propos de la syntaxe de la commande </span><span class="rvts22">START</span><span class="rvts13">, alors saisissez </span><span class="rvts22">START /?</span><span class="rvts13"> dans la fenêtre de commande.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="close"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_konsole.png"><span class="rvts0"><span class="rvts23"> Fermeture/Verrouillage de KeePass en utilisant un fichier batch</span></span></h2>
+<p class="rvps7"><span class="rvts13">Pour fermer toutes les instances en cours d'exécution, appelez </span><span class="rvts22">KeePass.exe</span><span class="rvts13"> avec le paramètre </span><span class="rvts22">'--exit-all'</span><span class="rvts13">&nbsp;:</span></p>
+<p class="rvps12"><span class="rvts22">KeePass.exe --exit-all</span></p>
+<p class="rvps7"><span class="rvts13">Toutes les fenêtres de KeePass essaieront de se fermer. Si une base de données a été modifiée, alors KeePass vous demandera si vous souhaitez l'enregistrer ou non. Si dans tous les cas vous souhaitez l'enregistrer (c'est-à-dire forcer la sortie sans confirmation d'une boîte de dialogue), alors activez l'option </span><span class="rvts17">'Enregistrer automatiquement quand on ferme/verrouille la base de données'</span><span class="rvts13"> dans </span><span class="rvts17">'Outils' → 'Options...' → onglet 'Avancé'</span><span class="rvts13">.</span></p>
+<p class="rvps7"><span class="rvts13">L'instance de KeePass qui a été créée par la commande ci-dessus n'est pas visible (c'est-à-dire qu'elle n'affiche pas de fenêtre principale) et se terminera aussitôt après l'envoi de la requête de fermeture aux autres instances.</span></p>
+<p class="rvps7"><span class="rvts13">Les options de ligne de commande </span><span class="rvts22">--lock-all</span><span class="rvts13"> et </span><span class="rvts22">--unlock-all</span><span class="rvts13"> verrouillent/déverrouillent les espaces de travail de toutes les autres instances de KeePass.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="urloverride"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_enhanced_browsing.png"><span class="rvts0"><span class="rvts23"> Editing URL Overrides (2.x)</span></span></h2>
+<p class="rvps7"><span class="rvts13">KeePass 2.x prend en charge les options de la ligne de commande suivantes pour l'édition </span><a class="rvts15" href="LechampdadresseURL.html#override">des remplacements d'URL</a><span class="rvts13">:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts22">-add-urloverride</span><span class="rvts13">:</span><br/><span class="rvts13">Ajoute un remplacement d'URL pour un protocol spécifique. Spécifier le protocole le paramètre de la ligne de commande '</span><span class="rvts22">-scheme:</span><span class="rvts13">' et le remplacement utilisant le paramètre de la ligne de commande '</span><span class="rvts22">-value:</span><span class="rvts13">'. Si le remplacement d'URL doit être activé, alors passer en plus l'option de ligne de commande '</span><span class="rvts22">-activate</span><span class="rvts13">'.</span></li>
+ <li class="rvps3"><span class="rvts22">-remove-urloverride</span><span class="rvts13">:</span><br/><span class="rvts13">Supprime un remplacement d'URL pour un protocole spécifique. Spécifier le protocole utilisant le paramètre de la ligne de commande '</span><span class="rvts22">-scheme:</span><span class="rvts13">' et le remplacement utilisant le paramètre de la ligne de commande '</span><span class="rvts22">-value:</span><span class="rvts13">'.</span></li>
+ <li class="rvps3"><span class="rvts22">-set-urloverride</span><span class="rvts13">:</span><br/><span class="rvts13">La valeur de ce paramètre de ligne de commande (non pas le paramètre de la ligne de commande '</span><span class="rvts22">-value:</span><span class="rvts13">') est enregistré comme remplacement pour toutes les entrées d'URL.</span></li>
+ <li class="rvps3"><span class="rvts22">-get-urloverride</span><span class="rvts13">:</span><br/><span class="rvts13">Enregistre le remplacement courant pour toutes les entrées d'URL vers le fichier '</span><span class="rvts22">%TEMP%\KeePass_UrlOverride.tmp</span><span class="rvts13">' (format INI).</span></li>
+ <li class="rvps3"><span class="rvts22">-clear-urloverride</span><span class="rvts13">:</span><br/><span class="rvts13">Supprime le remplacement pour toutes les entrées d'URL.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts13">Les remplacement d'URL sont stockés dans le fichier </span><a class="rvts15" href="https://keepass.info/help/kb/config_enf.html">configation imposée</a><span class="rvts13">. Pour toutes les options de la ligne de commande ci-dessus excepté '</span><span class="rvts22">-get-urloverride</span><span class="rvts13">', un contrôle de compte utilisateur est affiché, si nécessaire.</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2024 par Ronan Plantec &amp; Dominik Reichl. Tous droits r&eacute;serv&eacute;s.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

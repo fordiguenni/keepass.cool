@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="author" content="Dominik Reichl" />
+<meta name="author" content="Ronan Plantec" />
+<meta name="DC.title" content="Les opérations de commande unique - KeePass" />
+<meta name="DC.creator" content="Dominik Reichl" />
+<meta name="DC.creator" content="Ronan Plantec" />
+<meta name="DC.type" content="Text" />
+<meta name="DC.format" content="text/html" />
+<meta name="DC.language" content="fr" />
+<meta name="DC.rights" content="Copyright (C) 2003-2023 Dominik Reichl" />
+<meta name="DC.rights" content="Copyright (C) 2003-2023 Ronan Plantec" />
+<meta name="robots" content="index, follow" />
+<meta name="flattr:id" content="42rykv" />
+<title>Les opérations de commande unique - KeePass</title>
+<base target="_self" />
+<link rel="stylesheet" type="text/css" href="../../default.css" />
+</head>
+<body>
+<table class="sectionheader">
+  <tr>
+    <td><img src="../images/b64x64_konsole.png" alt="" /></td>
+    <td><h1>Les opérations de commande unique</h1>
+      <p>Comment utiliser KPScript avec des opérations de commande unique pour effectuer des opérations de base de données simples ?</p></td>
+  </tr>
+</table>
+<p>KPScript peut être appelé à l'aide de commandes uniques. En transmettant l'emplacement de la base de données, sa clé, une commande et éventuellement certains paramètres, des opérations simples comme l'ajout d'une entrée peuvent être effectuées. La syntaxe est très simple, aucune connaissance en script n'est requise. Cette méthode est idéale lorsque vous souhaitez apporter rapidement de petites modifications à la base de données. Il n'est pas recommandé lorsque vous devez effectuer de nombreuses opérations, car pour chaque commande, la base de données doit être chargée à partir du fichier, déchiffrée, modifiée, chiffrée et réécrite dans le fichier.</p>
+<p>Les commandes sont spécifiées en passant <code>-c:COMMAND</code> à KPScript, où <code>COMMAND</code> est la commande à exécuter (voir ci-dessous pour une liste des commandes disponibles).</p>
+<p>L'emplacement de la base de données est passé à KPScript en le passant simplement comme paramètre, sans aucun préfixe d'option.</p>
+<br />
+<a name="masterkey"></a>
+<h2 class="sectiontitle"><img src="../images/b16x16_kgpg.png" alt="" /> La clé principale</h2>
+<p>La clé principale de la base de données peut être transmise à KPScript de l'une des manières suivantes :</p>
+<ul class="withspc">
+  <li><i>En paramètres de ligne de commande :</i> En utilisation les paramètres <code>-pw:</code>, <code>-pw-enc:</code>, <code>-keyfile:</code> et <code>-useraccount</code>. Par exemple, pour transmettre &quot;Secret&quot; comme mot de passe, vous devez donner à KPScript le paramètre suivant : <code>-pw:Secret</code>. Si le mot de passe contient des espaces ou d'autres caractères spéciaux, il doit être entouré de doubles quotes : <code>-pw:&quot;Mon mot de passe top secret&quot;</code>. Pour <code>-pw-enc:</code>, consultez le paramètre substituable <a href="../base/placeholders.html#passwordenc"><code>{PASSWORD_ENC}</code></a>. Le paramètre <code>-keyfile:</code> peut spécifier l'emplacement du fichier clé. Si <code>-useraccount</code> est transmis à KPScript, alors l'accréditation du compte utilisateur de l'utilisateur actuellement connecté est utilisée, sinon non.</li>
+  <li><i>Lecture depuis l'entrée standard (StdIn) :</i> si vous transmettez <code>-keyprompt</code> à KPScript, alors il lira le mot de passe, le chemin du fichier de clé et l'indicateur de compte utilisateur à partir du flux de l'entrée standard. Cette option est destinée à transmettre par programme la clé à KPScript. Pour entrer le mot de passe à la main, il est recommandé d'utiliser à la place la boîte de dialogue normale de la clé principale (car dans cette boîte de dialogue, le mot de passe est masqué par des puces/astérisques et il est chiffré par la protection de la mémoire du processus), voir <code>-guikeyprompt</code>.</li>
+  <li><i>La saisie interactive à l'aide de l'interface graphique de l'utilisateur : </i> si vous transmettez <code>-guikeyprompt</code> à KPScript, alors il vous demandera la clé à l'aide de la boîte de dialogue de clé principale normale de KeePass.</li>
+</ul>
+<br />
+<a name="cmd"></a>
+<h2 class="sectiontitle"><img src="../images/b16x16_konsole.png" alt="" /> Les commandes disponibles</h2>
+<p>Veuillez noter que les commandes sont ajoutées progressivement en fonction des demandes des utilisateurs. S'il vous manque une commande, alors veuillez en informer l'équipe KeePass et elle sera ajoutée à la prochaine version de KPScript.</p>
+<p>Actuellement, les commandes suivantes sont disponibles :</p>
+<ul>
+  <li><a href="#listgroups">ListGroups</a></li>
+  <li><a href="#listentries">ListEntries</a></li>
+  <li><a href="#getentrystring">GetEntryString</a></li>
+  <li><a href="#addentry">AddEntry</a></li>
+  <li><a href="#editentry">EditEntry</a></li>
+  <li><a href="#moveentry">MoveEntry</a></li>
+  <li><a href="#deleteentry">DeleteEntry</a></li>
+  <li><a href="#deleteallentries">DeleteAllEntries</a></li>
+  <li><a href="#import">Import</a></li>
+  <li><a href="#export">Export</a></li>
+  <li><a href="#sync">Sync</a></li>
+  <li><a href="#changemasterkey">ChangeMasterKey</a></li>
+  <li><a href="#detachbins">DetachBins</a></li>
+  <li><a href="#genpw">GenPw</a></li>
+  <li><a href="#estimatequality">EstimateQuality</a></li>
+</ul>
+<br />
+<hr />
+<a name="listgroups"></a>
+<p><b>Commande : ListGroups</b></p>
+<p>Cette commande répertorie tous les groupes dans un format facilement lisible par la machine. La sortie n'est pas destinée à être imprimée/utilisée directement. Exemple d'utilisation :</p>
+<p><code>KPScript -c:ListGroups &quot;C:\KeePass\MaBdD.kdbx&quot; -pw:MonMotDePasse</code><br />
+  Cela listera tous les groupes contenus dans le fichier de base de données MaBdD.kdbx.</p>
+<br />
+<hr />
+<a name="listentries"></a>
+<p><b>Commande : ListEntries</b></p>
+<p>Cette commande répertorie toutes les entrées dans un format facilement lisible par la machine. La sortie n'est pas destinée à être imprimée/utilisée directement. La syntaxe d'identification d'entrée est exactement la même que dans la commande <a href="#editentry">EditEntry</a>. Exemple d'utilisation :</p>
+<p><code>KPScript -c:ListEntries &quot;C:\KeePass\MaBdD.kdbx&quot; -pw:MonMotDePasse -keyfile:"C:\KeePass\MaBdD.key&quot;</code><br />
+  Ouvre la base de données MaBdD.kdbx en utilisant 'MonMotDePasse' comme mot de passe et le fichier MaBdD.key comme fichier clé. Il affichera une liste de toutes les entrées contenues dans le fichier de base de données MaBdD.kdbx.</p>
+<br />
+<hr />
+<a name="getentrystring"></a>
+<p><b>Commande : GetEntryString</b></p>
+<p>Récupère la valeur d'un champ de chaîne de caractères d'une entrée. La syntaxe d'identification de l'entrée est exactement la même que dans la commande <a href="#editentry">EditEntry</a>. Des paramètres de ligne de commande supplémentaires :</p>
+<ul>
+  <li><code>-Field:<i>NOM</i></code><br />
+    Le nom du champ peut être spécifié à l'aide du paramètre '<code>-Field</code>'. Les noms de champs pris en charge sont par ex. Title, UserName, Password, URL, Notes, etc.</li>
+  <li><code>-FailIfNotExists</code><br />
+    Si vous passez l'option '<code>-FailIfNotExists</code>' et que le champ spécifié n'existe pas, alors l'opération est abandonnée et une erreur est renvoyée.</li>
+  <li><code>-FailIfNoEntry</code><br />
+    Si vous passez l'option '<code>-FailIfNoEntry</code>' et qu'aucune entrée n'est trouvée, alors KPScript se termine avec une erreur.</li>
+  <li><code>-Spr</code><br />
+    Spr-compile la valeur du champ, c'est-à-dire que les <a href="../base/placeholders.html">paramètres substituables</a> sont remplacés, les <a href="../base/fieldrefs.html">références de champ</a> sont résolues, etc.</li>
+</ul>
+<p>Exemple d'utilisation :</p>
+<p><code>KPScript -c:GetEntryString &quot;C:\KeePass\MaBdD.kdbx&quot; -pw:MonMotDePasse
+  -Field:UserName -ref-Title:&quot;Compte de Démo&quot;</code><br />
+  Ouvre la base de données MaBdD.kdbx en utilisant 'MonMotDePasse' comme mot de passe.
+  Il affiche tous les noms d'utilisateur de toutes les entrées qui ont le titre &quot;Compte de Démo&quot;.</p>
+<br />
+<hr />
+<a name="addentry"></a>
+<p><b>Commande : AddEntry</b></p>
+<p>Cette commande ajoute une entrée à la base de données. Pour spécifier les détails de l'entrée, utilisez les identificateurs de champ de chaîne de caractères standard comme noms de paramètres et leurs valeurs pour le contenu. Les champs de chaîne de caractères standard pris en charge sont : Title, UserName, Password, URL, and Notes. Exemples d'utilisation :</p>
+<p><code>KPScript -c:AddEntry &quot;C:\KeePass\MaBdD.kdbx&quot; -pw:MonMdP -Title:&quot;Titre de la nouvelle entrée&quot;</code></p>
+<p><code>KPScript -c:AddEntry &quot;C:\KeePass\MaBdD.kdbx&quot; -pw:MonMdP -Title:UnSiteWeb
+  -UserName:Don -Password:pao5j3eg -URL:https://exemple.com/</code></p>
+<p>Les paramètres de ligne de commande supplémentaires :</p>
+<ul>
+  <li><code>-GroupName:<i>NOM</i></code><br />
+    Le paramètre <code>-GroupName:</code> peut être utilisé pour spécifier le groupe dans lequel l'entrée est créée. Pour la recherche, KPScript effectue une traversée de préordre et utilise le premier groupe correspondant (le nom est sensible à la casse). Si aucun groupe avec le nom spécifié n'est trouvé, alors il sera créé dans le groupe racine.</li>
+  <li><code>-GroupPath:<i>CHEMIN</i></code><br />
+    Le chemin complet du groupe peut être spécifié à l'aide du paramètre <code>-GroupPath:</code> (utilisez '<code>/</code>' comme séparateur). Si vous ne spécifiez pas de nom de groupe ou de chemin, alors l'entrée sera créée dans le groupe racine.</li>
+  <li><code>-setx-Icon:<i>ID</i></code><br />
+    Positionne l'icône de l'entrée sur l'icône standard ayant un <i>ID</i> d'index.</li>
+  <li><code>-setx-CustomIcon:<i>ID</i></code><br />
+    Positionne l'icône de l'entrée sur l'icône personnalisée ayant l'<i>ID</i> d'index.</li>
+  <li><code>-setx-Expires:<i>VALEUR</i></code><br />
+    Positionne si l'entrée est expirée ou pas.<i>VALEUR</i> doit être soit <code>true</code> soit <code>false</code>.</li>
+  <li><code>-setx-ExpiryTime:<i>VALEUR</i></code><br />
+    Poistionne le temps/la date d'expiration de l'entrée.</li>
+</ul>
+<p>Exemple d'utilisation :</p>
+<p><code>KPScript -c:AddEntry &quot;C:\KeePass\MaBdD.kdbx&quot; -pw:MonMdP -Title:&quot;Mon Fournisseur&quot;
+  -GroupName:&quot;Sites Internet&quot;</code></p>
+<br />
+<hr />
+<a name="editentry"></a>
+<p><b>Commande : EditEntry</b></p>
+<p>Cette commande modifie les entrées existantes.</p>
+<p>Utilisez un ou plusieurs des paramètres suivants pour identifier les entrées à modifier ; toutes les conditions spécifiées doivent correspondre :</p>
+<ul>
+  <li><code>-ref-<i>NOMDUCHAMP</i>:<i>VALEURDUCHAMP</i></code><br />
+    Le champ de la chaîne de caractère <i>NOMDUCHAMP</i> doit avoir la valeur <i>VALEURDUCHAMP</i>.<br />
+    Si la valeur est entourée entre '<code>//</code>', alors elle est traitée comme 
+    <!-- https://msdn.microsoft.com/en-us/library/az24scfc.aspx --> 
+    <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference"
+target="_blank">expression régulière</a>,
+    qui doit apparaître dans le champ de l'entrée pour l'entrée qui correspond.
+    Par exemple : <code>-ref-Title:&quot;//Test\d\d//&quot;</code> correspond à toutes les entrées qui contiennent 'Test' suivi par au moins deux chiffres.</li>
+  <li><code>-refx-UUID:<i>VALEUR</i></code><br />
+    L'UUID de l'entrée doit être <i>VALEUR</i>.</li>
+  <li><code>-refx-Tags:<i>VALEUR</i></code><br />
+    L'entrée doit avoir les balises (tags) spécifiées. Plusieurs balises peuvent être séparées par des virgules '<code>,</code>'.</li>
+  <li><code>-refx-Expires:<i>VALEUR</i></code><br />
+    <i>VALEUR</i> doit être <code>true</code> ou <code>false</code>.
+    Ce paramètre permet de spécifier si l'entrée expire parfois (c'est-à-dire si la case à cocher 'Expire le :' est cochée, indépendant du temps d'expiration).</li>
+  <li><code>-refx-Expired:<i>VALEUR</i></code><br />
+    <i>VALEUR</i> doit être <code>true</code> ou <code>false</code>.
+    Ce paramètre permet de spécifier si l'entrée a expiré (c'est-à-dire si la case à cocher 'Expire le :' est cochée et que le temps d'expiration n'est pas dans le futur).</li>
+  <li><code>-refx-Group:<i>VALEUR</i></code><br />
+    Le nom du groupe parent group de l'entrée doit être <i>VALEUR</i>.</li>
+  <li><code>-refx-GroupPath:<i>VALEUR</i></code><br />
+    Le chemin complet du groupe parent de l'entrée doit être <i>VALEUR</i>.
+    Dans le chemin utiliser '<code>/</code>' comme séparateur de groupe.</li>
+  <li><code>-refx-All</code><br />
+    Correspond à toutes les entrées.</li>
+</ul>
+<p>Utilisez un ou plusieurs des paramètres suivants pour spécifier comment l'entrée doit être modifiée :</p>
+<ul>
+  <li><code>-set-<i>NOMDUCHAMP</i>:<i>VALEURDUCHAMP</i></code><br />
+    Positionne le champ de chaîne de caractères <i>NOMDUCHAMP</i> de l'entrée à la valeur <i>VALEURDUCHAMP</i>.</li>
+  <li><code>-setx-Icon:<i>ID</i></code><br />
+    Poistionne l'icône de l'entrée à l'icône standard ayant l'index <i>ID</i>.</li>
+  <li><code>-setx-CustomIcon:<i>ID</i></code><br />
+    Poistionne l'icône de l'entrée à l'icône personnalisée ayant l'index <i>ID</i>.</li>
+  <li><code>-setx-Expires:<i>VALEUR</i></code><br />
+    Positionne si l'entrée expire ou pas. <i>VALEUR</i> doit être soit <code>true</code> ou <code>false</code>.</li>
+  <li><code>-setx-ExpiryTime:<i>VALEUR</i></code><br />
+    Positionne la date/le temps d'expiration.</li>
+</ul>
+<p>Exemples d'utilisation :</p>
+<p><code>KPScript -c:EditEntry &quot;C:\KeePass\MaBdD.kdbx&quot; -pw:MonMdP -ref-Title:&quot;Titre d'une entrée existante&quot; -set-UserName:&quot;Nouveauy Nom d'utilisateur&quot;</code></p>
+<p><code>KPScript -c:EditEntry &quot;C:\KeePass\MaBdD.kdbx&quot; -pw:MonMdP -ref-UserName:MonNom
+  -set-UserName:NouveauNom -set-Password:&quot;Top Secret&quot;</code></p>
+<p>Si vous transmettez en plus <code>-CreateBackup</code>, alors KPScript créera d'abord des sauvegardes des entrées avant de les modifier.</p>
+<br />
+<hr />
+<a name="moveentry"></a>
+<p><b>Commande : MoveEntry</b></p>
+<p>Cette commande déplace une ou plusieurs entrées existantes. La syntaxe d'identification d'entrée est exactement la même que dans la commande <a href="#editentry">EditEntry</a>.
+<ul>
+  <li><code>-GroupPath:<i>CHEMIN</i></code><br />
+    Le groupe cible peut être spécifié à l'aide du paramètre <code>-GroupPath:</code>. '/' doit être utilisé comme séparateur (par exemple : <code>-GroupPath:Internet/Courriel</code> déplace les entrées spécifiées vers le sous-groupe 'Courriel' du sous-groupe 'Internet').</li>
+  <li><code>-NomGroupe:<i>NOM</i></code><br />
+    Le paramètre <code>-GroupName:</code> peut être utilisé (voir la commande <a href="#addentry">AddEntry</a> pour plus de détails).</li>
+</ul>
+<br />
+<hr />
+<a name="deleteentry"></a>
+<p><b>Commande : DeleteEntry</b></p>
+<p>Cette commande supprime une ou plusieurs entrées existantes. La syntaxe d'identification de l'entrée est exactement la même que dans la commande <a href="#editentry">EditEntry</a>.</p>
+<br />
+<hr />
+<a name="deleteallentries"></a>
+<p><b>Commande : DeleteAllEntries</b></p>
+<p>Cette commande supprime toutes les entrées (dans tous les sous-groupes).</p>
+<br />
+<hr />
+<a name="import"></a>
+<p><b>Commande : Import</b></p>
+<p>Cette commande importe un fichier dans la base de données.</p>
+<ul>
+  <li><code>-Format:<i>NOM</i></code><br />
+    Le format est spécifié en positionnant le paramètre &quot;-Format&quot; (voir les noms dans la boîte de dialogue d'importation de KeePass).
+  <li><code>-File:<i>CHEMIN</i></code><br />
+    Le fichier à importer est spécifié à l'aide du paramètre "-File".
+  <li><code>-MM:<i>VALEUR</i></code><br />
+    Si le format prend en charge les UUID, alors le comportement des groupes/entrées qui existent à la fois dans la base de données actuelle et dans le fichier d'importation peut être spécifié à l'aide du paramètre facultatif &quot;-MM&quot;. Les VALEURS possibles sont
+    &quot;CreateNewUuids&quot;,
+    &quot;KeepExisting&quot;,
+    &quot;OverwriteExisting&quot;,
+    &quot;OverwriteIfNewer&quot;, et
+    &quot;Sync&quot;.
+    Par défaut, de nouveaux UUID sont créés.</li>
+  <li><code>-imp_*:<i>VALEUR</i></code><br />
+    Pour les fichiers d'importation chiffrés, par défaut, la clé principale de la base de données cible est utilisée. Cependant, il est également possible de spécifier une clé principale différente, en utilisant les <a href="#masterkey">paramètres de ligne de commande de clé principale</a> habituels avec le préfixe '<code>-imp_</code>' (c'est-à-dire <code>-imp_pw:</code>, <code>-imp_pw-enc:</code>, <code>-imp_keyfile:</code>, <code>-imp_useraccount</code>, <code>-imp_keyprompt</code>, <code>-imp_guikeyprompt</code>).</li>
+</ul>
+<p>Exemple d'utilisation :</p>
+<p><code>KPScript -c:Import &quot;C:\KeePass\MaBdD.kdbx&quot; -pw:MonMdP -Format:&quot;KeePass XML (2.x)&quot; -File:FichierSource.xml</code></p>
+<br />
+<hr />
+<a name="export"></a>
+<p><b>Commande : Export</b></p>
+<p>Cette commande exporte (des parties de) la base de données.</p>
+<ul>
+  <li><code>-Format:<i>NOM</i></code><br />
+    Le format est spécifié en positionnant le paramètre &quot;-Format&quot; (voir les noms dans la boîte de dialogue d'exportation de KeePass).</li>
+  <li><code>-OutFile:<i>CHEMIN</i></code><br />
+    Le fichier vers lequel exporter est spécifié à l'aide du paramètre &quot;-OutFile&quot;.</li>
+  <li><code>-GroupPath:<i>CHEMIN</i></code><br />
+    Si un groupe spécifique doit être exporté (au lieu de toute la base de données), alors spécifiez le groupe à l'aide du paramètre &quot;-GroupPath&quot; (utilisez '<code>/</code>' comme séparateur).</li>
+  <li><code>-XslFile:<i>PATH</i></code><br />
+    Pour le module d'export de la transformation XSL, le chemin du fichier XSL peut être passé à l'aide du paramètre &quot;-XslFile&quot;.</li>
+</ul>
+<p>Exemple d'utilisation :</p>
+<p><code>KPScript -c:Export &quot;C:\KeePass\MaBdD.kdbx&quot; -pw:MonMdP -Format:&quot;KeePass XML (2.x)&quot; -OutFile:FichierCible.xml</code></p>
+<br />
+<hr />
+<a name="sync"></a>
+<p><b>Commande : Sync</b></p>
+<p>Cette commande synchronise la base de données avec une autre. L'autre chemin de la base de données doit être spécifié à l'aide du paramètre de ligne de commande &quot;-File&quot;. Exemple d'utilisation :</p>
+<p><code>KPScript -c:Sync -guikeyprompt &quot;C:\Chemin\A.kdbx&quot; -File:&quot;C:\Chemin\B.kdbx&quot;</code></p>
+<br />
+<hr />
+<a name="changemasterkey"></a>
+<p><b>Commande : ChangeMasterKey</b></p>
+<p>Cette commande modifie la clé principale de la base de données. Les nouvelles valeurs de clé sont spécifiées à l'aide des options standard précédées de 'new', c'est-à-dire <code>-newpw:</code>, <code>-newkeyfile:</code> et <code>-newuseraccount</code> (toutes sont facultatives). Exemple d'utilisation :</p>
+<p><code>KPScript -c:ChangeMasterKey &quot;C:\KeePass\MaBdD.kdbx&quot; -pw:MonMdP -newpw:MonNouveauMdP</code></p>
+<br />
+<hr />
+<a name="detachbins"></a>
+<p><b>Commande : DetachBins</b></p>
+<p>Cette commande enregistre toutes les pièces jointes d'entrée (dans le répertoire de la base de données) et les supprime de la base de données. 
+  <!-- This might e.g. be useful when the database is too large to be opened on
+the current computer. --> 
+  Exemple d'utilisation :</p>
+<p><code>KPScript -c:DetachBins -guikeyprompt &quot;C:\KeePass\MaBdD.kdbx&quot;</code></p>
+<br />
+<hr />
+<a name="genpw"></a>
+<p><b>Commande : GenPw</b></p>
+<p>Génère des mots de passe :</p>
+<ul>
+  <li><code>-count:<i>NOMBRE</i></code><br />
+    Le nombre de mots de passe peut être spécifié à l'aide du paramètre optionnel <code>-count:</code>.</li>
+  <li><code>-profile:<i>NOM</i></code><br />
+    Un profil de générateur de mot de passe peut être spécifié à l'aide du paramètre optionnel <code>-profile:</code> (les noms de tous les profils disponibles peuvent être trouvés dans la boîte de dialogue du générateur de mot de passe).</li>
+</ul>
+<p>Exemples d'utilisation :</p>
+<p><code>KPScript -c:GenPw</code><br />
+  Génère un mot de passe en utilisant le profil du générateur par défaut.</p>
+<p><code>KPScript -c:GenPw -count:5 -profile:&quot;Hex Key - 128-Bit (built-in)&quot;</code><br />
+  Génère cinq mots de passe hexadécimaux sur 128 bits (quand aucune traduction n'est utilisée).</p>
+<br />
+<hr />
+<a name="estimatequality"></a>
+<p><b>Commande : EstimateQuality</b></p>
+<p>Estime la <a href="https://keepass.info/help/kb/pw_quality_est.html"
+target="_blank">qualité</a> (en bits) du mot de passe spécifié via le paramètre <code>-text:</code>. Exemple d'utilisation :</p>
+<p><code>KPScript -c:EstimateQuality -text:MonMotDePasseTopSecret</code></p>
+<br />
+<a name="enc"></a>
+<h2 class="sectiontitle"><img src="../images/b16x16_help.png" alt="" /> Codage des caractères de la console</h2>
+<p>Si vous observez des caractères spéciaux brouillés dans la sortie, alors veuillez lire la page <a href="https://keepass.info/help/kb/console_encoding.html" target="_blank">Console
+  Character Encoding</a>.</p>
+</body>
+</html>

@@ -1,0 +1,761 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 7.9.0.612">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Rechercher</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Rechercher">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Rechercher" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.56" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.56</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Rechercher"
+		  data-hnd-context="26"
+		  data-hnd-title="Rechercher"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Reparerlesbasesdedonnees.html" title="R&eacute;parer les bases de donn&eacute;es" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Lescontrolesdeditionsecurises.html" title="Les contr&ocirc;les d'&eacute;dition s&eacute;curis&eacute;s" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Rechercher</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" border="2" cellpadding="0" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <p class="rvps3"><img width="64" height="64" alt="" style="vertical-align: middle;" src="lib/imagesb64x64_xmag.png"></p>
+  </td>
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">Rechercher</span></span></h1>
+   <p class="rvps3"><span class="rvts19">Les détails à propos des fonctions de recherche de KeePass.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><a class="rvts15" href="Rechercher.html#mode_se">Le mode de recherche 'Expression simple'</a></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_se_multi">termes multiples</a></li>
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_se_spc">terme avec espaces</a></li>
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_se_excl">Exclusions (2.x)</a></li>
+ </ul>
+ <li class="rvps3"><a class="rvts15" href="Rechercher.html#mode_re">Le mode de recherche 'Expression régulière'</a></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_re_exact">terme exact</a></li>
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_re_pw_short">mots de passe courts</a></li>
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_re_tags_or">balises multiples (OR, exact)</a></li>
+ </ul>
+ <li class="rvps3"><a class="rvts15" href="Rechercher.html#mode_xpe">Le mode de recherche 'Expression XPath' (2.x)</a></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_xpe_icon">icône</a></li>
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_xpe_exp_year">expiré spécifié en années</a></li>
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_xpe_str_c">champ chaîne de caractères personnalisé</a></li>
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_xpe_bin_ext">fichiers PDF joints</a></li>
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_xpe_clr_bg">couleur d'arrière-plan</a></li>
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_xpe_tags_and">balises multiples (AND, exact)</a></li>
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_xpe_hist_cnt">le compteur d'entrée de l'historique</a></li>
+  <li class="rvps3"><span class="rvts13">Exemple : </span><a class="rvts15" href="Rechercher.html#ex_xpe_grp_notes">les remarques de groupe</a></li>
+ </ul>
+ <li class="rvps3"><a class="rvts15" href="Rechercher.html#prf">Les profils de recherche (2.x)</a></li>
+ <li class="rvps3"><a class="rvts15" href="Rechercher.html#quick">Boîte de recherche rapide</a></li>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="mode_se"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_xmag3.png"><span class="rvts0"><span class="rvts23"> Le mode recherche 'Expression simple'</span></span></h2>
+<p class="rvps7"><span class="rvts13">Dans ce mode, KeePass recherche les termes spécifiés dans les champs sélectionnés. Pour qu'une entrée corresponde, alors </span><span class="rvts17">tous</span><span class="rvts13"> les termes doivent correspondre.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts20">Termes multiples :</span><br/><span class="rvts13">Afin de rechercher pour des termes multiples, séparer les termes en utilisant des espaces. Si vous souhaitez rechercher un terme contenant des espaces, alors imbriquer le terme entre double quotes (</span><span class="rvts22">"..."</span><span class="rvts13">).</span></li>
+ <li class="rvps3"><span class="rvts20">Exclusions (2.x) :</span><br/><span class="rvts13">Afin de chercher des entrées qui </span><span class="rvts17">ne</span><span class="rvts13"> contiennent </span><span class="rvts17">pas</span><span class="rvts13"> un certain terme, alors précéder le terme d'un signe moins.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts13">Une entrée correspond si les termes spécifiés peuvent être trouvés en tant que sous-chaînes. Si vous souhaitez trouver plutôt des correspondances exactes, alors utiliser une </span><a class="rvts15" href="Rechercher.html#mode_re">expression régulière</a><span class="rvts13"> (voir l'exemple '</span><a class="rvts15" href="Rechercher.html#ex_re_exact">Terme exact</a><span class="rvts13">').</span></p>
+<p class="rvps7"><span class="rvts20">Exemples :</span></p>
+<div class="rvps3">
+<a name="ex_se_multi"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Termes multiples</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">Michael Home</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Titre</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Cherche chaque entrée dont le titre contient à la fois le terme 'Michael' et le terme 'Home' (dans n'importe quel ordre).</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="ex_se_spc"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Termes avec des espaces</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">Michael "Serveur Web"</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Titre</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Cherche chaque entrée dont le titre contient à la fois le terme 'Michael' et le terme 'Serveur Web'.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="ex_se_excl"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Exclusions (2.x)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">Michael -Home</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Titre</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Cherche chaque entrée dont le titre contient le terme 'Michael', mais pas le terme 'Home'.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"></span><br/><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="mode_re"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_xmag2.png"><span class="rvts0"><span class="rvts23"> Le mode de recherche 'Expression régulière'</span></span></h2>
+<p class="rvps7"><span class="rvts13">Dans ce mode, KeePass recherche les correspondances d'une expression régulière dans les champs sélectionnés.</span></p>
+<p class="rvps7"><span class="rvts13">Des informations à propos des expressions régulières et des outils peuvent être trouvées ici :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><a class="rvts15" href="https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference">Microsoft: Regular Expression Language - Quick Reference</a></li>
+ <li class="rvps3"><a class="rvts15" href="https://en.wikipedia.org/wiki/Regular_expression">Wikipedia: Regular expression</a></li>
+ <li class="rvps3"><a class="rvts15" href="http://regexstorm.net/tester">Regex Storm Tester</a></li>
+</ul>
+<p class="rvps7"><span class="rvts20">Exemples :</span></p>
+<div class="rvps3">
+<a name="ex_re_exact"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Terme exact</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">^Michael$</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Nom d'utilisateur</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Cherche chaque entrée dont le nom d'utilisateur est 'Michael' (c'est-à-dire que 'Michael' n'est pas seulement exactement une sous-chaîne du nom d'utilisateur de l'entrée).</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="ex_re_pw_short"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Mots de passe courts</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">^.{1,10}$</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Mot de passe</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Cherche chaque entrée dont le mot de passe à une longueur entre 1 et 10 (inclusif).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Si vous souhaitez plutôt chercher des mots de passe faibles, alors utilisez la commande de 'Qualité du mot de passe' dans le menu 'Rechercher'.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="ex_re_tags_or"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Balises multiples (OR, exact)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">^(Home|Privé)$</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Balises</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Cherche chaque entrée qui possède la balise 'Home' ou la balise 'Privé' (ou bien les deux à la fois).</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"></span><br/><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="mode_xpe"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_xmag1.png"><span class="rvts0"><span class="rvts23"> Le mode de recherche 'Expression XPath' (2.x)</span></span></h2>
+<p class="rvps7"><span class="rvts13">Dans ce mode, un DOM XML KeePass 2.x de la base de données en cours est créé en mémoire et l'expression XPath spécifiée est utilisée pour trouver les entrées.</span></p>
+<p class="rvps7"><span class="rvts13">Des informations à propos des expressions XPath peuvent être trouvées ici :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><a class="rvts15" href="https://www.w3.org/TR/xpath20/">W3C: XML Path Language (XPath) 2.0</a></li>
+ <li class="rvps3"><a class="rvts15" href="https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms256115(v=vs.100)">Microsoft: XPath Reference</a></li>
+ <li class="rvps3"><a class="rvts15" href="https://learn.microsoft.com/en-us/previous-versions/dotnet/netframework-4.0/ms256086(v=vs.100)">Microsoft: XPath Examples</a></li>
+ <li class="rvps3"><a class="rvts15" href="https://en.wikipedia.org/wiki/XPath">Wikipedia: XPath</a></li>
+</ul>
+<p class="rvps7"><span class="rvts13">Afin de voir votre base de données dans le format XML de KeePass 2.x, vous pouvez l'exporter (via 'Fichier' → 'Exporter') vers un fichier 'KeePass XML (2.x)'.</span></p>
+<p class="rvps7"><span class="rvts13">Si vous souhaitez trouver et </span><span class="rvts17">remplacer</span><span class="rvts13"> des données en utilisant des expressions XPath et régulières, alors voir la fonctionnalité </span><a class="rvts15" href="https://keepass.info/help/v2/xml_replace.html">Remplacement XML</a><span class="rvts13">.</span></p>
+<p class="rvps7"><span class="rvts20">Exemples :</span></p>
+<div class="rvps3">
+<a name="ex_xpe_icon"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Icône</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry[(IconID = '3') and not(CustomIconUUID)]</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Trouve chaque entrée qui possède une icône </span><img alt="Server" style="vertical-align: middle;" src="lib/imagesb16x16_server2.png"><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="ex_xpe_exp_year"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Expiré spécifié en année</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry/Times[(Expires = 'True') and starts-with(ExpiryTime, '2022-')]/..</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Trouve chaque entrée qui a expiré en 2022.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="ex_xpe_str_c"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Champ chaîne de caractères personnalisée</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry/String[(Key = 'Telephone') and contains(Value, '12345')]/..</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps7"><span class="rvts13">☑ Autres chaînes</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Trouve chaque entrée qui a un champ de chaîne de caractères personnalisé nommé 'Telephone' dont la valeur contient '12345'.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="ex_xpe_bin_ext"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Fichiers PDF joints</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry/Binary/Key[(string-length(.) &gt;= 4) and (substring(., string-length(.) - 3) = '.pdf')]/../..</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Trouve chaque entrée qui possède un fichier joint dont le nom de termine par '.pdf'.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Si au contraire vous souhaitez trouver des entrées volumineuses, alors utilisez la commande 'Entrées volumineuses' dans le menu 'Rechercher'.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="ex_xpe_clr_bg"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Couleur d'arrière-plan</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry[BackgroundColor = '#CCFFCC']</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Trouve chaque entrée qui possède une </span><span class="rvts33">lumière verte</span><span class="rvts13"> en couleur d'arrière-plan.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Les couleurs d'arrière-plan normalisées sont </span><span class="rvts34">lumière rouge (</span><span class="rvts35">#FFCCCC</span><span class="rvts34">)</span><span class="rvts13">, </span><span class="rvts33">lumière verte (</span><span class="rvts36">#CCFFCC</span><span class="rvts33">)</span><span class="rvts13">, </span><span class="rvts37">lumière bleue (</span><span class="rvts38">#99CCFF</span><span class="rvts37">)</span><span class="rvts13"> et </span><span class="rvts39">lumière jaune (</span><span class="rvts40">#FFFF99</span><span class="rvts39">)</span><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="ex_xpe_tags_and"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Balises multiples (AND, exact)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry[contains(concat(';', Tags, ';'), ';Home;') and contains(concat(';', Tags, ';'), ';Privé;')]</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Balises (tags)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Trouve chaque entrée qui possède à la fois la balise 'Home' et la balise 'Privé'.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Contrairement à ceci, en recherchant avec l' </span><a class="rvts15" href="Rechercher.html#mode_se">expression simple</a><span class="rvts13"> '</span><span class="rvts22">Home Privé</span><span class="rvts13">' cela trouve également les entrées qui ont 'Home' et 'Privé' en tant que sous-chaînes dans les balises.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="ex_xpe_hist_cnt"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Le compteur d'entrée de l'historique</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry[count(History/Entry) &gt;= 4]</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Historique</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Trouve chaque entrée qui possède au moins quatre entrées d'historique.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="ex_xpe_grp_notes"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Les remarques de groupe</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que chercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Group[contains(Notes, 'Privé')]/Entry</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Trouve chaque entrée dont le groupe parent (direct) contient le mot 'Privé' dans les remarques (du groupe, et non de l'entrée). S'il existe plusieurs de tels groupes, alors les entrées de tous ces groupes sont trouvées.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"></span><br/><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="prf"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_kmultiple6.png"><span class="rvts0"><span class="rvts23"> Les profils de recherche (2.x)</span></span></h2>
+<p class="rvps7"><span class="rvts13">KeePass peut sauvegarder les paramètres de recherche en tant que profil de recherche. Ceci peut être utile quand vous accomplissez régulièrement des recherches similaires.</span></p>
+<p class="rvps7"><span class="rvts20">La création d'un profil :</span><br/><span class="rvts13">Afin de sauvegarder les paramètres de la recherche en cours spécifiés dans la boîte de dialogue 'Rechercher', clique sur le bouton </span><img alt="" style="vertical-align: middle;" src="lib/imagesb16x16_filesaveas1.png"><span class="rvts13"> création de profil. KeePass affichera alors une boîte de dialogue où vous pourrez saisir un nom pour le nouveau profil.</span></p>
+<p class="rvps7"><span class="rvts20">Écraser un profil :</span><br/><span class="rvts13">L'écrasement d'un profil existant fonctionne de la même manière que la création d'un profil, excepté que vous sélectionnez un nom de profil existant dans le nom de la boîte de dialogue.</span></p>
+<p class="rvps7"><span class="rvts20">L'utilisation d'un profil :</span><br/><span class="rvts13">Il existe deux façons de charger un profil et d'accomplir une recherche avec lui :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts13">Ouvrir la boîte de dialogue 'Rechercher' (via le menu 'Rechercher' ou </span><span class="rvts21">Ctrl</span><span class="rvts22">+</span><span class="rvts21">F</span><span class="rvts13">), cliquer sur la case 'Profil' et sélectionner le profil souhaité ; cela implique que KeePass charge le profil. Si nécessaire, alors ajustez les paramètres de recherche. Finalement, cliquer sur le bouton 'Rechercher'.</span></li>
+ <li class="rvps3"><span class="rvts13">Dans le menu de la fenêtre principale, cliquer sur 'Rechercher' → 'Rechercher des profils'. Dans ce menu, tous les profils sont listés. Pour chaque profil, il existe des commandes pour accomplir directement une recherche avec le profil (les commandes 'Rechercher...') et des commandes pour afficher les profils dans la boîte de dialogue 'Rechercher' (les commandes 'Ouvrir...').</span></li>
+</ul>
+<p class="rvps7"><span class="rvts20">La suppression d'un profil :</span><br/><span class="rvts13">Afin de supprimer un profil, sélectionnez le dans la boîte de dialogue 'Rechercher' et cliquez sur le bouton de suppression de profil.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="quick"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_xmag.png"><span class="rvts0"><span class="rvts23"> Boîte de recherche rapide</span></span></h2>
+<p class="rvps7"><span class="rvts13">La boîte de recherche rapide dans la barre d'outils de la fenêtre principale prend en charge des recherche par </span><a class="rvts15" href="Rechercher.html#mode_se">expression simple</a><span class="rvts13"> et </span><a class="rvts15" href="Rechercher.html#mode_re">expression régulière</a><span class="rvts13">.</span></p>
+<p class="rvps7"><span class="rvts13">Afin d'indiquer que la chaîne de recherche est une expression régulière, enfermez la avec des '</span><span class="rvts22">//</span><span class="rvts13">'. Par exemple : '</span><span class="rvts22">//A{6}//</span><span class="rvts13">' trouve toutes les entrées contenant la chaîne de caractères 'AAAAAA'. Noter que cette syntaxe spéciale ne fonctionne pas dans la boite de dialogue 'Rechercher'. Dans cette boîte de dialogue, vous devez sélectionner le mode de l'expression régulière tel quel, c'est-à-dire sans l'enfermer avec des '</span><span class="rvts22">//</span><span class="rvts13">'.</span></p>
+<p class="rvps7"><span class="rvts20">Options :</span><br/><span class="rvts13">La boîte de dialogue 'Rechercher' et la boîte de recherche rapide sont indépendantes. Les options/paramètres dans la boîte de dialogue 'Rechercher' n'affectent pas les recherches rapides. Des options pour des recherches rapides peuvent être trouvées dans les options de la boîte de dialogue (menu 'Outils' → 'Options...' → onglet 'Interface').</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2024 par Ronan Plantec &amp; Dominik Reichl. Tous droits r&eacute;serv&eacute;s.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

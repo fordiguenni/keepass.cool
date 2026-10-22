@@ -1,0 +1,683 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 9.7.0.541">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Le g&eacute;n&eacute;rateur de mot de passe</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Le g&eacute;n&eacute;rateur de mot de passe">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Le g&eacute;n&eacute;rateur de mot de passe" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.58" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.58</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Legenerateurdemotdepasse"
+		  data-hnd-context="23"
+		  data-hnd-title="Le générateur de mot de passe"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Utilisateursmultiples.html" title="Utilisateurs multiples" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Lesparametressubstituables.html" title="Les param&egrave;tres substituables" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Le g&eacute;n&eacute;rateur de mot de passe</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" style="border-color: #808080; border-style: solid; border-width: 1px; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr style="vertical-align: middle;">
+  <td style="padding: 0px;">
+   <p class="rvps3"><img alt="" style="width : 64px; height : 64px; vertical-align: middle;" src="lib/imagesb64x64_kgpg%201.png"></p>
+  </td>
+  <td style="padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">Le générateur de mots de passe</span></span></h1>
+   <p class="rvps3"><span class="rvts19">Les détails à propos du générateur de mots de passe intégré dans KeePass.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><a class="rvts14" href="Legenerateurdemotdepasse.html#charset">La génération basée sur des jeux de caractères</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Legenerateurdemotdepasse.html#pattern">La génération basée sur des motifs</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Legenerateurdemotdepasse.html#rules">La génération des mots de passe conforme à des règles</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Legenerateurdemotdepasse.html#secreduc">Les options réduisant la sécurité</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Legenerateurdemotdepasse.html#profiles">La création et l'utilisation des profils du générateur de mots de passe</a></li>
+ <li class="rvps14 noindent"><a class="rvts14" href="Legenerateurdemotdepasse.html#configauto">La configuration des paramètres de mots de passe générés automatiquement pour les nouvelles entrées</a></li>
+</ul>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="charset"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2013.png"><span class="rvts0"><span class="rvts24"> La génération basée sur des jeux de caractères</span></span></h2>
+<p class="rvps7"><span class="rvts8">Cette méthode de génération de mot de passe est la voie recommandée pour générer des mots de passe aléatoires. Les autres méthodes (génération basée sur un motif, etc.) ne devraient seulement être utilisées que si les mots de passe doivent suivre des règles spéciales ou remplir certaines conditions.</span></p>
+<p class="rvps7"><span class="rvts8">La génération basée sur un jeu de caractères est très simple. Vous laissez simplement KeePass connaître quels caractères peuvent être utilisés (par exemple&nbsp;: des lettres en majuscules, des chiffres, etc.) et KeePass sélectionnera au hasard des caractères du jeu.</span></p>
+<p class="rvps7"><span class="rvts20">Définir un jeu de caractères&nbsp;:</span><br/><span class="rvts8">Le jeu de caractères peut être défini dans la fenêtre du générateur de mot de passe. Par commodité, KeePass propose d'ajouter des plages de caractères communément utilisés dans le jeu. Pour cela, cochez la case appropriée. En plus de ces plages de caractères prédéfinies, vous pouvez spécifier des caractères manuellement&nbsp;: tous les caractères que vous saisissez dans la zone de texte </span><span class="rvts17">'Inclure également les caractères suivants'</span><span class="rvts8"> seront directement ajoutés au jeu de caractères.</span></p>
+<p class="rvps7"><span class="rvts8">Les caractères que vous saisissez dans la zone de texte </span><span class="rvts17">'Inclure également les caractères suivants'</span><span class="rvts8"> sont incorporés au jeu de caractères à partir duquel le générateur de mot de passe choisit aléatoirement des caractères. Cela signifie que les caractères ajoutés sont </span><span class="rvts16">autorisés</span><span class="rvts8"> à apparaître dans les mots de passe générés, mais ils ne sont pas </span><span class="rvts16">imposés</span><span class="rvts8">. Si vous souhaitez imposer que certains caractères apparaissent dans les mots de passe générés, alors vous devez utiliser une génération basée sur un motif.</span></p>
+<p class="rvps7"><span class="rvts20">Les jeux de caractères sont des ensembles&nbsp;:</span><br/><span class="rvts8">En terme mathématique, les jeux de caractères sont des ensembles, pas des vecteurs. Ceci signifie que les caractères ne peuvent pas être ajoutés deux fois au jeu. Soit un caractère est dans le jeu, soit il n'y est pas.</span></p>
+<p class="rvps7"><span class="rvts8">Par exemple&nbsp;: si vous saisissez </span><span class="rvts17">'AAAAB'</span><span class="rvts8"> dans la case des caractères supplémentaires, alors c'est exactement le même jeu que </span><span class="rvts17">'AB'</span><span class="rvts8">. </span><span class="rvts17">'A'</span><span class="rvts8"> </span><span class="rvts17">n'</span><span class="rvts8">y sera </span><span class="rvts17">pas</span><span class="rvts8"> 4 fois plus probable mais autant que </span><span class="rvts17">'B'</span><span class="rvts8">&nbsp;! Si vous avez besoin de suivre des règles comme </span><span class="rvts17">'le caractère 'A' est plus probable que B'</span><span class="rvts8">, alors vous devez utiliser </span><a class="rvts14" href="Legenerateurdemotdepasse.html#rules">la génération basée sur un motif + la permutation des caractères de mot de passe</a><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts8">KeePass 'optimisera' votre jeu de caractères en enlevant tous les caractères dupliqués. Si vous saisissiez le jeu de caractères </span><span class="rvts17">'AAAAB'</span><span class="rvts8"> dans la case de caractères supplémentaire, alors fermez et rouvrez le générateur de mot passe, il affichera le plus petit jeu de caractères </span><span class="rvts17">'AB'</span><span class="rvts8">. De même, si vous cochez la case </span><span class="rvts17">'Chiffres'</span><span class="rvts8"> et entrez </span><span class="rvts17">'3'</span><span class="rvts8"> dans la case supplémentaire, le </span><span class="rvts17">'3'</span><span class="rvts8"> sera ignoré, car il est déjà inclus dans la plage de caractères </span><span class="rvts17">'Chiffres'</span><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts20">Les caractères pris en charge&nbsp;:</span><br/><span class="rvts8">Tous les caractères </span><a class="rvts14" href="https://www.unicode.org/">Unicode</a><span class="rvts8"> dans les plages [U+0001, U+D7FF] et [U+E000, U+FFFF] exceptés { U+0009 / '\t', U+000A / '\n', U+000D / '\r' } sont pris en charge. Les caractères dans la plage [U+010000, U+10FFFF] (qui doivent être codés en UTF-16 en utilisant des paires de substitutions depuis [0xD800, 0xDFFF]) ne sont pas pris en charge. Le traitement ultérieur des mots de passe peut avoir d'autres limitations (par exemple&nbsp;: le caractère U+FFFF est interdit dans les fichiers XML/KDBX et sera remplacé ou supprimé).</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="pattern"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2012.png"><span class="rvts0"><span class="rvts24"> La génération basée sur des motifs</span></span></h2>
+<p class="rvps7"><span class="rvts8">Le générateur de mot de passe peut créer des mots de passe en utilisant des motifs. Un motif est une chaîne définissant la disposition du nouveau mot de passe. Les paramètres substituables (placeholders) suivants sont pris en charge&nbsp;:</span></p>
+<div class="rvps3">
+<table width="100%" style="border-color: #afb5cf; border-style: solid; border-width: 1px; background-color: #eeeeee; border-collapse: collapse;">
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Paramètre substituable</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Type</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Jeu de caractères</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">a</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Minuscules alphanumériques</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">abcdefghijklmnopqrstuvwxyz 0123456789</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">A</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Alphanumériques à casse mixte</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">U</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Majuscules alphanumériques</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">d</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Chiffres</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0123456789</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">h</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Minuscules en caractère hexadécimal</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0123456789 abcdef</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">H</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Majuscules en caractère hexadécimal</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0123456789 ABCDEF</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">l</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Lettres en minuscules</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">abcdefghijklmnopqrstuvwxyz</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">L</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Lettres à casse mixte</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">u</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Lettres en majuscules</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">v</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Voyelles en minuscules</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">aeiou</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">V</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Voyelles à casse mixte</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">AEIOU aeiou</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">Z</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Voyelles en majuscules</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">AEIOU</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">c</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Consonnes en minuscules</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">bcdfghjklmnpqrstvwxyz</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">C</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Consonnes à casse mixte</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">BCDFGHJKLMNPQRSTVWXYZ bcdfghjklmnpqrstvwxyz</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">z</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Consonnes en majuscules</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">BCDFGHJKLMNPQRSTVWXYZ</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">p</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Ponctuation</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">,.;:</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">b</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Crochets (parenthèses)</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">()[]{}&lt;&gt;</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">s</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Caractères spéciaux 7 bits imprimables</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">S</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">ASCII 7 bits imprimables</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">A-Z, a-z, 0-9,&nbsp;!"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">x</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><a class="rvts14" href="https://en.wikipedia.org/wiki/Latin-1_Supplement_(Unicode_block)">Supplément Latin-1</a></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Plage [U+00A1, U+00FF] excepté U+00AD:</span><br/><span class="rvts8">¡¢£¤¥¦§¨©ª«¬®¯ °±²³´µ¶·¸¹º»¼½¾¿ ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏ ÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞß àáâãäåæçèéêëìíîï ðñòóôõö÷øùúûüýþÿ</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">\</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Échappement (caractère fixé)</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Utiliser le caractère suivant tel quel.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{</span><span class="rvts38">n</span><span class="rvts23">}</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Échappement (Répétition)</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Répétez le paramètre substituable précédent </span><span class="rvts16">n</span><span class="rvts8"> fois.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">[</span><span class="rvts31">...</span><span class="rvts23">]</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Jeu de caractères personnalisés</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Définissez un jeu de caractères personnalisés.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts8">Le paramètre substituable </span><span class="rvts20">\</span><span class="rvts8"> est spécial&nbsp;: c'est un caractère d'échappement. Le prochain caractère qui suit le </span><span class="rvts20">\</span><span class="rvts8"> est écrit directement dans le mot de passe généré. Si vous souhaitez un </span><span class="rvts23">\</span><span class="rvts8"> dans votre mot de passe à une place spécifique, alors vous devez écrire </span><span class="rvts23">\\</span><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts8">En utilisant le code </span><span class="rvts20">{</span><span class="rvts30">n</span><span class="rvts20">}</span><span class="rvts8"> vous pouvez définir combien de fois le paramètre substituable précédent devrait arriver. L'opérateur </span><span class="rvts20">{ }</span><span class="rvts8"> duplique les paramètres substituables, et non pas les caractères générés. Exemples&nbsp;:</span><br/><span class="rvts8">» </span><span class="rvts23">d{4}</span><span class="rvts8"> est équivalent à </span><span class="rvts23">dddd</span><span class="rvts8">,</span><br/><span class="rvts8">» </span><span class="rvts23">dH{4}a</span><span class="rvts8"> est équivalent à </span><span class="rvts23">dHHHHa</span><span class="rvts8"> et</span><br/><span class="rvts8">» </span><span class="rvts23">Hda{1}dH</span><span class="rvts8"> est équivalent à </span><span class="rvts23">HdadH</span><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts8">La notation </span><span class="rvts20">[</span><span class="rvts30">...</span><span class="rvts20">]</span><span class="rvts8"> peut être utilisée pour définir un jeu de caractères personnalisés, depuis lequel le générateur de mot de passe choisira aléatoirement un caractère. Tous les caractères entre les crochets '</span><span class="rvts20">[</span><span class="rvts8">' et '</span><span class="rvts20">]</span><span class="rvts8">' suivent les mêmes règles que les paramètres substituables ci-dessus. Le caractère '</span><span class="rvts20">^</span><span class="rvts8">' supprime les paramètres substituables suivants du jeu de caractères. Exemples&nbsp;:</span><br/><span class="rvts8">» </span><span class="rvts23">[dp]</span><span class="rvts8"> génère exactement 1 caractère aléatoire parmi les jeux chiffres + ponctuation,</span><br/><span class="rvts8">» </span><span class="rvts23">[d\m\@^\3]{5}</span><span class="rvts8"> génère 5 caractères parmi le jeu "012456789m@",</span><br/><span class="rvts8">» </span><span class="rvts23">[u\_][u\_]</span><span class="rvts8"> génère 2 caractères parmi le jeu majuscules + '_'.</span></p>
+<p class="rvps7"><span class="rvts20">Davantage d'exemples&nbsp;:</span></p>
+<p class="rvps7"><span class="rvts23">ddddd</span><br/><span class="rvts8">Génère par exemple&nbsp;: 41922, 12733, 43960, 07660, 12390, 74680, etc.</span></p>
+<p class="rvps7"><span class="rvts23">\H\e\x\:\ HHHHHH</span><br/><span class="rvts8">Génère par exemple&nbsp;: 'Hex: 13567A', 'Hex: A6B99D', 'Hex: 02243C', etc.</span></p>
+<p class="rvps7"><span class="rvts20">Les motifs de mots de passe communs&nbsp;:</span></p>
+<div class="rvps3">
+<table width="100%" style="border-color: #afb5cf; border-style: solid; border-width: 1px; background-color: #eeeeee; border-collapse: collapse;">
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Nom</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Motif</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Touche hexadécimale - 40-Bit</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">H{10}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Touche hexadécimale - 128-Bit</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">H{32}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Touche hexadécimale - 256-Bit</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">H{64}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Adresse MAC</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">H\2\-HH\-HH\-HH\-HH\-HH</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts8">Chacun de ces motifs génère exactement une clé hexadécimale, pas plusieurs clés hexadécimales. Par conséquent, on utilise la forme singulière.</span></p>
+<p class="rvps7"><span class="rvts8"></span><br/><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="rules"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2011.png"><span class="rvts0"><span class="rvts24"> La génération des mots de passe conforme à des règles</span></span></h2>
+<p class="rvps7"><span class="rvts8">Voici ci-dessous quelques exemples d'utilisation de fonction de génération de motifs pour générer des mots de passe qui suivent certaines règles.</span></p>
+<p class="rvps7"><span class="rvts17">Important&nbsp;! Pour tous les exemples suivants, vous devez activer l'option 'Permuter aléatoirement des caractères du mot de passe'&nbsp;!</span></p>
+<div class="rvps3">
+<table width="100%" style="border-color: #afb5cf; border-style: solid; border-width: 1px; background-color: #eeeeee; border-collapse: collapse;">
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Règle</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Motif</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Doit contenir 2 lettres majuscules, 2 lettres minuscules et 2 chiffres.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">uulldd</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Doit contenir 9 chiffres et 1 lettre.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">d{9}L</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Doit contenir 10 caractères alphanumériques, où au moins 1 est une lettre et au moins 1 est un chiffre.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">LdA{8}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Doit contenir 10 caractères alphanumériques, où au moins 2 sont des lettres majuscules et au moins 2 sont des lettres minuscules.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">uullA{6}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Doit contenir 9 caractères du jeu "ABCDEF" et un symbole '@'.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">\@[\A\B\C\D\E\F]{9}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts8"></span><br/><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secreduc"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2010.png"><span class="rvts0"><span class="rvts24"> Les options réduisant la sécurité</span></span></h2>
+<p class="rvps7"><span class="rvts8">Le générateur de mot de passe prend en charge plusieurs options comme </span><span class="rvts17">'Chaque caractère doit apparaître au plus une fois'</span><span class="rvts8">, </span><span class="rvts17">'Exclure les caractères similaires'</span><span class="rvts8">, (</span><span class="rvts23">O0</span><span class="rvts8">, </span><span class="rvts23">Il1|</span><span class="rvts8">) et un champ pour spécifier explicitement les caractères qui ne devraient pas apparaître dans les mots de passe générés.</span></p>
+<p class="rvps7"><span class="rvts8">Ces options réduisent la sécurité des mots de passe générés. Vous ne devriez les activer que si vous êtes obligés de suivre de telles règles par le site/application, pour lequel/laquelle vous êtes en train de générer le mot de passe.</span></p>
+<p class="rvps7"><span class="rvts8">Les options peuvent être trouvées dans la boîte de dialogue de l'onglet </span><span class="rvts17">'Avancé'</span><span class="rvts8">.</span></p>
+<p class="rvps3"><img alt="Tab Control" style="float: right; margin : 3px 3px;" src="lib/imagespwgen_adv_excltab.png"><span class="rvts8"> Si vous activez une option de réduction de sécurité alors un point d'exclamation (!)</span><br/><span class="rvts8">est ajouté à l'onglet </span><span class="rvts17">'Avancé'</span><span class="rvts8">.</span><br/><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="profiles"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%209.png"><span class="rvts0"><span class="rvts24"> La création et l'utilisation des profils du générateur de mots de passe</span></span></h2>
+<p class="rvps7"><span class="rvts8">Les options du générateur de mots de passe (jeu de caractères, longueur, motif, etc.) peuvent être enregistrées en tant que profils du générateur de mots de passe.</span></p>
+<p class="rvps7"><span class="rvts20">Création/modification d'un profil&nbsp;:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+ <li class="rvps10 noindent"><span class="rvts8">Ouvrez la fenêtre du </span><span class="rvts17">générateur de mot de passe</span><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Spécifiez toutes les options du nouveau profil.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Cliquez sur le bouton</span><img alt="" style="vertical-align: middle;" src="lib/imagesb16x16_filesaveas.png"><span class="rvts8"> '</span><span class="rvts17">Enregistrer les paramètres actuels dans un profil.</span><span class="rvts8">'.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Entrez le nom du nouveau profil, ou sélectionnez un nom de profil existant depuis la liste déroulante pour l'écraser. Fermez la boîte de dialogue avec </span><span class="rvts17">OK</span><span class="rvts8">.</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">Si vous souhaitez immédiatement créer un mot de passe en utilisant le nouveau profil, alors cliquez sur </span><span class="rvts17">OK/Accepter</span><span class="rvts8">. Sinon cliquez sur </span><span class="rvts17">Annuler/Fermer</span><span class="rvts8"> (le profil n'est pas perdu&nbsp;; la gestion des profils est indépendante de la génération du mot de passe).</span></li>
+</ol>
+<p class="rvps7"><span class="rvts20">Utilisation d'un profil&nbsp;:</span><br/><span class="rvts8">Pour utiliser un profil, sélectionnez-le simplement depuis la liste déroulante des profils de la fenêtre du générateur de mots de passe. Tous les paramètres de ce profil seront restaurés tels quels.</span></p>
+<p class="rvps7"><span class="rvts20">Un méta profil 'Dérivé du mot de passe précédent'&nbsp;:</span><br/><span class="rvts8">Quand ce méta profil est sélectionné, un mot de passe est généré sur la base d'un jeu de caractères dérivé du mot de passe précédent. Le nouveau mot de passe a la même longueur que l'ancien, et chaque caractère de l'ancien mot de passe active le sous-ensemble de caractères qui contient ce caractère. Par exemple, si l'ancien mot de passe contient la lettre 'R', alors le jeu de caractères utilisé pour la génération du nouveau caractère contient la plage 'A' à 'Z'.</span><br/><span class="rvts17">Attention&nbsp;! Ce méta profil ne devrait pas être utilisé aveuglément (c'est-à-dire sans revoir le jeu de caractères utilisé). Le nouveau mot de passe ne doit pas nécessairement contenir au moins un caractère de chaque sous-ensemble de caractères (cf. '</span><a class="rvts33" href="Legenerateurdemotdepasse.html#charset">La génération basée sur des jeux de caractères</a><span class="rvts17">'), ainsi la génération aveugle de nouveaux mots de passe avec ce méta profil peut entraîner une dégradation de la qualité du profil effectivement utilisé.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="configauto"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%208.png"><span class="rvts0"><span class="rvts24"> La configuration des paramètres de mots de passe générés automatiquement pour les nouvelles entrées</span></span></h2>
+<p class="rvps7"><span class="rvts8">Quand vous créez une nouvelle entrée, KeePass génère automatiquement un mot de passe aléatoire pour celle-ci. Les propriétés de ces mots de passe générés peuvent être configurées dans la boîte de dialogue du générateur de mot de passe.</span></p>
+<p class="rvps7"><span class="rvts8">Pour configurer, spécifiez les options de votre choix et écrasez le profil </span><span class="rvts17">'(Mots de passe générés automatiquement pour les nouvelles entrées)'</span><span class="rvts8"> (cf. la section ci-dessus).</span></p>
+<p class="rvps7"><span class="rvts20">Désactivation des mots de passe générés automatiquement&nbsp;:</span><br/><span class="rvts8">Pour désactiver les mots de passe générés automatiquement pour les nouvelles entrées, sélectionnez </span><span class="rvts17">'Générer en utilisant un jeu de caractères'</span><span class="rvts8"> et spécifiez </span><span class="rvts17">0</span><span class="rvts8"> comme longueur de mot de passe. Écrasez le profil approprié (cf. ci-dessus).</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2025 par Ronan Plantec &amp; Dominik Reichl</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

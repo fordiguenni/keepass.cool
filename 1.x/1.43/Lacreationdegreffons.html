@@ -1,0 +1,360 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 9.7.0.541">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>La cr&eacute;ation de greffons</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="La cr&eacute;ation de greffons">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="La cr&eacute;ation de greffons" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-1.43" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-1.43</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Lacreationdegreffons"
+		  data-hnd-context="36"
+		  data-hnd-title="La création de greffons"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Ledeveloppement.html">Le d&eacute;veloppement</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Ledeveloppement.html" title="Le d&eacute;veloppement" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Lapersonnalisation.html" title="La personnalisation" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>La cr&eacute;ation de greffons</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" style="border-color: #808080; border-style: solid; border-width: 1px; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr style="vertical-align: middle;">
+  <td style="padding: 0px;">
+   <p class="rvps3"><img alt="" style="width : 64px; height : 64px; vertical-align: middle;" src="lib/imagesb64x64_blockdevice%201.png"></p>
+  </td>
+  <td style="padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">Le développement de greffon (1.x)</span></span></h1>
+   <p class="rvps3"><span class="rvts19">Comment développer des greffons pour KeePass 1.x.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts8">Cette documentation s'applique aux greffons de KeePass 1.x (toutes les versions ≥ 1.15). Les greffons 1.x sont fondamentalement différents des greffons 2.x. Les greffons 2.x ne peuvent pas être chargés par KeePass 1.x.</span></p>
+<p class="rvps7"><span class="rvts8">Une documentation détaillée du SDK est disponible ici&nbsp;: </span><a class="rvts14" href="https://keepass.info/help/v1_sdk/annotated.html">Plugin SDK Documentation</a><span class="rvts8">.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><a class="rvts14" href="Lacreationdegreffons.html#req">Les exigences</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lacreationdegreffons.html#tutorial">Le tutoriel pas à pas</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lacreationdegreffons.html#conventions">Les conventions et recommandations relatives aux greffons</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lacreationdegreffons.html#upgrading">Mettre à jour les greffons depuis ≤ 1.14 à ≥ 1.15</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lacreationdegreffons.html#sdk">La documentation détaillée de toutes les interfaces</a></li>
+ <li class="rvps14 noindent"><a class="rvts14" href="Lacreationdegreffons.html#pfk">Le Framework de greffon pour le C++</a></li>
+</ul>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="req"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2032.png"><span class="rvts0"><span class="rvts24"> Les exigences</span></span></h2>
+<p class="rvps7"><span class="rvts8">Avant de pouvoir commencer à développer un greffon KeePass, vous avez besoin des prérequis suivants&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Le dernier package de code source de KeePass. Vous pouvez l'obtenir auprès du </span><a class="rvts14" href="https://keepass.info/download.html">site Web de KeePass</a><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Un IDE/compilateur de développement C++.</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">Le SDK de la plate-forme Windows.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts8">L'API du greffon KeePass utilise certains concepts de la norme du Component Object Model (COM). Si vous n'avez pas d'expérience avec COM, alors les pages suivantes sont recommandées pour la lecture&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><a class="rvts14" href="https://en.wikipedia.org/wiki/IUnknown">Wikipedia: IUnknown</a><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">La section de comptage de référence sur </span><a class="rvts14" href="https://en.wikipedia.org/wiki/Component_Object_Model#Reference_counting">Wikipedia: Component Object Model</a><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="https://learn.microsoft.com/en-us/windows/win32/com/interfaces-and-interface-implementations">MSDN: COM Interfaces and Interface Implementations</a><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="https://learn.microsoft.com/en-us/windows/win32/com/interface-pointers-and-interfaces">MSDN: COM Interface Pointers and Interfaces</a><span class="rvts8">.</span></li>
+ <li class="rvps14 noindent"><a class="rvts14" href="https://learn.microsoft.com/en-us/windows/win32/com/queryinterface--navigating-in-an-object">MSDN: COM QueryInterface: Navigating in an Object</a><span class="rvts8">.</span></li>
+</ul>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="tutorial"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2031.png"><span class="rvts0"><span class="rvts24"> Le tutoriel pas à pas</span></span></h2>
+<p class="rvps7"><span class="rvts8">Démarrez votre IDE préféré et créez un nouveau </span><span class="rvts17">projet Win32</span><span class="rvts8"> (type d'application </span><span class="rvts17">DLL</span><span class="rvts8">, projet vide). Dans ce tutoriel, l'exemple de greffon que nous développons s'appelle </span><span class="rvts23">TestPlugin</span><span class="rvts8">. Créez deux fichiers dans le nouveau projet&nbsp;: un fichier source C++ (</span><span class="rvts17">TestPlugin.cpp</span><span class="rvts8">) et un fichier d'en-tête (</span><span class="rvts17">TestPlugin.h</span><span class="rvts8">).</span></p>
+<p class="rvps7"><span class="rvts8">Afin d'accéder aux interfaces KeePass, vous devez inclure un fichier d'en-tête du SDK KeePass&nbsp;: placez une instruction </span><span class="rvts23">#include</span><span class="rvts8"> dans le fichier </span><span class="rvts17">TestPlugin.h</span><span class="rvts8">, qui inclut le fichier </span><span class="rvts23">KeePassLibCpp/SDK/KpSDK.h</span><span class="rvts8"> du code source de KeePass.</span></p>
+<p class="rvps7"><span class="rvts8">Les DLL Windows peuvent éventuellement implémenter une fonction </span><span class="rvts23">DllMain</span><span class="rvts8">. Alors si vous en voulez une (non requis par KeePass cependant), alors en implémenter une par défaut maintenant dans le fichier </span><span class="rvts17">TestPlugin.cpp</span><span class="rvts8"> (qui retourne toujours juste </span><span class="rvts23">TRUE</span><span class="rvts8">)&nbsp;:</span></p>
+<p class="rvps16"><span class="rvts26">BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)</span></p>
+<p class="rvps16"><span class="rvts26">{</span></p>
+<p class="rvps16"><span class="rvts26">	UNREFERENCED_PARAMETER(hinstDLL);</span></p>
+<p class="rvps16"><span class="rvts26">	UNREFERENCED_PARAMETER(fdwReason);</span></p>
+<p class="rvps16"><span class="rvts26">	UNREFERENCED_PARAMETER(lpvReserved);</span></p>
+<p class="rvps16"><span class="rvts26"><br/></span></p>
+<p class="rvps16"><span class="rvts26">	return TRUE;</span></p>
+<p class="rvps16"><span class="rvts26">}</span></p>
+<p class="rvps7"><span class="rvts8">L'étape suivante consiste à créer une classe de greffon, qui doit implémenter l'interface </span><span class="rvts23">IKpPlugin</span><span class="rvts8">. Alors, recherchez l'interface </span><span class="rvts23">IKpPlugin</span><span class="rvts8"> (classe C++ abstraite) et concevez une classe qui implémente toutes ces méthodes. Vous trouverez des détails sur les méthodes ici </span><a class="rvts14" href="https://keepass.info/help/v1_sdk/annotated.html">Plugin SDK Documentation</a><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts8">Exportez maintenant une fonction que KeePass utilisera pour créer une instance de votre classe de greffon&nbsp;:</span><br/><span class="rvts23">KP_EXPORT HRESULT KP_API KP_I_CREATEINSTANCE_DECL(REFIID riid, void** ppvObject, IKpUnknown* pAPI);</span><br/><span class="rvts8">Dans cette fonction, vous devrez créer une instance de votre classe de greffon et stocker un pointeur d'interface du type demandé par KeePass (</span><span class="rvts23">riid</span><span class="rvts8">) dans le paramètre </span><span class="rvts23">ppvObject</span><span class="rvts8">. Le paramètre </span><span class="rvts23">pAPI</span><span class="rvts8"> est un pointeur d'interface vers l'API KeePass, que vous devez stocker pour une utilisation ultérieure au cas où vous seriez en mesure de retourner une interface de greffon valide.</span></p>
+<p class="rvps7"><span class="rvts8">KeePass est actuellement proposé uniquement en tant qu'application ANSI, et non Unicode. Par conséquent, allez dans </span><span class="rvts17">Projet → Testez les propriétés du plugin</span><span class="rvts8"> et choisissez </span><span class="rvts17">Multi Byte</span><span class="rvts8"> comme jeu de caractères.</span></p>
+<p class="rvps7"><span class="rvts8">Il est recommandé (mais pas nécessaire) d'établir un lien statique avec la bibliothèque d'exécution (et la MFC, si vous l'utilisez). Pour ce faire, rendez-vous sur </span><span class="rvts17">Projet → Tester les propriétés du plugin → C/C++ → Génération de code</span><span class="rvts8"> et choisissez une bibliothèque d'exécution ne se terminant pas par '-DLL'.</span></p>
+<p class="rvps7"><span class="rvts8">La dernière étape avant de créer votre greffon consiste à ajouter une ressource d'information de version. Alors, allez dans l'onglet 'Ressources' du projet de greffon et ajoutez une ressource de type 'Version'. Ici, définissez le nom du produit sur </span><span class="rvts23">KeePass Plugin</span><span class="rvts8">. Tous les autres champs peuvent être librement définis sur des chaînes de votre choix.</span></p>
+<p class="rvps7"><span class="rvts20">Exemple.</span><span class="rvts8"> Vous pouvez trouver une version entièrement documentée et étendue de ce simple greffon sur la page web des plugins KeePass (</span><span class="rvts17">"Test Plugin"</span><span class="rvts8">).</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="conventions"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2030.png"><span class="rvts0"><span class="rvts24"> Les conventions et recommandations relatives aux greffons</span></span></h2>
+<p class="rvps7"><span class="rvts8">Les conventions :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Le fichier DLL doit avoir une ressource d'informations de version, dans laquelle le nom du produit est défini sur </span><span class="rvts23">KeePass Plugin</span><span class="rvts8">. KeePass utilise ceci pour déterminer si la DLL est un greffon KeePass ou non (c'est-à-dire si vous ne créez pas une ressource d'informations de version avec cette chaîne, alors KeePass ne chargera pas votre fichier DLL).</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Si vous souhaitez utiliser le nom "KeePass" en tant que partie du nom de votre plugin, alors préfixez/ajoutez directement un préfixe/suffixe non numérique. Par exemple : "KeePassSync" est correct, mais "KeePass Sync" ne l'est pas.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Un greffon KeePass doit exporter la fonction suivante&nbsp;:</span><br/><span class="rvts23">KP_EXPORT HRESULT KP_API KP_I_CREATEINSTANCE_DECL(REFIID riid, void** ppvObject, IKpUnknown* pAPI);</span><br/><span class="rvts8"></span><br/><span class="rvts8">KeePass appellera cette fonction pour créer une instance de votre classe de greffon. Vous devez retourner une interface de type </span><span class="rvts23">riid</span><span class="rvts8"> dans le paramètre </span><span class="rvts23">ppvObject</span><span class="rvts8">, si votre classe de greffon prend en charge cette interface (il retournera </span><span class="rvts23">S_OK</span><span class="rvts8">). Sinon, positionnez </span><span class="rvts23">ppvObject</span><span class="rvts8"> sur </span><span class="rvts23">NULL</span><span class="rvts8"> et retournez </span><span class="rvts23">E_NOINTERFACE</span><span class="rvts8">. Vous pouvez stocker le pointeur d'interface </span><span class="rvts23">pAPI</span><span class="rvts8"> pour une utilisation ultérieure. KeePass garantit que le pointeur est valide tant qu'il a un pointeur vers votre instance de classe de greffon.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Important : vérifiez explicitement pour quelle interface KeePass demande (</span><span class="rvts23">riid</span><span class="rvts8">), sinon votre greffon ne sera pas descendant compatible et pourrait planter dans les futures versions de KeePass.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Un greffon KeePass peut éventuellement exporter les fonctions suivantes&nbsp;:</span><br/><span class="rvts23">KP_EXPORT HRESULT KP_API KP_I_INITIALIZELIB_DECL(IKpUnknown* pAPI);</span><br/><span class="rvts23">KP_EXPORT HRESULT KP_API KP_I_RELEASELIB_DECL(IKpUnknown* pAPI);</span><br/><span class="rvts8"></span><br/><span class="rvts8">KeePass appellera la première fonction après le chargement de la DLL, et la seconde un peu avant le déchargement de la DLL.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Vous ne devez pas stocker le pointeur d'interface </span><span class="rvts23">pAPI</span><span class="rvts8"> pour une utilisation ultérieure. Considérez les pointeurs comme temporaires ; ils pourraient devenir invalides dès que vous retournez depuis </span><span class="rvts23">KP_I_INITIALIZELIB_DECL</span><span class="rvts8"> ou </span><span class="rvts23">KP_I_RELEASELIB_DECL</span><span class="rvts8">. Les valeurs du pointeur d'interface </span><span class="rvts23">pAPI</span><span class="rvts8"> transmises à </span><span class="rvts23">KP_I_INITIALIZELIB_DECL</span><span class="rvts8"> et </span><span class="rvts23">KP_I_RELEASELIB_DECL</span><span class="rvts8"> ne sont pas garanties comme étant les mêmes comme chacune d'entre elles, ou comme la valeur de pointeur transmise à </span><span class="rvts23">KP_I_CREATEINSTANCE_DECL</span><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Le protocole est </span><span class="rvts23">DllMain</span><span class="rvts8"> (si présent), </span><span class="rvts23">KP_I_INITIALIZELIB_DECL</span><span class="rvts8"> (si présent), </span><span class="rvts23">KP_I_CREATEINSTANCE_DECL</span><span class="rvts8">, méthodes d'interface de greffon, </span><span class="rvts23">KP_I_RELEASELIB_DECL</span><span class="rvts8"> (si présent).</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">KeePass utilise le jeu de caractères multi-octets. Par conséquent, assurez-vous que vous compilez également votre greffon en mode jeu de caractères multi-octets, et pas Unicode.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts8">Les recommandations :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Tous les fichiers de greffon doivent commencer par un préfixe commun. Par exemple : si votre greffon s'appelle </span><span class="rvts17">VariousImport</span><span class="rvts8">, alors le fichier DLL peut être nommé </span><span class="rvts17">VariousImport.dll</span><span class="rvts8"> et son fichier d'aide </span><span class="rvts17">VariousImport.html</span><span class="rvts8">. Si vous n'utilisez pas de préfixe commun, alors les utilisateurs peuvent rencontrer des problèmes d'écrasement lors de l'installation de plusieurs greffons, car tous les greffons doivent être copiés dans le répertoire de l'application KeePass. Par exemple : s'il y a un greffon qui est livré avec un fichier </span><span class="rvts17">ReadMe.txt</span><span class="rvts8"> et un autre greffon qui est également livré avec un tel fichier, alors ce dernier écrase le fichier readme du premier, ou l'utilisateur choisit de ne pas l'écraser et le fichier readme du deuxième greffon n'est alors pas disponible. En utilisant un préfixe commun cela évite ce problème.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Le bloc d'informations sur la version doit au moins être disponible en langue anglaise (États-Unis).</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">Il existe deux implémentations de l'interface </span><span class="rvts23">IKpConfig</span><span class="rvts8">. Une implémentation est identifiée par </span><span class="rvts23">CLSID_KpConfig</span><span class="rvts8">, l'autre par </span><span class="rvts23">CLSID_KpConfig_ReadOnly</span><span class="rvts8">. La première prend en charge à la fois la lecture et l'écriture, tandis que la seconde uniquement la lecture. Il est fortement recommandé que vous utilisiez la deuxième implémentation, si vous ne voulez lire que les éléments de la configuration.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Essayer d'écrire en utilisant l'implémentation </span><span class="rvts23">CLSID_KpConfig_ReadOnly</span><span class="rvts8"> vérifiera si KeePass est compilé en mode débogage et échouera en mode Release (et pourrait éventuellement détruire des parties de la configuration actuelle).</span></li>
+</ul>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="upgrading"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2029.png"><span class="rvts0"><span class="rvts24"> Mettre à jour les greffons depuis ≤ 1.14 à ≥ 1.15</span></span></h2>
+<p class="rvps7"><span class="rvts8">Lors de la mise à jour d'un greffon depuis KeePass ≤ 1.14 à ≥ 1.15, il est fortement recommandé de créer un nouveau fichier de projet, de recommencer à zéro et copier/remplir les méthodes d'interface avec l'ancien code.</span></p>
+<p class="rvps7"><span class="rvts8">Remarques :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Il n'y a plus de fichier </span><span class="rvts23">KeePass.lib</span><span class="rvts8">. La nouvelle architecture des greffons est basée sur des interfaces. On inclut le fichier d'en-tête </span><span class="rvts23">KpSDK.h</span><span class="rvts8"> c'est tout ce que vous avez à faire.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Ne compilez avec aucun des fichiers du code source de KeePass ou n'incluez tout autre fichier d'en-tête que </span><span class="rvts23">KpSDK.h</span><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Auparavant, un préfixe de ligne de commande était enregistré en définissant le membre de la structure d'informations du greffon </span><span class="rvts23">cmdLineArgPrefix</span><span class="rvts8">. Dans la nouvelle architecture, le préfixe de la ligne de commande doit être retourné par le membre de la méthode de l'interface du greffon </span><span class="rvts23">GetProperty</span><span class="rvts8"> quand il est appelé par le paramètre </span><span class="rvts23">KPPS_COMMANDLINEARGPREFIX</span><span class="rvts8">.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Votre </span><span class="rvts23">GetProperty</span><span class="rvts8"> pourrait ressembler à ceci&nbsp;:</span></li>
+</ul>
+<p class="rvps19"><span class="rvts26">STDMETHODIMP_(LPCTSTR) CYourPluginImpl::GetProperty(LPCTSTR lpName)</span></p>
+<p class="rvps19"><span class="rvts26">{</span></p>
+<p class="rvps19"><span class="rvts26">if(lpName == NULL) retourne NULL&nbsp;;</span></p>
+<p class="rvps19"><span class="rvts26"><br/></span></p>
+<p class="rvps19"><span class="rvts26">if(_tcscmp(lpName, KPPS_COMMANDLINEARGPREFIX) == 0)</span></p>
+<p class="rvps19"><span class="rvts26">return _T("mypluginprefix.");</span></p>
+<p class="rvps19"><span class="rvts26"><br/></span></p>
+<p class="rvps19"><span class="rvts26">return NULL&nbsp;;</span></p>
+<p class="rvps19"><span class="rvts26">}</span></p>
+<p class="rvps18"><span class="rvts8">Le greffon ne doit pas accéder à la ligne de commande de KeePass après que tous les greffons ont été chargés. C'est parce qu'à ce moment KeePass ne peut bien sûr pas encore appeler la méthode </span><span class="rvts23">GetProperty</span><span class="rvts8"> de votre greffon et par conséquent ne connaît pas encore le préfixe (et cela conduira à des avertissements 'option de ligne de commande inconnue'). Au lieu de cela, effectuez une ligne de commande dépendante de l'initialisation lorsque KeePass appelle votre gestionnaire de méthode </span><span class="rvts23">OnMessage</span><span class="rvts8"> avec le code </span><span class="rvts23">KPM_DELAYED_INIT</span><span class="rvts8">.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="sdk"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2028.png"><span class="rvts0"><span class="rvts24"> La documentation détaillée de toutes les interfaces</span></span></h2>
+<p class="rvps7"><span class="rvts8">Voir </span><a class="rvts14" href="https://keepass.info/help/v1_sdk/annotated.html">Plugin SDK Documentation</a><span class="rvts8">.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="pfk"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2027.png"><span class="rvts0"><span class="rvts24"> Le Framework de greffon pour le C++</span></span></h2>
+<p class="rvps7"><span class="rvts8">Merci à Bill Rubin, il existe un </span><a class="rvts32" href="https://abp-keepass.sourceforge.net/PFK.html">Plugin Framework</a><span class="rvts8"> disponible, facilitant le développement de greffons KeePass en C++. Les fonctionnalités en détail&nbsp;:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+ <li class="rvps10 noindent"><span class="rvts8">Implémentation complète de l'interface </span><span class="rvts23">IID_IKpUnknown</span><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Implémentation de l'interface </span><span class="rvts23">IID_IKpPlugin</span><span class="rvts8">, excepté pour la fonction membre </span><span class="rvts23">OnMessage</span><span class="rvts8">, qui est toujours une application spécifique.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">La possibilité d'obtenir des pointeurs intelligents vers n'importe quelle autre interface KeePass, y compris </span><span class="rvts23">IKpAPI</span><span class="rvts8">, </span><span class="rvts23">IKPCommandLine</span><span class="rvts8">, </span><span class="rvts23">IKpCommandLineOption</span><span class="rvts8">, </span><span class="rvts23">IKpConfig</span><span class="rvts8">, </span><span class="rvts23">IKpDatabase</span><span class="rvts8">, </span><span class="rvts23">IKpFullPathName</span><span class="rvts8"> et </span><span class="rvts23">IKpUtilities</span><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Implémentation de la fonction </span><span class="rvts23">KpCreateInstance</span><span class="rvts8">, dont le greffon doit s'exporter de ses DLL.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Vérification complète des erreurs de l'établissement de liaison COM pour les éléments&nbsp;3 et 4. Si une erreur est détectée, alors PFK affiche une boîte de message contenant toutes les informations sur l'erreur. Sans cette fonctionnalité, un greffon échouera dans la plupart des cas à se charger de façon silencieuse. Dans les autres cas, il échouera à remplir sa fonction.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Utilitaires pratiques, pour afficher une boîte de message, traduire un code d'erreur Windows dans une chaîne en langage naturel et déclarez une chaîne standard indépendamment du type de caractère.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Vérification du temps de la compilation des invocations de constructeur pour les pointeurs COM intelligents. Sans cette fonctionnalité, il est difficile pour un développeur d'interpréter les messages d'erreur du compilateur causés en utilisant le mauvais constructeur de pointeur COM intelligent.</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">Le code PFK évite de définir des macros. Au lieu des modèles, les fonctions en ligne, typedefs et autres constructions C++ maintiennent des pratiques de conception sécurisée, sans pénalité d'exécution.</span></li>
+</ol>
+<p class="rvps7"><span class="rvts8">Il y a également </span><a class="rvts14" href="https://abp-keepass.sourceforge.net/TestPluginPFK.html">un greffon de test</a><span class="rvts8"> disponible en utilisant le Framework de greffon.</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2025 par Ronan Plantec &amp; Dominik Reichl</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

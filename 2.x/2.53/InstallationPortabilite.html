@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 7.7.0.519">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Installation/Portabilit&eacute;</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Installation/Portabilit&eacute;">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Installation/Portabilit&eacute;" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.53" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.53</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="InstallationPortabilite"
+		  data-hnd-context="7"
+		  data-hnd-title="Installation/Portabilité"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Leguidedelutilisateur.html">Le guide de l'utilisateur</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Leguidedelutilisateur.html" title="Le guide de l'utilisateur" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Leguidedelutilisateur.html" title="Le guide de l'utilisateur" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Lestraductions.html" title="Les traductions" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Installation/Portabilit&eacute;</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" border="2" cellpadding="0" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <p class="rvps3"><img width="64" height="64" alt="" style="vertical-align: middle;" src="lib/imagesb64x64_package_system.png"></p>
+  </td>
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">Installation/Portabilité</span></span></h1>
+   <p class="rvps3"><span class="rvts19">Installation, désinstallation, portabilité et mises à jour de KeePass 2.x.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><a class="rvts15" href="InstallationPortabilite.html#info">Informations générales</a></li>
+ <li class="rvps3"><a class="rvts15" href="InstallationPortabilite.html#installer">Le programme d'installation (fichier KeePass-2.xx-Setup.exe)</a></li>
+ <li class="rvps3"><a class="rvts15" href="InstallationPortabilite.html#portable">La version portable (fichier KeePass-2.xx.zip)</a></li>
+ <li class="rvps3"><a class="rvts15" href="InstallationPortabilite.html#mono">Exécuter KeePass sous Mono (Linux, MacOS, BSD, etc.)</a></li>
+ <li class="rvps3"><a class="rvts15" href="InstallationPortabilite.html#wine">Exécuter KeePass sous Wine (Linux, MacOS, BSD, etc.)</a></li>
+ <li class="rvps3"><a class="rvts15" href="InstallationPortabilite.html#mig1x">Migration de KeePass 1.x vers 2.x</a></li>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="info"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_tar.png"><span class="rvts0"><span class="rvts23"> Informations générales</span></span></h2>
+<p class="rvps7"><span class="rvts13">Lors du téléchargement de KeePass, vous avez le choix entre trois paquets différents&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts20">KeePass-</span><span class="rvts27">2.xx</span><span class="rvts20">-Setup.exe&nbsp;:</span><span class="rvts13"> le programme d'installation pour Windows.</span></li>
+ <li class="rvps3"><span class="rvts20">KeePass-</span><span class="rvts27">2.xx</span><span class="rvts20">.zip&nbsp;:</span><span class="rvts13"> le paquet KeePass au format ZIP (version portable).</span></li>
+ <li class="rvps3"><span class="rvts20">KeePass-</span><span class="rvts27">2.xx</span><span class="rvts20">-Source.zip&nbsp;:</span><span class="rvts13"> le code source.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts13">Le programme d'installation et la version portable sont décrits en détail ci-dessous.</span></p>
+<p class="rvps7"><span class="rvts13">Le paquet de code source contient tout ce dont vous avez besoin pour compiler KeePass. Il comprend le code source C#/C++ et les fichiers d'en-têtes, les fichiers de ressources, les sources de construction du programme d'installation, etc.</span></p>
+<p class="rvps7"><span class="rvts20">Mise à jour de KeePass&nbsp;:</span><br/><span class="rvts13">Quand une nouvelle version de KeePass sort, vous pouvez alors mettre à jour votre installation existante de KeePass, sans perdre aucun paramètre de configuration. Les étapes dépendent du paquet que vous utilisez (installateur ou portable), cf. ci-dessous.</span></p>
+<p class="rvps7"><span class="rvts13">Les traductions doivent également être mises à jour lorsque vous installez une nouvelle version de KeePass. Vous pouvez trouver les derniers fichiers de traduction ici&nbsp;: </span><a class="rvts15" href="https://keepass.info/translations.html">traductions de KeePass</a><span class="rvts13">.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="installer"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_package_system3.png"><span class="rvts0"><span class="rvts23"> Le programme d'installation (fichier KeePass-2.xx-Setup.exe)</span></span></h2>
+<p class="rvps7"><span class="rvts13">L'équipe de développement de KeePass fournit un programme d'installation qui copie KeePass sur votre disque dur, crée des raccourcis dans le menu Démarrer et associe les fichiers KDBX à KeePass, si vous le souhaitez.</span></p>
+<p class="rvps7"><span class="rvts13">De plus, KeePass est automatiquement configuré pour enregistrer ses paramètres dans le répertoire de données de l'application de l'utilisateur courant. De cette façon, plusieurs utilisateurs peuvent utiliser une installation de KeePass sans écraser les paramètres de chacun (chaque utilisateur possède son propre fichier de </span><a class="rvts15" href="../base/configuration.html">configuration</a><span class="rvts13">). Le programme d'installation doit être exécuté avec les droits d'un compte administrateur, cependant KeePass s'exécute bien sans les droits d'un compte administrateur une fois qu'il est installé.</span></p>
+<p class="rvps7"><span class="rvts20">Installation&nbsp;:</span><br/><span class="rvts13">Pour installer KeePass, exécutez le fichier </span><span class="rvts22">KeePass-2.xx-Setup.exe</span><span class="rvts13"> et suivez l'assistant.</span></p>
+<p class="rvps7"><span class="rvts20">Mise à jour&nbsp;:</span><br/><span class="rvts13">Exécutez le fichier </span><span class="rvts22">KeePass-2.xx-Setup.exe</span><span class="rvts13">. Vous n'avez </span><span class="rvts17">pas</span><span class="rvts13"> à désinstaller auparavant l'ancienne version. Vos options de configuration ne seront pas perdues.</span></p>
+<p class="rvps7"><span class="rvts20">Désinstallation&nbsp;:</span><br/><span class="rvts13">Pour désinstaller KeePass, exécutez le programme de désinstallation, accessible par un raccourci dans le dossier du menu Démarrer de KeePass ou dans la section programme du panneau de configuration du système. Si vous souhaitez également supprimer vos paramètres de configuration, alors vous aurez besoin de supprimer le fichier de configuration dans le répertoire de données de l'application de votre profil utilisateur (cf. </span><a class="rvts15" href="../base/configuration.html">configuration</a><span class="rvts13">).</span></p>
+<p class="rvps7"><span class="rvts20">Installation silencieuse&nbsp;:</span><br/><span class="rvts13">Le programme d’installation de KeePass, </span><span class="rvts22">KeePass-2.xx-Setup.exe</span><span class="rvts13">, prend en charge des paramètres de ligne de commande pour une installation silencieuse, c’est-à-dire que le programme s'installe sans demander à l'utilisateur le répertoire cible ou les options d'association. Les paramètres par défaut du programme d'installation sont utilisés.</span></p>
+<p class="rvps7"><span class="rvts13">Le paramètre de ligne de commande </span><span class="rvts22">/SILENT</span><span class="rvts13"> effectue une installation en mode silencieux et affiche une boîte de dialogue d'état pendant le processus d'installation. Aucune question ne sera cependant posée.</span></p>
+<p class="rvps7"><span class="rvts13">Le paramètre de ligne de commande </span><span class="rvts22">/VERYSILENT</span><span class="rvts13"> effectue une installation en mode silencieux et n'affiche </span><span class="rvts17">pas</span><span class="rvts13"> de boîte de dialogue d'état lors du processus d'installation.</span></p>
+<p class="rvps7"><span class="rvts20">Chemin de destination&nbsp;:</span><br/><span class="rvts13">Le programme d'installation permet de choisir le chemin de destination sur lequel KeePass est installé. Toutefois, lorsque le programme d'installation détecte une installation existante de KeePass, il suppose que l'utilisateur souhaite effectuer une mise à niveau et n'affiche donc pas la page de sélection du chemin de destination&nbsp;; l'ancienne version sera remplacée par la nouvelle version. Si vous souhaitez déplacer une installation existante de KeePass vers un autre chemin, alors commencez par désinstaller l'ancienne version&nbsp;; l'installateur de la nouvelle version affichera à nouveau la page de sélection du chemin de destination.</span></p>
+<p class="rvps7"><span class="rvts20">Options/composants&nbsp;:</span><br/><span class="rvts13">Les options/composants d'installation sont expliqué(e)s en détail ici&nbsp;: </span><a class="rvts15" href="https://keepass.info/help/kb/faq.html#instopt2x">que signifient les options/composants d'installation 2.x en détail&nbsp;?</a></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="portable"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_usbpendrive_unmount.png"><span class="rvts0"><span class="rvts23"> La version portable (fichier KeePass-2.xx.zip)</span></span></h2>
+<p class="rvps7"><span class="rvts13">La version portable peut être transportée sur des appareils portables (comme des clés USB) et fonctionne sur n'importe quel ordinateur directement à partir de l'appareil, sans aucune installation. Il ne stocke rien sur votre système (contrairement au paquet d'installation, cf. ci-dessus). KeePass ne crée aucune nouvelle clé de registre et ne crée aucun fichier de configuration dans votre répertoire de données Windows ou d'application de votre profil utilisateur.</span></p>
+<p class="rvps7"><span class="rvts13">Assurez-vous que KeePass dispose d'un accès en écriture à son répertoire d'application. Sinon, le cas échéant, il essaiera d'enregistrer les options de configuration (rien de pertinent pour la sécurité) dans le répertoire de données d'application de l'utilisateur actuellement connecté (pour plus d'informations à ce sujet, cf.&nbsp;: </span><a class="rvts15" href="../base/configuration.html">configuration</a><span class="rvts13">).</span></p>
+<p class="rvps7"><span class="rvts20">Installation&nbsp;:</span><br/><span class="rvts13">KeePass n'a pas besoin d'être installé. Il suffit de télécharger le paquet ZIP, de le décompresser avec votre programme ZIP préféré et KeePass est prêt à être utilisé. Copiez-le à l'emplacement de votre choix (par exemple&nbsp;: sur votre clé USB)&nbsp;; aucune configuration ou installation supplémentaire n'est nécessaire.</span></p>
+<p class="rvps7"><span class="rvts20">Mise à jour&nbsp;:</span><br/><span class="rvts13">Téléchargez le dernier paquet portable de KeePass, décompressez-le et copiez tous les nouveaux fichiers par-dessus les anciens. Vos paramètres de configuration ne seront pas perdus (les paramètres sont stockés dans le fichier </span><span class="rvts17">KeePass.config.xml</span><span class="rvts13">, qui ne sera pas écrasé, car les paquets ZIP de KeePass n'incluent pas de fichier </span><span class="rvts17">KeePass.config.xml</span><span class="rvts13">).</span></p>
+<p class="rvps7"><span class="rvts20">Désinstallation&nbsp;:</span><br/><span class="rvts13">Supprimer simplement le répertoire où se trouve KeePass.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="mono"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_package_system2.png"><span class="rvts0"><span class="rvts23">Exécuter KeePass sous Mono (Linux, MacOS, BSD, etc.)</span></span></h2>
+<p class="rvps7"><span class="rvts13">En plus de Windows, KeePass 2.x fonctionne sous Mono, c'est-à-dire Linux, MacOS, BSD, etc.</span></p>
+<p class="rvps7"><span class="rvts13">Des liens vers tous les paquets pris en charge sont disponibles sur la page des </span><a class="rvts15" href="https://keepass.info/download.html">téléchargements</a><span class="rvts13">.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts20">Linux Debian/Ubuntu&nbsp;:</span><br/><span class="rvts13">Installez le paquet </span><span class="rvts17">keepass2</span><span class="rvts13">/</span><span class="rvts17">KeePass 2.x pour Linux Debian/Ubuntu</span><span class="rvts13"> (par exemple&nbsp;: à l'aide de la commande apt). Un lien vers une page contenant plus d'informations sur ce paquet est disponible sur la page des téléchargements.</span><br/><span class="rvts13"><br/></span></li>
+ <li class="rvps3"><span class="rvts20">Linux Fedora&nbsp;:</span><br/><span class="rvts13">Installez le paquet </span><span class="rvts17">keepass</span><span class="rvts13"> (à partir du référentiel Fedora&nbsp;; lien sur la page des téléchargements).</span><br/><span class="rvts13"><br/></span></li>
+ <li class="rvps3"><span class="rvts20">Linux OpenSUSE&nbsp;:</span><br/><span class="rvts13">Installez le paquet </span><span class="rvts17">keepass</span><span class="rvts13"> (à partir du référentiel Mono d'OpenSUSE&nbsp;; lien sur la page des téléchargements).</span><br/><span class="rvts13"><br/></span></li>
+ <li class="rvps3"><span class="rvts20">Linux Gentoo&nbsp;:</span><br/><span class="rvts13">Installez le paquet </span><span class="rvts17">keepass</span><span class="rvts13"> (depuis le dépôt Linux Gentoo&nbsp;; lien sur la page des téléchargements).</span><br/><span class="rvts13"><br/></span></li>
+ <li class="rvps3"><span class="rvts20">Linux Arch&nbsp;:</span><br/><span class="rvts13">Installer le paquet </span><span class="rvts17">keepass</span><span class="rvts13"> (à partir du référentiel Linux Arch&nbsp;; lien sur la page des téléchargements).</span><br/><span class="rvts13"><br/></span></li>
+ <li class="rvps3"><span class="rvts20">MacOS&nbsp;:</span><br/><span class="rvts13">Installer le paquet </span><span class="rvts17">KeePass 2.x</span><span class="rvts13"> pour Mac OS X (lien sur la page des téléchargements).</span><br/><span class="rvts13"><br/></span></li>
+ <li class="rvps3"><span class="rvts20">FreeBSD&nbsp;:</span><br/><span class="rvts13">Installer le paquet </span><span class="rvts17">keepass</span><span class="rvts13"> (à partir de l'arborescence des portages FreeBSD ou du référentiel pkg des binaires&nbsp;; lien sur la page des téléchargements).</span><br/><span class="rvts13"><br/></span></li>
+</ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts20">Les autres systèmes Unix-like&nbsp;:</span><br/><span class="rvts13">Pour exécuter KeePass, procéder comme suit&nbsp;:</span></li>
+</ul>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+  <li class="rvps3"><span class="rvts13">Installez </span><a class="rvts15" href="https://www.mono-project.com/">Mono ≥ 2.6</a><span class="rvts13"> (les versions antérieures ne fonctionneront pas et ne sont pas prises en charge). Selon votre plateforme utilisée, les paquets à installer sont appelés </span><span class="rvts22">mono-stable</span><span class="rvts13">, </span><span class="rvts22">MonoFramework</span><span class="rvts13">, </span><span class="rvts22">mono-devel</span><span class="rvts13"> ou </span><span class="rvts22">mono-2.0-devel</span><span class="rvts13">&nbsp;; cf. la </span><a class="rvts15" href="https://www.mono-project.com/">page du projet Mono</a><span class="rvts13">, si vous n'êtes pas sûrs des paquets à installer.</span></li>
+  <li class="rvps3"><span class="rvts13">Sur certaines plateformes, l'implémentation de Windows Forms (System.Windows.Forms) est proposée dans un paquet à part. KeePass a besoin de ce paquet&nbsp;; alors si vous en voyez un, installez-le également.</span></li>
+  <li class="rvps3"><span class="rvts13">Sur certaines plateformes, l'espace de nom Runtime (System.Runtime) est proposé sous forme de paquet à part. KeePass a besoin de ce paquet&nbsp;; alors si vous en voyez un, installez-le également.</span></li>
+  <li class="rvps3"><span class="rvts13">Si vous souhaitez utiliser la saisie automatique sous Linux/MacOS/BSD/etc., vous avez également besoin du paquet </span><span class="rvts22">xdotool</span><span class="rvts13">.</span></li>
+  <li class="rvps3"><span class="rvts13">Téléchargez la version portable de KeePass (paquet ZIP) et décompressez-la à l'emplacement de votre choix.</span></li>
+  <li class="rvps3"><span class="rvts13">Lorsque vous vous trouvez dans le répertoire KeePass, exécuter la ligne de commande "</span><span class="rvts22">mono KeePass.exe</span><span class="rvts13">". Vous pouvez également faire un clic droit sur le fichier </span><span class="rvts22">KeePass.exe</span><span class="rvts13">, et choisir "Ouvrir avec une autre application" et tapez </span><span class="rvts22">mono</span><span class="rvts13"> en tant que commande personnalisée.</span></li>
+ </ol>
+</ul>
+<p class="rvps7"><span class="rvts13">Pour la dernière étape, vous pouvez créer un raccourci ou un fichier de script shell avec cette ligne de commande (utilisez un chemin absolu vers </span><span class="rvts22">KeePass.exe</span><span class="rvts13">, si le raccourci/fichier de script shell se trouve à un emplacement différent).</span></p>
+<p class="rvps7"><span class="rvts20">Presse-papiers&nbsp;:</span><br/><span class="rvts13">Sur certains systèmes, les routines du presse-papiers de Mono ne fonctionnent pas correctement. Dans ce cas, installez les paquets </span><span class="rvts22">xsel</span><span class="rvts13"> et </span><span class="rvts22">xdotool</span><span class="rvts13">. Si ceux-ci sont installés, KeePass les utilise pour les opérations du presse-papiers.</span></p>
+<p class="rvps7"><span class="rvts20">Saisie automatique globale&nbsp;:</span><br/><span class="rvts13">Afin d'utiliser </span><a class="rvts15" href="../base/autotype.html#autoglobal">la saisie automatique globale</a><span class="rvts13">, vous devez créer une touche de raccourci appropriée à l'échelle du système. Cela ne doit être fait qu'une fois manuellement. KeePass effectue la saisie automatique globale lorsqu'il est invoqué avec l'option </span><span class="rvts22">--auto-type</span><span class="rvts13"> </span><a class="rvts15" href="../base/cmdline.html">de la ligne de commande</a><span class="rvts13">.</span></p>
+<p class="rvps7"><span class="rvts13">Voici quelques exemples de création d'une touche de raccourci à l'échelle du système pour la saisie automatique globale, pour différents systèmes d'exploitation&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts20">KDE.</span><span class="rvts13"> Sur les systèmes Linux avec KDE, la touche de raccourci peut être créée dans </span><span class="rvts17">Computer</span><span class="rvts13"> → </span><span class="rvts17">System Settings</span><span class="rvts13"> → </span><span class="rvts17">Shortcuts and Gestures</span><span class="rvts13">: dans la boîte de dialogue, aller dans </span><span class="rvts17">Edit</span><span class="rvts13"> → </span><span class="rvts17">New</span><span class="rvts13"> → </span><span class="rvts17">Global Shortcut</span><span class="rvts13"> → </span><span class="rvts17">Command/URL</span><span class="rvts13">, spécifié le raccourci sur l'onglet </span><span class="rvts17">Trigger</span><span class="rvts13"> et saisissez</span><br/><span class="rvts22">mono /</span><span class="rvts28">VotreCheminVersKeePass</span><span class="rvts22">/KeePass.exe --auto-type</span><br/><span class="rvts13">à l'intérieur du champ </span><span class="rvts17">Command/URL</span><span class="rvts13"> sur l'onglet </span><span class="rvts17">Action</span><span class="rvts13">.</span></li>
+  <li class="rvps3"><span class="rvts20">Linux Ubuntu ≥ 11.04 (Unity/GNOME).</span><span class="rvts13"> Ouvrez la boîte de dialogue </span><span class="rvts17">Raccourcis Clavier (Keyboard Shortcuts)</span><span class="rvts13"> dans les préférences système, cliquez sur le bouton </span><span class="rvts17">Ajouter (Add)</span><span class="rvts13">, saisissez </span><span class="rvts22">KeePass --auto-type</span><span class="rvts13"> comme nom et</span><br/><span class="rvts22">mono /</span><span class="rvts28">VotreCheminVersKeePass</span><span class="rvts22">/KeePass.exe --auto-type</span><br/><span class="rvts13">en tant que nom de commande, puis cliquez sur [Appliquer] ([Apply]). Cliquez sur </span><span class="rvts17">Désactivé</span><span class="rvts13"> (Disabled) de l'élément nouvellement créé (tel que le texte </span><span class="rvts17">'Nouveau raccourci...'</span><span class="rvts13"> </span><span class="rvts17">'New shortcut...'</span><span class="rvts13"> s'affiche), appuyez sur </span><span class="rvts21">Ctrl</span><span class="rvts22">+</span><span class="rvts21">Alt</span><span class="rvts22">+</span><span class="rvts21">A</span><span class="rvts13"> et fermez la boîte de dialogue.</span></li>
+  <li class="rvps3"><span class="rvts20">Linux Ubuntu ≤ 10.10 (GNOME).</span></li>
+  <ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+   <li class="rvps3"><span class="rvts13">Appuyez sur </span><span class="rvts21">Alt</span><span class="rvts22">+</span><span class="rvts21">F2</span><span class="rvts13">, saisissez </span><span class="rvts22">gconf-editor</span><span class="rvts13"> et cliquez sur [OK].</span></li>
+   <li class="rvps3"><span class="rvts13">Naviguez vers </span><span class="rvts22">apps</span><span class="rvts13"> → </span><span class="rvts22">metacity</span><span class="rvts13"> → </span><span class="rvts22">keybinding_commands</span><span class="rvts13">.</span></li>
+   <li class="rvps3"><span class="rvts13">Double-cliquez sur l'un des éléments </span><span class="rvts22">command_</span><span class="rvts28">i</span><span class="rvts13">, saisissez</span><br/><span class="rvts22">mono /</span><span class="rvts28">VotreCheminVersKeePass</span><span class="rvts22">/KeePass.exe --auto-type</span><br/><span class="rvts13">et cliquez sur [OK].</span></li>
+   <li class="rvps3"><span class="rvts13">Cliquez sur le nœud </span><span class="rvts22">global_keybindings</span><span class="rvts13"> sur la gauche.</span></li>
+   <li class="rvps3"><span class="rvts13">Double-cliquez sur l'élément </span><span class="rvts22">run_command_</span><span class="rvts28">i</span><span class="rvts13"> approprié (par exemple&nbsp;: lorsque vous avez utilisé </span><span class="rvts22">command_5</span><span class="rvts13"> aux étapes précédentes, double-cliquez maintenant sur </span><span class="rvts22">run_command_5</span><span class="rvts13"> ) et spécifiez le raccourci clavier de votre choix. Par exemple, pour utiliser </span><span class="rvts21">Ctrl</span><span class="rvts22">+</span><span class="rvts21">Alt</span><span class="rvts22">+</span><span class="rvts21">A</span><span class="rvts13"> comme raccourci clavier, saisissez </span><span class="rvts22">&lt;Control&gt;&lt;Alt&gt;a</span><span class="rvts13">.</span></li>
+  </ol>
+ </ul>
+</ul>
+<p class="rvps7"><span class="rvts13">Important&nbsp;: pour la saisie automatique globale, la version du paquet </span><span class="rvts22">xdotool</span><span class="rvts13"> doit être 2.20100818.3004 ou supérieure&nbsp;! Si votre distribution ne propose qu'une version plus ancienne, alors vous pouvez télécharger et installer manuellement la dernière version du paquet (cf. le site </span><a class="rvts29" href="https://www.semicomplete.com/projects/xdotool/">xdotool</a><span class="rvts13">).</span></p>
+<p class="rvps7"><span class="rvts20">La saisie automatique sur Wayland:</span><br/><span class="rvts13">Si vous souhaitez utiliser la saisie automatique sur un système avec un compositeur Wayland, alors cf. la page </span><a class="rvts15" href="https://keepass.info/help/kb/autotype_wayland.html">la saisie automatique sur Wayland</a><span class="rvts13">.</span></p>
+<p class="rvps7"><span class="rvts20">AES-KDF:</span><br/><span class="rvts13">Pour des </span><a class="rvts15" href="../base/security.html#secdictprotect">transformations de clé</a><span class="rvts13"> rapides utilisant AES-KDF, assurez-vous que la librairie </span><span class="rvts22">libgcrypt</span><span class="rvts13"> est installée.</span></p>
+<p class="rvps7"><span class="rvts20">Argon2:</span><br/><span class="rvts13">Pour des </span><a class="rvts15" href="../base/security.html#secdictprotect">transformations de clé</a><span class="rvts13"> rapides utilisant Argon2, assurez-vous que la librairie </span><span class="rvts22">libargon2</span><span class="rvts13"> est installée.</span></p>
+<p class="rvps7"><span class="rvts20">Greffons&nbsp;:</span><br/><span class="rvts13">Sur certains systèmes Linux, le paquet </span><span class="rvts22">mono-complete</span><span class="rvts13"> peut être nécessaire au bon fonctionnement des greffons.</span></p>
+<p class="rvps7"><span class="rvts20">TLS 1.2&nbsp;:</span><br/><span class="rvts13">Pour la prise en charge de TLS 1.2, Mono 4.8.0 ou supérieur (ou .NET Framework 4.5 ou supérieur) est requis.</span></p>
+<p class="rvps7"><span class="rvts20">Polices :</span><br/><span class="rvts13">Sur certains systèmes Linux, le paquet </span><span class="rvts22">ttf-mscorefonts-installer</span><span class="rvts13"> peut être exigé.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="wine"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_package_system1.png"><span class="rvts0"><span class="rvts23"> Exécuter KeePass sous Wine (Linux, MacOS, BSD, etc.)</span></span></h2>
+<p class="rvps7"><span class="rvts13">Bien que vous puissiez exécuter KeePass 2.x de manière plus ou moins native sur des systèmes Unix-like en utilisant Mono (cf. ci-dessus), l'interface utilisateur n'est pas toujours jolie. Certains utilisateurs préfèrent donc exécuter KeePass 2.x sous Wine, qui fonctionne également très bien.</span></p>
+<p class="rvps7"><span class="rvts13">Pour exécuter KeePass 2.x avec Wine, procéder comme suit&nbsp;:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+ <li class="rvps3"><span class="rvts13">Assurez-vous que Wine est installé. Généralement, le paquet à installer s'appelle </span><span class="rvts22">wine</span><span class="rvts13">.</span></li>
+ <li class="rvps3"><span class="rvts13">Assurez-vous que le Framework .NET 4.5 ou version ultérieure est installé dans Wine (cf. </span><a class="rvts15" href="https://appdb.winehq.org/objectManager.php?sClass=application&iId=2586">WineHQ AppDB: .NET Framework</a><span class="rvts13">).</span><br/><span class="rvts13">Pour l'installation du Framework .NET 4.5 </span><span class="rvts22">winetricks</span><span class="rvts13"> peut être utilisé (cf. </span><a class="rvts15" href="https://appdb.winehq.org/objectManager.php?sClass=version&iId=25478">WineHQ AppDB: .NET Framework 4.5</a><span class="rvts13">).</span></li>
+ <li class="rvps3"><span class="rvts13">Téléchargez le dernier paquet portable de KeePass 2.x (fichier ZIP) et décompressez-le dans le répertoire de votre choix.</span></li>
+ <li class="rvps3"><span class="rvts13">Exécutez </span><span class="rvts22">wine KeePass.exe</span><span class="rvts13">.</span></li>
+</ol>
+<p class="rvps7"><span class="rvts20">Thème.</span><span class="rvts13"> Par défaut, Wine utilise le thème Windows classique. Si vous préférez un autre thème, vous pouvez l'installer dans 'Applications' → 'Wine' → 'Configurer Wine' ('Configure Wine)' → onglet 'Intégration au bureau' ('Desktop Integration'). Des liens vers des thèmes se trouvent par exemple sur </span><a class="rvts15" href="https://en.wikipedia.org/wiki/Windows_XP_visual_styles">Wikipédia: Windows XP visual styles</a><span class="rvts13">.</span></p>
+<p class="rvps7"><span class="rvts20">Saisie automatique.</span><span class="rvts13"> Actuellement Wine n'implémente pas toutes les fonctions de l'API Windows requises pour la saisie automatique, c'est-à-dire que la saisie automatique ne fonctionne pas quand on exécute KeePass sous Wine.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="mig1x"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_package_system.png"><span class="rvts0"><span class="rvts23"> Migration depuis KeePass 1.x vers 2.x</span></span></h2>
+<p class="rvps7"><span class="rvts13">Afin de migrer KeePass depuis 1.x vers 2.x, suivre ces étapes&nbsp;:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+ <li class="rvps3"><span class="rvts13">Installez KeePass 2.x.</span><br/><span class="rvts13">Si vous utilisez le programme d'installation, assurez-vous que le composant 'Native Support Library' est installé (par défaut ce composant est activé).</span></li>
+ <li class="rvps3"><span class="rvts13">Exécutez KeePass 2.x et créez un nouveau fichier de base de données (via 'Fichier' → 'Nouveau...').</span></li>
+ <li class="rvps3"><span class="rvts13">Importez votre ancien fichier de base de données KDB dans votre nouveau fichier de base de données KDBX (via 'Fichier' → 'Importer...', format de fichier 'KeePass KDB (1.x)').</span></li>
+</ol>
+<p class="rvps7"><span class="rvts13">Si tout fonctionne correctement, vous pouvez effacer votre ancienne installation de KeePass 1.x. L'ancien fichier de base de données KDB n'est également plus nécessaire, mais vous pourriez souhaiter le garder comme sauvegarde.</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2023 par Ronan Plantec &amp; Dominik Reichl. Tous droits r&eacute;serv&eacute;s.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

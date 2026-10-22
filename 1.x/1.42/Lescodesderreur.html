@@ -1,0 +1,579 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 9.6.0.494">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Les codes d'erreur</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Les codes d'erreur">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Les codes d'erreur" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-1.42" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-1.42</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Lescodesderreur"
+		  data-hnd-context="11"
+		  data-hnd-title="Les codes d'erreur"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Leguidedelutilisateur.html">Le guide de l'utilisateur</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Leguidedelutilisateur.html" title="Le guide de l'utilisateur" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Lacompatibilite.html" title="La compatibilit&eacute;" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Les codes d'erreur</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" style="border-color: #808080; border-style: solid; border-width: 1px; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr style="vertical-align: middle;">
+  <td style="padding: 0px;">
+   <p class="rvps3"><img alt="" style="width : 64px; height : 64px; vertical-align: middle;" src="lib/imagesb64x64_binary.png"></p>
+  </td>
+  <td style="padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">Les codes d'erreur</span></span></h1>
+   <p class="rvps3"><span class="rvts19">Les codes d'erreur de KeePass et leurs significations.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<div class="rvps3">
+<table width="100%" style="border-color: #afb5cf; border-style: solid; border-width: 1px; background-color: #eeeeee; border-collapse: collapse;">
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Code&nbsp;d'erreur</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Nom</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Utilisateur</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Description</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000000</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Inconnue</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="No" style="vertical-align: middle;" src="lib/imagesb16x16_cancel%204.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Une erreur inconnue s'est produite. KeePass utilise ce code d'erreur en interne et l'utilisateur ne devrait jamais voir cette erreur.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000001</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Succès</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%2017.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Aucune erreur n'est survenue. Tout a parfaitement fonctionné.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000002</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Paramètre invalide</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="No" style="vertical-align: middle;" src="lib/imagesb16x16_cancel%203.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Une fonction dans KeePass a reçu un paramètre invalide. Cela ne devrait jamais arriver.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000003</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Manque de mémoire</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%2016.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Le système d'exploitation n'a pas accordé suffisamment de mémoire à KeePass. L'opération en cours a été annulée. La base de données est peut-être dans un état cassé et ne doit pas être enregistrée.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000004</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Clé invalide</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%2015.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">La clé principale fournie par l'utilisateur (mot de passe principal/fichier de clé) pour la base de données était incorrecte ou la base de données est corrompue. Assurez-vous que le mot de passe principal et/ou le fichier clé sont corrects.&nbsp;</span><br/><span class="rvts8"></span><br/><span class="rvts8">Si vous êtes absolument sûr que le mot de passe principal/fichier de clé est correct, alors le fichier est probablement corrompu (vous avez peut-être accidentellement retiré la clé USB de l'ordinateur sans la démonter). Dans ce cas, essayez la fonctionnalité de </span><a class="rvts14" href="../base/repair.html">réparation de la base de données</a><span class="rvts8"> de KeePass.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000005</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Erreur d'Accès Fichier :</span><br/><span class="rvts8">Lire Fichier</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%2014.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Le système d'exploitation (Windows) n'a pas accordé à KeePass l'accès en lecture au fichier de base de données spécifié. Notez que cela ne signifie pas que la base de données est corrompue ou quelque chose comme ça ; KeePass ne peut tout simplement pas obtenir un accès en lecture au fichier.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Assurez-vous que vous pouvez lire le fichier.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000006</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Erreur d'Accès Fichier :</span><br/><span class="rvts8">Écrire Fichier</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%2013.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Le système d'exploitation (Windows) n'a pas accordé à KeePass l'accès en écriture au fichier de base de données spécifié.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Essayez d'enregistrer la base de données à un emplacement différent, auquel les administrateurs de votre réseau vous ont accordé un accès en écriture.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000007</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Erreur Fichier : Lire</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%2012.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Une erreur s'est produite lors de la lecture de la base de données ou du fichier clé. Cela peut arriver si, par exemple, vous ouvrez une grande base de données à partir d'une clé USB et retirez la clé pendant que KeePass lit le fichier.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Assurez-vous que KeePass peut accéder au fichier complet et ne retirez pas l'appareil avant que KeePass ne l'ait lu complètement.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000008</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Erreur Fichier : Écrire</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%2011.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Une erreur s'est produite lors de l'écriture de la base de données ou du fichier clé. Cela peut arriver si, par exemple, vous enregistrez une grande base de données sur une clé USB et retirez la clé pendant que KeePass écrit le fichier.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Assurez-vous qu'il reste suffisamment d'espace libre sur l'appareil cible et n'enlevez pas l'appareil avant que KeePass n'ait complètement écrit le fichier. Assurez-vous d'avoir correctement démonté l'appareil (clé USB).</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000009</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Source d'aléas invalide</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="No" style="vertical-align: middle;" src="lib/imagesb16x16_cancel%202.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Il s'agit d'une erreur cryptographique interne. La source aléatoire, utilisée pour générer des nombres aléatoires, n'est pas valide. Cela signifie qu'il produit des valeurs non aléatoires et que la sécurité (secret) de votre base de données ne peut donc pas être garantie ; donc, l'opération a été abandonnée.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Cette erreur ne devrait jamais se produire. Si vous voyez ce code d'erreur, alors veuillez soumettre un rapport de bogue (voir ci-dessous).</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x0000000A</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Structure de fichier invalide</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%2010.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">La structure du fichier de base de données actuel n'est pas valide. Cela peut se produire si la clé principale fournie par l'utilisateur (mot de passe principal/fichier de clé) n'est pas valide ou si le fichier est corrompu.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Si vous êtes sûr que la clé est correcte, alors essayez la fonctionnalité de </span><a class="rvts14" href="../base/repair.html">réparation de la base de données</a><span class="rvts8">.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x0000000B</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Erreur cryptographique</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="No" style="vertical-align: middle;" src="lib/imagesb16x16_cancel%201.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Une erreur cryptographique interne s'est produite. L'un des composants cryptographiques ne peut pas être initialisé, testé et/ou a renvoyé une erreur.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x0000000C</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Taille de fichier invalide</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%209.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">La taille du fichier n'est pas valide. Cela signifie que le fichier est corrompu.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x0000000D</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Signature de fichier invalide</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%208.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">La signature du fichier n'est pas valide. Cela signifie que le fichier est corrompu et/ou n'est pas un fichier que KeePass peut lire.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x0000000E</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Entête de fichier invalide</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%207.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">L'en-tête du fichier n'est pas valide. Le fichier peut être corrompu, avoir été créé par une version plus récente de KeePass ou ne pas être du tout un fichier KeePass.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x0000000F</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Erreur d'accès fichier :</span><br/><span class="rvts8">Lire clé</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%206.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Le système d'exploitation (Windows) n'a pas accordé à KeePass l'accès en lecture au fichier clé spécifié ou il n'existe pas. Notez que cela ne signifie pas que le fichier clé est corrompu, KeePass ne peut tout simplement pas obtenir un accès en lecture au fichier.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Assurez-vous que le média contenant le fichier clé est inséré et que KeePass a le droit d'y accéder (vérifiez les droits d'accès au fichier, assurez-vous qu'aucune autre application ne bloque le fichier, ...).</span><br/><span class="rvts8"></span><br/><span class="rvts8">Si vous sélectionnez le lecteur du fichier clé (c'est-à-dire que vous ne le spécifiez pas manuellement), alors recherchez le fichier </span><span class="rvts17">"pwsafe.key"</span><span class="rvts8">. Consultez la documentation de la </span><a class="rvts14" href="../base/keys.html">clé principale</a><span class="rvts8"> pour plus d'informations sur l'utilisation des fichiers de clé.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000010</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Fournisseur : clé invalide</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%205.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Le greffon du fournisseur de clé n'a pas fourni de clé valide.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000011</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Erreur de fichier : Vérifier</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%204.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Les données qui ont été envoyées au disque/lecteur ne correspondent pas aux données qui sont maintenant stockées sur le disque/lecteur, c'est-à-dire que le fichier a été corrompu par quelque chose. Voir l'erreur 0x00000008.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000012</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Fichier KDBX</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%203.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Le fichier que vous avez essayé d'ouvrir est au format KDBX. Les fichiers KDBX ne sont pris en charge que par KeePass 2.x. Soit vous utilisez KeePass 2.x soit vous utilisez la fonction "Exporter" de KeePass 2.x pour migrer le fichier vers un fichier KDB KeePass 1.x.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000013</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Erreur système</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%202.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Une erreur au niveau de l'utilisateur s'est produite et le système a fourni la description détaillée affichée dans la boîte de message d'erreur.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">0x00000014</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Base de données vide</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%201.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">La base de données est vide. KeePass refuse de charger/sauvegarder des bases de données vides.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts20">Utilisateur :</span></p>
+<p class="rvps7"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok.png"><span class="rvts8"> : cette erreur n'est pas un bogue. KeePass n'a pas réussi à effectuer certaines opérations et vous pouvez corriger cette "erreur" vous-même. Par exemple : lorsque vous avez entré une clé invalide pour votre base de données, ne pas ouvrir la base de données n'est pas un bogue.</span></p>
+<p class="rvps7"><img alt="No" style="vertical-align: middle;" src="lib/imagesb16x16_cancel.png"><span class="rvts8"> : cette erreur est un bogue. Vous ne devriez jamais voir cette erreur. Veuillez soumettre un </span><a class="rvts14" href="https://sourceforge.net/p/keepass/bugs/">rapport de bogue</a><span class="rvts8">.</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2025 par Ronan Plantec &amp; Dominik Reichl</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,1103 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 7.9.0.612">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Les param&egrave;tres substituables</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Les param&egrave;tres substituables">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Les param&egrave;tres substituables" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.56" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.56</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Lesparametressubstituables"
+		  data-hnd-context="24"
+		  data-hnd-title="Les paramètres substituables"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Legenerateurdemotdepasse.html" title="Le g&eacute;n&eacute;rateur de mot de passe" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Reparerlesbasesdedonnees.html" title="R&eacute;parer les bases de donn&eacute;es" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Les param&egrave;tres substituables</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" border="2" cellpadding="0" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <p class="rvps3"><img width="64" height="64" alt="" style="vertical-align: middle;" src="lib/imagesb64x64_chardevice.png"></p>
+  </td>
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">Les paramètres substituables (placeholders)</span></span></h1>
+   <p class="rvps3"><span class="rvts19">KeePass prend en charge divers paramètres substituables.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts13">À de nombreux endroits dans KeePass (la saisie automatique, le champ d'adresse (URL), les déclencheurs, etc.), des paramètres substituables peuvent être utilisés.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><a class="rvts15" href="Lesparametressubstituables.html#entryfields">Les paramètres substituables de champ d'entrée</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesparametressubstituables.html#fieldrefs">Les références de champ d'entrée</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesparametressubstituables.html#envctx">Les paramètres substituables des chemins et date/heure</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesparametressubstituables.html#envvars">Les variables d'environnement</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesparametressubstituables.html#texttrf">Les transformations de texte</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesparametressubstituables.html#plh">Les autres paramètres substituables</a></li>
+</ul>
+<p class="rvps3"><span class="rvts13">Les paramètres substituables ne sont pas sensibles à la casse.</span></p>
+<p class="rvps7"><span class="rvts13">KeePass utilise l'abréviation "Spr" pour "String placeholder replacement" ("le remplacement du paramètre substituable par une chaîne"). Un champ compilé par </span><span class="rvts17">Spr</span><span class="rvts13"> est un champ où les paramètres substituables sont remplacés quand on effectue une action avec ce champ (par exemple&nbsp;: comme la copie vers le presse-papiers, l'envoyer en utilisant la saisie automatique, etc.).</span></p>
+<p class="rvps7"><span class="rvts13">Les références dans un champ vers (les parties du) le champ lui-même ne sont pas prises en charge. Par exemple&nbsp;: le paramètre substituable </span><span class="rvts22">{URL:HOST}</span><span class="rvts13"> ne peut pas être utilisé dans le champ d'adresse (URL) (mais il peut être utilisé dans le champ 'Remplacer l'adresse (URL - par exemple&nbsp;: pour utiliser un navigateur spécifique)&nbsp;:'.</span></p>
+<p class="rvps7"><span class="rvts13">Les paramètres substituables sont similaires aux variables d'environnement, mais ils ne fonctionnent que dans KeePass (par exemple&nbsp;: il y a un paramètre substituable {APPDIR}, qui est remplacé par le chemin du répertoire de l'application).</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="entryfields"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_chardevice3.png"><span class="rvts0"><span class="rvts23"> Les paramètres substituables de champ d'entrée</span></span></h2>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<table width="75%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Paramètre substituable</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Champ</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{TITLE}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Titre</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{USERNAME}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Nom d'utilisateur</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Adresse (URL)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{PASSWORD}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Mot de passe</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{NOTES}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remarques</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"></span><br/><span class="rvts13">Des chaînes personnalisées peuvent être référencées en utilisant </span><span class="rvts22">{S:</span><span class="rvts25">Nom</span><span class="rvts22">}</span><span class="rvts13">. Par exemple&nbsp;: si vous avez une chaîne personnalisée nommée "Courriel", alors vous pouvez utiliser le paramètre substituable </span><span class="rvts22">{S:Courriel}</span><span class="rvts13">.</span><br/><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<table width="75%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Le paramètre substituable</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Est remplacé par</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:RMVSCM}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">L'adresse (URL) de l'entrée sans le nom du protocole (scheme).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:SCM}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le protocole de l'adresse (URL) de l'entrée.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:HOST}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le composant d'hôte de l'adresse (URL) de l'entrée.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:PORT}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le numéro de port de l'adresse (URL) de l'entrée.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:PATH}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le composant du chemin de l'adresse (URL) de l'entrée.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:QUERY}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">La recherche d'informations sur l'adresse (URL) de l'entrée.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:USERINFO}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">L'information de l'utilisateur de l'adresse (URL) de l'entrée.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:USERNAME}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le nom d'utilisateur de l'adresse (URL) de l'entrée.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:PASSWORD}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le mot de passe de l'adresse (URL) de l'entrée.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{UUID}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">L'UUID de l'entrée (32 caractères hexadécimaux).</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"></span><br/><span class="rvts13">Un exemple pour les paramètres substituables </span><span class="rvts22">{URL:...}</span><span class="rvts13"> se trouve </span><a class="rvts15" href="Lesparametressubstituables.html#url">ci-dessous</a><span class="rvts13">.</span><br/><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="fieldrefs"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_chardevice2.png"><span class="rvts0"><span class="rvts23"> Les références de champ d'entrée</span></span></h2>
+<p class="rvps7"><span class="rvts13">Les champs d'</span><span class="rvts17">autres</span><span class="rvts13"> entrées peuvent être insérés en utilisant </span><a class="rvts15" href="Lesreferencesdechamp.html">des références de champ</a><span class="rvts13">.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="envctx"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_chardevice1.png"><span class="rvts0"><span class="rvts23"> Les paramètres substituables des chemins et date/heure</span></span></h2>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<table width="75%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Le paramètre substituable</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Est remplacé par</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{EDGE}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le chemin vers Microsoft Edge, s'il est installé.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{FIREFOX}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le chemin vers Mozilla Firefox, s'il est installé.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{GOOGLECHROME}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le chemin vers Google Chrome (ou Chromium sur les systèmes Unix-like), s'il est installé.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{INTERNETEXPLORER}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le chemin vers Internet Explorer, s'il est installé.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{OPERA}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le chemin vers Opera, s'il est installé.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{SAFARI}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le chemin vers Safari, s'il est installé.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<table width="75%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Le paramètre substituable</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Est remplacé par</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{APPDIR}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le chemin du répertoire de l'application KeePass.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<table width="75%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Le paramètre substituable</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Est remplacé par</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{GROUP}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le nom du groupe parent de l'entrée.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{GROUP_PATH}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le chemin complet du groupe parent de l'entrée.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{GROUP_NOTES}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Les remarques du groupe parent de l'entrée.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{GROUP_SEL}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le nom du groupe actuellement sélectionné dans la fenêtre principale.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{GROUP_SEL_PATH}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le chemin complet du groupe actuellement sélectionné dans la fenêtre principale.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{GROUP_SEL_NOTES}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Les remarques du groupe actuellement sélectionné dans la fenêtre principale.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DB_PATH}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le chemin complet de la base de données actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DB_DIR}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le répertoire de la base de données actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DB_NAME}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le nom du fichier (y compris son extension) de la base de données actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DB_BASENAME}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le nom du fichier (sans son extension) de la base de données actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DB_EXT}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">L'extension du nom du fichier de la base de données actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{ENV_DIRSEP}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le séparateur de répertoire ('\' sous Windows, '/' sous Unix).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{ENV_PROGRAMFILES_X86}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Il s'agit de </span><span class="rvts22">%ProgramFiles(x86)%</span><span class="rvts13">, s'il existe, sinon </span><span class="rvts22">%ProgramFiles%</span><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<table width="75%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Le paramètre substituable</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Est remplacé par</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_SIMPLE}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">La date/heure locale actuelle sous la forme d'une chaîne simple et qui peut être triée. Par exemple&nbsp;: pour 2012-07-25 17:05:34 la valeur est 20120725170534.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_YEAR}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">La composante année de la date/heure locale actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_MONTH}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le composant mois de la date/heure locale actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_DAY}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le composant jour de la date/heure locale actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_HOUR}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">La composante heure de la date/heure locale actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_MINUTE}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">La composante minute de la date/heure locale actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_SECOND}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">La composante seconde de la date/heure locale actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_UTC_SIMPLE}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">La composante date/heure UTC actuelle sous la forme d'une chaîne simple et qui peut être triée.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_UTC_YEAR}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">La composante année de la date/heure UTC actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_UTC_MONTH}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le composant mois de la date/heure UTC actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_UTC_DAY}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le composant jour de la date/heure UTC actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_UTC_HOUR}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">La composante heure de la date/heure UTC actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_UTC_MINUTE}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">La composante minute de la date/heure UTC actuelle.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DT_UTC_SECOND}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">La composante seconde de la date/heure UTC actuelle.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"></span><br/><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="envvars"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_konsole2.png"><span class="rvts0"><span class="rvts23"> Les variables d'environnement</span></span></h2>
+<p class="rvps7"><span class="rvts13">Les variables d'environnement système sont prises en charge. Le nom de la variable doit être entouré par le caractère '</span><span class="rvts22">%</span><span class="rvts13">'. Par exemple&nbsp;: </span><span class="rvts22">%TEMP%</span><span class="rvts13"> est remplacé par le chemin temporaire de l'utilisateur.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="texttrf"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ascii11.png"><span class="rvts0"><span class="rvts23"> Les transformations de texte</span></span></h2>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<table width="75%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Paramètre substituable</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Action</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{T-REPLACE-RX:/</span><span class="rvts25">Texte</span><span class="rvts22">/</span><span class="rvts25">Recherche</span><span class="rvts22">/</span><span class="rvts25">Remplace</span><span class="rvts22">/}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Recherche l'expression régulière </span><span class="rvts17">Recherche</span><span class="rvts13"> dans </span><span class="rvts17">Texte</span><span class="rvts13"> et remplace toutes correspondances par </span><span class="rvts17">Remplace</span><span class="rvts13">. Cf. </span><a class="rvts15" href="Lesparametressubstituables.html#replacerx">ci-dessous</a><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{T-CONV:/</span><span class="rvts25">Texte</span><span class="rvts22">/</span><span class="rvts25">Type</span><span class="rvts22">/}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Converti </span><span class="rvts17">Texte</span><span class="rvts13"> en </span><span class="rvts17">Type</span><span class="rvts13">. Cf. </span><a class="rvts15" href="Lesparametressubstituables.html#conv">ci-dessous</a><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"></span><br/><span class="rvts13"></span><br/><a name="replacerx"></a><span class="rvts31">{T-REPLACE-RX:/</span><span class="rvts32">Text</span><span class="rvts31">/Rec</span><span class="rvts32">herche</span><span class="rvts31">/</span><span class="rvts32">Remplace</span><span class="rvts31">/}</span><span class="rvts20"> – Remplacer à l'aide d'une expression régulière&nbsp;:</span><br/><span class="rvts13">Ce paramètre substituable recherche </span><a class="rvts15" href="https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference">l'expression régulière</a><span class="rvts13"> </span><span class="rvts17">Recherche</span><span class="rvts13"> dans </span><span class="rvts17">Texte</span><span class="rvts13"> et remplace toutes les correspondances par </span><span class="rvts17">Remplace</span><span class="rvts13">.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Tous les paramètres sont compilés par Spr, c'est-à-dire que des paramètres substituables peuvent être utilisés en leur sein.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Le premier caractère après le premier '</span><span class="rvts22">:</span><span class="rvts13">' spécifie le caractère séparateur. Tout caractère excepté '</span><span class="rvts22">}</span><span class="rvts13">' peut être utilisé comme caractère séparateur. Il ne doit pas apparaître dans les paramètres. Par exemple&nbsp;: </span><span class="rvts22">{T-REPLACE-RX:/A/B/C/}</span><span class="rvts13"> et </span><span class="rvts22">{T-REPLACE-RX:!A!B!C!}</span><span class="rvts13"> sont équivalents. Le dernier caractère séparateur (avant le '</span><span class="rvts22">}</span><span class="rvts13">') est requis.</span><br/><span class="rvts13"></span><br/><span class="rvts17">Exemple d'utilisation&nbsp;:</span><span class="rvts13"> laissez le champ du nom de l'utilisateur contenir l'adresse de messagerie électronique '</span><span class="rvts22">monnom@exemple.com</span><span class="rvts13">' et le champ de l'adresse (URL) '</span><span class="rvts22">{T-REPLACE-RX:!{USERNAME}!.*@(.*)!https://$1!}</span><span class="rvts13">'. Quand on exécute le champ Adresse (URL), KeePass ouvre '</span><span class="rvts22">https://exemple.com</span><span class="rvts13">'.</span><br/><span class="rvts13"></span><br/><a name="conv"></a><span class="rvts31">{T-CONV:/</span><span class="rvts32">Texte</span><span class="rvts31">/</span><span class="rvts32">Type</span><span class="rvts31">/}</span><span class="rvts20"> – Convertir&nbsp;:</span><br/><span class="rvts13">Ce paramètre substituable convertit </span><span class="rvts17">Text</span><span class="rvts13"> en </span><span class="rvts17">Type</span><span class="rvts13">.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Tous les paramètres sont compilés par Spr, c'est-à-dire que les paramètres substituables peuvent être utilisés en leur sein.</span><br/><span class="rvts13"><br/></span></p>
+<p class="rvps7"><span class="rvts13">Les types pris en charge sont&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts20">Upper</span><span class="rvts13"> ou </span><span class="rvts20">U</span><span class="rvts13">:</span><br/><span class="rvts13">Majuscule.</span></li>
+ <li class="rvps3"><span class="rvts20">Lower</span><span class="rvts13"> ou </span><span class="rvts20">L</span><span class="rvts13">:</span><br/><span class="rvts13">Minuscule.</span><br/><span class="rvts17">Exemple&nbsp;: </span><span class="rvts13">laissez le nom d'utilisateur d'une entrée être '</span><span class="rvts22">Bob</span><span class="rvts13">' et l'adresse (URL) '</span><span class="rvts22">https://exemple.com/?user={T-CONV:/{USERNAME}/L/}</span><span class="rvts13">'. Quand on exécute l'adresse (URL), KeePass ouvre '</span><span class="rvts22">https://exemple.com/?user=bob</span><span class="rvts13">'.</span></li>
+ <li class="rvps3"><span class="rvts20">Base64</span><span class="rvts13">:</span><br/><span class="rvts13">Le codage Base64 de la représentation UTF-8 du texte.</span></li>
+ <li class="rvps3"><span class="rvts20">Hex</span><span class="rvts13">:</span><br/><span class="rvts13">Le codage hexadécimal de la représentation UTF-8 du texte.</span></li>
+ <li class="rvps3"><span class="rvts20">Uri</span><span class="rvts13">:</span><br/><span class="rvts13">La représentation URI-escaped du texte.</span></li>
+ <li class="rvps3"><span class="rvts20">Uri-Dec</span><span class="rvts13">:</span><br/><span class="rvts13">La représentation URI-unescaped du texte.</span></li>
+ <li class="rvps3"><span class="rvts20">Raw</span><span class="rvts13">:</span><br/><span class="rvts13">Spr compile </span><span class="rvts17">Texte</span><span class="rvts13"> sans encoder le résultat pour le contexte actuel.</span><br/><span class="rvts17">Exemple&nbsp;: </span><span class="rvts13">Laissons le nom d'utilisateur d'une entrée être '</span><span class="rvts22">+</span><span class="rvts13">'. La séquence de saisie automatique '</span><span class="rvts22">{USERNAME}a</span><span class="rvts13">' donne pour résultat dans le texte '</span><span class="rvts22">+a</span><span class="rvts13">', tandis que la séquence de saisie automatique '</span><span class="rvts22">{T-CONV:/{USERNAME}/Raw/}a</span><span class="rvts13">' donne pour résultat dans le texte '</span><span class="rvts22">A</span><span class="rvts13">' (parce que ce paramètre substituable insère '</span><span class="rvts22">+</span><span class="rvts13">' dans la séquence de saisie automatique sans l'encoder, et que '</span><span class="rvts22">+a</span><span class="rvts13">' signifie appuyer sur </span><span class="rvts21">Maj</span><span class="rvts22">+</span><span class="rvts21">A</span><span class="rvts13">, qui donne pour résultat dans le texte '</span><span class="rvts22">A</span><span class="rvts13">').</span></li>
+</ul>
+<p class="rvps7"><span class="rvts13">Le paramètre substituable {T-CONV:...} avec le type 'Raw' ne fonctionne habituellement qu'avec la séquence de saisie automatique, et pas avec les champs de donnée. Ceci pourrait changer dans le futur.</span></p>
+<p class="rvps3"><span class="rvts13"></span><br/><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="plh"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_chardevice.png"><span class="rvts0"><span class="rvts23"> Les autres paramètres substituables</span></span></h2>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<table width="75%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Paramètre substituable</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Action</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{PICKCHARS}</span><br/><span class="rvts22">{PICKCHARS:</span><span class="rvts25">Fld</span><span class="rvts22">:</span><span class="rvts25">Opt</span><span class="rvts22">}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Affiche une boîte de dialogue pour sélectionner certains caractères dans une chaîne d'entrée. Cf. </span><a class="rvts15" href="Lesparametressubstituables.html#pickchars">ci-dessous</a><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{PICKFIELD}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Affiche une boîte de dialogue pour choisir un champ dont la valeur sera insérée.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{NEWPASSWORD}</span><br/><span class="rvts22">{NEWPASSWORD:/</span><span class="rvts25">Profile</span><span class="rvts22">/.../}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Génère un nouveau mot de passe. Cf. </span><a class="rvts15" href="Lesparametressubstituables.html#newpassword">ci-desssous</a><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{PASSWORD_ENC}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le mot de passe sous forme chiffrée. Cf. </span><a class="rvts15" href="Lesparametressubstituables.html#passwordenc">ci-dessous</a><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <br/>
+  </td>
+  <td style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <br/>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{HMACOTP}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Génère un mot de passe à usage unique basé sur HMAC. Voir </span><a class="rvts15" href="Lesparametressubstituables.html#otp">ci-dessous</a><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{TIMEOTP}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Génère un mot de passe à usage unique basé sur le temps. Voir </span><a class="rvts15" href="Lesparametressubstituables.html#otp">ci-dessous</a><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{C:</span><span class="rvts25">Commentaire</span><span class="rvts22">}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Commentaire&nbsp;; est retiré.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{BASE}</span><br/><span class="rvts22">{BASE:RMVSCM}</span><br/><span class="rvts22">{BASE:SCM}</span><br/><span class="rvts22">{BASE:HOST}</span><br/><span class="rvts22">{BASE:PORT}</span><br/><span class="rvts22">{BASE:PATH}</span><br/><span class="rvts22">{BASE:QUERY}</span><br/><span class="rvts22">{BASE:USERINFO}</span><br/><span class="rvts22">{BASE:USERNAME}</span><br/><span class="rvts22">{BASE:PASSWORD}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">À l'intérieur d'un remplacement d'adresse (URL), chacun de ces paramètres substituables est remplacé par la partie spécifiée de la chaîne qui est remplacée. Cf. </span><a class="rvts15" href="Lesparametressubstituables.html#url">ci-dessous</a><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{CLIPBOARD}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Obtient le contenu du presse-papiers (texte).</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{CLIPBOARD-SET:/</span><span class="rvts25">Texte</span><span class="rvts22">/}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Copie </span><span class="rvts17">Texte</span><span class="rvts13"> dans le presse-papiers.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{CMD:/</span><span class="rvts25">LigneCommande</span><span class="rvts22">/</span><span class="rvts25">Options</span><span class="rvts22">/}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Exécute une ligne de commande. Cf. </span><a class="rvts15" href="Lesparametressubstituables.html#cmd">ci-dessous</a><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"></span><br/><span class="rvts13"></span><br/><a name="pickchars"></a><span class="rvts31">{PICKCHARS}</span><span class="rvts20"> – Choisir des caractères&nbsp;:</span></p>
+<p class="rvps3"><a href="https://keepass.info/screenshots/windows_vista/pickchars_big.png"><img alt="Boîte de dialogue de choix d&amp;apos;un charactère" style="vertical-align: middle; margin : 3px 3px;" src="lib/screenshotswindows_vistapickchars.png"></a><span class="rvts13">Le paramètre substituable </span><span class="rvts22">{PICKCHARS}</span><span class="rvts13"> affiche une boîte de dialogue, dans laquelle vous pouvez sélectionner des caractères d'une chaîne d'entrée (par exemple&nbsp;: le mot de passe) à certaines positions.</span><br/><span class="rvts13"></span><br/><span class="rvts22">{PICKCHARS}</span><span class="rvts13"> sans aucun paramètre vous permet de sélectionner une quantité arbitraire de caractères depuis le mot de passe de l'entrée. Une chaîne d'entrée différente peut être spécifiée en ajoutant '</span><span class="rvts22">:</span><span class="rvts13">' et le nom du champ&nbsp;; c'est-à-dire </span><span class="rvts22">{PICKCHARS:UserName}</span><span class="rvts13">. Les noms des champs standards sont </span><span class="rvts17">Title</span><span class="rvts13">, </span><span class="rvts17">UserName</span><span class="rvts13"> (sans espace), </span><span class="rvts17">Password</span><span class="rvts13">, </span><span class="rvts17">URL</span><span class="rvts13"> et </span><span class="rvts17">Notes</span><span class="rvts13">. Une chaîne d'entrée personnalisée peut être référencée par son nom (sans le préfixe </span><span class="rvts22">S:</span><span class="rvts13">).</span><br/><span class="rvts13"><br/></span></p>
+<p class="rvps7"><span class="rvts13">De plus, le paramètre substituable prend en charge diverses options (facultatives&nbsp;! ). Les options sont ajoutées après le nom du champ, séparées par '</span><span class="rvts22">:</span><span class="rvts13">'. Si vous souhaitez spécifier plusieurs options, alors les séparer par une virgule '</span><span class="rvts22">,</span><span class="rvts13">'. Les options sont des paires clé-valeur, séparées par '</span><span class="rvts22">=</span><span class="rvts13">'. Les options suivantes sont prises en charge&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts20">ID</span><span class="rvts13">: spécifie un ID alphanumérique pour le paramètre substituable (cf. ci-dessous).</span></li>
+ <li class="rvps3"><span class="rvts20">C</span><span class="rvts13"> ou </span><span class="rvts20">Count</span><span class="rvts13">: spécifie le nombre de caractères à sélectionner dans la chaîne. Quand suffisamment de caractères ont été choisis, la boîte de dialogue se ferme automatiquement (c'est-à-dire que vous n'avez plus besoin de cliquer manuellement sur [OK]).</span></li>
+ <li class="rvps3"><span class="rvts20">Hide</span><span class="rvts13">: s'il est positionné à </span><span class="rvts17">False</span><span class="rvts13"> (Faux), les caractères choisis dans la boîte de dialogue sont affichés par défaut en texte brut, c'est-à-dire non masqués par des astérisques. Par défaut, KeePass utilise le paramétrage de masquage des mots de passe dans la fenêtre principale.</span></li>
+ <li class="rvps3"><span class="rvts20">Conv</span><span class="rvts13">: Spécifie comment convertir les caractères sélectionnés. Quand le paramètre est omis, aucune conversion n'est accomplie, c'est-à-dire que les caractères sélectionnés sont directement saisis automatiquement. L'option prend en charge les valeurs suivantes&nbsp;:</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts20">D</span><span class="rvts13">: Convertit les caractères sélectionnés en touches fléchées vers le bas&nbsp;; par exemple '2', 'c' et 'C' sont convertis en deux touches fléchées vers le bas.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Un nombre fixe de touches fléchées vers le bas peut être ajouté en les spécifiant à l'aide de l'option </span><span class="rvts20">Conv-Offset</span><span class="rvts13">. Par exemple&nbsp;: si vous spécifiez </span><span class="rvts22">Conv=D, Conv-Offset=1</span><span class="rvts13">, alors '2', 'c' et 'C' sont convertis en 3 touches fléchées vers le bas.</span><br/><span class="rvts13"></span><br/><span class="rvts13">En utilisant l'option </span><span class="rvts20">Conv-Fmt</span><span class="rvts13">, vous pouvez spécifier la disposition des comboboxes. Par défaut, KeePass suppose qu'une combobox contient les valeurs de 0 à 9 </span><span class="rvts17">ou</span><span class="rvts13"> de A à Z. Si la combobox contient les valeurs 0-9A-Z (c'est-à-dire tout d'abord les dix chiffres, immédiatement suivis par tous les caractères de A à Z), alors spécifiez </span><span class="rvts22">Conv=D, Conv-Fmt=0A</span><span class="rvts13">. Similairement, s'il contient les valeurs A-Z0-9, alors spécifiez </span><span class="rvts22">Conv=D, Conv-Fmt=A0</span><span class="rvts13">. Si les chiffres commencent à 1 au lieu de 0 (c'est-à-dire que le 0 apparaît après le 9), alors utilisez </span><span class="rvts22">1A</span><span class="rvts13"> et </span><span class="rvts22">A1</span><span class="rvts13"> au lieu de </span><span class="rvts22">0A</span><span class="rvts13"> et </span><span class="rvts22">A0</span><span class="rvts13">. Si la combobox contient les valeurs 0-9A-Za-z (c'est-à-dire les caractères sensibles à la casse), alors spécifiez </span><span class="rvts22">0Aa</span><span class="rvts13">. Toutes les combinaisons de '</span><span class="rvts22">0</span><span class="rvts13">', '</span><span class="rvts22">A</span><span class="rvts13">', '</span><span class="rvts22">a</span><span class="rvts13">' et '</span><span class="rvts22">?</span><span class="rvts13">' sont prises en charge. Si '</span><span class="rvts22">A</span><span class="rvts13">' et '</span><span class="rvts22">a</span><span class="rvts13">' ne sont pas tous les deux spécifiés à la fois, alors les caractères sont traités comme insensibles à la casse. '</span><span class="rvts22">?</span><span class="rvts13">' ignore un élément de combobox.</span></li>
+ </ul>
+</ul>
+<p class="rvps3"><span class="rvts13">Si vous souhaitez afficher la boîte de dialogue de sélection de caractères plusieurs fois dans une même séquence, alors attribuez des ID différents aux paramètres substituables. Si un ID est spécifié plusieurs fois (ou si aucun ID n'est spécifié et que les paramètres substituables sont les mêmes), alors KeePass affiche la boîte de dialogue de sélection des caractères une fois et réutilise les caractères sélectionnés dans tous les paramètres substituables suivants avec le même ID.</span><br/><span class="rvts13"></span><br/><span class="rvts17">Exemples d'utilisation</span><span class="rvts13">&nbsp;:</span><br/><span class="rvts13"></span><br/><span class="rvts22">{USERNAME}{TAB}{PICKCHARS:Password:C=5}{ENTER}</span><br/><span class="rvts13">Tout d'abord, une boîte de dialogue s'affiche dans laquelle l'utilisateur peut choisir exactement 5 caractères depuis le mot de passe d'entrée. Ensuite, KeePass saisit le nom d'utilisateur dans la fenêtre cible, appuie sur </span><span class="rvts21">Tabulation</span><span class="rvts13">, tape les 5 caractères choisis et appuie sur </span><span class="rvts21">Entrée</span><span class="rvts13">.</span><br/><span class="rvts13"><br/></span></p>
+<p class="rvps3"><a href="https://keepass.info/screenshots/windows_vista/comboboxform_big.png"><img alt="ComboBox Form" style="vertical-align: middle; margin : 3px 3px;" src="lib/screenshotswindows_vistacomboboxform.png"></a><span class="rvts22">{S:Memorable}{TAB}{PICKCHARS:Password:ID=1, C=1, Conv=D, Conv-Offset=1}{TAB}{PICKCHARS:Password:ID=2, C=1, Conv=D, Conv-Offset=1}{TAB}{PICKCHARS:Password:ID=3, C=1, Conv=D, Conv-Offset=1}{ENTER}</span><br/><span class="rvts13">Tout d'abord, la boîte de dialogue de sélection de caractères s'affiche trois fois et chaque fois, l'utilisateur peut sélectionner exactement un caractère depuis le mot de passe d'entrée. Ensuite, le processus de saisie automatique démarre&nbsp;: KeePass saisit le contenu d'une chaîne d'entrée personnalisée nommée "Memorable" dans la fenêtre cible. Le focus est basculé sur le contrôle suivant en appuyant sur la touche </span><span class="rvts21">Tabulation</span><span class="rvts13">, et le premier caractère précédemment sélectionné est converti en touches fléchées vers le bas (avec une touche supplémentaire&nbsp;; par exemple&nbsp;: un '1' est converti en deux touches fléchées vers le bas). Ceci est répété deux fois de plus avec les autres caractères sélectionnés, et enfin la touche </span><span class="rvts21">Entrée</span><span class="rvts13"> est pressée.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Remarquez que cela ne revient pas à choisir trois caractères à la fois. Si vous utilisez </span><span class="rvts22">{S:Memorable}{TAB}{PICKCHARS:Password: C = 3, Conv = D, Conv-Offset = 1}</span><span class="rvts13">, toutes les touches fléchées vers le bas sont envoyées au même contrôle actuellement actif.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Dans certains navigateurs (par exemple&nbsp;: Opera), mettre le focus sur une combobox peut être lent. Si vous rencontrez des échecs de saisie automatique, envisagez de ralentir les changements de focus (par exemple&nbsp;: en ajoutant </span><span class="rvts22">{DELAY 250}</span><span class="rvts13"> après chaque </span><span class="rvts22">{TAB}</span><span class="rvts13">, ou en ralentissant toute la séquence, par exemple en ajoutant </span><span class="rvts22">{DELAY = 150})</span><span class="rvts13">.</span><br/><span class="rvts13"></span><br/><a name="newpassword"></a><span class="rvts31">{NEWPASSWORD}</span><span class="rvts20"> et </span><span class="rvts31">{NEWPASSWORD:/</span><span class="rvts32">Profile</span><span class="rvts31">/.../}</span><span class="rvts20"> – Génération de nouveaux mots de passe&nbsp;:</span><br/><span class="rvts13">Le paramètre substituable </span><span class="rvts22">{NEWPASSWORD}</span><span class="rvts13"> génère un nouveau mot de passe pour l'entrée actuelle, basé sur le profil de générateur '</span><a class="rvts15" href="Legenerateurdemotdepasse.html#configauto">Mots de passe générés automatiquement pour les nouvelles entrées</a><span class="rvts13">'.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Ce paramètre substituable est évalué seulement qu'une fois dans un processus de saisie automatique, c'est-à-dire pour une boîte de dialogue typique 'Ancien mot de passe' - 'Nouveau mot de passe' - 'Répéter nouveau mot de passe', vous pouvez utiliser </span><span class="rvts22">{PASSWORD}{TAB}{NEWPASSWORD}{TAB}{NEWPASSWORD}{ENTER}</span><span class="rvts13"> comme séquence de saisie automatique.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Pour utiliser un profil de générateur de mot de passe différent, utilisez </span><span class="rvts22">{NEWPASSWORD:/</span><span class="rvts25">Profil</span><span class="rvts22">/}</span><span class="rvts13">, où </span><span class="rvts17">Profil</span><span class="rvts13"> est le nom du profil. Si le profil spécifié est introuvable, le profil 'Mots de passe générés automatiquement pour les nouvelles entrées' est utilisé.</span><br/><span class="rvts13"><br/></span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts31">~</span><span class="rvts13">: Lorsque vous spécifiez '</span><span class="rvts22">~</span><span class="rvts13">' comme nom du profil (c'est-à-dire lorsque vous utilisez le paramètre substituable </span><span class="rvts22">{NEWPASSWORD:/~/}</span><span class="rvts13">), KeePass </span><a class="rvts15" href="Legenerateurdemotdepasse.html#derive">dérive</a><span class="rvts13"> un profil du mot de passe de l'entrée actuelle. Non recommandé, car la qualité peut se dégrader.</span></li>
+ <li class="rvps3"><span class="rvts31">#</span><span class="rvts13">: Quano on spécifie '</span><span class="rvts22">#</span><span class="rvts13">' comme nom de profil, alors vous pouvez spécifier deux paramètres en plus : un </span><a class="rvts15" href="Legenerateurdemotdepasse.html#pattern">modèle de chaîne de caractères</a><span class="rvts13"> et une option.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts31">R</span><span class="rvts13">: Spécifie si réarranger/permuter les caractères aléatoirement du mot de passe généré.</span><br/><span class="rvts13">La valeur par défaut est </span><span class="rvts22">0</span><span class="rvts13">.</span></li>
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: square;">
+   <li class="rvps3"><span class="rvts31">0</span><span class="rvts13">: Ne pas réarranger.</span></li>
+   <li class="rvps3"><span class="rvts31">1</span><span class="rvts13">: Réarranger.</span></li>
+  </ul>
+ </ul>
+</ul>
+<p class="rvps3"><span class="rvts13">Exemples :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts22">{NEWPASSWORD:/#/HH\-HH\-HH\-HH\-HH\-HH/}</span><br/><span class="rvts13">génère une adressse MAC.</span></li>
+  <li class="rvps3"><span class="rvts22">{NEWPASSWORD:/#/uldA{17}/R=1/}</span><br/><span class="rvts13">génère un mot de passe alphanumerique d'une longueur de 20 qui contient au moins une capitale, au moins une minuscule et au moins un chiffre (à des positions aléatoires).</span></li>
+ </ul>
+</ul>
+<p class="rvps3"><span class="rvts13">Comme avec le paramètre substituable </span><span class="rvts22">{NEWPASSWORD}</span><span class="rvts13">, les paramètres substituables </span><span class="rvts22">{NEWPASSWORD:/.../}</span><span class="rvts13"> sont évalués une seule fois (même quand différent profile/paramètres sont spécifiés).</span><br/><span class="rvts13"></span><br/><a name="passwordenc"></a><span class="rvts31">{PASSWORD_ENC}</span><span class="rvts20"> – Chiffrement des mots de passe&nbsp;:</span><br/><span class="rvts13">Le paramètre substituable </span><span class="rvts22">{PASSWORD_ENC}</span><span class="rvts13"> est remplacé par le mot de passe de l'entrée actuelle sous forme chiffrée. Le mot de passe est chiffré à l'aide de l'accréditation (les informations d'identification) de l'utilisateur courant Windows. Le mot de passe chiffré ne doit pas être enregistré et ne fonctionne que pour l'utilisateur courant.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Il est destiné à être utilisé conjointement avec le paramètre de </span><a class="rvts15" href="Lesoptionsdelalignedecommande.html">ligne de commande</a><span class="rvts13"> </span><span class="rvts22">-pw-enc</span><span class="rvts13"> (cf. la page </span><a class="rvts15" href="LechampdadresseURL.html">du champ Adresse (URL)</a><span class="rvts13"> pour un exemple de définition d'une adresse - URL - pour ouvrir une base de données KeePass supplémentaire). Le paramètre substituable ne peut pas être utilisé pour transférer des mots de passe vers d'autres applications (à l'exception de KeePass), car les applications cibles ne savent pas comment déchiffrer les mots de passe chiffrés générés par </span><span class="rvts22">{PASSWORD_ENC}</span><span class="rvts13">.</span><br/><span class="rvts13"></span><br/><a name="hmacotp"></a><span class="rvts20">Les mots de passe à usage unique (OTPs):</span><br/><span class="rvts13">KeePass fournit des commandes de menu dans la fenêtre principale pour la génération de mots de passe à usage unique ('Copier OTP basé sur HMAC', 'Montrer OTP basé sur HMAC', 'Copier OTP basé sur le temps', 'Montrer OTP basé sur le temps'). De plus, des mots de passe à usage unique peuvent être générés pendant la </span><a class="rvts15" href="Lasaisieautomatique.html">saisie automatique</a><span class="rvts13"> en utilisant les paramètres substituables </span><span class="rvts22">{HMACOTP}</span><span class="rvts13"> et </span><span class="rvts22">{TIMEOTP}</span><span class="rvts13">.</span></p>
+<p class="rvps7"><span class="rvts13">Les paramètres pour la génération d'OTP sont enregistrés dans des chaînes de caractères de l'entrée et peuvent être efficacement édités en utilisant la boîte de dialogue 'Les paramètres du générateur OTP...' (qui vérifie les valeurs saisies, affiche une prévisualisation, etc.). Alternativement, vous pouvez directement éditer les chaînes de caractères de l'entrée, tel que documenté ci-dessous.</span></p>
+<p class="rvps7"><span class="rvts31">{HMACOTP}</span><span class="rvts20"> – La génération de mots de passe à usage unique basé sur HMAC :</span><br/><span class="rvts13">Le paramètre substituable </span><span class="rvts22">{HMACOTP}</span><span class="rvts13"> génère un mot de passe (HOTP) à usage unique basé sur HMAC selon la RFC 4226.</span></p>
+<p class="rvps7"><span class="rvts13">Le secret partagé et les autres paramètres peuvent être spécifiés en utilisant les champs de chaîne d'entrée (qui peuvent être ajoutés/édités dans la boîte de dialogue de l'entrée sur la page de l'onglet 'Avancé'):</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts20">HmacOtp-Secret</span><br/><span class="rvts20">HmacOtp-Secret-Hex</span><br/><span class="rvts20">HmacOtp-Secret-Base32</span><br/><span class="rvts20">HmacOtp-Secret-Base64</span><br/><span class="rvts13">Au moins un de ces champs doit être présent, et sa valeur doit être mise vers le secret partagé dans l'encodage correspondant. Dans le premier cas ('HmacOtp-Secret'), l'encodage UTF-8 de la valeur est utilisé comme secret partagé.</span></li>
+ <li class="rvps3"><span class="rvts20">HmacOtp-Counter</span><span class="rvts13"> (automatique)</span><br/><span class="rvts13">Ce champ stocke la valeur du compteur dans sa représentation décimale. La valeur par défaut est 0. Quand le paramètre substituable </span><span class="rvts22">{HMACOTP}</span><span class="rvts13"> est remplacé (c'est-à-dire quand on génère un mot de passe à usage unique), KeePass met à jour automatiquement la valeur du compteur.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts31">{TIMEOTP}</span><span class="rvts20"> – En générant des mots de passe à usage unique basés sur le Temps :</span><br/><span class="rvts13">Le paramètre substituable </span><span class="rvts22">{TIMEOTP}</span><span class="rvts13"> génère un mot de passe (TOTP) à usage unique selon la RFC 6238.</span></p>
+<p class="rvps7"><span class="rvts13">Le secret partagé et les autres paramètres peuvent être spécifiés en utilisant les champs de chaîne d'entrée suivants (qui peuvent être ajoutés/édités dans la boîte de dialogue sur la page de l'onglet 'Avancé') :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts20">TimeOtp-Secret</span><br/><span class="rvts20">TimeOtp-Secret-Hex</span><br/><span class="rvts20">TimeOtp-Secret-Base32</span><span class="rvts13"> (plus commun)</span><br/><span class="rvts20">TimeOtp-Secret-Base64</span><br/><span class="rvts13">Au moins un de ces champs doit être présent, et sa valeur doit être positionnée au secret partagé dans l'encodage correspondant. Dans le premier cas ('TimeOtp-Secret'), l'encodage UTF-8 de la valeur est utilisé en tant que secret partagé. La plupart des services utilisent l'encodage Base32.</span></li>
+ <li class="rvps3"><span class="rvts20">TimeOtp-Length</span><span class="rvts13"> (optionnel)</span><br/><span class="rvts13">Spécifie la longueur du mot de passe à usage unique généré. La valeur par défaut est 6 ; le maximum est 8.</span></li>
+ <li class="rvps3"><span class="rvts20">TimeOtp-Period</span><span class="rvts13"> (optionnel)</span><br/><span class="rvts13">Spécifie l'écoulement du temps en secondes. La valeur par défaut est 30.</span></li>
+ <li class="rvps3"><span class="rvts20">TimeOtp-Algorithm</span><span class="rvts13"> (optionnel)</span><br/><span class="rvts13">Spécifie l'algorithme cryptographique utilisé pour la génération du mot de passe à usage unique. Les algorithmes suivant sont pris en charge :</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts13">HMAC-SHA-1</span></li>
+  <li class="rvps3"><span class="rvts13">HMAC-SHA-256</span></li>
+  <li class="rvps3"><span class="rvts13">HMAC-SHA-512</span></li>
+ </ul>
+</ul>
+<p class="rvps3"><span class="rvts13">La valeur par défaut est HMAC-SHA-1.</span></p>
+<p class="rvps7"><span class="rvts13">La date et le temps de votre système doivent être justes, sinon le service/serveur peut rejeter l'OTP généré.</span></p>
+<p class="rvps7"><span class="rvts17">Exemple d'utilisation&nbsp;:</span><span class="rvts13"> Créez une nouvelle entrée et modifiez sa séquence de saisie automatique par défaut à </span><span class="rvts22">{USERNAME}{TAB}{PASSWORD}{ENTER}{DELAY 3000}{HMACOTP}{ENTER}</span><span class="rvts13">. Ouvrez la boîte de dialogue 'Les paramètres du générateur OTP...', positionnez le secret partagé pour les OTP basés sur HMAC à '12345678901234567890' et sélectionnez l'encodage UTF-8. Quand on accomplit la saisie automatique, alors KeePass envoie le nom d'utilisateur, appuie sur </span><span class="rvts21">Tab</span><span class="rvts13">, envoie le mot de passe, appuie sur </span><span class="rvts21">Entrée</span><span class="rvts13">, attends 3 secondes, génère et envoie l'OTP basé sur HMAC et appuie encore finalement sur la touche </span><span class="rvts21">Entrée</span><span class="rvts13">. La valeur du compteur pour la génération du mot de passe à usage unique est automatiquement mise à jour. Avec le secret partagé ci-dessus et le compteur initialisé à la valeur 0, les mots de passe à usage unique suivant sont générés : 755224, 287082, 359152, 969429, 338314, etc. (d'autres OTP générés peuvent être trouvés dans l'exemple de la RFC 4226).</span></p>
+<p class="rvps3"><span class="rvts17">Les greffons :</span><span class="rvts13"> Il existe </span><a class="rvts15" href="https://keepass.info/plugins.html">des greffons</a><span class="rvts13"> qui prennent en charge des OTP non normalisés (par exemple : Steam) et offre des fonctions supplémentaires relatives aux OTP.</span><br/><a name="otp"></a><span class="rvts31">{URL:...}</span><span class="rvts20"> et </span><span class="rvts31">{BASE:...}</span><span class="rvts20">&nbsp;:</span><br/><span class="rvts13">Le paramètre substituable </span><span class="rvts22">{URL: ...}</span><span class="rvts13"> est remplacé par la partie spécifiée de l'adresse (URL) de l'entrée courante&nbsp;; cela est généralement utile dans un remplacement d'adresse (URL) spécifique d'une entrée (défini dans l'onglet «&nbsp;Propriétés&nbsp;» de la boîte de dialogue d'entrée). Le paramètre substituable </span><span class="rvts22">{BASE:...}</span><span class="rvts13"> est remplacé par la partie spécifiée de l'URL qui est remplacée&nbsp;; ceci est généralement utile dans un remplacement d'URL global (défini dans 'Outils' → 'Options' → onglet 'Intégration' → bouton 'Les remplacements d'adresse (URL)...'), car aucun contexte d'entrée ne peut être disponible.</span><br/><span class="rvts13"></span><br/><span class="rvts17">Exemple d'utilisation&nbsp;:</span><span class="rvts13"> Pour l'adresse (URL) de l'entrée </span><span class="rvts22">https://identifiant:motdepasse@keepass.info:80/chemin/exemple.php?q=e&amp;s=t</span><span class="rvts13">, les paramètres substituables retournent les valeurs suivantes&nbsp;:</span><br/><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<table width="75%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Paramètre substituable</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Valeur</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">https://identifiant:motdepasse@keepass.info:80/chemin/exemple.php?q=e&amp;s=t</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:RMVSCM}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">identifiant:motdepasse@keepass.info:80/chemin/exemple.php?q=e&amp;s=t</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:SCM}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">https</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:HOST}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">keepass.info</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:PORT}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">80</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:PATH}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">/chemin/exemple.php</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:QUERY}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">?q=e&amp;s=t</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:USERINFO}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">identifiant:motdepasse</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:USERNAME}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">identifiant</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{URL:PASSWORD}</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">motdepasse</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"></span><br/><span class="rvts22">{BASE}</span><span class="rvts13"> prend en charge exactement les mêmes parties que </span><span class="rvts22">{URL}</span><span class="rvts13">.</span><br/><span class="rvts13"></span><br/><a name="url"></a><span class="rvts31">{CMD:/</span><span class="rvts32">LigneDeCommande</span><span class="rvts31">/</span><span class="rvts32">Options</span><span class="rvts31">/}</span><span class="rvts20"> – Exécution d'une ligne de commande&nbsp;:</span><br/><span class="rvts13">Le paramètre substituable </span><span class="rvts22">{CMD:/</span><span class="rvts25">LigneDeCommande</span><span class="rvts22">/</span><span class="rvts25">Options</span><span class="rvts22">/}</span><span class="rvts13"> exécute la ligne de commande spécifiée.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Une ligne de commande se compose d'un chemin d'accès à un fichier exécutable ou à un document et à des paramètres de ligne de commande. Si le chemin contient des espaces, alors il doit être placé entre double quotes (</span><span class="rvts22">"</span><span class="rvts13">).</span><br/><span class="rvts13"></span><br/><span class="rvts13">Le caractère après le premier '</span><span class="rvts22">:</span><span class="rvts13">' spécifie le caractère séparateur. Il peut être choisi librement (sauf '</span><span class="rvts22">{</span><span class="rvts13">' et '</span><span class="rvts22">}</span><span class="rvts13">'), mais il ne doit pas apparaître dans la ligne de commande ni dans aucune des options. Par exemple&nbsp;: </span><span class="rvts22">{CMD:/Notepad.exe/W=0/}</span><span class="rvts13"> et </span><span class="rvts22">{CMD:!Notepad.exe!W=0!}</span><span class="rvts13"> sont équivalents. Le séparateur à la fin (avant le '</span><span class="rvts22">}</span><span class="rvts13">') est obligatoire.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Une option est une paire clé-valeur, séparée par '</span><span class="rvts22">=</span><span class="rvts13">'. Plusieurs options doivent être séparées à l'aide de virgules '</span><span class="rvts22">,</span><span class="rvts13">'.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Options&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts31">M</span><span class="rvts13">&nbsp;: spécifie la méthode d'exécution/d'ouverture de l'exécutable/document.</span><br/><span class="rvts13">La valeur par défaut est </span><span class="rvts22">S</span><span class="rvts13">.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts31">S</span><span class="rvts13">&nbsp;: utilisez le shell système (via </span><span class="rvts22">ShellExecute</span><span class="rvts13">). Avec cela, les fichiers exécutables sont exécutés et les documents sont ouverts à l'aide de leurs applications associées. Cependant, aucune entrée/sortie standarde n'est prise en charge.</span></li>
+  <li class="rvps3"><span class="rvts31">C</span><span class="rvts13">: Exécutez un fichier exécutable (EXE ou COM, via </span><span class="rvts22">CreateProcess</span><span class="rvts13">)&nbsp;; les documents ne sont pas pris en charge. L'entrée/sortie standard est prise en charge.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts31">O</span><span class="rvts13">&nbsp;: spécifie ce qu'il faut faire avec la sortie standard de l'application exécutée.</span><br/><span class="rvts13">La valeur par défaut est </span><span class="rvts22">1</span><span class="rvts13">.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts31">0</span><span class="rvts13">&nbsp;: ignorer la sortie standard. Le paramètre substituable est remplacé par une chaîne vide.</span></li>
+  <li class="rvps3"><span class="rvts31">1</span><span class="rvts13">&nbsp;: remplacez le paramètre substituable par la sortie standard.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts31">W</span><span class="rvts13">&nbsp;: spécifie s'il faut attendre la fin de l'application exécutée.</span><br/><span class="rvts13">La valeur par défaut est </span><span class="rvts22">1</span><span class="rvts13">.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts31">0</span><span class="rvts13">&nbsp;: ne pas attendre.</span></li>
+  <li class="rvps3"><span class="rvts31">1</span><span class="rvts13">&nbsp;: Attendre.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts31">WS</span><span class="rvts13">&nbsp;: spécifie le style de fenêtre. Toutes les applications ne prennent pas en charge cette option.</span><br/><span class="rvts13">La valeur par défaut est </span><span class="rvts22">N</span><span class="rvts13">.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts31">N</span><span class="rvts13">&nbsp;: Normal.</span></li>
+  <li class="rvps3"><span class="rvts31">H</span><span class="rvts13">&nbsp;: Caché.</span></li>
+  <li class="rvps3"><span class="rvts31">Min</span><span class="rvts13">&nbsp;: Minimisé.</span></li>
+  <li class="rvps3"><span class="rvts31">Max</span><span class="rvts13">&nbsp;: Maximisé.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts31">V</span><span class="rvts13">&nbsp;: spécifie le verbe (action à effectuer), par exemple 'Open' ('Ouvrir') ou 'Print' ('Imprimer'). Lorsque vous utilisez le verbe 'RunAs' ('Exécuter en tant que'), l'application est exécutée avec des droits administratifs (cela peut nécessiter une confirmation via la boîte de dialogue UAC).</span></li>
+</ul>
+<p class="rvps7"><span class="rvts13">Les caractères de nouvelle ligne à la fin de la sortie sont supprimés (de la même manière que les substitutions de commandes shell '</span><span class="rvts22">$(...)</span><span class="rvts13">' et '</span><span class="rvts22">`...`</span><span class="rvts13">').</span></p>
+<p class="rvps3"><span class="rvts17">Exemples d'utilisation&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts22">{CMD:/Notepad.exe/W=0/}</span><br/><span class="rvts13">Exécute le Bloc-notes et continue immédiatement.</span></li>
+ <li class="rvps3"><span class="rvts22">{CMD:/PowerShell.exe -Command "(Get-FileHash '%SYSTEMROOT%\Win.ini' -Algorithm SHA256).Hash"/M=C,WS=H/}</span><br/><span class="rvts13">Le paramètre substituable est remplacé par le hachage SHA-256 du fichier Win.ini de Windows.</span><span class="rvts8"></span></li>
+</ul>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2024 par Ronan Plantec &amp; Dominik Reichl. Tous droits r&eacute;serv&eacute;s.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

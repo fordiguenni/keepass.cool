@@ -1,0 +1,1170 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 7.7.0.519">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Remplacer XML</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Remplacer XML">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Remplacer XML" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.53" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.53</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="RemplacerXML"
+		  data-hnd-context="33"
+		  data-hnd-title="Remplacer XML"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Lutilisationdesmotsdepassestocke.html" title="L'utilisation des mots de passe stock&eacute;s" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Linterfaceutilisateur.html" title="L'interface utilisateur" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Remplacer XML</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" border="2" cellpadding="0" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <p class="rvps3"><img width="64" height="64" alt="" style="vertical-align: middle;" src="lib/imagesb64x64_binary.png"></p>
+  </td>
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">Remplacer XML</span></span></h1>
+   <p class="rvps3"><span class="rvts19">À propos de la fonctionnalité de remplacement XML.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#info">Les informations générales</a></li>
+ <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#ex">Exemples</a><span class="rvts13"> :</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#repstr">Remplacer le texte dans tous les titres et les remarques d'entrée</a></li>
+  <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#tohttps">Remplacer toutes les adresses (URLs) HTTP par des adresses (URLs) HTTPS</a></li>
+  <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#repgrpicon">Remplacer les icônes de groupe</a></li>
+  <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#delstr">Supprimer les chaînes d'entrée par nom</a></li>
+  <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#delbinext">Supprimer les pièces jointes d'entrée par extension de nom</a></li>
+  <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#resetbgcolor">Réinitialiser les couleurs d'arrière-plan</a></li>
+  <li class="rvps3"><span class="rvts13">La saisie automatique :</span></li>
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: square;">
+   <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#atdisable">Désactiver la saisie automatique pour les entrées avec des champs vides</a></li>
+   <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#atdelayupper">Convertir </a><a class="rvts29" href="RemplacerXML.html#atdelayupper">{DELAY=</a><a class="rvts15" href="RemplacerXML.html#atdelayupper"> en majuscules</a></li>
+   <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#ataddstddelay">Ajouter </a><a class="rvts29" href="RemplacerXML.html#ataddstddelay">{DELAY=50}</a><a class="rvts15" href="RemplacerXML.html#ataddstddelay"> à toutes les séquences sans un </a><a class="rvts29" href="RemplacerXML.html#ataddstddelay">{DELAY=</a></li>
+   <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#atmodstddelay">Modifier les valeurs </a><a class="rvts29" href="RemplacerXML.html#atmodstddelay">{DELAY=</a></li>
+   <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#atrmvstddelay">Supprimer </a><a class="rvts29" href="RemplacerXML.html#atrmvstddelay">{DELAY=</a><a class="rvts44" href="RemplacerXML.html#atrmvstddelay">x</a><a class="rvts29" href="RemplacerXML.html#atrmvstddelay">}</a><a class="rvts15" href="RemplacerXML.html#atrmvstddelay"> de toutes les séquences</a></li>
+   <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#atresetifstddelay">Réinitialiser les séquences par défaut qui contiennent </a><a class="rvts29" href="RemplacerXML.html#atresetifstddelay">{DELAY=</a></li>
+   <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#ataddassoc">Ajouter une association de saisie automatique à toutes les entrées</a></li>
+  </ul>
+  <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#copyurls">Copier les adresses (URLs) d'entrée dans les champs Titre</a></li>
+  <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#copytitles">Copier les titres des entrées dans les champs Nom d'utilisateur vides</a></li>
+  <li class="rvps3"><a class="rvts15" href="RemplacerXML.html#firstnotempty">S'assurer que la première ligne n'est pas vide</a></li>
+ </ul>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="info"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help15.png"><span class="rvts0"><span class="rvts23"> Les informations générales</span></span></h2>
+<p class="rvps7"><span class="rvts13">Remplacer XML est une fonctionnalité puissante qui modifie une base de données en manipulant sa représentation XML.</span></p>
+<p class="rvps7"><span class="rvts13">Il crée un DOM XML KeePass 2.x de la base de données actuelle en mémoire, effectue l'opération spécifiée par l'utilisateur (par exemple : supprimer des nœuds ou remplacer du texte), charge l'arborescence XML modifiée, et fusionne la base de données actuelle avec la base de données modifiée.</span></p>
+<p class="rvps7"><img width="13" height="13" alt="Attention" style="vertical-align: middle;" src="lib/imagesb16x16_warning4.png"><span class="rvts13"> Il s'agit d'une fonction réservée aux experts. Utilisez-la avec précaution !</span></p>
+<p class="rvps7"><span class="rvts13">Remplacer XML peut être invoqué via 'Outils' → 'Outils de la base de données' → 'Remplacer XML...'.</span></p>
+<p class="rvps7"><span class="rvts13">Des informations sur XPath et les expressions régulières sont disponibles sur la page d'aide </span><a class="rvts15" href="../base/search.html">Rechercher</a><span class="rvts13">.</span></p>
+<p class="rvps7"><span class="rvts13">KeePass protège les entrées de l'historique&nbsp;; XML Replace ne peut pas être utilisé pour les modifier. De plus, toute modification des propriétés de la base de données (nom/description de la base de données, etc.) peut être ignorée.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="ex"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help14.png"><span class="rvts0"><span class="rvts23"> Exemples</span></span></h2>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="repstr"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Remplacer le texte dans tous les titres et les remarques d'entrée</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry/String[(Key = 'Title') or (Key = 'Notes')]/Value</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplace les données</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Données :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le texte interne</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que rechercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts28">LeTexteÀRechercher</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplacer par :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts28">LeRemplacement</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Dans tous les titres et remarques d'entrée, cela remplace toutes les occurrences de </span><span class="rvts28">LeTexteÀRechercher</span><span class="rvts13"> par </span><span class="rvts28">LeRemplacement</span><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="tohttps"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Remplacer toutes les adresses (URLs) HTTP par des adresses (URLs) HTTPS</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry/String[Key = 'URL']/Value</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplace les données</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Données :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le texte interne</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que rechercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">^http:</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplacer par :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">https:</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Expression régulière</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Dans tous les champs d'adresse (URL) d'entrée, cela remplace toutes les URL HTTP par des URL HTTPS.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="repgrpicon"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Remplacer les icônes de groupe</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Group/IconID</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplace les données</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Données :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le texte interne</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que rechercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">^48$</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplacer par :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">36</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Expression régulière</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Cela assigne l'icône du package ZIP à tous les groupes qui ont actuellement un dossier fermé en tant qu'icône.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Tous les ID d'icône peuvent être trouvés dans la boîte de dialogue du sélecteur d'icône.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="delstr"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Supprimer les chaînes d'entrée par nom</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry/String[Key = '</span><span class="rvts28">LeNom</span><span class="rvts22">']</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Supprime des nœuds</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Supprime toutes les chaînes de caractères d'entrée nommées </span><span class="rvts28">LeNom</span><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="delbinext"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Supprimer les pièces jointes d'entrée par extension de nom</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry/Binary/Key[(string-length(.) &gt;= 4) and (substring(., string-length(.) - 3) = '.jpg')]/..</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Supprime des nœuds</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Supprime toutes les pièces jointes dont le nom se termine par «&nbsp;.jpg&nbsp;».</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="resetbgcolor"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Réinitialiser les couleurs d'arrière-plan</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry/BackgroundColor</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Supprime des nœuds</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Positionne la couleur d'arrière-plan par défaut (transparent/alterné) à toutes les entrées.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="atdisable"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Désactiver la saisie automatique pour les entrées avec des champs vides</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry/String[((Key = 'UserName') or (Key = 'Password')) and (Value = '')]/../AutoType/Enabled</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplace les données</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Données :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le texte interne</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que rechercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">True</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplacer par :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">False</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Désactive la saisie automatique pour toutes les entrées qui ont un champ Nom d'utilisateur ou un champ de mot de passe vide.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="atdelayupper"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Convertir </span><span class="rvts33">{DELAY=</span><span class="rvts20"> en majuscules</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//DefaultSequence | //KeystrokeSequence</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplace les données</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Données :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le texte interne</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que rechercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DELAY=</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplacer par :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DELAY=</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Convertit tous les codes </span><span class="rvts22">{DELAY=</span><span class="rvts13"> dans les substitutions et les associations de séquence de saisie automatique en majuscules (par défaut, l'option de sensibilité à la casse est désactivée, donc le texte 'Que rechercher' correspond à toutes les casses).</span><br/><span class="rvts13"></span><br/><span class="rvts13">Dans KeePass 2.x, les paramètres substituables sont insensibles à la casse. Cependant, cette opération de remplacement XML peut être utile pour préparer l'exemple suivant (qui correspond à </span><span class="rvts22">{DELAY=</span><span class="rvts13"> d'une manière sensible à la casse).</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="ataddstddelay"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Ajouter </span><span class="rvts33">{DELAY=50}</span><span class="rvts20"> à toutes les séquences sans un </span><span class="rvts33">{DELAY=</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">(//DefaultSequence | //KeystrokeSequence)[not(contains(., '{DELAY=')) and (. != '')]</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplace les données</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Données :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le texte interne</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que rechercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">^(.*)$</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplacer par :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DELAY=50}$1</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Expression régulière</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Ajoute un </span><span class="rvts22">{DELAY=50}</span><span class="rvts13"> à tous les remplacements et associations de séquence de saisie automatique qui ne contiennent déjà aucun </span><span class="rvts22">{DELAY=</span><span class="rvts13"> et qui ne sont pas vides.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Notez que la sélection du nœud est sensible à la casse (indépendamment de l'option de sensibilité à la casse des données), vous devez donc vous assurer que tous les codes </span><span class="rvts22">{DELAY=</span><span class="rvts13"> sont en majuscules avant d'effectuer cette opération. Cela peut par exemple être fait à l'aide de l'opération de remplacement XML mentionnée </span><a class="rvts15" href="RemplacerXML.html#atdelayupper">ci-dessus</a><span class="rvts13">.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="atmodstddelay"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Modifier les valeurs </span><span class="rvts33">{DELAY=</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//DefaultSequence | //KeystrokeSequence</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplace les données</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Données :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le texte interne</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que rechercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">\{DELAY=[\d\s]*\}</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplacer par :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">{DELAY=50}</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Expression régulière</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Positionne les valeurs de tous les codes </span><span class="rvts22">{DELAY=</span><span class="rvts13"> dans les remplacements et les associations de séquence de saisie automatique à 50.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="atrmvstddelay"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Supprimer </span><span class="rvts33">{DELAY=</span><span class="rvts34">x</span><span class="rvts33">}</span><span class="rvts20"> de toutes les séquences</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//DefaultSequence | //KeystrokeSequence</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplace les données</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Données :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le texte interne</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que rechercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">\{DELAY=[\d\s]*\}</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplacer par :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts17">(Laisser vide)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Expression régulière</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Supprime tous les codes </span><span class="rvts22">{DELAY=</span><span class="rvts28">x</span><span class="rvts22">}</span><span class="rvts13"> de toutes les séquences de saisie automatique.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="atresetifstddelay"></a><table width="100%" border="1" cellpadding="4" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px;">
+   <p class="rvps3"><span class="rvts20">Réinitialiser les séquences par défaut qui contiennent </span><span class="rvts33">{DELAY=</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//DefaultSequence[contains(., '{DELAY=')]</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Supprime des nœuds</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Si une séquence a été spécifiée dans le champ 'Remplacer la séquence par défaut' (dans la boîte de dialogue de saisie automatique) et qu'elle contient </span><span class="rvts22">{DELAY=</span><span class="rvts13">, alors la séquence est réinitialisée, c'est-à-dire que l'option 'Hériter de la séquence de saisie automatique par défaut du groupe parent' est activée.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="ataddassoc"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Ajouter une association de saisie automatique à toutes les entrées</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry/AutoType</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplace les données</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Données :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">XML externe</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que rechercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">&lt;/AutoType&gt;\Z</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplacer par :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">&lt;Association&gt;&lt;Window&gt;* - Notepad&lt;/Window&gt;&lt;KeystrokeSequence&gt;{PASSWORD}&lt;/KeystrokeSequence&gt;&lt;/Association&gt;&lt;/AutoType&gt;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Expression régulière</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Ajoute une association de saisie automatique à toutes les entrées : le titre de la fenêtre '</span><span class="rvts22">* - Bloc-notes</span><span class="rvts13">' est associé à la séquence '</span><span class="rvts22">{PASSWORD}</span><span class="rvts13">'.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="copyurls"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Copier les adresses (URLs) d'entrée dans les champs Titre</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplace les données</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Données :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">XML interne</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que rechercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">(?s)(&lt;Key&gt;Title&lt;/Key&gt;\s*)(&lt;Value&gt;.*?&lt;/Value&gt;|&lt;Value\s*/&gt;)(.*?&lt;Key&gt;URL&lt;/Key&gt;\s*)(&lt;Value&gt;.*?&lt;/Value&gt;|&lt;Value\s*/&gt;)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplacer par :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">$1$4$3$4</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Sensible à la casse</span><br/><span class="rvts13">☑ Expression régulière</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Copie l'adresse (URL) de l'entrée dans le champ Titre de l'entrée (en écrasant toutes les données existantes dans le champ Titre).</span><br/><span class="rvts13"></span><br/><span class="rvts13">Si vous souhaitez que l'adresse (URL) de l'entrée soit copiée seulement si le champ titre est vide, alors utiliser ce qui suit pour 'Sélectionner les nœuds':</span><br/><span class="rvts22">//Entry/String[(Key = 'Title') and (Value = '')]/..</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="copytitles"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Copier les titres des entrées dans les champs Nom d'utilisateur vides</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry/String[(Key = 'UserName') and (Value = '')]/..</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplace les données</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Données :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">XML interne</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que rechercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">(?s)(&lt;Key&gt;Title&lt;/Key&gt;\s*&lt;Value&gt;)(.*?)(&lt;/Value&gt;.*?&lt;Key&gt;UserName&lt;/Key&gt;\s*)(&lt;Value&gt;&lt;/Value&gt;|&lt;Value\s*/&gt;)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplacer par :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">$1$2$3&lt;Value&gt;$2&lt;/Value&gt;</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Sensible à la casse</span><br/><span class="rvts13">☑ Expression régulière</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Copie le titre de l'entrée dans le champ du nom d'utilisateur de l'entrée, si ce champ est vide.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<div class="rvps3">
+<a name="firstnotempty"></a><table width="100%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td colspan="2" height="30" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">S'assurer que la première ligne n'est pas vide</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Sélectionner les nœuds :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">//Entry/String/Value</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Action :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplace les données</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Données :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Le texte interne</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Que rechercher :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">(?s)^(\r?\n)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remplacer par :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">--$1</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Options :</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">☑ Expression régulière</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Pour tous les champs multilignes, cela insère '</span><span class="rvts22">--</span><span class="rvts13">' dans la première ligne de la valeur du champ, si cette ligne est vide et que la valeur a au moins deux lignes. Exemple :</span><br/><span class="rvts13"><br/></span></p>
+   <p class="rvps16"><span class="rvts25"></span><br/><span class="rvts25"></span><br/><span class="rvts25">Échantillon de données</span></p>
+   <p class="rvps3"><span class="rvts13"></span><br/><span class="rvts13">est remplacé par</span><br/><span class="rvts13"><br/></span></p>
+   <p class="rvps16"><span class="rvts25">--</span><br/><span class="rvts25"></span><br/><span class="rvts25">Échantillon de données</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2023 par Ronan Plantec &amp; Dominik Reichl. Tous droits r&eacute;serv&eacute;s.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

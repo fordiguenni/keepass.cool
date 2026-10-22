@@ -1,0 +1,662 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 7.9.0.612">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Importer/Exporter</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Importer/Exporter">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Importer/Exporter" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.51.1" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.51.1</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="ImporterExporter"
+		  data-hnd-context="18"
+		  data-hnd-title="Importer/Exporter"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Lesreferencesdechamp.html" title="Les r&eacute;ferences de champ" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Lintegration.html" title="L'int&eacute;gration" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Importer/Exporter</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" border="2" cellpadding="0" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <p class="rvps3"><img width="64" height="64" alt="" style="vertical-align: middle;" src="lib/imagesb64x64_dataexchange.png"></p>
+  </td>
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">Importer/Exporter</span></span></h1>
+   <p class="rvps3"><span class="rvts19">KeePass prend en charge l'importation/exportation de données depuis/vers divers formats de fichier.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts13">KeePass 1.x prend en charge l'importation de données depuis </span><span class="rvts20">des fichiers CSV</span><span class="rvts13"> (formulaire spécial), </span><span class="rvts20">CodeWallet</span><span class="rvts13">, </span><span class="rvts20">Password Safe</span><span class="rvts13">, et </span><span class="rvts20">Personal Vault</span><span class="rvts13">.</span></p>
+<p class="rvps7"><span class="rvts13">KeePass 2.x prend en charge l'importation de données depuis </span><span class="rvts20">des fichiers CSV</span><span class="rvts13"> (tout), </span><span class="rvts20">KeePass 1.x (KDB, XML et CSV)</span><span class="rvts13">, </span><span class="rvts20">KeePass 2.x XML</span><span class="rvts13">, </span><span class="rvts20">1Password Pro</span><span class="rvts13">, </span><span class="rvts20">1PW</span><span class="rvts13">, </span><span class="rvts20">Alle meine Passworte</span><span class="rvts13">, </span><span class="rvts20">Any Password</span><span class="rvts13">, </span><span class="rvts20">Bitwarden</span><span class="rvts13">, </span><span class="rvts20">CodeWallet</span><span class="rvts13">, </span><span class="rvts20">Dashlane</span><span class="rvts13">, </span><span class="rvts20">DataVault</span><span class="rvts13">, </span><span class="rvts20">DesktopKnox</span><span class="rvts13">, </span><span class="rvts20">Enpass</span><span class="rvts13">, </span><span class="rvts20">FlexWallet</span><span class="rvts13">, </span><span class="rvts20">Google Chrome</span><span class="rvts13">, </span><span class="rvts20">Handy Safe</span><span class="rvts13">, </span><span class="rvts20">Handy Safe Pro</span><span class="rvts13">, </span><span class="rvts20">Kaspersky Password Manager</span><span class="rvts13">, </span><span class="rvts20">KeePassX</span><span class="rvts13">, </span><span class="rvts20">Keeper</span><span class="rvts13">, </span><span class="rvts20">LastPass</span><span class="rvts13">, </span><span class="rvts20">Mozilla Bookmarks</span><span class="rvts13">, </span><span class="rvts20">mSecure</span><span class="rvts13">, </span><span class="rvts20">Network Password Manager</span><span class="rvts13">, </span><span class="rvts20">Norton Identity Safe</span><span class="rvts13">, </span><span class="rvts20">nPassword</span><span class="rvts13">, </span><span class="rvts20">PassKeeper</span><span class="rvts13">, </span><span class="rvts20">Passphrase Keeper</span><span class="rvts13">, </span><span class="rvts20">Password Agent</span><span class="rvts13">, </span><span class="rvts20">Password Depot</span><span class="rvts13">, </span><span class="rvts20">Password Exporter</span><span class="rvts13">, </span><span class="rvts20">Password Keeper</span><span class="rvts13">, </span><span class="rvts20">Password Memory</span><span class="rvts13">, </span><span class="rvts20">Password Prompter</span><span class="rvts13">, </span><span class="rvts20">Password Safe</span><span class="rvts13">, </span><span class="rvts20">Password Saver</span><span class="rvts13">, </span><span class="rvts20">Passwords Plus</span><span class="rvts13">, </span><span class="rvts20">Passwort.Tresor</span><span class="rvts13">, </span><span class="rvts20">Personal Vault</span><span class="rvts13">, </span><span class="rvts20">PINs</span><span class="rvts13">, </span><span class="rvts20">Revelation</span><span class="rvts13">, </span><span class="rvts20">RoboForm</span><span class="rvts13">, </span><span class="rvts20">SafeWallet</span><span class="rvts13">, </span><span class="rvts20">Security TXT</span><span class="rvts13">, </span><span class="rvts20">SplashID</span><span class="rvts13">, </span><span class="rvts20">Steganos Password Manager 2007</span><span class="rvts13">, </span><span class="rvts20">Sticky Password</span><span class="rvts13">, </span><span class="rvts20">True Key</span><span class="rvts13">, </span><span class="rvts20">TurboPasswords</span><span class="rvts13">, </span><span class="rvts20">VisKeeper</span><span class="rvts13">, </span><span class="rvts20">Whisper 32</span><span class="rvts13">, </span><span class="rvts20">ZDNet's Password Pro</span><span class="rvts13">, et </span><span class="rvts20">Spamex.com</span><span class="rvts13">.</span></p>
+<p class="rvps7"><span class="rvts13">Pour les deux KeePass 1.x et 2.x, il existe des greffons qui ajoutent davantage de possibilités d'importation/exportation.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts13">Pour KeePass 1.x&nbsp;:</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><a class="rvts15" href="ImporterExporter.html#csv">Format de fichier&nbsp;: CSV</a></li>
+  <li class="rvps3"><a class="rvts15" href="ImporterExporter.html#xml">Format de fichier&nbsp;: XML</a></li>
+ </ul>
+ <li class="rvps3"><span class="rvts13">Pour KeePass 2.x&nbsp;:</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><a class="rvts15" href="ImporterExporter.html#genericcsv">Importateur de CSV générique</a></li>
+  <li class="rvps3"><span class="rvts13">Les formats qui nécessitent des options/étapes personnalisées pour être importés&nbsp;:</span></li>
+  <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: square;">
+   <li class="rvps3"><a class="rvts15" href="ImporterExporter.html#imp_cwallet">Comment importer CodeWallet TXT</a></li>
+   <li class="rvps3"><a class="rvts15" href="ImporterExporter.html#imp_pins">Comment importer des PIN TXT</a></li>
+   <li class="rvps3"><a class="rvts15" href="ImporterExporter.html#imp_roboform">Comment importer des données depuis RoboForm</a></li>
+   <li class="rvps3"><a class="rvts15" href="ImporterExporter.html#imp_steganos">Comment importer des données depuis Steganos Password Manager 2007</a></li>
+   <li class="rvps3"><a class="rvts15" href="ImporterExporter.html#imp_passkeeper">Comment importer des données depuis PassKeeper 1.2</a></li>
+   <li class="rvps3"><a class="rvts15" href="ImporterExporter.html#imp_1pwpro">Comment importer 1PW et 1Password Pro CSV</a></li>
+  </ul>
+  <li class="rvps3"><a class="rvts15" href="ImporterExporter.html#exp_parents">Exporter : Option 'Exporter en plus les groupes parents'</a></li>
+ </ul>
+</ul>
+<hr style="height: 1px;">
+<p class="rvps7"><span class="rvts13">Malheureusement, le format des bases de données de mots de passe n'est pas normalisé. Tous les gestionnaires de mots de passe utilisent le leur. Qu'importe, presque tous prennent en charge l'exportation vers des fichiers CSV ou XML. De prime abord ceci semble a priori correct, mais les fichiers CSV et XML ne sont pas spécialisés aux formats des bases de données de mots de passe, ils spécifient seulement une disposition de bas niveau des données enregistrées (pour CSV&nbsp;: les champs de données sont séparés par des virgules&nbsp;; pour XML&nbsp;: une forme hiérarchique utilisant des balises). Ces formats ne spécifient pas le haut niveau d'agencement des données (pour CSV&nbsp;: l'ordre/signification des champs&nbsp;; pour XML&nbsp;: des noms de balises et une structure). Pour cette raison, de nombreux utilisateurs sont confus quand l'application #1 exporte les données vers CSV/XML et que l'application #2 ne peut pas lire les fichiers CSV/XML, bien qu'elle clame pouvoir lire ces fichiers.</span></p>
+<p class="rvps7"><span class="rvts13">Cette page d'aide détaille les formats de fichiers CSV et XML attendus. En connaissant les formats que KeePass attend, vous pouvez reformater les fichiers CSV et XML exportés par d'autres gestionnaires de mots de passe pour les faire correspondre aux formats de KeePass. Les fichiers CSV peuvent être reformatés en utilisant par exemple&nbsp;: </span><span class="rvts17">LibreOffice Calc</span><span class="rvts13"> (cf. ci-dessous). Les fichiers XML peuvent être reformatés en utilisant un éditeur XML.</span></p>
+<p class="rvps7"><span class="rvts13">KeePass peut importer directement plusieurs formats de bases de données de mots de passe (cf. en haut de cette page). De plus, il existe des </span><a class="rvts15" href="https://keepass.info/plugins.html">greffons</a><span class="rvts13"> spécialisés disponibles dans KeePass pour importer davantage de formats (comme AnyPassword CSV, fichiers Oubliette, PINs TXT, fichiers ZSafe, et bien d'autres encore, etc.). En utilisant ces greffons, vous n'avez pas besoin de reformater manuellement la sortie de ces autres gestionnaires de mots de passe&nbsp;; vous pouvez directement importer les fichiers exportés.</span></p>
+<p class="rvps7"><span class="rvts13">Si aucun greffon d'importation n'existe pour l'importation des données de votre précédent gestionnaire de mots de passe, alors soyez certain de poser une requête pour ceci dans </span><a class="rvts15" href="https://sourceforge.net/p/keepass/feature-requests/">KeePass Feature Requests Tracker</a><span class="rvts13"> ou dans le forum de </span><a class="rvts15" href="https://sourceforge.net/p/keepass/discussion/329220/">discussion ouverte</a><span class="rvts13">.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="csv"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ascii9.png"><span class="rvts0"><span class="rvts23"> Format de fichier&nbsp;: CSV (KeePass 1.x)</span></span></h2>
+<p class="rvps7"><span class="rvts13">KeePass importe et exporte les données depuis/vers des fichiers CSV au format suivant&nbsp;:</span></p>
+<p class="rvps7"><span class="rvts22">"Account","Login Name","Password","Web Site","Comments"</span></p>
+<p class="rvps7"><span class="rvts13">le champ 'Account' dans un fichier CSV correspond au champ du titre d'une entrée de KeePass, 'Login Name' correspond au nom d'utilisateur, 'Web Site' correspond à l'adresse (URL), et 'Comments' correspond à Remarques. Les noms de champ CSV sont différents depuis les noms de champ d'entrée afin d'assurer une compatibilité avec certaines autres applications.</span></p>
+<p class="rvps7"><span class="rvts13">Pour un exemple détaillé, téléchargez ce fichier&nbsp;: </span><img alt="Package ZIP" style="vertical-align: middle;" src="lib/imagesb16x16_tar2.png"><span class="rvts13"> </span><a class="rvts15" href="https://keepass.info/help/download/FileSample_CSV.zip">FileSample_CSV.zip</a><span class="rvts13">. Ce fichier est zippé seulement afin d'assurer un encodage correct (s'il n'était pas zippé, les navigateurs ou les gestionnaires de téléchargement pourraient automatiquement le convertir vers un encodage différent). Quand on importe un fichier CSV, il </span><span class="rvts17">ne</span><span class="rvts13"> doit </span><span class="rvts17">pas</span><span class="rvts13"> être zippé&nbsp;!</span></p>
+<p class="rvps7"><span class="rvts13">Des remarques importantes à propos du format&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts13">Le fichier doit être encodé en utilisant UTF-8 (Unicode). Les autres encodages ne sont pas pris en charge.</span></li>
+ <li class="rvps3"><span class="rvts13">Les fichiers CSV prennent en charge les champs suivants&nbsp;: titre, nom d'utilisateur, mot de passe, adresse (URL) et remarques. Les autres champs comme le temps de la dernière modification, la date d'expiration, l'icône, les pièces jointes de l'entrée, etc. </span><span class="rvts17">ne</span><span class="rvts13"> sont </span><span class="rvts17">pas</span><span class="rvts13"> pris en charge. Si vous souhaitez transférer de telles informations, alors vous devez utiliser un format différent (comme XML).</span></li>
+ <li class="rvps3"><span class="rvts13">Tous les champs doivent être entourés entre deux doubles quotes ("). Ces doubles quotes sont nécessaires, les champs non quotés ne sont pas autorisés.</span></li>
+ <li class="rvps3"><span class="rvts13">Les doubles quotes (") dans les chaînes sont encodées en tant que </span><span class="rvts22">\"</span><span class="rvts13"> (deux caractères). Les barres obliques inversées (\) sont codées en tant que </span><span class="rvts22">\\</span><span class="rvts13">.</span></li>
+ <li class="rvps3"><span class="rvts13">Plusieurs lignes Comments sont réalisées à travers des sauts de nouvelles lignes. Le codage des sauts de ligne par </span><span class="rvts22">\n</span><span class="rvts13"> n'est pas pris en charge.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts13">Par défaut Excel de Microsoft n'entoure pas les champs entre doubles quotes (</span><span class="rvts22">"</span><span class="rvts13">). Il est recommandé d'utiliser LibreOffice Calc pour créer un fichier CSV correct (cf. ci-dessous), ou utilisez l'</span><a class="rvts15" href="ImporterExporter.html#genericcsv">importateur de CSV générique</a><span class="rvts13"> de KeePass 2.x (importez votre fichier CSV dans KeePass 2.x, puis exportez les données vers un fichier KDB de KeePass 1.x), ou corrigez manuellement le fichier CSV en ajoutant des doubles quotes en utilisant un éditeur de texte.</span></p>
+<p class="rvps7"><span class="rvts13">Si vous souhaitez transférer des données entre des bases de données de KeePass 1.x, alors vous ne devez pas modifier les options d'exportation par défaut de KeePass. N'exportez pas des champs supplémentaires ou ne décochez aucune option, sinon KeePass ne pourra plus réimporter le fichier CSV, parce qu'il n'est plus conforme aux spécifications ci-dessus.</span></p>
+<p class="rvps7"><span class="rvts20">L'utilisation de </span><span class="rvts27">LibreOffice Calc</span><span class="rvts20"> pour créer un fichier CSV&nbsp;:</span><br/><a class="rvts15" href="https://www.libreoffice.org/discover/calc/">LibreOffice Calc</a><span class="rvts13"> peut être utilisé pour créer des fichiers CSV qui peuvent être correctement importés dans KeePass. Suivez ces étapes&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts13">Assurez-vous d'avoir 5 colonnes comme décrites ci-dessus.</span></li>
+ <li class="rvps3"><span class="rvts13">Sélectionnez tout, clic droit et sélectionnez </span><span class="rvts17">'Format des cellules'</span><span class="rvts13">. Dans la boîte de dialogue, choisissez </span><span class="rvts17">Texte</span><span class="rvts13"> comme catégorie. Cliquez sur [OK].</span></li>
+ <li class="rvps3"><span class="rvts13">Allez dans </span><span class="rvts17">'Fichier' → 'Enregistrer sous...'</span><span class="rvts13">, choisir un emplacement et le type de fichier 'Text CSV', et assurez-vous que la case </span><span class="rvts17">'Édition paramètres de filtre'</span><span class="rvts13"> est bien cochée. Cliquez sur le bouton </span><span class="rvts17">'Enregistrer'</span><span class="rvts13">.</span></li>
+ <li class="rvps3"><span class="rvts13">Choisissez </span><span class="rvts17">'Unicode (UTF-8)'</span><span class="rvts13"> comme jeu de caractères. Le séparateur de champ doit être défini sur une virgule. Le séparateur de texte doit être </span><span class="rvts22">"</span><span class="rvts13">. Assurez-vous que l'option </span><span class="rvts17">'Quotter toutes les cellules de texte'</span><span class="rvts13"> est cochée, et que l'option </span><span class="rvts17">'Taille de colonne fixe'</span><span class="rvts13"> n'est pas cochée. Cliquez sur [OK].</span></li>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="xml"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ascii8.png"><span class="rvts0"><span class="rvts23"> Format de fichier&nbsp;: XML (KeePass 1.x)</span></span></h2>
+<p class="rvps7"><span class="rvts13">Cette section décrit le format XML de KeePass 1.x. Remarquez que ce format est différent du format XML utilisé par KeePass 2.x (qu'importe, KeePass 2.x peut importer des fichiers XML de KeePass 1.x).</span></p>
+<p class="rvps7"><span class="rvts13">Vous pouvez télécharger un exemple de fichier XML détaillé ici&nbsp;: </span><img alt="Package ZIP" style="vertical-align: middle;" src="lib/imagesb16x16_tar1.png"><span class="rvts13"> </span><a class="rvts15" href="https://keepass.info/help/download/FileSample_XML.zip">FileSample_XML.zip</a><span class="rvts13">. Ce fichier est zippé uniquement afin d'assurer un encodage correct (s'il n'était pas zippé, les navigateurs ou les gestionnaires de téléchargement pourraient automatiquement convertir le fichier vers un encodage différent). Quand on importe un fichier XML, il </span><span class="rvts17">ne</span><span class="rvts13"> doit bien sûr </span><span class="rvts17">pas</span><span class="rvts13"> être zippé&nbsp;!</span></p>
+<p class="rvps7"><span class="rvts13">Remarques importantes à propos du format&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts13">Les fichiers doivent être encodés en UTF-8 (Unicode). Les autres encodages ne sont pas pris en charge.</span></li>
+ <li class="rvps3"><span class="rvts13">Les cinq entités suivantes doivent être codées&nbsp;: </span><span class="rvts22">&lt; &gt; &amp; " '</span><span class="rvts13">. Elles sont codées par </span><span class="rvts22">&amp;lt; &amp;gt; &amp;amp; &amp;quot; &amp;apos;</span><span class="rvts13">.</span></li>
+ <li class="rvps3"><span class="rvts13">l'UUID est une chaîne de 16 octets au format hexadécimal (c'est-à-dire une chaîne de 32 caractères hexadécimaux ANSI dans les fichiers XML). Il est unique (également sur plusieurs bases de données) et peut être utilisé pour identifier les entrées.</span></li>
+ <li class="rvps3"><span class="rvts13">Les dates/heure sont encodées au format XML de date/heure standard (YYYY-MM-DDTHH:mm:ss): premièrement, la date sous la forme YYYY-MM-DD, un caractère 'T', et l'heure sous la forme HH:mm:ss.</span></li>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="genericcsv"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_dataexchange.png"><span class="rvts0"><span class="rvts23"> L'importateur de CSV générique</span></span></h2>
+<p class="rvps7"><span class="rvts13">KeePass 2.x dispose d'un importateur de CSV générique. Cet outil peut importer presque tous les formats CSV. Les fichiers CSV sont chargés et vous pouvez spécifier manuellement l'encodage/jeu de caractères, affecter des colonnes aux champs de données, et spécifier à quoi ressemble la structure de bas niveau (l'utilisation de doubles quotes, etc.).</span></p>
+<p class="rvps7"><span class="rvts13">Pour démarrer l'importateur de fichier CSV générique, cliquez sur </span><span class="rvts17">'Fichier' → 'Importer...'</span><span class="rvts13"> et choisir </span><span class="rvts17">'Importateur de CSV générique'</span><span class="rvts13">.</span></p>
+<p class="rvps4"><a href="https://keepass.info/screenshots/keepass_2x/gencsvimp_big.png"><img alt="Importateur de CSV générique" style="vertical-align: middle;" src="lib/screenshotskeepass_2xgencsvimp.png"></a></p>
+<p class="rvps7"><span class="rvts13">Des détails à propos de l'importateur de CSV générique (avec des descriptions des options, des exemples, etc.) peuvent être trouvés sur la page d'aide </span><a class="rvts15" href="https://keepass.info/help/kb/imp_csv.html">Generic CSV Importer</a><span class="rvts13">.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="imp_cwallet"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ascii7.png"><span class="rvts0"><span class="rvts23"> Comment importer CodeWallet TXT</span></span></h2>
+<p class="rvps7"><span class="rvts13">CodeWallet est un gestionnaire de mots de passe qui prend en charge différents types de carte (champs). KeePass ne peut pas savoir à quel champ de CodeWallet correspond le champ standard de KeePass (titre, nom d'utilisateur, etc.), parce qu'ils n'ont pas des noms fixes (en fonction de la langue, personnalisable par l'utilisateur, etc.). Donc tous les champs depuis le fichier CodeWallet sont importés dans des champs de chaîne personnalisés d'entrées de KeePass. Après l'importation du fichier, vous pouvez déplacer des chaînes vers leurs champs standards corrects (en cliquant le bouton </span><span class="rvts17">'Déplacer'</span><span class="rvts13"> sur la page du second onglet de la boîte de dialogue des entrées).</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="imp_pins"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ascii6.png"><span class="rvts0"><span class="rvts23"> Comment importer des PIN TXT</span></span></h2>
+<p class="rvps7"><span class="rvts13">Pour réussir à importer un fichier de PIN TXT, vous devez effectuer les opérations suivantes &nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts13">Basculez la langue des PIN sur 'anglais'.</span></li>
+ <li class="rvps3"><span class="rvts13">Dans la boîte de dialogue d'exportation des PIN&nbsp;: activez </span><span class="rvts17">tous</span><span class="rvts13"> les champs.</span></li>
+ <li class="rvps3"><span class="rvts13">Dans la boîte de dialogue d'exportation des PIN&nbsp;: définissez </span><span class="rvts17">'tabulation'</span><span class="rvts13"> comme séparateur.</span></li>
+ <li class="rvps3"><span class="rvts13">Dans la boîte de dialogue d'exportation des PIN&nbsp;: activez </span><span class="rvts17">'Quotter les textes'</span><span class="rvts13">.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts13">Après l'exportation d'un fichier TXT en utilisant les paramètres ci-dessus, importez-le en utilisant </span><span class="rvts17">'Fichier → Importer...'</span><span class="rvts13"> dans KeePass 2.x.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="imp_roboform"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ascii5.png"><span class="rvts0"><span class="rvts23"> Comment importer des données depuis RoboForm</span></span></h2>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+ <li class="rvps3"><span class="rvts13">Exportez vos identifiants vers un fichier HTML. Pour réaliser ceci, ouvrir </span><span class="rvts17">l'éditeur Passcard</span><span class="rvts13"> de RoboForm (</span><span class="rvts17">'Edit Passcards'</span><span class="rvts13"> ou </span><span class="rvts17">'RoboForm Editor '</span><span class="rvts13"> dans le menu Démarrer de Windows) et aller dans le menu principal de </span><span class="rvts17">l'éditeur allez à 'Passcard'</span><span class="rvts13"> → </span><span class="rvts17">'Print List'</span><span class="rvts13"> (dans les plus récentes versions vous devez cliquer sur le bouton </span><span class="rvts17">'RoboForm'</span><span class="rvts13"> et aller dans </span><span class="rvts17">'Print List'</span><span class="rvts13"> → </span><span class="rvts17">'Logins'</span><span class="rvts13">). Dans la boîte de dialogue qui s'ouvre, cliquez sur le bouton </span><span class="rvts17">'Save'</span><span class="rvts13">. Choisissez un emplacement et un nom de fichier, puis cliquez sur </span><span class="rvts17">'Save'</span><span class="rvts13">.</span></li>
+ <li class="rvps3"><span class="rvts13">Ouvrez votre fichier de base de données dans votre KeePass 2.x et allez dans </span><span class="rvts17">'Fichier'</span><span class="rvts13"> → </span><span class="rvts17">'Importer...'</span><span class="rvts13">. Choisissez </span><span class="rvts17">'RoboForm HTML'</span><span class="rvts13"> comme format et sélectionnez le fichier HTML que vous venez juste d'exporter, puis cliquez sur </span><span class="rvts17">'OK'</span><span class="rvts13">.</span></li>
+</ol>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="imp_steganos"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ascii4.png"><span class="rvts0"><span class="rvts23"> Comment importer des données depuis Steganos Password Manager 2007</span></span></h2>
+<p class="rvps7"><span class="rvts20">Attention&nbsp;!</span><span class="rvts13"> Il est possible que le transfert échoue et que KeePass écrase accidentellement vos mots de passe existants dans Steganos Password Manager. Donc sauvegardez votre fichier SEF avant de commencer l'importation&nbsp;! Dans tous les cas, vous devrez restaurer vos mots de passe en restaurant la sauvegarde que vous venez juste de créer après le processus d'importation&nbsp;! Même si vous pensez que KeePass n'a rien changé, restaurer la sauvegarde&nbsp;!</span></p>
+<p class="rvps7"><span class="rvts13">Malheureusement Steganos Password Manager (SPM) n'a aucune forme de fonctionnalité pour exporter. Comme le format de fichier SEF (dans lequel sont sauvegardées les données) est propriétaire et qu'aucune spécification n'est disponible, KeePass doit essayer d'extraire toutes les données des fenêtres de SPM.</span></p>
+<p class="rvps7"><span class="rvts13">Le processus d'import fonctionne comme suit. Premièrement, démarrez SPM et ouvrez votre base de données de mot de passe. La fenêtre principale de gestion des mots de passe devrait s'ouvrir (c'est-à-dire celui qui répertorie vos éléments au milieu de l'écran, et contient les boutons de la pseudo barre d'outils en haut). Assurez-vous que </span><span class="rvts17">tous</span><span class="rvts13"> vos éléments sont affichés dans la liste (sélectionnez le filtre correct dans la combobox au-dessus de la liste des éléments).</span></p>
+<p class="rvps7"><span class="rvts13">Maintenant, basculez sur KeePass 2.x et ouvrez votre base de données KeePass. Allez dans </span><span class="rvts17">Fichier → Importer...</span><span class="rvts13"> et choisissez </span><span class="rvts17">Steganos Password Manager 2007</span><span class="rvts13">. Cliquez sur [OK]. Maintenant, lisez le reste avant de continuer.</span></p>
+<p class="rvps7"><span class="rvts13">Après la pression du bouton [Oui] dans la boîte de dialogue de confirmation d'importation de KeePass, vous avez 10 secondes pour basculer sur la fenêtre de SPM. Sélectionnez la toute première entrée à l'intérieur de la fenêtre SPM (mais ne l'ouvrez pas, sélectionnez-la simplement). C'est important&nbsp;! La première entrée doit avoir le focus du clavier et doit être sélectionnée.</span></p>
+<p class="rvps7"><span class="rvts13">Une fois les 10 secondes écoulées, KeePass démarrera l'importation. Vous verrez comment KeePass ouvre les éléments de SPM, copie les données, ferme la fenêtre de l'élément, sélectionne le prochain élément, etc. Tout est maintenant automatisé et vous pouvez simplement vous asseoir en arrière et regarder. Parfois, Windows joue un son </span><span class="rvts17">ding</span><span class="rvts13">, ceci est normal.</span></p>
+<p class="rvps7"><span class="rvts13">Remarquer que cela peut prendre quand même du temps pour importer vos éléments. </span><span class="rvts20">Ne</span><span class="rvts13"> faites </span><span class="rvts20">rien</span><span class="rvts13"> tant que KeePass importe&nbsp;! Un seul clic de souris ou une touche pressée peut ruiner en entier le processus d'importation.</span></p>
+<p class="rvps7"><span class="rvts13">Le dernier élément sera scanné deux fois. Quand ce sera terminé, KeePass affichera un message "The import process has finished!" (le processus d'importation est terminé&nbsp;!).</span></p>
+<p class="rvps7"><span class="rvts13">Il est possible que KeePass ne réussisse pas à importer des éléments (principalement causé par d'imprévisibles temps de réponse lents de SPM). Il est fortement recommandé que vous compariez chaque entrée.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="imp_passkeeper"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ascii3.png"><span class="rvts0"><span class="rvts23"> Comment importer des données depuis PassKeeper 1.2</span></span></h2>
+<p class="rvps7"><span class="rvts13">Le processus d'importation fonctionne visuellement, exactement comme la méthode d'importation des données de Steganos Password Manager 2007. Veuillez lire toutes les instructions dans </span><a class="rvts15" href="ImporterExporter.html#imp_steganos">comment importer des données depuis Steganos Password Manager 2007</a><span class="rvts13">.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="imp_1pwpro"></a><img alt="Text" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ascii2.png"><span class="rvts0"><span class="rvts23"> Comment importer 1PW et 1Password Pro CSV</span></span></h2>
+<p class="rvps7"><span class="rvts13">KeePass peut importer les fichiers CSV exportés par 1PW et 1Password Pro. Quand on exporte les données, assurez-vous&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts13">De choisir la tabulation (Tab) comme séparateur de champ.</span></li>
+ <li class="rvps3"><span class="rvts13">Que l'option pour entourer les champs entre double quotes est activée.</span></li>
+ <li class="rvps3"><span class="rvts13">Que tous les champs doivent être exportés, dans l'ordre d'origine.</span></li>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="exp_parents"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_kmultiple4.png"><span class="rvts0"><span class="rvts23"> Exporter: Option 'Exporter en plus les groupes parents'</span></span></h2>
+<p class="rvps7"><span class="rvts13">Dans KeePass 2.x, il y a une option 'Exporter en plus les groupes parents' dans la boîte de dialogue Exporter. Si cette option est activée, alors les groupes parents des groupes/entrées sélectionnés sont exportés, également (jusqu'au groupe racine de la base de données). Les groupes/entrées non sélectionnés dans les groupes parents ne sont pas exportés.</span></p>
+<p class="rvps7"><span class="rvts13">Si le format de fichier sélectionné ne prend pas en charge les groupes, alors l'option n'a pas d'effet. Quand on exporte la base de donnés entière (via 'Fichier' → 'Exporter') ou le groupe racine, l'option est désactivée, parce que le groupe racine n'a pas de parent.</span></p>
+<p class="rvps7"><span class="rvts13">Les propriétés des groupes parents (icônes, remarques, paramètres de saisie automatique, etc.) sont exportées, si le format de fichier les prend en charge. Quand on importe un fichier, les propriétés des groupes de la base de données en cours peuvent être écrasées par les propriétés des groupes dans le fichier (cela dépend du mode d'importation et des derniers temps de modification).</span></p>
+<p class="rvps7"><span class="rvts20">Exemple :</span><span class="rvts13"> supposons que l'utilisateur sélectionne l'entrée 'Entrée B' qui est enregistrée dans les groupes 'Groupe 1' → 'Groupe 1.2' de la base de données.</span></p>
+<div class="rvps4">
+<table border="1" cellpadding="1" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #ffffff; border-spacing: 2px; margin: 0px auto;">
+ <tr valign="top">
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesfolder_closed8.png"></p>
+  </td>
+  <td colspan="3" valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Groupe racine</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <br/>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesfolder_closed7.png"></p>
+  </td>
+  <td colspan="2" valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Groupe 1</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-width : 0px; padding: 1px;">
+   <br/>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesfolder_closed6.png"></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Groupe 1.1</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-width : 0px; padding: 1px;">
+   <br/>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesfolder_closed5.png"></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px; background-color: #99d1ff;">
+   <p class="rvps3"><span class="rvts13">Groupe 1.2</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <br/>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesfolder_closed4.png"></p>
+  </td>
+  <td colspan="2" valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Groupe 2</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps4"><span class="rvts13">&nbsp;</span></p>
+<div class="rvps4">
+<table border="1" cellpadding="1" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #ffffff; border-spacing: 2px; margin: 0px auto;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Titre</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Nom d'utilisateur</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Mot de passe</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Adresse (URL)</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Remarques</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesb16x16_password4.png"></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Entrée A</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Michael42</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">********</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">https://exemple.net/</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Aucune.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesb16x16_password3.png"></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px; background-color: #99d1ff;">
+   <p class="rvps3"><span class="rvts13">Entrée B</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px; background-color: #99d1ff;">
+   <p class="rvps3"><span class="rvts13">Michael42</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px; background-color: #99d1ff;">
+   <p class="rvps3"><span class="rvts13">********</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px; background-color: #99d1ff;">
+   <p class="rvps3"><span class="rvts13">https://exemple.com/</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px; background-color: #99d1ff;">
+   <p class="rvps3"><span class="rvts13">Aucune.</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesb16x16_password2.png"></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Entrée C</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Michael42</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">********</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">https://exemple.org/</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Aucune.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts13">En exportant l'entrée sélectionnée (via 'Entrée' → 'Échange de données' → 'Exporter l'entrée') vers un fichier de base de données KDBX sans activer l'option donnera :</span></p>
+<div class="rvps4">
+<table border="1" cellpadding="1" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #ffffff; border-spacing: 2px; margin: 0px auto;">
+ <tr valign="top">
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesfolder_closed3.png"></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px; background-color: #99d1ff;">
+   <p class="rvps3"><span class="rvts20">Groupe racine</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps4"><span class="rvts13">&nbsp;</span></p>
+<div class="rvps4">
+<table border="1" cellpadding="1" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #ffffff; border-spacing: 2px; margin: 0px auto;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Titre</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Nom d'utilisateur</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Mot de passe</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Adresse (URL)</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Remarques</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesb16x16_password1.png"></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Entrée B</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Michael42</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">********</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">https://exemple.com/</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Aucune.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts13">En revanche, en exportant l'entrée sélectionnée vers un fichier de base de données KDBX avec l'option activée donnera :</span></p>
+<div class="rvps4">
+<table border="1" cellpadding="1" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #ffffff; border-spacing: 2px; margin: 0px auto;">
+ <tr valign="top">
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesfolder_closed2.png"></p>
+  </td>
+  <td colspan="3" valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Groupe racine</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <br/>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesfolder_closed1.png"></p>
+  </td>
+  <td colspan="2" valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Groupe 1</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-width : 0px; padding: 1px;">
+   <br/>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesfolder_closed.png"></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px; background-color: #99d1ff;">
+   <p class="rvps3"><span class="rvts13">Groupe 1.2</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps4"><span class="rvts13">&nbsp;</span></p>
+<div class="rvps4">
+<table border="1" cellpadding="1" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #ffffff; border-spacing: 2px; margin: 0px auto;">
+ <tr valign="top">
+  <td colspan="2" valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Titre</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Nom d'utilisateur</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Mot de passe</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Adresse (URL)</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts20">Remarques</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><img alt="" style="vertical-align: middle;" src="lib/imagesb16x16_password.png"></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Entrée B</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Michael42</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">********</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">https://exemple.com/</span></p>
+  </td>
+  <td valign="top" style="border-width : 0px; padding: 1px;">
+   <p class="rvps3"><span class="rvts13">Aucune.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2022 par Ronan Plantec &amp; Dominik Reichl. Tous droits r&eacute;serv&eacute;s.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,527 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 9.6.0.494">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>La cr&eacute;ation de greffons</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="La cr&eacute;ation de greffons">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="La cr&eacute;ation de greffons" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.57.1" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.57.1</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Lacreationdegreffons"
+		  data-hnd-context="45"
+		  data-hnd-title="La création de greffons"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Ledeveloppement.html">Le d&eacute;veloppement</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Ledeveloppement.html" title="Le d&eacute;veloppement" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Lapersonnalisation.html" title="La personnalisation" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Ecriredesscripts.html" title="&Eacute;crire des scripts" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>La cr&eacute;ation de greffons</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" style="border-color: #808080; border-style: solid; border-width: 1px; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr style="vertical-align: middle;">
+  <td style="padding: 0px;">
+   <p class="rvps3"><img alt="" style="width : 64px; height : 64px; vertical-align: middle;" src="lib/imagesb64x64_blockdevice%201.png"></p>
+  </td>
+  <td style="padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">La création de greffons (2.x)</span></span></h1>
+   <p class="rvps3"><span class="rvts19">Comment développer des greffons pour KeePass 2.x ?</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts8">Cette documentation s'applique aux greffons de KeePass 2.x. Les greffons 2.x sont fondamentalement différents des greffons 1.x. Les greffons 1.x ne peuvent pas être chargés par KeePass 2.x.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><a class="rvts14" href="Lacreationdegreffons.html#req">Exigences</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lacreationdegreffons.html#tutorial">Le tutoriel pas à pas</a></li>
+ <li class="rvps10 noindent"><span class="rvts8">Les opérations communes :</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps11 noindent"><a class="rvts14" href="Lacreationdegreffons.html#co_menuitem">La fourniture d'éléments de menu</a></li>
+ </ul>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lacreationdegreffons.html#conventions">Les conventions d'un greffon</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lacreationdegreffons.html#upd">La vérification de la mise à jour</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lacreationdegreffons.html#unmanagedcpp">Est-ce que les greffons de KeePass 2.x peuvent être écrits en C++ non managé ?</a></li>
+ <li class="rvps14 noindent"><a class="rvts14" href="Lacreationdegreffons.html#plgx">Les fichiers PLGX</a></li>
+</ul>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="req"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2045.png"><span class="rvts0"><span class="rvts24"> Exigences</span></span></h2>
+<p class="rvps7"><span class="rvts8">Avant de pouvoir commencer à développer un greffon KeePass, vous avez besoin des prérequis suivants&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Le dernier package portable KeePass ZIP. Vous pouvez l'obtenir sur le </span><a class="rvts14" href="https://keepass.info/download.html">site Web de KeePass</a><span class="rvts8">.</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">Un IDE de développement C# (≥ 2.0) (par exemple : </span><a class="rvts14" href="https://visualstudio.microsoft.com/">Microsoft Visual Studio</a><span class="rvts8"> ou </span><a class="rvts14" href="https://github.com/icsharpcode/SharpDevelop">SharpDevelop</a><span class="rvts8">).</span></li>
+</ul>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="tutorial"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2044.png"><span class="rvts0"><span class="rvts24"> Le tutoriel pas à pas</span></span></h2>
+<p class="rvps7"><span class="rvts8">Démarrez votre IDE préféré et créez un nouveau projet de </span><span class="rvts16">bibliothèque de classes C#</span><span class="rvts8"> (pour le Framework .NET, et non pas pour le Standard/Core .NET). Dans ce tutoriel, l'exemple de greffon que nous développons s'appelle </span><span class="rvts23">SimplePlugin</span><span class="rvts8">. La première chose que vous devez faire maintenant est d'ajouter une </span><span class="rvts16">référence</span><span class="rvts8"> à KeePass&nbsp;: accédez à la boîte de dialogue des références et sélectionnez le fichier </span><span class="rvts23">KeePass.exe</span><span class="rvts8"> (à partir du package ZIP portable). Après avoir ajouté la référence, les espaces de noms </span><span class="rvts23">KeePass</span><span class="rvts8"> et </span><span class="rvts23">KeePassLib</span><span class="rvts8"> devraient être disponibles.</span></p>
+<p class="rvps7"><span class="rvts8">Il est important que vous fassiez référence à un </span><span class="rvts23">KeePass.exe</span><span class="rvts8"> officiel, et non à un instantané de développement ou à votre propre build, car sinon votre greffon sera incompatible avec les builds officiels de KeePass.</span></p>
+<p class="rvps7"><span class="rvts8">Tous les greffons KeePass doivent dériver d'une classe de </span><span class="rvts23">greffon</span><span class="rvts8"> d'un KeePass de base (un greffon dans l'espace de noms KeePass.Plugins). En remplaçant les méthodes et les propriétés de cette classe, vous pouvez personnaliser le comportement de votre greffon.</span></p>
+<p class="rvps7"><span class="rvts8">Un greffon minimal ressemble à ceci :</span></p>
+<p class="rvps16"><span class="rvts53">using</span><span class="rvts26"> System;</span></p>
+<p class="rvps16"><span class="rvts53">using</span><span class="rvts26"> System.Collections.Generic;</span></p>
+<p class="rvps16"><span class="rvts26"><br/></span></p>
+<p class="rvps16"><span class="rvts53">using</span><span class="rvts26"> KeePass.Plugins;</span></p>
+<p class="rvps16"><span class="rvts26"><br/></span></p>
+<p class="rvps16"><span class="rvts53">namespace</span><span class="rvts26"> SimplePlugin</span></p>
+<p class="rvps16"><span class="rvts26">{</span></p>
+<p class="rvps16"><span class="rvts26">	</span><span class="rvts53">public sealed class</span><span class="rvts26"> </span><span class="rvts54">SimplePluginExt</span><span class="rvts26"> : </span><span class="rvts54">Plugin</span></p>
+<p class="rvps16"><span class="rvts26">	{</span></p>
+<p class="rvps16"><span class="rvts26">		</span><span class="rvts53">private</span><span class="rvts26"> </span><span class="rvts54">IPluginHost</span><span class="rvts26"> m_host = </span><span class="rvts53">null</span><span class="rvts26">;</span></p>
+<p class="rvps16"><span class="rvts26"><br/></span></p>
+<p class="rvps16"><span class="rvts26">		</span><span class="rvts53">public override bool</span><span class="rvts26"> Initialize(</span><span class="rvts54">IPluginHost</span><span class="rvts26"> host)</span></p>
+<p class="rvps16"><span class="rvts26">		{</span></p>
+<p class="rvps16"><span class="rvts26">			</span><span class="rvts53">if</span><span class="rvts26">(host == </span><span class="rvts53">null</span><span class="rvts26">) </span><span class="rvts53">return false</span><span class="rvts26">;</span></p>
+<p class="rvps16"><span class="rvts26">			m_host = host;</span></p>
+<p class="rvps16"><span class="rvts26">			</span><span class="rvts53">return true</span><span class="rvts26">;</span></p>
+<p class="rvps16"><span class="rvts26">		}</span></p>
+<p class="rvps16"><span class="rvts26">	}</span></p>
+<p class="rvps16"><span class="rvts26">}</span></p>
+<p class="rvps7"><span class="rvts8">Vous pouvez trouver une version entièrement documentée et étendue de ce greffon simple sur la page Web des greffons de KeePass.</span></p>
+<p class="rvps7"><span class="rvts8">Ce greffon ne fait exactement rien, mais il montre déjà quelques conventions importantes, qui doivent être suivies par tous les greffons :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">namespace (l'espace de noms) doit être nommé comme le fichier DLL sans extension. Notre fichier DLL s'appelle </span><span class="rvts23">SimplePlugin.dll</span><span class="rvts8">, donc namespace doit s'appeler </span><span class="rvts23">SimplePlugin</span><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">La classe principale du greffon (que KeePass instanciera lorsqu'il chargera votre greffon) doit être appelée exactement de la même manière que le namespace plus "Ext". Dans ce cas : "SimplePlugin" + "Ext" = "SimplePluginExt".</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">La classe de greffon principale doit être dérivée de la classe de base </span><span class="rvts23">KeePass.Plugins.Plugin</span><span class="rvts8">.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts8">La fonction </span><span class="rvts23">Initialize</span><span class="rvts8"> est la plus importante et vous la remplacerez probablement toujours. Dans cette fonction, vous obtenez une interface vers les composants internes de KeePass&nbsp;: une référence d'interface </span><span class="rvts23">IPluginHost</span><span class="rvts8">. Grâce à cette interface, vous pouvez accéder au menu principal de KeePass, à la base de données actuellement ouverte, etc. La fonction </span><span class="rvts23">Initialize</span><span class="rvts8"> est appelée immédiatement après que KeePass a chargé votre greffon. Toute initialisation doit être effectuée dans cette méthode (</span><span class="rvts20">pas</span><span class="rvts8"> dans le constructeur de votre classe de greffon !). Si vous avez tout initialisé avec succès, alors vous devez retourner </span><span class="rvts23">true</span><span class="rvts8">. Si vous retournez </span><span class="rvts23">false</span><span class="rvts8">, alors KeePass déchargera immédiatement votre greffon.</span></p>
+<p class="rvps7"><span class="rvts8">Une seconde fonction dont vous aurez très souvent besoin est la méthode </span><span class="rvts23">Terminate</span><span class="rvts8"> :</span></p>
+<p class="rvps16"><span class="rvts53">public override void</span><span class="rvts26"> Terminate()</span></p>
+<p class="rvps16"><span class="rvts26">{</span></p>
+<p class="rvps16"><span class="rvts26">}</span></p>
+<p class="rvps7"><span class="rvts8">Cette fonction est appelée peu de temps avant que KeePass ne décharge votre greffon. Vous ne pouvez pas interrompre ce processus (c'est juste une notification et votre dernière chance de nettoyer toutes les ressources utilisées, etc.). Immédiatement après votre retour depuis cette méthode, KeePass peut décharger votre greffon. Il est fortement recommandé de libérer toutes les ressources dans cette méthode (</span><span class="rvts20">pas</span><span class="rvts8"> dans le destructeur de votre classe de greffon !).</span></p>
+<p class="rvps7"><span class="rvts8">Nous avons presque terminé&nbsp;! Nous devons maintenant dire à KeePass que notre fichier est un greffon KeePass. Cela se fait en éditant </span><span class="rvts17">le bloc d'informations de version</span><span class="rvts8"> du fichier. Ouvrez la boîte de dialogue d'édition de la version du fichier (dans Visual Studio 2005&nbsp;: cliquez avec le bouton droit sur le nom du projet → </span><span class="rvts17">'Propriétés'</span><span class="rvts8"> → bouton </span><span class="rvts17">'Informations sur l'assemblage'</span><span class="rvts8">). Tous les champs peuvent être attribués librement à l'exception du champ </span><span class="rvts17">Nom du produit</span><span class="rvts8"> (pour plus d'informations, voir </span><a class="rvts14" href="Lacreationdegreffons.html#conventions">Les conventions d'un greffon</a><span class="rvts8">). Ce champ doit être positionné à "</span><span class="rvts23">KeePass Plugin</span><span class="rvts8">" (sans les doubles quotes).</span></p>
+<p class="rvps7"><span class="rvts8">C'est ça ! Essayez maintenant de compiler votre greffon et de copier le fichier DLL résultant dans le répertoire KeePass. Si vous démarrez KeePass et accédez à la boîte de dialogue des greffons, alors vous devriez voir votre greffon dans la liste des greffons chargés.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="co_menuitem"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2043.png"><span class="rvts0"><span class="rvts24"> La fourniture d'éléments de menu</span></span></h2>
+<p class="rvps7"><span class="rvts8">De nombreux greffons fournissent des éléments de menu (avec des sous-éléments, si nécessaire) dans des emplacements bien en vue comme le menu 'Outils', le menu contextuel d'entrée, etc. Un tel élément de menu peut être fourni à KeePass en remplaçant la méthode </span><span class="rvts23">GetMenuItem</span><span class="rvts8"> de votre classe de greffon (qui dérive de la classe de base du </span><span class="rvts23">greffon</span><span class="rvts8">). Dans cette méthode, le greffon peut construire et renvoyer un </span><span class="rvts23">ToolStripMenuItem</span><span class="rvts8">, que KeePass affichera ensuite à l'emplacement approprié.</span></p>
+<p class="rvps7"><span class="rvts8">Les utilisateurs doivent pouvoir associer l'élément de menu à votre greffon. En règle générale, les greffons positionnent le texte de l'élément de menu sur le nom du greffon ou sur une chaîne de caractères commençant par le nom du greffon. Par exemple, un greffon 'Abcd' qui veut fournir un seul élément de menu (pour l'accès aux options du greffon) pourrait positionner le texte de l'élément de menu sur 'Options Abcd'. Si le greffon prend en charge plusieurs commandes, alors positionnez le texte de l'élément de menu sur le nom du greffon (par exemple 'Abcd') et ajoutez un sous-élément pour chaque commande.</span></p>
+<p class="rvps7"><span class="rvts8">La méthode </span><span class="rvts23">GetMenuItem</span><span class="rvts8"> doit toujours construire et retourner un nouveau </span><span class="rvts23">ToolStripMenuItem</span><span class="rvts8">. Ne mettez pas en cache l'élément de menu ou l'un de ses sous-éléments à des fins ultérieures (KeePass peut invoquer la méthode </span><span class="rvts23">GetMenuItem</span><span class="rvts8"> plusieurs fois et afficher les éléments de menu à plusieurs endroits&nbsp;; si votre greffon mettait en cache un élément de menu, alors essayer de l'afficher à plusieurs endroits entraînerait des problèmes, car un </span><span class="rvts23">ToolStripMenuItem</span><span class="rvts8"> ne peut avoir qu'un seul élément parent). Si vous souhaitez mettre à jour l'état des sous-éléments (comme désactiver certains éléments ou afficher des coches), alors vous pouvez le faire par exemple dans une méthode anonyme qui gère l'événement </span><span class="rvts23">DropDownOpening</span><span class="rvts8"> de l'élément de menu renvoyé (de cette façon, vous n'avez pas besoin de vous souvenir manuellement des références de l'élément de menu); voir </span><a class="rvts14" href="https://keepass.info/plugins.html#testplugin">SamplePlugin</a><span class="rvts8"> pour un exemple.</span></p>
+<p class="rvps7"><span class="rvts8">KeePass prend possession de l'élément de menu renvoyé (et de ses sous-éléments). Le greffon ne doit pas ajouter ou supprimer l'élément à/depuis n'importe quel menu lui-même&nbsp;; KeePass le fera.</span></p>
+<p class="rvps7"><span class="rvts8">Si votre greffon ne fournit pas d'élément de menu à l'emplacement spécifié par le paramètre </span><span class="rvts23">t</span><span class="rvts8"> de </span><span class="rvts23">PluginMenuType</span><span class="rvts8"> , alors, renvoyez </span><span class="rvts23">null</span><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts8">Exemple:</span></p>
+<p class="rvps16"><span class="rvts53">public override</span><span class="rvts26"> </span><span class="rvts54">ToolStripMenuItem</span><span class="rvts26"> GetMenuItem(</span><span class="rvts54">PluginMenuType</span><span class="rvts26"> t)</span></p>
+<p class="rvps16"><span class="rvts26">{</span></p>
+<p class="rvps16"><span class="rvts26">	</span><span class="rvts55">// Provide a menu item for the main location(s)</span></p>
+<p class="rvps16"><span class="rvts26">	</span><span class="rvts53">if</span><span class="rvts26">(t == </span><span class="rvts54">PluginMenuType</span><span class="rvts26">.Main)</span></p>
+<p class="rvps16"><span class="rvts26">	{</span></p>
+<p class="rvps16"><span class="rvts26">		</span><span class="rvts54">ToolStripMenuItem</span><span class="rvts26"> tsmi = </span><span class="rvts53">new</span><span class="rvts26"> </span><span class="rvts54">ToolStripMenuItem</span><span class="rvts26">();</span></p>
+<p class="rvps16"><span class="rvts26">		tsmi.Text = </span><span class="rvts56">"Abcd Options"</span><span class="rvts26">;</span></p>
+<p class="rvps16"><span class="rvts26">		tsmi.Click += </span><span class="rvts53">this</span><span class="rvts26">.OnOptionsClicked;</span></p>
+<p class="rvps16"><span class="rvts26">		</span><span class="rvts53">return</span><span class="rvts26"> tsmi;</span></p>
+<p class="rvps16"><span class="rvts26">	}</span></p>
+<p class="rvps16"><span class="rvts26"><br/></span></p>
+<p class="rvps16"><span class="rvts26">	</span><span class="rvts53">return null</span><span class="rvts26">; </span><span class="rvts55">// No menu items in other locations</span></p>
+<p class="rvps16"><span class="rvts26">}</span></p>
+<p class="rvps16"><span class="rvts26"><br/></span></p>
+<p class="rvps16"><span class="rvts53">private void</span><span class="rvts26"> OnOptionsClicked(</span><span class="rvts53">object</span><span class="rvts26"> sender, </span><span class="rvts54">EventArgs</span><span class="rvts26"> e)</span></p>
+<p class="rvps16"><span class="rvts26">{</span></p>
+<p class="rvps16"><span class="rvts26">	</span><span class="rvts55">// Called when the menu item is clicked</span></p>
+<p class="rvps16"><span class="rvts26">}</span></p>
+<p class="rvps7"><span class="rvts8">Pour un exemple sur comment créer un élément de menu avec des sous-éléments (et de mise à jour dynamique de leurs états), consultez l'exemple de greffon </span><a class="rvts14" href="https://keepass.info/plugins.html#testplugin">SamplePlugin</a><span class="rvts8">.&nbsp;</span></p>
+<h2 class="rvps13"><a name="conventions"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2042.png"><span class="rvts0"><span class="rvts24"> Les conventions d'un greffon</span></span></h2>
+<p class="rvps7"><span class="rvts20">Bloc d'informations sur la version du fichier&nbsp;:</span></p>
+<p class="rvps7"><span class="rvts8">KeePass utilise le bloc d'informations sur la version du fichier pour détecter si un fichier DLL est un greffon KeePass et il en récupère les informations à afficher dans la boîte de dialogue des greffons. Les champs sont utilisés comme suit&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts20">Title:</span><span class="rvts8"> doit contenir le nom complet du greffon.</span></li>
+ <li class="rvps10 noindent"><span class="rvts20">Description:</span><span class="rvts8"> doit contenir une courte description (pas plus de 5 lignes) de votre greffon.</span></li>
+ <li class="rvps10 noindent"><span class="rvts20">Company:</span><span class="rvts8"> doit contenir le nom de l'auteur du greffon.</span></li>
+ <li class="rvps10 noindent"><span class="rvts20">Product name:</span><span class="rvts8"> doit être positionné à </span><span class="rvts23">"KeePass Plugin"</span><span class="rvts8"> (sans les doubles quotes).</span></li>
+ <li class="rvps10 noindent"><span class="rvts20">Copyright:</span><span class="rvts8"> non utilisé par KeePass ; librement assignable par le greffon.</span></li>
+ <li class="rvps10 noindent"><span class="rvts20">Trademarks:</span><span class="rvts8"> non utilisées par KeePass&nbsp;; librement assignable par le greffon.</span></li>
+ <li class="rvps10 noindent"><span class="rvts20">Assembly version:</span><span class="rvts8"> doit être positionné à la version de votre greffon.</span></li>
+ <li class="rvps10 noindent"><span class="rvts20">File version:</span><span class="rvts8"> doit être positionné à la version de votre greffon. C'est à vous de décider comment vous versionnez vos versions de greffon, mais cela devrait être un schéma qui permet des comparaisons de version (en comparant les composants de version). </span><span class="rvts17">N</span><span class="rvts8">'utilisez </span><span class="rvts17">pas</span><span class="rvts8"> d'astérisques pour créer un numéro de version au moment de la génération.</span></li>
+ <li class="rvps14 noindent"><span class="rvts20">GUID:</span><span class="rvts8"> non utilisé par KeePass&nbsp;; librement assignable par le greffon.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts20">Name, namespace et class name&nbsp;:</span></p>
+<p class="rvps7"><span class="rvts8">Si vous souhaitez utiliser le nom (name) "KeePass" en tant que partie du nom de votre greffon, alors préfixez/ajoutez directement un préfixe/suffixe non numérique. Par exemple, "KeePassSync" est correct, mais "KeePass Sync" ne l'est pas.</span></p>
+<p class="rvps7"><span class="rvts8">L'espace de noms (namespace) doit être nommé comme le fichier DLL sans extension. Par exemple, si le fichier DLL est nommé </span><span class="rvts23">SecretImporter.dll</span><span class="rvts8">, alors vous devez appeler l'espace de noms </span><span class="rvts23">SecretImporter</span><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts8">La classe du greffon doit être nommée comme l'espace de noms plus "Ext". Pour le greffon SecretImporter, ce serait </span><span class="rvts23">SecretImporterExt</span><span class="rvts8">.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="upd"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_dataexchange%204.png"><span class="rvts0"><span class="rvts24"> La vérification de la mise à jour</span></span></h2>
+<p class="rvps7"><span class="rvts8">La vérification des mises à jour de KeePass ≥ 2.18 peut également vérifier les mises à jour des greffons. La prise en charge de la vérification des mises à jour est facultative ; les greffons n'ont pas à prendre en charge les vérifications de mise à jour.</span></p>
+<p class="rvps7"><span class="rvts8">Afin de prendre en charge les vérifications de mise à jour, les développeurs de greffon doivent effectuer les opérations suivantes&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts20">Fournir le fichier d'informations de version :</span><span class="rvts8"> lorsqu'un utilisateur final appelle une vérification de mise à jour, KeePass télécharge un fichier d'informations de version, qui spécifie les numéros de version actuels d'un ou plusieurs greffons. Chaque auteur de greffon héberge son propre fichier d'informations de version. Le format du fichier d'informations de version est décrit en détail ci-dessous.</span></li>
+ <li class="rvps14 noindent"><span class="rvts20">Laisser KeePass savoir :</span><span class="rvts8"> afin de pouvoir vérifier la version du greffon, KeePass doit savoir où se trouve votre fichier d'informations de version. Pour informer KeePass, remplacez la propriété de chaîne </span><span class="rvts23">UpdateUrl</span><span class="rvts8"> de votre classe de greffon (celle dérivée de Plugin) pour renvoyer l'URL complète et absolue de votre fichier d'informations de version. Il doit s'agir d'une URL </span><span class="rvts23">https://</span><span class="rvts8"> (pour la rétrocompatibilité, KeePass prend également en charge </span><span class="rvts23">http://</span><span class="rvts8"> et </span><span class="rvts23">ftp://</span><span class="rvts8">, mais pour des raisons de sécurité, </span><span class="rvts23">https://</span><span class="rvts8"> devrait être utilisé).</span></li>
+</ul>
+<p class="rvps7"><span class="rvts8">Les développeurs de greffon doivent mettre à jour leur fichier d'informations de version chaque fois qu'ils publient de nouvelles versions de leurs greffons.</span></p>
+<p class="rvps7"><span class="rvts20">Format de fichier d'informations de version :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Le fichier est un simple fichier texte. Il doit être encodé en UTF-8 sans marque d'ordre d'octet (KeePass ≥ 2.21 prend en charge les BOM UTF-8 dans les fichiers d'informations de version, mais pour la compatibilité avec KeePass &lt; 2.21, il est recommandé de ne pas utiliser de BOM). Toutes les fins de ligne sont prises en charge.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">La première ligne du fichier doit commencer par un caractère séparateur de votre choix. Le caractère de séparation peut être n'importe quel caractère, mais il ne doit pas apparaître dans les noms et les versions de greffon. Il est suggéré '</span><span class="rvts23">:</span><span class="rvts8">'.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Chacune des lignes suivantes spécifie un nom de greffon et sa version actuellement disponible, séparés par le caractère de séparation spécifié dans la ligne d'en-tête.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Comme nom de greffon, la valeur du champ 'Title' dans le bloc d'informations de version du greffon doit être spécifiée. Pour les greffons gérés, il s'agit de la valeur spécifiée à l'aide de l'attribut d'assemblage </span><span class="rvts23">AssemblyTitle</span><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Comme numéro de version, la valeur de la version du fichier dans le bloc d'informations de version du greffon doit être spécifiée. Pour les greffons gérés, il s'agit de la valeur spécifiée à l'aide de l'attribut d'assemblage </span><span class="rvts23">AssemblyFileVersion</span><span class="rvts8">. Le .0 à la fin peut être supprimé (par exemple, spécifiez </span><span class="rvts23">1.3</span><span class="rvts8"> au lieu de </span><span class="rvts23">1.3.0.0</span><span class="rvts8">).</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Le fichier doit se terminer par une ligne contenant uniquement le caractère de séparation.</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">Vous pourriez éventuellement compresser votre fichier d'informations de version à l'aide de GZip (notez que ce n'est pas la même chose que Zip). Le nom du fichier doit alors se terminer par "</span><span class="rvts23">.gz</span><span class="rvts8">".</span></li>
+</ul>
+<p class="rvps7"><span class="rvts8">Exemple : supposons que vous développiez deux greffons : </span><span class="rvts16">MonGreffon1</span><span class="rvts8"> (version 1.5) et </span><span class="rvts16">MonGreffon2</span><span class="rvts8"> (version 1.13.2.17). Ensuite, votre fichier d'informations de version pourrait ressembler à ceci&nbsp;:</span></p>
+<p class="rvps16"><span class="rvts26">:</span></p>
+<p class="rvps16"><span class="rvts26">MonGreffon:1.5</span></p>
+<p class="rvps16"><span class="rvts26">MonGreffon:1.13.2.17</span></p>
+<p class="rvps16"><span class="rvts26">:</span></p>
+<p class="rvps7"><span class="rvts8">Si vous avez développé plusieurs greffons, alors il est recommandé de créer un fichier d'informations de version, de répertorier tous vos greffons dans ce fichier et de spécifier l'URL du fichier dans tous vos greffons. Lorsque KeePass vérifie les mises à jour, il ne télécharge votre fichier d'informations de version qu'une seule fois. Cela réduit le trafic réseau et est plus rapide que de télécharger un fichier d'informations de version pour chaque greffon séparément.</span></p>
+<p class="rvps7"><span class="rvts20">Signature :</span><span class="rvts8"> depuis KeePass 2.34, vous pouvez </span><span class="rvts16">éventuellement</span><span class="rvts8"> signer numériquement votre fichier d'informations de version à l'aide de RSA/SHA-512.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Une paire de clés RSA peut par exemple être générée comme suit :</span></li>
+</ul>
+<p class="rvps20"><span class="rvts53">using</span><span class="rvts26">(</span><span class="rvts54">RSACryptoServiceProvider</span><span class="rvts26"> rsa = </span><span class="rvts53">new</span><span class="rvts26"> </span><span class="rvts54">RSACryptoServiceProvider</span><span class="rvts26">(4096))</span></p>
+<p class="rvps20"><span class="rvts26">{</span></p>
+<p class="rvps20"><span class="rvts26">	rsa.PersistKeyInCsp = </span><span class="rvts53">false</span><span class="rvts26">;</span></p>
+<p class="rvps20"><span class="rvts26">	</span><span class="rvts54">Console</span><span class="rvts26">.WriteLine(</span><span class="rvts56">"Private key: "</span><span class="rvts26"> + rsa.ToXmlString(</span><span class="rvts53">true</span><span class="rvts26">));</span></p>
+<p class="rvps20"><span class="rvts26">	</span><span class="rvts54">Console</span><span class="rvts26">.WriteLine(</span><span class="rvts56">"Public key: "</span><span class="rvts26"> + rsa.ToXmlString(</span><span class="rvts53">false</span><span class="rvts26">));</span></p>
+<p class="rvps20"><span class="rvts26">}</span></p>
+<p class="rvps10"><span class="rvts8">Toutes les longueurs de clé prises en charge par </span><span class="rvts23">RSACryptoServiceProvider</span><span class="rvts8"> sont prises en charge par KeePass (jusqu'à .NET 4.5, soit 384 à 16384 bits par pas de 8 bits). Nous recommandons au moins 2048 bits ; le fichier d'informations de version principal (contenant la version KeePass) utilise 4096 bits.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Afin de dire à KeePass d'accepter un fichier d'informations de version spécifique uniquement lorsqu'il est vérifiable avec une clé publique spécifique, votre greffon doit appeler la méthode </span><span class="rvts23">UpdateCheckEx.SetFileSigKey</span><span class="rvts8"> pour associer l'URL spécifiée à la clé publique spécifiée. La clé publique doit être une chaîne XML au format renvoyé par la méthode </span><span class="rvts23">RSACryptoServiceProvider.ToXmlString</span><span class="rvts8">. Ne stockez pas la clé privée dans votre greffon, uniquement la clé publique.</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">Pour signer un fichier d'informations de version non signé, hachez toutes les lignes non vides coupées entre l'en-tête et la ligne de pied de page à l'aide du codage SHA-512, UTF-8, chaque ligne se terminant par </span><span class="rvts23">'\n'</span><span class="rvts8"> (et non </span><span class="rvts23">"\r\n"</span><span class="rvts8">). Signez le hachage à l'aide de la clé privée (si vous utilisez </span><span class="rvts23">RSACryptoServiceProvider</span><span class="rvts8">&nbsp;: alors chargez la clé privée à l'aide de sa méthode </span><span class="rvts23">FromXmlString</span><span class="rvts8">, puis calculez la signature à l'aide de la méthode </span><span class="rvts23">SignData</span><span class="rvts8">). Encodez le hachage à l'aide de Base64 et ajoutez-le à la première ligne du fichier d'informations de version.</span></li>
+</ul>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="unmanagedcpp"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%2041.png"><span class="rvts0"><span class="rvts24"> Est-ce que les greffons de KeePass 2.x peuvent être écrits en C++ non managé ?</span></span></h2>
+<p class="rvps7"><span class="rvts8">Oui et non. Vous pouvez écrire la logique de votre greffon en C++ non managé (des API Win32 natives peuvent être utilisées). Cependant, vous devez fournir une interface managée à votre greffon, c'est-à-dire que vous devez exporter une classe managée dérivée de la classe de base du </span><span class="rvts23">Greffon</span><span class="rvts8"> comme décrit dans le tutoriel. De plus, le C++ managé est nécessaire pour modifier les éléments internes de KeePass (les entrées, les groupes, la fenêtre principale, etc.).</span></p>
+<p class="rvps7"><span class="rvts8">Pour un exemple d'utilisation d'API non gérées dans un assemblage de greffon en C++ géré, consultez l'exemple de greffon </span><a class="rvts14" href="https://keepass.info/plugins.html#testplugin">SamplePluginCpp</a><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts8">Il est fortement recommandé de développer des greffons en C#, et non en C++, pour des raisons de compatibilité (dans le cas des greffons natifs, des versions 32 et 64 bits distinctes sont nécessaires ; les greffons natifs ne fonctionnent pas sur des systèmes de type Unix ; etc.).</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="plgx"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_tar%204.png"><span class="rvts0"><span class="rvts24"> Les fichiers PLGX</span></span></h2>
+<p class="rvps7"><span class="rvts8">PLGX est un format de fichier de greffon </span><span class="rvts16">optionnel</span><span class="rvts8"> pour KeePass ≥ 2.09. Au lieu de compiler votre greffon dans un fichier DLL, les fichiers de code source du greffon peuvent être empaquetés dans un fichier PLGX et KeePass compilera le greffon lui-même lors de son chargement.</span></p>
+<p class="rvps7"><span class="rvts8">Le principal avantage de l'appoche PLGX est la compatibilité avec les versions de KeePass personnalisées. Un greffon DLL fait référence à une version officielle de KeePass, et à moins qu'il y ait un changement dans KeePass qui casse le greffon, le greffon est également compatible avec toutes les futures versions de KeePass qui sont compilées avec la même clé de signature d'assemblage (nom fort). Cela s'applique à tous les systèmes d'exploitation. En particulier, un greffon DLL qui n'utilise aucune fonction spécifique à Windows fonctionne correctement sous Linux avec une version KeePass du package ZIP portable officiel. Cependant, certains packages Linux compilent KeePass à partir du code source ; ces constructions ne sont pas signées du tout ou sont signées avec une clé de signature d'assemblage différente et sont donc incompatibles avec les greffons DLL. En revanche, les greffons PLGX sont compatibles avec les versions (builds) de KeePass personnalisées, car KeePass peut ajuster la référence KeePass du greffon avant de le compiler.</span></p>
+<p class="rvps7"><span class="rvts8">Un autre avantage de l'approche PLGX est une forte détection de compatibilité. Dans le cas d'un greffon DLL, une incompatibilité (causée par un changement d'API dans KeePass) est détecté par le runtime lorsque le greffon essaie d'appeler/accéder à la méthode/classe, pas au moment du chargement. Ainsi, une incompatibilité est détectée tardivement et peut planter KeePass. En revanche, lors de l'utilisation du format PLGX, une incompatibilité est détecté immédiatement au moment du chargement : en cas de problème, le le processus de compilation échoue et KeePass peut afficher une information message d'incompatibilité du greffon à l'utilisateur. Pour les greffons DLL, KeePass effectue sa propre vérification de compatibilité, qui ne détecte cependant pas toutes les incompatibilités ; PLGX est supérieur ici.</span></p>
+<p class="rvps7"><span class="rvts8">En ce qui concerne la sécurité, les plugins DLL sont meilleurs, car ils peuvent être signé numériquement (Authenticode). De plus, les plugins DLL sont généralement chargés légèrement plus rapidement (parce qu'ils peuvent être chargés directement&nbsp;; pas </span><a class="rvts14" href="../v2/plugins.html#cache">cache des greffons</a><span class="rvts8">).</span></p>
+<p class="rvps7"><span class="rvts8">Pour les utilisateurs, la procédure d'installation d'un greffon DLL est exactement la même que pour un greffon PLGX ; les deux doivent être copiés dans le dossier 'Plugins'.</span></p>
+<p class="rvps7"><span class="rvts20">Comparaison :</span></p>
+<div class="rvps4">
+<table width="75%" style="border-color: #afb5cf; border-style: solid; border-width: 1px; background-color: #eeeeee; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">&nbsp;</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">DLL</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">PLGX</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Compatibilité avec les versions (builds) personnalisées (Linux)</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="No" style="vertical-align: middle;" src="lib/imagesb16x16_cancel%204.png"><span class="rvts8"> Partielle.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%204.png"></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Vérification de compatibilité</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="No" style="vertical-align: middle;" src="lib/imagesb16x16_cancel%203.png"><span class="rvts8"> Faible.</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%203.png"><span class="rvts8"> Forte.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Prise en charge de la signature Authenticode</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%202.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="No" style="vertical-align: middle;" src="lib/imagesb16x16_cancel%202.png"></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Pas de compilation sur le système de l'utilisateur</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok%201.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="No" style="vertical-align: middle;" src="lib/imagesb16x16_cancel%201.png"></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Pas de cache de greffon</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="Yes" style="vertical-align: middle;" src="lib/imagesb16x16_ok.png"></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><img alt="No" style="vertical-align: middle;" src="lib/imagesb16x16_cancel.png"></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts8">Ainsi, les deux formats ont des avantages et des inconvénients uniques.</span></p>
+<p class="rvps7"><span class="rvts20">Package double :</span><span class="rvts8"> vous pouvez expédier un greffon à la fois sous forme de DLL et de PLGX dans un seul package (par exemple : 'SecretImporter.dll' et 'SecretImporter.plgx' à l'intérieur du même dossier). KeePass chargera le fichier le plus approprié (si KeePass a été signé avec la clé officielle de signature d'assemblage, alors il chargera la DLL, sinon le PLGX). Si KeePass charge la DLL, le PLGX est ignoré.</span></p>
+<p class="rvps7"><span class="rvts20">Recommandations :</span><span class="rvts8"> Dans tous les cas, fournissez un fichier DLL (pour des raisons de sécurité). Si vous souhaitez prendre en charge les builds KeePass personnalisés, fournissez également un fichier PLGX (c'est-à-dire fournir un package double).</span></p>
+<p class="rvps7"><span class="rvts20">La création de fichiers PLGX :</span><span class="rvts8"> les fichiers PLGX peuvent être créés à partir des sources de greffon en appelant </span><span class="rvts23">KeePass.exe</span><span class="rvts8"> avec l'option de ligne de commande </span><span class="rvts23">--plgx-create</span><span class="rvts8">. Si vous passez en plus un chemin vers le répertoire des sources du greffon (sans séparateur de fin), alors KeePass utilisera celui-ci ; sinon, il affichera une boîte de dialogue de navigation de dossiers pour vous permettre de sélectionner le répertoire. Si vous souhaitez transmettre l'emplacement du répertoire à l'aide de la ligne de commande, alors assurez-vous de spécifier un chemin d'accès complet et absolu&nbsp;; les chemins relatifs ne fonctionneront pas.</span></p>
+<p class="rvps7"><span class="rvts8">Afin de garder la taille du fichier PLGX petite, il est recommandé de nettoyer le répertoire des sources du greffon avant de compiler le PLGX. Supprimez tous les fichiers binaires inutiles (fichiers dans les répertoires </span><span class="rvts23">bin</span><span class="rvts8"> et </span><span class="rvts23">obj</span><span class="rvts8">)&nbsp;; en particulier, supprimez toute DLL d'assemblage de greffon que vous avez compilée vous-même. Les fichiers temporaires de l'IDE (tels que les fichiers </span><span class="rvts23">.suo</span><span class="rvts8"> et </span><span class="rvts23">.user</span><span class="rvts8">) peuvent également être supprimés.</span></p>
+<p class="rvps7"><span class="rvts20">Les fonctionnalités PLGX :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Format de fichier extensible et orienté objet.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Prise en charge de la compression (les fichiers de données sont compressés à l'aide de GZip).</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Prise en charge de </span><span class="rvts23">.csproj</span><span class="rvts8">. KeePass récupère toutes les informations nécessaires à la compilation de l'assemblage du greffon à partir du fichier </span><span class="rvts23">.csproj</span><span class="rvts8"> dans les sources du greffon.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Prise en charge des ressources embarquées.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Prise en charge des assemblages .NET référencés. L'information de références est lue à partir du fichier </span><span class="rvts23">.csproj</span><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Prise en charge des assemblages personnalisés référencés. Les assemblages tiers requis par le greffon (références aux DLL) sont pris en charge, à condition que l'assemblage tiers se trouve dans le répertoire du code source du greffon (ou tout sous-répertoire de celui-ci).</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Prise en charge de ResX. Les fichiers </span><span class="rvts23">.resx</span><span class="rvts8"> sont automatiquement compilés en fichiers binaires </span><span class="rvts23">.resources</span><span class="rvts8">.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Le cache PLGX. Les fichiers PLGX sont compilés une seule fois et l'assemblage généré est stocké dans un cache. Pour tous les démarrages de KeePass suivants, aucune compilation n'est requise.</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">Maintenance du cache PLGX. La taille du cache PLGX peut être vue dans la boîte de dialogue des greffons KeePass. Ici, le cache peut également être marqué pour être effacé (il sera effacé lors du prochain démarrage de KeePass). Une option pour supprimer automatiquement les anciens fichiers du cache est prise en charge et activée par défaut.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts20">Les limites de PLGX :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Seul C# est pris en charge (pas Visual Basic ou tout autre langage .NET).</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Le compilateur inclus dans le .NET Framework prend en charge au maximum C# 5. Afin d'éviter d'utiliser les fonctionnalités d'une version plus récente de C#, il est donc recommandé de définir la version C# de votre projet de greffon sur 5 :</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps11 noindent"><span class="rvts8">Dans Visual Studio 2017 et versions antérieures , ouvrez les propriétés du projet → onglet 'Version' → bouton 'Avancé' → définissez l'option 'Version du language' sur 'C# 5'.</span></li>
+  <li class="rvps11 noindent"><span class="rvts8">Dans Visual Studio 2019 et versions ultérieures, le fichier XML du projet doit être modifié : l'élément '</span><span class="rvts23">LangVersion</span><span class="rvts8">' doit contenir '</span><span class="rvts23">5</span><span class="rvts8">'. Pour plus de détails, consultez </span><a class="rvts14" href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version">Gestion des versions du langage C# (C# Language Versioning)</a><span class="rvts8">.</span></li>
+ </ul>
+ <li class="rvps10 noindent"><span class="rvts8">Les ressources liées (dans différents assemblages) ne sont pas prises en charge.</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">Les dépendances sur d'autres projets ne sont pas prises en charge (réorganisez votre projet pour utiliser à la place des références d'assemblage personnalisées).</span></li>
+</ul>
+<p class="rvps7"><span class="rvts20">Définition des prérequis : </span><span class="rvts8">vous pouvez </span><span class="rvts17">éventuellement</span><span class="rvts8"> spécifier une version minimale de KeePass, un framework .NET installé au minimum, un système d'exploitation et la taille minimale d'un pointeur (x86 contre x64) en utilisant les options </span><span class="rvts23">--plgx-prereq-kp:</span><span class="rvts8">, </span><span class="rvts23">--plgx-prereq-net:</span><span class="rvts8">, </span><span class="rvts23">--plgx-prereq-os:</span><span class="rvts8"> et </span><span class="rvts23">--plgx-prereq-ptr:</span><span class="rvts8"> de ligne de commande. Si l'une des conditions préalables du greffon n'est pas remplie, alors KeePass affiche un message d'erreur détaillé à l'utilisateur final (au lieu d'un message générique d'incompatibilité du greffon). Exemple de construction&nbsp;:</span><br/><span class="rvts23">KeePass.exe --plgx-create C:\VotreRépertoireDeGreffon --plgx-prereq-kp:2.09 --plgx-prereq-net:3.5</span></p>
+<p class="rvps7"><span class="rvts8">Les valeurs de système d'exploitation valides sont </span><span class="rvts23">Windows</span><span class="rvts8"> et </span><span class="rvts23">Unix</span><span class="rvts8">. Lorsqu'il s'exécute sur un système d'exploitation inconnu, KeePass est par défaut Windows. Les tailles de pointeur (vérification de x86 par rapport à x64) sont spécifiées en octets&nbsp;; par exemple, pour autoriser uniquement l'exécution sur x64, vous spécifiez </span><span class="rvts23">--plgx-prereq-ptr:8</span><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts20">Générer des commandes : </span><span class="rvts8">vous pouvez </span><span class="rvts17">éventuellement</span><span class="rvts8"> spécifier des commandes de préconstruction et de post-construction à l'aide de </span><span class="rvts23">--plgx-build-pre:</span><span class="rvts8"> et </span><span class="rvts23">--plgx-build-post:</span><span class="rvts8">. Ces commandes sont intégrées dans le fichier PLGX et exécutées lors de la compilation du greffon sur le système de l'utilisateur final.</span></p>
+<p class="rvps7"><span class="rvts8">Dans les commandes de génération, le paramètre substituable </span><span class="rvts23">{PLGX_TEMP_DIR}</span><span class="rvts8"> spécifie le répertoire temporaire (incorporant un séparateur de fin), dans lequel les fichiers ont été extraits. Dans la commande de post-construction, </span><span class="rvts23">{PLGX_CACHE_DIR}</span><span class="rvts8"> est remplacé par le répertoire de cache du greffon (incorporant un séparateur de fin), dans lequel l'assemblage généré a été stocké.</span></p>
+<p class="rvps7"><span class="rvts8">Ces commandes de construction peuvent par exemple être utilisées pour copier des fichiers supplémentaires dans le répertoire de cache. Exemple : </span><span class="rvts23">KeePass.exe --plgx-create C:\VotreRépertoireDeGreffon --plgx-build-post:"cmd /c COPY """{PLGX_TEMP_DIR}MonFichier.txt""" """{PLGX_CACHE_DIR}MonFichier.txt""""</span></p>
+<p class="rvps7"><span class="rvts8">Afin de spécifier une double quote sur la ligne de commande, elle doit être encodée à l'aide de trois doubles quotes (c'est le standard Windows, voir "https://docs.microsoft.com/en-us/windows/win32/api/shellapi/ns-shellapi-shellexecuteinfow </span><a class="rvts14" href="https://learn.microsoft.com/en-us/windows/win32/api/shellapi/ns-shellapi-shellexecuteinfow">MSDN: </a><a class="rvts32" href="https://learn.microsoft.com/en-us/windows/win32/api/shellapi/ns-shellapi-shellexecuteinfow">SHELLEXECUTEINFOW</a><span class="rvts8">). Ainsi, la ligne de commande ci-dessus intégrera en fait la commande post-build </span><span class="rvts23">cmd /c COPY "{PLGX_TEMP_DIR}MonFichier.txt" "{PLGX_CACHE_DIR}MonFichier.txt"</span><span class="rvts8"> dans le PLGX, ce qui est correct. Il est fortement recommandé d'encadrer les chemins contenant des espaces réservés PLGX à l'aide de doubles quotes, sinon la commande ne s'exécutera pas correctement si le chemin contient un espace (ce qui arrive très souvent).</span></p>
+<p class="rvps7"><span class="rvts8">Si vous devez exécuter plusieurs commandes, alors écrivez-les dans un fichier batch et exécutez-le (avec </span><span class="rvts23">cmd</span><span class="rvts8">). Si vous avez besoin d'effectuer des tâches de construction plus complexes, alors écrivez votre propre exécutable de construction et exécutez-le à l'aide des commandes de construction (il est généralement utile de transmettre les emplacements des répertoires en tant qu'arguments à votre exécutable de construction), par exemple&nbsp;:</span><br/><span class="rvts23">KeePass.exe --plgx-create C:\VotreRépertoireDeGreffon --plgx-build-post:"{PLGX_TEMP_DIR}MonBuild.exe {PLGX_TEMP_DIR} {PLGX_CACHE_DIR}"</span></p>
+<p class="rvps7"><span class="rvts20">Le débogage PLGX : </span><span class="rvts8">lorsque l'option de ligne de commande </span><span class="rvts23">--debug</span><span class="rvts8"> est transmise et qu'un greffon PLGX ne parvient pas à se compiler, alors la sortie de tous les compilateurs essayés est enregistrée dans un fichier temporaire.</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2025 par Ronan Plantec &amp; Dominik Reichl</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

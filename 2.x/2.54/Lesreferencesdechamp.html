@@ -1,0 +1,363 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 7.7.0.519">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Les r&eacute;ferences de champ</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Les r&eacute;ferences de champ">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Les r&eacute;ferences de champ" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.54" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.54</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Lesreferencesdechamp"
+		  data-hnd-context="17"
+		  data-hnd-title="Les réferences de champ"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Laconfiguration.html" title="La configuration" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="ImporterExporter.html" title="Importer/Exporter" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Les r&eacute;ferences de champ</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" border="2" cellpadding="0" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <p class="rvps3"><img width="64" height="64" alt="" style="vertical-align: middle;" src="lib/imagesb64x64_usb.png"></p>
+  </td>
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">Les références de champ</span></span></h1>
+   <p class="rvps3"><span class="rvts19">Comment mettre des références à des données dans les champs d'autres entrées&nbsp;?</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><a class="rvts15" href="Lesreferencesdechamp.html#intro">Introduction</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesreferencesdechamp.html#syntax">Syntaxe du paramètre substituable (placeholder)</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesreferencesdechamp.html#example">Exemple</a></li>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="intro"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help6.png"><span class="rvts0"><span class="rvts23"> Introduction</span></span></h2>
+<p class="rvps7"><span class="rvts13">KeePass peut insérer des données enregistrées dans différentes entrées dans les champs d'une entrée. Ce qui signifie que plusieurs entrées peuvent partager un champ commun (nom d'utilisateur, mot de passe, etc.), et en changeant les données de l'entrée réelle, toutes les autres entrées utiliseront également la nouvelle valeur.</span></p>
+<p class="rvps7"><span class="rvts13">Pour créer une référence de champ, vous pouvez soit utiliser l'assistant pratique des références de champ (dans la fenêtre d'édition des entrées, cliquez le bouton 'Outils' au bas à gauche et sélectionnez 'Insérer une référence à un champ'), soit insérer manuellement le paramètre substituable (cf. syntaxe ci-dessous).</span></p>
+<p class="rvps7"><span class="rvts13">Remarquer que les références de champs sont destinées à référencer des données enregistrées dans </span><span class="rvts17">différentes</span><span class="rvts13"> entrées. Si vous souhaitez insérer des données de la </span><span class="rvts17">même entrée/entrée en cours</span><span class="rvts13">, alors vous devrez utiliser des paramètres substituables locaux, comme </span><span class="rvts22">{TITLE}</span><span class="rvts13"> et </span><span class="rvts22">{S:</span><span class="rvts28">NomDeChamp</span><span class="rvts22">}</span><span class="rvts13">; cf. </span><a class="rvts15" href="Lesparametressubstituables.html">paramètres substituables</a><span class="rvts13">.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="syntax"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_rotate_cw.png"><span class="rvts0"><span class="rvts23"> Syntaxe du paramètre substituable (placeholder)</span></span></h2>
+<p class="rvps7"><span class="rvts13">La syntaxe du paramètre substituable pour les références de champ est la suivante&nbsp;:</span></p>
+<p class="rvps7"><span class="rvts22">{REF:</span><span class="rvts28">&lt;ChampSouhaité&gt;</span><span class="rvts22">@</span><span class="rvts28">&lt;RechercherDans&gt;</span><span class="rvts22">:</span><span class="rvts28">&lt;Texte&gt;</span><span class="rvts22">}</span></p>
+<p class="rvps7"><span class="rvts13">Les parties </span><span class="rvts17">&lt;ChampSouhaité&gt;</span><span class="rvts13"> et </span><span class="rvts17">&lt;RechercherDans&gt;</span><span class="rvts13"> doivent être remplacées par des codes d'une lettre identifiants le champ&nbsp;:</span></p>
+<div class="rvps3">
+<table width="75%" border="1" cellpadding="5" cellspacing="-1" style="border-color: #afb5cf; border-style: solid; background-color: #eeeeee; border-collapse: collapse;">
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Code</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px;">
+   <p class="rvps3"><span class="rvts20">Champ</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">T</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Titre</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">U</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Nom d'utilisateur</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">P</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Mot de passe</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">A</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Adresse (URL)</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">N</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Remarques</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">I</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">UUID</span></p>
+  </td>
+ </tr>
+ <tr valign="top">
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts22">O</span></p>
+  </td>
+  <td valign="top" style="border-color : #afb5cf #afb5cf #afb5cf #afb5cf; border-style: solid; padding: 5px; background-color: #f0f0f0;">
+   <p class="rvps3"><span class="rvts13">Les autres chaînes personnalisées </span><span class="rvts17">(seulement KeePass 2.x)</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts13">La partie </span><span class="rvts17">Texte</span><span class="rvts13"> est </span><a class="rvts15" href="https://keepass.info/help/kb/faq.html#search">la chaîne recherchée</a><span class="rvts13">, qui décrit le ou les textes qui doivent apparaître dans le champ spécifié d'une entrée pour correspondre.</span></p>
+<p class="rvps7"><span class="rvts13">Si plusieurs entrées correspondent au critère de recherche spécifié, alors la première entrée sera utilisée. Pour éviter toute ambiguïté, une entrée peut être identifiée par son UUID, qui est unique. Exemple&nbsp;: </span><span class="rvts22">{REF:P@I:46C9B1FFBD4ABC4BBB260C6190BAD20C}</span><span class="rvts13"> insérerait le mot de passe de l'entrée ayant 46C9B1FFBD4ABC4BBB260C6190BAD20C comme UUID.</span></p>
+<p class="rvps3"><span class="rvts13">Le référencement des champs des autres entrées ne fonctionne qu'avec les champs standards, pas avec des chaînes utilisateur personnalisées. Si vous souhaitez référencer une chaîne utilisateur personnalisée, alors vous devez placer une redirection dans un champ standard de l'entrée avec la chaîne personnalisée, en utilisant </span><span class="rvts22">{S:</span><span class="rvts28">&lt;Nom&gt;</span><span class="rvts22">}</span><span class="rvts13">, et la référence du champ standard.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Des chaînes personnalisées peuvent être référencées localement (c'est-à-dire à l'intérieur d'une entrée) en utilisant </span><span class="rvts22">{S:</span><span class="rvts28">&lt;Nom&gt;</span><span class="rvts22">}</span><span class="rvts13">, cf. la page </span><a class="rvts15" href="Lesparametressubstituables.html">paramètres substituables</a><span class="rvts13"> pour les détails.</span><br/><span class="rvts13"></span><br/><span class="rvts13">Vous pouvez utiliser le code </span><span class="rvts22">O</span><span class="rvts13"> pour que KeePass recherche dans la base de données des champs de chaîne personnalisée (pour identifier l'entrée source référencée), mais </span><span class="rvts22">O</span><span class="rvts13"> ne peut pas être utilisé pour récupérer des données depuis des champs personnalisés (c'est-à-dire que le code ne peut pas être utilisé comme </span><span class="rvts17">ChampSouhaité</span><span class="rvts13">).</span><br/><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="example"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help5.png"><span class="rvts0"><span class="rvts23"> Exemple</span></span></h2>
+<p class="rvps7"><span class="rvts13">Supposons que vous avez deux entrées&nbsp;: une avec le titre "Exemple de site Web" et une avec "Exemple de forum", et que vous souhaiteriez insérer le nom d'utilisateur du compte du site Web dans l'adresse (URL) de l'entrée du forum. À l'intérieur de l'adresse (URL) de l'entrée du forum, vous devrez référencer le nom d'utilisateur comme suit&nbsp;:</span><br/><span class="rvts22">https://forum.exemple.com/?user={REF:U@T:Exemple de site Web}</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2023 par Ronan Plantec &amp; Dominik Reichl. Tous droits r&eacute;serv&eacute;s.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

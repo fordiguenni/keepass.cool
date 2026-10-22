@@ -1,0 +1,822 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 9.7.0.541">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>La saisie automatique</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="La saisie automatique">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="La saisie automatique" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-1.43" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-1.43</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Lasaisieautomatique"
+		  data-hnd-context="14"
+		  data-hnd-title="La saisie automatique"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Accessibilite.html" title="Accessibilit&eacute;" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Lesoptionsdelalignedecommande.html" title="Les options de la ligne de commande" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>La saisie automatique</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" style="border-color: #808080; border-style: solid; border-width: 1px; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr style="vertical-align: middle;">
+  <td style="padding: 0px;">
+   <p class="rvps3"><img alt="" style="width : 64px; height : 64px; vertical-align: middle;" src="lib/imagesb64x64_ktouch.png"></p>
+  </td>
+  <td style="padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">La saisie automatique</span></span></h1>
+   <p class="rvps3"><span class="rvts19">Fonction puissante qui envoie des pressions de touches simulées aux autres applications.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasaisieautomatique.html#autobasic">Informations de base sur la saisie automatique</a></li>
+ <li class="rvps10 noindent"><a class="rvts14" href="Lasaisieautomatique.html#req">Exigences et limitations</a></li>
+ <li class="rvps10 noindent"><span class="rvts8">Appel de la saisie automatique</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps11 noindent"><a class="rvts14" href="Lasaisieautomatique.html#autoctx">Depuis le menu contextuel&nbsp;: commande '</a><a class="rvts32" href="Lasaisieautomatique.html#autoctx">Accomplir la saisie automatique</a><a class="rvts14" href="Lasaisieautomatique.html#autoctx">'</a></li>
+  <li class="rvps11 noindent"><a class="rvts14" href="Lasaisieautomatique.html#autoglobal">Raccourci clavier global de la saisie automatique</a></li>
+ </ul>
+ <li class="rvps10 noindent"><span class="rvts8">Spécification des séquences de touches pressées et des fenêtres cibles</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps11 noindent"><a class="rvts14" href="Lasaisieautomatique.html#autoseq">Les séquences de touches pressées de saisie automatique</a></li>
+  <li class="rvps11 noindent"><a class="rvts14" href="Lasaisieautomatique.html#autowindows">Les filtres de fenêtre cible</a></li>
+  <li class="rvps11 noindent"><a class="rvts14" href="Lasaisieautomatique.html#changedefaultseq">Modifier la séquence de saisie automatique par défaut</a></li>
+ </ul>
+ <li class="rvps14 noindent"><a class="rvts14" href="Lasaisieautomatique.html#autoexample">Exemple d'utilisation</a></li>
+</ul>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="autobasic"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ktouch%204.png"><span class="rvts0"><span class="rvts24"> Les informations de base sur la saisie automatique</span></span></h2>
+<p class="rvps7"><span class="rvts8">KeePass dispose d'une fonctionnalité de "saisie automatique". Cette fonctionnalité permet de définir une séquence de touches pressées, que KeePass peut automatiquement accomplir pour vous. Les touches pressées simulées peuvent être envoyées à n'importe quelle autre fenêtre actuellement ouverte de votre choix (navigateur, boîtes de dialogue de login, etc.).</span></p>
+<p class="rvps7"><span class="rvts8">Par défaut, la séquence de touches pressées envoyée est </span><span class="rvts23">{USERNAME}{TAB}{PASSWORD}{ENTER}</span><span class="rvts8">, c'est-à-dire qu'elle tape d'abord le nom d'utilisateur de l'entrée sélectionnée, puis appuie sur la touche </span><span class="rvts21">Tabulation</span><span class="rvts8">, saisit le mot de passe de l'entrée et appuie finalement sur la touche </span><span class="rvts21">Entrée</span><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts8">Pour </span><a class="rvts14" href="LapriseenchargedesNAT.html">les entrées de NAT (TAN)</a><span class="rvts8">, la séquence par défaut est </span><span class="rvts23">{PASSWORD}</span><span class="rvts8">, c'est-à-dire qu'elle saisit juste le NAT dans la fenêtre cible, sans appuyer sur </span><span class="rvts21">Entrée</span><span class="rvts8">.</span></p>
+<p class="rvps3"><span class="rvts8">Vous pouvez librement définir votre propre séquence de saisie automatique : écrivez simplement la séquence dans le </span><span class="rvts20">champ remarques</span><span class="rvts8"> de l'entrée, préfixé par "</span><span class="rvts23">saisie automatique :</span><span class="rvts8">". Vos remarques pourraient ressembler à ceci :</span></p>
+<p class="rvps16"><span class="rvts26">Vous pouvez écrire des notes ici.</span></p>
+<p class="rvps16"><span class="rvts26">Mon adresse de courriel que j'utilise pour m'inscrire : moi@exemple.com</span></p>
+<p class="rvps16"><span class="rvts26"><br/></span></p>
+<p class="rvps16"><span class="rvts33">Auto-Type: {USERNAME}{TAB}{TAB}Une certaine chaîne de caractères fixée{TAB}{PASSWORD}{ENTER}</span></p>
+<p class="rvps16"><span class="rvts26"><br/></span></p>
+<p class="rvps16"><span class="rvts26">Ici vous pouvez continuer avec vos remarques si vous le souhaitez...</span></p>
+<p class="rvps3"><span class="rvts8">Comme vous pouvez le voir, la seule chose importante est que la séquence de saisie automatique soit préfixée en utilisant "</span><span class="rvts23">Auto-Type:</span><span class="rvts8">" et est une seule ligne. Une séquence de saisie automatique ne peut pas être définie à l'aide de deux lignes ou plus.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Si vous définissez deux ou plusieurs séquences de saisie automatique, alors la première est utilisée.</span></p>
+<p class="rvps7"><span class="rvts8">De plus, vous pouvez créer des associations fenêtre/séquence personnalisées, qui remplacent la séquence par défaut. Vous pouvez spécifier différentes séquences de touches pressées pour différentes fenêtres pour chaque entrée. Par exemple&nbsp;: imaginez une page HTML, sur laquelle vous souhaitez vous connecter, qui a plusieurs pages dont une permet la connexion. Ces pages pourraient toutes sembler un peu différentes (sur une vous pourriez de plus avoir besoin de vérifier des cases à cocher – comme on en voit souvent sur les forums). Ici la création d'associations fenêtre/séquence personnalisées résout les problèmes&nbsp;: il vous suffit de spécifier simplement différentes séquences de saisie automatique pour chaque fenêtre (identifiée par leur titre).</span></p>
+<p class="rvps7"><span class="rvts20">Appel de la saisie automatique&nbsp;:</span><br/><span class="rvts8">Il y a trois méthodes différentes pour appeler la saisie automatique&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Appel de la saisie automatique pour une entrée en utilisant la commande du menu contextuel </span><span class="rvts17">Accomplir la saisie automatique</span><span class="rvts8"> tout en ayant au préalable sélectionnée l'entrée.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Sélectionnez l'entrée et appuyez sur </span><span class="rvts21">Ctrl</span><span class="rvts22">+</span><span class="rvts21">V</span><span class="rvts8"> (c'est le raccourci de la commande du menu contextuel ci-dessus).</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">En utilisant les raccourcis clavier globaux de saisie automatique. KeePass recherchera dans toutes les entrées de la base de données actuellement ouverte des séquences de correspondance.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts8">Toutes les méthodes sont expliquées en détail ci-dessous.</span></p>
+<p class="rvps7"><span class="rvts20">Focus d'entrée&nbsp;:</span><br/><span class="rvts8">Remarquez que la saisie automatique démarre en tapant dans le contrôle de la fenêtre cible qui a le focus d'entrée. Donc, par exemple pour la séquence par défaut vous devez vous assurer que le focus d'entrée est positionné sur le contrôle d'utilisateur de la fenêtre cible avant l'appel de la saisie automatique en utilisant les méthodes ci-dessus.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="req"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help%201.png"><span class="rvts0"><span class="rvts24"> Les exigences et les limitations</span></span></h2>
+<p class="rvps7"><span class="rvts20">Les droits&nbsp;:</span><br/><span class="rvts8">Pour que la saisie automatique fonctionne, KeePass doit s'exécuter avec les mêmes droits ou droits plus élevés que l'application cible. Notamment, si l'application cible s'exécute avec les droits d'administration, KeePass doit également s'exécuter avec les droits d'administration. Pour les détails, cf. </span><a class="rvts14" href="https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/bb625963(v=msdn.10)">conception du mécanisme d'intégrité de Windows</a><span class="rvts8">. Un exemple : certaines instances de VMware Workstation s'exécutent sur un niveau d'intégrité supérieur.</span></p>
+<p class="rvps7"><span class="rvts20">Les bureaux à distance et les machines virtuelles&nbsp;:</span><br/><span class="rvts8">KeePass ne connaît pas la disposition du clavier qui a été sélectionné sur un bureau distant ou une fenêtre de machine virtuelle. Si vous souhaitez saisir automatiquement dans une telle fenêtre, alors vous devez vous assurer que le système local et le système distant/virtuel utilise la même disposition de clavier.</span></p>
+<p class="rvps7"><span class="rvts8">Au moment d'accomplir la saisie automatique à l'intérieur d'un bureau distant ou une fenêtre de machine virtuelle, les caractères suivants peuvent être problématiques (selon les circonstances exactes) et doivent donc être évités, si possible&nbsp;: </span><span class="rvts34">"</span><span class="rvts8"> (U+0022), </span><span class="rvts34">'</span><span class="rvts8"> (U+0027), </span><span class="rvts34">^</span><span class="rvts8"> (U+005E), </span><span class="rvts34">`</span><span class="rvts8"> (U+0060), </span><span class="rvts34">~</span><span class="rvts8"> (U+007E), </span><span class="rvts34">¨</span><span class="rvts8"> (U+00A8), </span><span class="rvts34">¯</span><span class="rvts8"> (U+00AF), </span><span class="rvts34">°</span><span class="rvts8"> (U+00B0), </span><span class="rvts34">´</span><span class="rvts8"> (U+00B4), </span><span class="rvts34">¸</span><span class="rvts8"> (U+00B8), </span><a class="rvts14" href="https://en.wikipedia.org/wiki/Spacing_Modifier_Letters">les lettres qui modifient l'espacement</a><span class="rvts8"> (U+02B0 to U+02FF), et les caractères qui ne peuvent pas être réalisés en une combinaison de touches directe.</span></p>
+<p class="rvps7"><span class="rvts20">Wayland :</span><br/><span class="rvts8">Sur des système Unix-like avec un compositeur Wayland, il peut y avoir d'autres limitations ; cf. la page </span><a class="rvts14" href="https://keepass.info/help/kb/autotype_wayland.html">Auto-Type on Wayland</a><span class="rvts8">.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="autoctx"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ktouch%203.png"><span class="rvts0"><span class="rvts24"> Menu contextuel&nbsp;: la commande 'Accomplir la saisie automatique'</span></span></h2>
+<p class="rvps7"><span class="rvts8">Cette méthode est celle qui nécessite le moindre effort et est la plus simple, mais elle a l'inconvénient que vous devez sélectionner dans KeePass l'entrée dont vous souhaitez la saisie automatique.</span></p>
+<p class="rvps7"><span class="rvts8">La méthode est simple&nbsp;: clic droit sur l'entrée de votre base de données actuellement ouverte et cliquez '</span><span class="rvts17">Accomplir la saisie automatique</span><span class="rvts8">' (ou appuyez alternativement le raccourci </span><span class="rvts21">Ctrl</span><span class="rvts22">+</span><span class="rvts21">V</span><span class="rvts8"> pour cette commande). La fenêtre qui précédemment avait le focus (c'est-à-dire celle dans laquelle vous travailliez avant de permuter vers KeePass) sera appelée au premier plan et KeePass saisit automatiquement vers cette fenêtre.</span></p>
+<p class="rvps7"><span class="rvts8">La séquence qui est saisie automatiquement dépend du titre de la fenêtre. Si vous ne spécifiez aucune association fenêtre/séquence personnalisée la séquence par défaut est envoyée. Si vous avez créé des associations, KeePass utilise la séquence de la première association qui correspond. Si aucune des associations ne correspond, alors la séquence par défaut est utilisée.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="autoglobal"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ktouch%202.png"><span class="rvts0"><span class="rvts24"> Le raccourci clavier de la saisie automatique globale</span></span></h2>
+<p class="rvps7"><span class="rvts8">C'est la méthode la plus puissante, mais elle nécessite également un peu plus de travail/connaissance, avant de pouvoir être utilisée.</span></p>
+<p class="rvps7"><span class="rvts20">Exemple d'une simple saisie automatique globale&nbsp;:</span></p>
+<ol style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside;">
+ <li class="rvps10 noindent"><span class="rvts8">Créer dans KeePass une entrée qui s'intitule </span><span class="rvts17">Bloc-notes</span><span class="rvts8"> avec les valeurs pour le nom d'utilisateur et le mot de passe.</span></li>
+ <li class="rvps10 noindent"><span class="rvts8">Démarrer le Bloc-notes (depuis 'Programmes' → 'Accessoires').</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">Appuyer sur </span><span class="rvts21">Ctrl</span><span class="rvts22">+</span><span class="rvts21">Alt</span><span class="rvts22">+</span><span class="rvts21">A</span><span class="rvts8"> depuis le Bloc-notes. Le nom d'utilisateur et le mot de passe seront saisis dans le Bloc-notes.</span></li>
+</ol>
+<p class="rvps7"><span class="rvts8">Le titre </span><span class="rvts17">Bloc-notes</span><span class="rvts8"> de l'entrée de KeePass correspond avec le titre de la fenêtre du Bloc-notes et la séquence par défaut de saisie automatique est tapée.</span></p>
+<p class="rvps7"><span class="rvts20">Comment ça fonctionne&nbsp;? - Détails&nbsp;:</span></p>
+<p class="rvps7"><span class="rvts8">KeePass enregistre un raccourci clavier global pour la saisie automatique. L'avantage de ce raccourci clavier est que vous n'avez pas à permuter vers la fenêtre KeePass et sélectionner l'entrée. Vous appuyez simplement sur le raccourci tout en ayant la fenêtre cible ouverte (c'est-à-dire la fenêtre qui recevra la pression des touches simulées).</span></p>
+<p class="rvps7"><span class="rvts8">Par défaut, le raccourci clavier global est </span><span class="rvts21">Ctrl</span><span class="rvts22">+</span><span class="rvts21">Alt</span><span class="rvts22">+</span><span class="rvts21">A</span><span class="rvts8"> (c'est-à-dire maintenez les touches </span><span class="rvts21">Ctrl</span><span class="rvts8"> et </span><span class="rvts21">Alt</span><span class="rvts8">, appuyez sur </span><span class="rvts21">A</span><span class="rvts8"> et relâchez toutes les touches). Vous pouvez modifier ce raccourci clavier dans la boîte de dialogue des options (menu principal → 'Outils' → 'Options...', onglet 'Avancé')&nbsp;: ici, cliquez dans la fenêtre de saisie de texte du raccourci de saisie automatique global et saisissez le raccourci que vous souhaitez utiliser. Si le raccourci clavier est utilisable, il apparaîtra dans la zone de texte.</span></p>
+<p class="rvps7"><span class="rvts8">Quand vous appuyez le raccourci clavier, KeePass examine le titre de la fenêtre actuellement ouverte et recherche les entrées utilisables dans la base de données actuellement ouverte. Si KeePass trouve plusieurs entrées qui peuvent être utilisées, alors il affiche une boîte de dialogue de sélection. Une entrée est considérée comme utilisable pour le titre de la fenêtre courante quand au moins une des conditions suivantes est remplie&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps10 noindent"><span class="rvts8">Le titre de l'entrée est une sous-chaîne du titre de la fenêtre actuellement active.</span></li>
+ <li class="rvps14 noindent"><span class="rvts8">L'entrée a une association fenêtre/séquence, dont le spécifiant de fenêtre correspond au titre de la fenêtre actuellement active.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts8">La seconde condition a déjà été mentionnée, mais la première est nouvelle. En utilisant les titres d'entrée comme filtres pour les titres des fenêtres, le coût de la configuration pour la saisie automatique est presque nul&nbsp;: vous n'avez besoin que de vous assurer que le titre de l'entrée est contenu dans le titre de la fenêtre dans laquelle vous souhaitez que l'entrée soit saisie automatiquement. Bien sûr, ceci n'est pas toujours possible (par exemple&nbsp;: si une page HTML a un titre très générique comme </span><span class="rvts17">"Bienvenue"</span><span class="rvts8">), alors ici vous devez utiliser des associations fenêtre/séquence personnalisées.</span></p>
+<p class="rvps3"><span class="rvts8">Des associations fenêtre/séquence personnalisées peuvent être spécifiées sur l'onglet </span><span class="rvts17">'Saisie automatique'</span><span class="rvts8"> de chaque entrée.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Des association fenêtre/séquence personnalisées peuvent être spécifiées en utilisant le champ Remarques de l'entrée.</span></p>
+<p class="rvps16"><span class="rvts26">Mon adresse de courriel que j'utilise pour m'inscrire : moi@exemple.com</span></p>
+<p class="rvps16"><span class="rvts26"><br/></span></p>
+<p class="rvps16"><span class="rvts26">Auto-Type: {USERNAME}{TAB}{TAB}Une certaine chaîne de caractères fixée{TAB}{PASSWORD}{ENTER}</span></p>
+<p class="rvps16"><span class="rvts33">Auto-Type-Window: Un site Web - Bienvenue*</span></p>
+<p class="rvps16"><span class="rvts26"><br/></span></p>
+<p class="rvps16"><span class="rvts26">Ici, vous pouvez continuer avec vos remarques si vous le souhaitez...</span></p>
+<p class="rvps3"><span class="rvts8">Si vous avez maintenant une fenêtre ouverte qui commence par "Un site Web - Bienvenue" et appuyez sur la combinaison de touches de raccourci globale de saisie automatique, alors KeePass exécute la séquence de type automatique ci-dessus.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Certains sites, notamment les banques, utilisent des schémas de connexion multi-pages. Vous pouvez utiliser des chaînes </span><span class="rvts23">Auto-Type-Window</span><span class="rvts8"> pour automatiser ces sites. Vous pouvez également utiliser les chaînes </span><span class="rvts23">Auto-Type-Window</span><span class="rvts8"> pour normaliser votre connexion LAN dans une entrée KeePass.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Vous pouvez définir autant de chaînes </span><span class="rvts23">Auto-Type-Window</span><span class="rvts8"> par entrée que vous le souhaitez.</span><br/><span class="rvts8"></span><br/><span class="rvts8">De plus, une séquence peut être utilisée pour plusieurs fenêtres. Pour cela, définissez d'abord une paire de fenêtre/séquence comme d'habitude, puis continuez en ajoutant '-' et un nombre, en commençant par 1. Exemple :</span></p>
+<p class="rvps16"><span class="rvts26">Auto-Type: {USERNAME}{TAB}{PASSWORD}{ENTER}</span></p>
+<p class="rvps16"><span class="rvts26">Auto-Type-Window: Une certaine boîte de dialogue - *</span></p>
+<p class="rvps16"><span class="rvts26">Auto-Type-1: {USERNAME}{ENTER}</span></p>
+<p class="rvps16"><span class="rvts26">Auto-Type-Window-1: * - Editor</span></p>
+<p class="rvps16"><span class="rvts26">Auto-Type-Window-1: * - Notepad</span></p>
+<p class="rvps16"><span class="rvts26">Auto-Type-Window-1: * - WordPad</span></p>
+<p class="rvps16"><span class="rvts26">Auto-Type-2: {PASSWORD}{ENTER}</span></p>
+<p class="rvps16"><span class="rvts26">Auto-Type-Window-2: Une certaine page Web - *</span></p>
+<p class="rvps3"><span class="rvts8">Ici, la séquence </span><span class="rvts23">Auto-Type-1</span><span class="rvts8"> sera utilisée pour toutes les fenêtres </span><span class="rvts23">Auto-Type-Window-1</span><span class="rvts8">.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Les associations de fenêtres personnalisées remplacent le titre de l'entrée KeePass. Si des associations de fenêtres personnalisées sont spécifiées, alors elles seront les seuls éléments utilisés pour déterminer une correspondance et le titre d'entrée KeePass sera ignoré.</span></p>
+<p class="rvps7"><span class="rvts8">Les définitions de fenêtre de saisie automatique, des titres d'entrée et adresses (URLs) sont compilées par Spr, c'est-à-dire que </span><a class="rvts14" href="Lesparametressubstituables.html">des paramètres substituables (placeholders)</a><span class="rvts8">, </span><a class="rvts14" href="Lesparametressubstituables.html#envvars">variables d'environment</a><span class="rvts8">, </span><a class="rvts14" href="Lesreferencesdechamp.html">références de champ</a><span class="rvts8">, etc. peuvent être utilisés.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="autoseq"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ktouch%201.png"><span class="rvts0"><span class="rvts24"> Les séquences de touches pressées de la saisie automatique</span></span></h2>
+<p class="rvps7"><span class="rvts8">Une séquence de touches pressées de saisie automatique est une chaîne d'une ligne qui peut contenir des paramètres substituables et des codes de touche spéciale.</span></p>
+<p class="rvps7"><span class="rvts8">Une liste complète de tous les paramètres substituables pris en charge peut être trouvée sur la page </span><a class="rvts14" href="Lesparametressubstituables.html">paramètres substituables</a><span class="rvts8">. Les codes de touche spéciale peuvent être trouvés ci-dessous.</span></p>
+<p class="rvps7"><span class="rvts8">Au-dessus vous avez déjà vu que la saisie automatique par défaut est </span><span class="rvts23">{USERNAME}{TAB}{PASSWORD}{ENTER}</span><span class="rvts8">. Ici, </span><span class="rvts23">{USERNAME}</span><span class="rvts8"> et </span><span class="rvts23">{PASSWORD}</span><span class="rvts8"> sont des paramètres substituables&nbsp;: lorsque la saisie automatique est accomplie, ceux-ci sont remplacés par les valeurs de champ appropriées de l'entrée. </span><span class="rvts23">{TAB}</span><span class="rvts8"> et </span><span class="rvts23">{ENTER}</span><span class="rvts8"> sont des codes de touche spéciale&nbsp;: ils sont remplacés par les touches appropriées. Les codes de touche spéciale sont la seule façon de spécifier des touches spéciales comme Flèche vers le bas, Maj, Échap, etc.</span></p>
+<p class="rvps7"><span class="rvts8">Bien sûr, les séquences de touches peuvent également contenir des caractères simples à envoyer. Par exemple&nbsp;: la chaîne suivante est parfaitement valide en tant que chaîne de séquence de touches&nbsp;:</span><br/><span class="rvts23">{USERNAME}{TAB}Du texte pour envoi&nbsp;! {ENTER}</span><span class="rvts8">.</span></p>
+<p class="rvps3"><span class="rvts8">Les codes de touche spéciale sont sensibles à la casse.</span></p>
+<p class="rvps7"><span class="rvts20">Les touches spéciales&nbsp;:</span><br/><span class="rvts8">Les codes suivants pour les touches spéciales sont pris en charge&nbsp;:</span></p>
+<div class="rvps4">
+<table width="75%" style="border-color: #afb5cf; border-style: solid; border-width: 1px; background-color: #eeeeee; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Touche spéciale</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Code</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Tabulation</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{TAB}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Entrée</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{ENTER}</span><span class="rvts8"> ou </span><span class="rvts23">~</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Flèche vers le haut</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{UP}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Flèche vers le bas</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{DOWN}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Flèche gauche</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{LEFT}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Flèche droite</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{RIGHT}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Insertion</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{INSERT}</span><span class="rvts8"> ou </span><span class="rvts23">{INS}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Supprimer</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{DELETE}</span><span class="rvts8"> ou </span><span class="rvts23">{DEL}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Début</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{HOME}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Fin</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{END}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Page précédente</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{PGUP}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Page suivante</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{PGDN}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Espace</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{SPACE}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Retour arrière</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{BACKSPACE}</span><span class="rvts8">, </span><span class="rvts23">{BS}</span><span class="rvts8"> ou </span><span class="rvts23">{BKSP}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Pause</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{BREAK}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Verrouillage des majuscules</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{CAPSLOCK}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Échap</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{ESC}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Touche Windows</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{WIN}</span><span class="rvts8"> (équ. à </span><span class="rvts23">{LWIN}</span><span class="rvts8">)</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Touche Windows&nbsp;: gauche, droite</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{LWIN}</span><span class="rvts8">, </span><span class="rvts23">{RWIN}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Applications/Menu</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{APPS}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">À l'aide</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{HELP}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Pavé numérique verrouillé</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{NUMLOCK}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Imprime écran</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{PRTSC}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Arrêt défilement</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{SCROLLLOCK}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">F1 - F16</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{F1}</span><span class="rvts8"> - </span><span class="rvts23">{F16}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Pavé numérique +</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{ADD}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Pavé numérique -</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{SUBTRACT}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Pavé numérique *</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{MULTIPLY}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Pavé numérique /</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{DIVIDE}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Pavé numérique 0 à 9</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{NUMPAD0}</span><span class="rvts8"> à </span><span class="rvts23">{NUMPAD9}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Maj</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">+</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Ctrl</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">^</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Alt</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">%</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<div class="rvps4">
+<table width="75%" style="border-color: #afb5cf; border-style: solid; border-width: 1px; background-color: #eeeeee; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Touche spéciale</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Code</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">+</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{PLUS}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">%</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{PERCENT}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">^</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{CARET}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">~</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{TILDE}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">(, )</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{LEFTPAREN}</span><span class="rvts8">, </span><span class="rvts23">{RIGHTPARENT}</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">{, }</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{LEFTBRACE}</span><span class="rvts8">, </span><span class="rvts23">{RIGHTBRACE}</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts8">De plus, certaines commandes spéciales sont prises en charge&nbsp;:</span></p>
+<div class="rvps4">
+<table width="75%" style="border-color: #afb5cf; border-style: solid; border-width: 1px; background-color: #eeeeee; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Syntaxe de commande</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Action</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{DELAY </span><span class="rvts35">X</span><span class="rvts23">}</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Retarde </span><span class="rvts17">X</span><span class="rvts8"> millisecondes.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{DELAY=</span><span class="rvts35">X</span><span class="rvts23">}</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Définit le retard par défaut à </span><span class="rvts17">X</span><span class="rvts8"> millisecondes pour toutes les pressions de touches suivantes.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{CLEARFIELD}</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Efface le contenu du contrôle d'édition qui a actuellement le focus (seulement les contrôles d'édition sur une seule ligne).</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{VKEY </span><span class="rvts35">X</span><span class="rvts23">}</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Envoi la </span><a class="rvts14" href="https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes">touche virtuelle</a><span class="rvts8"> de valeur </span><span class="rvts17">X</span><span class="rvts8">.</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{APPACTIVATE </span><span class="rvts35">TitreFenêtre</span><span class="rvts23">}</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Active la fenêtre "</span><span class="rvts17">TitreFenêtre</span><span class="rvts8">".</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts23">{BEEP </span><span class="rvts35">X</span><span class="rvts23"> </span><span class="rvts35">Y</span><span class="rvts23">}</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Émet un son avec une fréquence de </span><span class="rvts17">X</span><span class="rvts8"> Hertz et une durée de </span><span class="rvts17">Y</span><span class="rvts8"> millisecondes.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps7"><span class="rvts20">Exemples :</span></p>
+<p class="rvps7"><span class="rvts23">{TITLE}{TAB}{USERNAME}{TAB}{PASSWORD}{ENTER}</span><br/><span class="rvts8">Saisit le titre de l'entrée, une </span><span class="rvts21">Tabulation</span><span class="rvts8">, le nom d'utilisateur, une </span><span class="rvts21">Tabulation</span><span class="rvts8">, le mot de passe de l'entrée actuellement sélectionnée, et appuie sur </span><span class="rvts22">Entrée</span><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts23">{TAB}{PASSWORD}{ENTER}</span><br/><span class="rvts8">Appuie sur la touche </span><span class="rvts21">Tabulation</span><span class="rvts8">, saisit le mot de passe de l'entrée et appuie sur </span><span class="rvts21">Entrée</span><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts23">{USERNAME}{TAB}^v{ENTER}</span><br/><span class="rvts8">Saisit le nom d'utilisateur, appuie sur </span><span class="rvts21">Tabulation</span><span class="rvts8">, appuie sur </span><span class="rvts21">Ctrl</span><span class="rvts22">+</span><span class="rvts21">V</span><span class="rvts8"> (qui copie les données depuis le presse-papiers de Windows dans la plupart des applications), et appuie sur </span><span class="rvts22">Entrée</span><span class="rvts8">.</span></p>
+<p class="rvps7"><span class="rvts20">Basculer les cases à cocher&nbsp;:</span><br/><span class="rvts8">Une case à cocher (par exemple&nbsp;: "Rester connecté sur cet ordinateur") peut habituellement être basculé en envoyant un caractère espace (</span><span class="rvts23">' '</span><span class="rvts8">). Exemple :&nbsp;</span><br/><span class="rvts23">{USERNAME}{TAB}{PASSWORD}{TAB} {TAB}{ENTER}</span><br/><span class="rvts8">S'il y a un formulaire avec un champ de nom d'utilisateur, un champ de mot de passe et une case à cocher, cette séquence entrera le nom d'utilisateur, le mot de passe et activera la case à cocher qui suit le contrôle du mot de passe.</span></p>
+<p class="rvps7"><span class="rvts20">Appuyer sur les boutons autres que ceux par défaut&nbsp;:</span><br/><span class="rvts8">En appuyant sur les boutons autres que ceux par défaut, cela revient à basculer les cases à cocher&nbsp;: envoie un espace (</span><span class="rvts23">' '</span><span class="rvts8">). Remarquez que cela doit être utilisé que pour les boutons autres que ceux par défaut&nbsp;; pour les boutons par défaut, </span><span class="rvts23">{ENTER}</span><span class="rvts8"> doit être envoyé à la place.</span></p>
+<p class="rvps7"><span class="rvts20">Les plus hauts caractères ANSI&nbsp;:</span><br/><span class="rvts8">La fonction de saisie automatique prend en charge l'envoi des plus hauts caractères ANSI dans l'intervalle 126-255. Ce qui signifie que vous pouvez envoyer un caractère spécial comme ©, @, etc. sans aucun problème&nbsp;; vous pouvez les écrire directement dans la définition de la séquence de touches pressées.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="autowindows"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_window_list.png"><span class="rvts0"><span class="rvts24"> Les filtres de la fenêtre cible</span></span></h2>
+<p class="rvps7"><span class="rvts8">Quand on crée une association fenêtre/séquence personnalisée, vous devez indiquer à KeePass à quoi ressemblent les titres de fenêtre correspondants. Ici, KeePass prend en charge les caractères génériques simples&nbsp;:</span></p>
+<div class="rvps4">
+<table width="75%" style="border-color: #afb5cf; border-style: solid; border-width: 1px; background-color: #eeeeee; border-collapse: collapse; margin: 0px auto;">
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Chaîne avec des caractères génériques</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; vertical-align: top;">
+   <p class="rvps3"><span class="rvts20">Signification</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">STRING</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Correspond à tous les titres de fenêtre nommés exactement "STRING".</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">STRING*</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Correspond à tous les titres de fenêtre commençant par "STRING".</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">*STRING</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Correspond à tous les titres de fenêtre se terminant par "STRING".</span></p>
+  </td>
+ </tr>
+ <tr style="vertical-align: middle;">
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">*STRING*</span></p>
+  </td>
+  <td style="border-width : 1px; border-color: #afb5cf; border-style: solid; padding: 4px 5px; background-color: #f0f0f0; vertical-align: top;">
+   <p class="rvps3"><span class="rvts8">Correspond à tous les titres de fenêtre contenant "STRING" quelque part dans le titre de la fenêtre. Cela inclut la chaîne se trouvant directement au début ou à la fin du titre de la fenêtre.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<p class="rvps3"><span class="rvts8"></span><br/><span class="rvts8">Les autres caractères génériques ne sont pas pris en charge. Le caractère générique </span><span class="rvts23">*</span><span class="rvts8"> ne doit pas être dans au milieu d'une chaîne de caractères.</span><br/><span class="rvts8"></span><br/><span class="rvts8">Par exemple : </span><span class="rvts23">*Windows*Explorer*</span><span class="rvts8"> ne correspondra pas à </span><span class="rvts23">l'Explorateur Windows</span><span class="rvts8">, il ne correspondra qu'à </span><span class="rvts23">Windows*Explorer</span><span class="rvts8">, c'est-à-dire que le caractère </span><span class="rvts23">*</span><span class="rvts8"> du milieu est traité comme un caractère de texte '*' au lieu d'un caractère générique.</span></p>
+<p class="rvps7"><span class="rvts8">En utilisant des caractères génériques, vous pouvez faire des associations de saisie automatique indépendamment du navigateur. cf. les exemples d'utilisation pour plus d'informations.</span></p>
+<p class="rvps3"><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="changedefaultseq"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ktouch.png"><span class="rvts0"><span class="rvts24"> Modifier la séquence de saisie automatique par défaut</span></span></h2>
+<p class="rvps7"><span class="rvts8">La séquence de saisie automatique par défaut (c'est-à-dire celle qui est utilisée quand vous n'en spécifiez pas une personnalisée) est </span><span class="rvts23">{USERNAME}{TAB}{PASSWORD}{ENTER}</span><span class="rvts8">. KeePass vous permet de modifier cette séquence par défaut. Normalement vous n'avez pas besoin de la modifier (utiliser plutôt les définitions de fenêtre/séquence personnalisées à la place&nbsp;!), mais c'est quand même utile quand d'autres applications interfèrent avec KeePass (par exemple un logiciel de sécurité qui vous demande toujours la permission avant d'autoriser KeePass à effectuer une saisie automatique).</span></p>
+<p class="rvps3"><span class="rvts8">La séquence de saisie automatique par défaut peut être modifiée dans la configuration de la boîte de dialogue de la saisie automatique. Cette boîte de dialogue se trouve dans </span><span class="rvts17">'Outils'</span><span class="rvts8"> → </span><span class="rvts17">'Options...'</span><span class="rvts8"> → </span><span class="rvts17">'Avancé'</span><span class="rvts8"> → </span><span class="rvts17">'Saisie automatique'</span><span class="rvts8">.</span><br/><span class="rvts8"></span><br/><span class="rvts8"><br/></span></p>
+<h2 class="rvps13"><a name="autoexample"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_ascii%202.png"><span class="rvts0"><span class="rvts24"> Exemple d'utilisation</span></span></h2>
+<p class="rvps7"><span class="rvts8">Maintenant, jetons un œil sur un exemple concret&nbsp;: la connexion à un site. Dans cet exemple, nous utiliserons le raccourci clavier de saisie automatique globale pour remplir la page de connexion. Tout d'abord, ouvrez la </span><a class="rvts14" href="https://keepass.info/help/kb/testform.html">page de test</a><span class="rvts8">, et créez ensuite une nouvelle entrée dans KeePass avec le titre </span><span class="rvts17">Test Form</span><span class="rvts8"> et un nom d'utilisateur et un mot de passe de votre choix.</span></p>
+<p class="rvps7"><span class="rvts8">Supposons que le raccourci clavier de saisie automatique globale soit défini sur </span><span class="rvts21">Ctrl</span><span class="rvts22">+</span><span class="rvts21">Alt</span><span class="rvts22">+</span><span class="rvts21">A</span><span class="rvts8"> (valeur par défaut). KeePass s'exécute en arrière-plan, vous avez ouvert votre base de données et l'espace de travail est déverrouillé.</span></p>
+<p class="rvps7"><span class="rvts8">Lorsque vous naviguez maintenant sur la page de test et que vous êtes invités à saisir votre nom d'utilisateur et mot de passe, cliquez alors simplement dans le champ du nom d'utilisateur et appuyer sur </span><span class="rvts21">Ctrl</span><span class="rvts22">+</span><span class="rvts21">Alt</span><span class="rvts22">+</span><span class="rvts21">A</span><span class="rvts8">. KeePass entre le nom d'utilisateur et le mot de passe pour vous&nbsp;!</span></p>
+<p class="rvps7"><span class="rvts8">Pourquoi cela a-t-il fonctionné&nbsp;? Le titre de la fenêtre de votre navigateur était </span><span class="rvts17">"Test Form - KeePass - Internet Explorer"</span><span class="rvts8"> ou </span><span class="rvts17">"Test Form - KeePass - Mozilla Firefox"</span><span class="rvts8">, selon le navigateur que vous utilisez. Parce que nous avons donné à l'entrée dans KeePass le titre </span><span class="rvts17">Test Form</span><span class="rvts8">, le titre de l'entrée est contenu dans le titre de la fenêtre, donc KeePass utilise cette entrée.</span></p>
+<p class="rvps7"><span class="rvts8">Ici vous voyez les énormes avantages de la saisie automatique&nbsp;: non seulement elle ne nécessite pas d'un logiciel de navigation supplémentaire (le navigateur ne sait rien de KeePass – il n'y a pas besoin de greffons d'aide de navigateur), mais elle est également indépendante du navigateur&nbsp;: la seule entrée que vous avez créée dans KeePass fonctionne pour Internet Explorer </span><span class="rvts17">et</span><span class="rvts8"> Mozilla Firefox (et autres navigateurs) sans nécessiter une modification ou définition.</span></p>
+<p class="rvps7"><span class="rvts8">Lorsque vous utiliserez des associations fenêtre/séquence (au lieu de la correspondance du titre de l'entrée), vous pourrez obtenir le même résultat indépendamment du navigateur en utilisant des caractères génériques&nbsp;: vous auriez pu par exemple utiliser </span><span class="rvts23">Test Form - KeePass - *</span><span class="rvts8"> comme filtre de fenêtre. Ce filtre correspond à la fois à la fenêtre Internet Explorer et à la fenêtre Firefox.</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2025 par Ronan Plantec &amp; Dominik Reichl</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script src="_topic_init.js"></script>
+
+
+
+</body>
+
+</html>
+

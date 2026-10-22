@@ -1,0 +1,466 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 7.9.0.612">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>Les d&eacute;clencheurs</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Les d&eacute;clencheurs">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="Les d&eacute;clencheurs" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.51.1" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.51.1</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Lesdeclencheurs"
+		  data-hnd-context="30"
+		  data-hnd-title="Les déclencheurs"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="LapriseenchargedesNAT.html" title="La prise en charge des NAT" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="LechampdadresseURL.html" title="Le champ d'adresse (URL)" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>Les d&eacute;clencheurs</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" border="2" cellpadding="0" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <p class="rvps3"><img width="64" height="64" alt="" style="vertical-align: middle;" src="lib/imagesb64x64_winprops.png"></p>
+  </td>
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">Les déclencheurs</span></span></h1>
+   <p class="rvps3"><span class="rvts19">Automatisez les flux de travail à l'aide du système de déclenchement.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><a class="rvts15" href="Lesdeclencheurs.html#intro">Présentation du système de déclenchement</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesdeclencheurs.html#events">Événements</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesdeclencheurs.html#conditions">Conditions</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesdeclencheurs.html#actions">Actions</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lesdeclencheurs.html#examples">Exemples</a></li>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="intro"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_make_kdevelop4.png"><span class="rvts0"><span class="rvts23"> Présentation du système de déclenchement</span></span></h2>
+<p class="rvps7"><span class="rvts13">KeePass dispose d'un puissant système de déclenchement événement-condition-action. Avec ce système, les flux de travail peuvent être automatisés. Par exemple, vous pouvez définir un déclencheur qui télécharge automatiquement votre base de données sur un serveur de sauvegarde après avoir enregistré le fichier localement.</span></p>
+<p class="rvps7"><span class="rvts13">Un déclencheur commence à s'exécuter lorsque l'</span><span class="rvts17">un</span><span class="rvts13"> des événements spécifiés correspond. Lorsque cela se produit, les conditions sont vérifiées. Si </span><span class="rvts17">toutes</span><span class="rvts13"> les conditions sont remplies, les actions du déclencheur sont exécutées. Les actions sont exécutées consécutivement ; si une action échoue, l'exécution de l'événement est généralement interrompue (c'est-à-dire que toutes les actions suivantes ne sont pas exécutées).</span></p>
+<p class="rvps7"><span class="rvts13">Un déclencheur doit être à la fois </span><span class="rvts17">activé</span><span class="rvts13"> et </span><span class="rvts17">amorcé</span><span class="rvts13"> pour être exécuté. L'état </span><span class="rvts17">activé</span><span class="rvts13"> est défini par l'utilisateur ; un déclencheur désactivé n'a aucune fonction. L'état </span><span class="rvts17">amorcé</span><span class="rvts13"> dépend de l'état du programme. En activant l'option </span><span class="rvts17">'Initialement amorcé'</span><span class="rvts13">, un déclencheur est </span><span class="rvts17">amorcé</span><span class="rvts13"> par défaut. Si vous activez l'option </span><span class="rvts17">'Désamorcé après l'exécution d'actions'</span><span class="rvts13">, le déclencheur sera désamorcé après avoir été exécuté une fois. Il existe des actions pour amorcer et désamorcer les déclencheurs, c'est-à-dire que des déclencheurs peuvent tourner eux-mêmes et d'autres déclencheurs s'amorcer et se désamorcer, ce qui permet de définir un système complexe de déclencheurs dépendant de déclencheurs.</span></p>
+<p class="rvps7"><span class="rvts13">La plupart des chaînes du système de déclenchement sont compilées par Spr, c'est-à-dire que des </span><a class="rvts15" href="../base/placeholders.html">paramètres substituables</a><span class="rvts13"> (sauf ceux qui changent d'état), des variables d'environnement, etc., peuvent être utilisés.</span></p>
+<p class="rvps7"><span class="rvts20">Les données sensibles :</span><br/><span class="rvts13">Certains événements/conditions/actions de déclenchement prennent en charge les champs pour les données potentiellement sensibles (par exemple : le champ mot de passe de l'action 'Ouvrir le fichier de la base de données'). Comme les déclencheurs sont enregistrés dans un fichier de </span><a class="rvts15" href="../base/configuration.html">configuration</a><span class="rvts13"> en texte brut, il n'est généralement pas recommandé de saisir directement des données sensibles dans les champs de déclencheur. Si une base de données est ouverte lorsque le déclencheur s'exécute, alors les données sensibles peuvent être stockées dans la base de données et le champ du déclencheur peut pointer vers les données à l'aide d'une </span><a class="rvts15" href="../base/fieldrefs.html">référence de champ</a><span class="rvts13"> (que KeePass résout lors de l'évaluation du champ). De cette façon, seule la référence du champ apparaît dans le fichier de configuration et les données sensibles actuelles sont stockées dans le fichier de base de données chiffré.</span></p>
+<p class="rvps7"><span class="rvts20">Propriétés de connexion d'E/S :</span><br/><span class="rvts13">La plupart des actions de déclenchement ayant un paramètre chemin/URL du fichier permettent uniquement de spécifier le chemin/l'URL et éventuellement les accréditations (nom d'utilisateur et mot de passe) pour accéder au fichier ; les propriétés de connexion avancées (comme le délai d'attente - timeout - , l'agent utilisateur, le mode passif, etc.) ne peuvent pas être spécifiées ici. Si des propriétés de connexion avancées sont requises, alors ouvrir le fichier une fois (en utilisant 'Fichier' → 'Ouvrir') avec les propriétés de connexion souhaitées. Cela créera un élément dans la liste de fichiers 'Rouvrir' (qui mémorise les propriétés de connexion). Lorsqu'une action de déclenchement est exécutée, KeePass charge les propriétés de connexion à partir de l'élément correspondant (même chemin/URL) dans la liste de fichiers 'Rouvrir'.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="events"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_make_kdevelop3.png"><span class="rvts0"><span class="rvts23"> Événements</span></span></h2>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts20">Application initialisée :</span><br/><span class="rvts13">cet événement se produit lorsque KeePass a terminé l'initialisation, mais n'a pas encore effectué d'automatisation de la fenêtre principale (comme l'ouverture d'une base de données par défaut).</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Paramètres :</span><span class="rvts13"> Aucun.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Application démarrée et prête :</span><br/><span class="rvts13">cet événement se produit lorsque KeePass a démarré, a effectué des automatisations de la fenêtre principale (comme l'ouverture d'une base de données par défaut) et est prêt pour les actions de l'utilisateur.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Paramètres :</span><span class="rvts13"> Aucun.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Sortie de l'application :</span><br/><span class="rvts13">cet événement se produit lorsque KeePass est sur le point de quitter. Les bases de données ont déjà été fermées, mais les ressources (comme les polices, etc.) sont toujours valides.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Paramètres :</span><span class="rvts13"> Aucun.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Le fichier de la base de données est ouvert :</span><br/><span class="rvts13">cet événement se produit juste après qu'un fichier de base de données a été ouvert avec succès.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Fichier/adresse (URL) :</span><span class="rvts13"> un filtre d'événement facultatif. Si un filtre est spécifié (c'est-à-dire que quelque chose est entré dans </span><span class="rvts17">'Fichier/adresse (URL) - Filtre'</span><span class="rvts13">), le déclencheur n'est évalué que si le filtre correspond au chemin du fichier de la base de données en cours. Par exemple : si vous entrez </span><span class="rvts17">F:\</span><span class="rvts13"> comme chaîne de filtre et spécifiez </span><span class="rvts17">'Commence par'</span><span class="rvts13"> comme méthode de comparaison, alors le déclencheur ne sera évalué que si le chemin de la base de données (qui vient juste d'être ouverte) commence par </span><span class="rvts17">F:\</span><span class="rvts13">.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Juste avant l'enregistrement du fichier de la base de données :</span><br/><span class="rvts13">cet événement se produit juste avant l'enregistrement d'un fichier de base de données.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Paramètres :</span><span class="rvts13"> voir l'événement 'Le fichier de la base de données est ouvert'.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Le fichier de la base de données a été enregistré :</span><br/><span class="rvts13">cet événement se produit juste après qu'un fichier de base de données a été enregistré avec succès.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Paramètres :</span><span class="rvts13"> voir l'événement 'Le fichier de la base de données est ouvert'.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Juste avant la synchronisation du fichier de la base de données :</span><br/><span class="rvts13">cet événement se produit juste avant qu'un fichier de base de données ne soit synchronisé avec un autre fichier de base de données.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Paramètres :</span><span class="rvts13"> voir l'événement 'Le fichier de la base de données est ouvert'.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Le fichier de la base de données vient juste d'être synchronisé :</span><br/><span class="rvts13">cet événement se produit juste après qu'un fichier de base de données a été synchronisé avec un autre fichier de base de données.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Paramètres :</span><span class="rvts13"> voir l'événement 'Le fichier de la base de données est ouvert'.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Fermeture du fichier de la base de données (avant l'enregistrement) :</span><br/><span class="rvts13">cet événement se produit juste avant la fermeture du fichier de la base de données. Cela se produit avant que KeePass enregistre automatiquement la base de données ou demande à l'utilisateur s'il souhaite enregistrer les modifications non enregistrées.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Paramètres :</span><span class="rvts13"> voir l'événement 'Le fichier de la base de données est ouvert'.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Fermeture du fichier de la base de données (après l'enregistrement) :</span><br/><span class="rvts13">cet événement se produit juste avant la fermeture d'un fichier de base de données. Le fichier de base de données était déjà enregistré automatiquement ou les modifications non enregistrées étaient enregistrées/abandonnées selon le choix de l'utilisateur.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Paramètres :</span><span class="rvts13"> Voir 'Fichier de la base de données est ouvert'</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Les données de l'entrée sont copiées dans le presse-papiers&nbsp;:</span><br/><span class="rvts13">cet événement se produit lorsque les données de l'entrée (nom d'utilisateur, mot de passe, etc.) sont copiées dans le presse-papiers de Windows.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Valeur&nbsp;:</span><span class="rvts13"> un filtre de valeur facultatif (données copiées).</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Temps - Périodique&nbsp;:</span><br/><span class="rvts13">cet événement se produit à des intervalles définis par l'utilisateur. L'événement n'est déclenché que si KeePass n'est pas occupé par une tâche différente (comme afficher une sous-boîte de dialogue).</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Intervalle :</span><span class="rvts13"> Intervalle de temps entre les événements, en secondes.</span></li>
+  <li class="rvps3"><span class="rvts17">Redémarrer le timer sur l'activité KeePass :</span><span class="rvts13"> si cette option est activée, une activité KeePass (interaction utilisateur, automatisation, sous-dialogue, activité de greffon, etc.) provoque un redémarrage du timer, c'est-à-dire qu'un intervalle complet doit s'écouler pour le prochain événement.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Clic sur un bouton personnalisé de la barre d'outils :</span><br/><span class="rvts13">cet événement se produit lorsque l'utilisateur clique sur un bouton personnalisé de la barre d'outils. Des boutons personnalisés de la barre d'outils peuvent être créés à l'aide de l'action du déclencheur 'Ajouter un bouton personnalisé à la barre d'outils'.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">ID :</span><span class="rvts13"> ID du bouton de la barre d'outils sur lequel il a fallu cliquer (voir Actions).</span></li>
+ </ul>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="conditions"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_make_kdevelop2.png"><span class="rvts0"><span class="rvts23"> Conditions</span></span></h2>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts20">Variable d'environnement&nbsp;:</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Nom :</span><span class="rvts13"> nom de la variable d'environnement à vérifier. Le nom </span><span class="rvts17">ne</span><span class="rvts13"> doit </span><span class="rvts17">pas</span><span class="rvts13"> être entouré par des caractères pourcentage (</span><span class="rvts22">%</span><span class="rvts13">).</span></li>
+  <li class="rvps3"><span class="rvts17">Valeur :</span><span class="rvts13"> la valeur que la variable d'environnement spécifiée doit avoir pour que la condition soit vraie.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Chaîne de caractères :</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Chaîne de caractères :</span><span class="rvts13"> une chaîne (KeePass Spr-compile cela, c'est-à-dire que vous pouvez, par exemple, utiliser des </span><a class="rvts15" href="../base/placeholders.html">paramètres substituables</a><span class="rvts13">)).</span></li>
+  <li class="rvps3"><span class="rvts17">Valeur&nbsp;:</span><span class="rvts13"> la valeur que la chaîne évaluée spécifiée doit avoir pour que la condition soit vraie.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Le fichier existe :</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Fichier :</span><span class="rvts13"> le fichier qui doit exister pour que la condition soit vraie.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">L'hôte distant est joignable (ping)&nbsp;:</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Hôte :</span><span class="rvts13"> l'hôte à qui envoyer le ping.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">La base de données a des modifications non sauvegardées&nbsp;:</span><br/><span class="rvts13">évalue à vrai, si la base de données spécifiée a des modifications non sauvegardées.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Base de données&nbsp;:</span><span class="rvts13"> la base de données pour vérifier les modifications non sauvegardées.</span></li>
+ </ul>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="actions"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_make_kdevelop1.png"><span class="rvts0"><span class="rvts23"> Actions</span></span></h2>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts20">Exécuter la ligne de commande ou l'adresse (URL)&nbsp;:</span><br/><span class="rvts13">Le fichier/l'URL et les arguments sont analysés par le moteur Spr avant d'être envoyés au shell, c'est-à-dire que des </span><a class="rvts15" href="../base/placeholders.html">paramètres substituables</a><span class="rvts13"> génériques et dépendants de la base de données peuvent être utilisés. Si vous souhaitez utiliser des commandes shell intégrées, comme </span><span class="rvts22">COPY</span><span class="rvts13">, alors veuillez consulter&nbsp;: </span><a class="rvts15" href="../base/autourl.html#builtin">L'exécution de commandes Shell intégrées</a><span class="rvts13">.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Fichier/adresse (URL) :</span><span class="rvts13"> la chaîne qui doit être exécuter par le shell.</span></li>
+  <li class="rvps3"><span class="rvts17">Arguments :</span><span class="rvts13"> facultatif. Si </span><span class="rvts17">'Fichier/adresse (URL)'</span><span class="rvts13"> pointe vers un fichier exécutable, alors cette chaîne est envoyée à l'exécutable en tant qu'argument(s) de ligne de commande.</span></li>
+  <li class="rvps3"><span class="rvts17">Attendre pour quitter :</span><span class="rvts13"> si cette option est cochée, alors KeePass attend indéfiniment la fin du processus démarré.</span></li>
+  <li class="rvps3"><span class="rvts17">Style de fenêtre :</span><span class="rvts13"> spécifie comment la fenêtre principale du fichier/adresse (URL) exécuté(e) doit être affichée. Toutes les applications ne respectent pas ce paramètre.</span></li>
+  <li class="rvps3"><span class="rvts17">Verbe :</span><span class="rvts13"> Spécifie l'action à effectuer. Une chaîne vide signifie utiliser le verbe par défaut. Certaines applications prennent en charge des verbes supplémentaires (par exemple : "Imprimer" pour imprimer le document spécifié). Lors de l'utilisation du verbe "RunAs", l'application est exécutée avec les droits d'administration (cela peut nécessiter une confirmation via la boîte de dialogue UAC).</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Activer ou désactiver le déclencheur&nbsp;:</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Nom du déclencheur&nbsp;: </span><span class="rvts13">nom du déclencheur cible dont l'état activé/désactivé doit être modifié. Si ce champ est laissé vide, alors le déclencheur cible est le déclencheur courant.</span></li>
+  <li class="rvps3"><span class="rvts17">Nouvel état&nbsp;:</span><span class="rvts13"> spécifie le nouvel état du déclencheur cible.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Ouvrir le fichier de la base de données&nbsp;:</span><br/><span class="rvts13">ouvre un fichier de base de données KDBX (dans un nouvel onglet). Si le fichier de base de données donné est déjà ouvert, alors KeePass le place au premier plan.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Fichier/adresse (URL) :</span><span class="rvts13"> le chemin du fichier de la base de données à ouvrir. S'il s'agit d'une adresse, alors le protocole (préfixe) doit être spécifié.</span></li>
+  <li class="rvps3"><span class="rvts17">Connexion d'entrée/sortie - Nom d'utilisateur/Mot de passe :</span><span class="rvts13"> accréditation facultative utilisée pour la connexion au système de fichiers cible (par exemple : nom d'utilisateur/mot de passe du compte FTP). Cette accréditation n'est pas utilisée pour déchiffrer la base de données.</span></li>
+  <li class="rvps3"><span class="rvts17">Mot de passe/Fichier clé/Compte utilisateur Windows :</span><span class="rvts13"> accréditation facultative qui est utilisée pour déchiffrer le fichier de la base de données.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Enregistrer la base de données active&nbsp;:</span><br/><span class="rvts13">enregistre la base de données actuellement active. Cette action enregistre toujours la base de données, même s'il n'y a pas de modifications non enregistrées. Pour n'enregistrer que s'il y a des modifications non enregistrées, alors utilisez la condition du déclencheur 'La base de données a des modifications non sauvegardées'.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Paramètres :</span><span class="rvts13"> Aucun.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Synchroniser la base de données active avec un fichier ou une adresse (URL)&nbsp;:</span><br/><span class="rvts13">synchronise la base de données actuellement ouverte et active avec un fichier.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Fichier/adresse (URL)&nbsp;:</span><span class="rvts13"> le chemin du fichier de la base de données avec lequel synchroniser. S'il s'agit d'une URL, alors le protocole (préfixe) doit être spécifié.</span></li>
+  <li class="rvps3"><span class="rvts17">Connexion d'entrée/sortie - Nom d'utilisateur/Mot de passe :</span><span class="rvts13"> accréditation facultative utilisée pour la connexion au système de fichiers cible (par exemple : nom d'utilisateur/mot de passe du compte FTP). Cette accréditation n'est pas utilisée pour déchiffrer la base de données.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Importer dans la base de données active&nbsp;:</span><br/><span class="rvts13">importe un fichier dans la base de données actuellement ouverte et active.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Fichier/adresse (URL) :</span><span class="rvts13"> le chemin du fichier source à importer. S'il s'agit d'une URL, alors le protocole (préfixe) doit être spécifié.</span></li>
+  <li class="rvps3"><span class="rvts17">Format de fichier&nbsp;:</span><span class="rvts13"> spécifie le format d'importation (voir la boîte de dialogue d'importation pour les valeurs possibles).</span></li>
+  <li class="rvps3"><span class="rvts17">Méthode :</span><span class="rvts13"> spécifie le comportement des groupes/entrées qui existent à la fois dans la base de données actuellement active et dans le fichier en importation.</span></li>
+  <li class="rvps3"><span class="rvts17">Mot de passe/Fichier clé/Compte utilisateur&nbsp;Windows :</span><span class="rvts13"> accréditation facultative qui est utilisée pour déchiffrer le fichier d'importation, si nécessaire. Si aucune accréditation n'est spécifiée, mais que le fichier d'importation est chiffré, alors KeePass affiche une boîte de dialogue d'invite de clé.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Exporter la base de données active&nbsp;:</span><br/><span class="rvts13">exporte la base de données actuellement ouverte et active vers un fichier.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Fichier/adresse (URL)&nbsp;:</span><span class="rvts13"> chemin du fichier cible vers lequel exporter. S'il s'agit d'une URL, alors le protocole (préfixe) doit être spécifié.</span></li>
+  <li class="rvps3"><span class="rvts17">Format de fichier&nbsp;: </span><span class="rvts13">spécifie le format d'exportation (voir la boîte de dialogue d'exportation pour les valeurs possibles).</span></li>
+  <li class="rvps3"><span class="rvts17">Filtre - Groupe&nbsp;:</span><span class="rvts13"> spécifie le chemin du groupe à exporter (facultatif&nbsp;; une chaîne vide signifie toute la base de données). Le chemin doit commencer par le caractère utilisé comme séparateur, et le nom du groupe racine de la base de données ne doit pas être spécifié. Par exemple : pour exporter un groupe 'B' qui est un sous-groupe du groupe 'A', alors spécifiez </span><span class="rvts22">/A/B</span><span class="rvts13"> comme chemin de groupe.</span></li>
+  <li class="rvps3"><span class="rvts17">Filtre - Balise&nbsp;(tag) :</span><span class="rvts13"> exporte uniquement les entrées qui ont la balise spécifiée (paramètre facultatif).</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Fermer la base de données active&nbsp;:</span><br/><span class="rvts13">Fermez la base de données actuellement active.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Paramètres :</span><span class="rvts13"> Aucun.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Activer la base de données (sélectionner l'onglet)&nbsp;:</span></li>
+ <li class="rvps3"><span class="rvts17">Fichier/adresse (URL) :</span><span class="rvts13"> le chemin de la base de données à activer. Il peut s'agir d'une sous-chaîne du chemin réel de la base de données. Par exemple : la spécification de </span><span class="rvts22">MaBaseDeDonnées</span><span class="rvts13"> correspondrait à une base de données </span><span class="rvts22">C:\Documents\KeePass\MaBaseDeDonnées.kdbx</span><span class="rvts13">.</span></li>
+ <li class="rvps3"><span class="rvts17">Filtre&nbsp;:</span><span class="rvts13"> spécifie les bases de données qui sont prises en compte. Si 'Déclenchement' est sélectionné et que le champ 'Fichier/adresse (URL)' est vide, alors la base de données qui a déclenché l'événement est activée.</span></li>
+</ul>
+<p class="rvps15"><span class="rvts20">Attendre :</span><br/><span class="rvts13">attend le laps de temps spécifié.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 56px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts17">Intervalle de temps&nbsp;:</span><span class="rvts13"> nombre de millisecondes à attendre.</span></li>
+</ul>
+<p class="rvps15"><span class="rvts20">Afficher la boîte de message&nbsp;:</span><br/><span class="rvts13">Affiche une boîte de message.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 56px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts17">Instruction principale :</span><span class="rvts13"> première ligne du texte du message (qui s'affiche éventuellement avec une police plus forte).</span></li>
+ <li class="rvps3"><span class="rvts17">Texte :</span><span class="rvts13"> texte du message.</span></li>
+ <li class="rvps3"><span class="rvts17">Icône :</span><span class="rvts13"> l'icône qui s'affiche à côté du texte du message.</span></li>
+ <li class="rvps3"><span class="rvts17">Boutons :</span><span class="rvts13"> spécifie les boutons disponibles.</span></li>
+ <li class="rvps3"><span class="rvts17">Bouton par défaut&nbsp;:</span><span class="rvts13"> le bouton qui a initialement le focus.</span></li>
+ <li class="rvps3"><span class="rvts17">Action - Condition :</span><span class="rvts13"> spécifie la condition qui doit être remplie pour que l'action suivante soit exécutée. Par exemple : si 'Bouton OK/Oui' est sélectionné, alors l'action n'est effectuée que si l'utilisateur clique sur le bouton 'OK' ou 'Oui' de la boîte de message.</span></li>
+ <li class="rvps3"><span class="rvts17">Action :</span><span class="rvts13"> l'action à effectuer après l'affichage de la boîte de message.</span></li>
+ <li class="rvps3"><span class="rvts17">Action - Paramètres :</span><span class="rvts13"> paramètres de l'action spécifiée. Par exemple : si l'exécution d'une ligne de commande/adresse (URL) est spécifiée comme action, alors ce champ doit contenir la ligne de commande/adresse (URL).</span></li>
+</ul>
+<p class="rvps15"><span class="rvts20">Exécuter la saisie automatique globale&nbsp;:</span><br/><span class="rvts13">exécute la saisie automatique globale (comme en appuyant sur la touche de raccourci clavier de la saisie automatique globale).</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 56px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts17">Paramètres :</span><span class="rvts13"> Aucun.</span></li>
+</ul>
+<p class="rvps15"><span class="rvts20">Exécuter la saisie automatique avec l'entrée sélectionnée&nbsp;:</span><br/><span class="rvts13">exécute la saisie automatique avec l'entrée actuellement sélectionnée comme contexte.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 56px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts17">Séquence :</span><span class="rvts13"> la séquence de frappes à envoyer. Si ce champ est vide, alors la séquence par défaut est utilisée.</span></li>
+</ul>
+<p class="rvps15"><span class="rvts20">Afficher les entrées par balise&nbsp;(tag) :</span><br/><span class="rvts13">recherche toutes les entrées ayant la balise spécifiée et les affiche dans la liste des entrées de la fenêtre principale.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 56px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts17">Balise (tag) :</span><span class="rvts13"> balise que les entrées doivent avoir.</span></li>
+</ul>
+<p class="rvps15"><span class="rvts20">Ajouter un bouton personnalisé à la barre d'outils &nbsp;:</span><br/><span class="rvts13">ajoute un bouton personnalisé à la barre d'outils de la fenêtre principale.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 56px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts17">ID :</span><span class="rvts13"> ID du bouton de la barre d'outils (voir le gestionnaire d'événements).</span></li>
+ <li class="rvps3"><span class="rvts17">Nom :</span><span class="rvts13"> texte qui est affiché sur le bouton de la barre d'outils.</span></li>
+ <li class="rvps3"><span class="rvts17">Description :</span><span class="rvts13"> texte qui s'affiche dans l'info-bulle du bouton.</span></li>
+</ul>
+<p class="rvps15"><span class="rvts20">Enlever le bouton personnalisé de la barre d'outils&nbsp;:</span><br/><span class="rvts13">supprime le bouton personnalisé de la barre d'outils de la fenêtre principale.</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 56px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts17">ID:</span><span class="rvts13"> ID du bouton de la barre d'outils (voir le gestionnaire d'événements).</span></li>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="examples"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_make_kdevelop.png"><span class="rvts0"><span class="rvts23"> Exemples</span></span></h2>
+<p class="rvps7"><span class="rvts13">Consulter la page </span><a class="rvts15" href="https://keepass.info/help/kb/trigger_examples.html">Trigger Examples</a><span class="rvts13"> page.</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2022 par Ronan Plantec &amp; Dominik Reichl. Tous droits r&eacute;serv&eacute;s.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

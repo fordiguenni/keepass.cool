@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Documentation en français sur le logiciel libre KeePass">
+    <meta name="author" content="Ronan Plantec">
+    <meta name="keywords" content="documentation, logiciel libre KeePass, français">
+    <meta name="generator" content="Hugo 0.88.1">
+    <meta name="DC.description" content="Documentation en français sur le logiciel libre KeePass" />
+    <meta name="DC.title" content="KeePass Password Safe" />
+    <meta name="DC.creator" content="Ronan Plantec" />
+    <meta name="DC.type" content="Text" />
+    <meta name="DC.format" content="text/html" />
+    <meta name="DC.language" content="fr" />
+    <meta name="DC.rights" content="Copyright (C) 2026 Ronan Plantec" />
+    <meta name="robots" content="index, follow" />
+    <title>KeePass - Accueil</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .no-gutter>[class*='col-'] {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      td,
+      th {
+        border: 1px solid rgb(190, 190, 190);
+        padding: 10px;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      tr:nth-child(even) {
+        background-color: #eee;
+      }
+
+      th[scope="col"] {
+        background-color: #696969;
+        color: #fff;
+        text-align: center
+      }
+
+      th[scope="row"] {
+        background-color: #d7d9f2;
+      }
+
+      caption {
+        padding: 10px;
+        caption-side: bottom;
+      }
+
+      table {
+        border-collapse: collapse;
+        border: 2px solid rgb(200, 200, 200);
+        letter-spacing: 1px;
+        font-family: sans-serif;
+        font-size: .8rem;
+        padding: 1px;
+        border-spacing: 1px;
+        text-align: center;
+        margin: auto;
+      }
+
+      tfoot,
+      thead {
+        background-color: #333;
+        color: #fff;
+      }
+
+      #align-left {
+        text-align: left
+      }
+
+      img {
+        width: 100%
+      }
+
+      .video-responsive {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+      }
+
+      .video-responsive iframe {
+        left: 2px;
+        top: 1px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/headers.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/footers.css" rel="stylesheet">
+    <script language="JavaScript" type="text/JavaScript"> //--> Scrypt pour afficher la date en français sous le format nom du jour mois année
+		versionum = navigator.appVersion.substring(0,1);
+			if (versionum < 3)
+				type = false;
+			else
+				type = true;
+			today = new Date;
+			
+			numero = today.getDate();
+/*
+			if (numero
+			<10)
+				numero = "0"+numero;
+*/
+			if (type )
+				annee = today.getFullYear();
+			else
+				annee = today.getYear();
+listjour = new Array("Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi");
+
+listmois = new Array("janvier","f&eacute;vrier","mars","avril","mai","juin","juillet","ao&ucirc;t","septembre","octobre","novembre","d&eacute;cembre");
+jour = listjour [ today.getDay()] + " " + numero + " " + listmois [today.getMonth()] + " " + annee;
+			
+			
+			heure = today.getHours();
+			minute = today.getMinutes();
+			seconde = today.getSeconds();
+			milli = today.getMilliseconds();
+
+			
+			if(heure > 1)
+					pluriel1="s";
+				else
+					pluriel1="";
+			if(minute > 1)
+					pluriel2="s";
+				else
+					pluriel2="";
+			if(seconde > 1)
+					pluriel3="s";
+				else
+					pluriel3="";
+			if(heure < 10)
+					zero1="0";
+				else
+					zero1="";
+			if(minute < 10)
+					zero2="0";
+				else
+					zero2="";
+			if(seconde < 10)
+					zero3="0";
+		else
+			zero3="";
+
+quelleheure = zero1 + heure + " heure" + pluriel1 + " " + zero2 + minute + " minute" + pluriel2 + " " + zero3 + seconde + " seconde" + pluriel3;
+
+			</script>
+  </head>
+  <body>
+    <div align="center">
+      <td>
+        <script type="text/javascript" language="javascript">
+          document.write(" " + jour + " ")
+        </script>
+      </td>
+    </div>
+    <div class="container">
+		<header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="https://keepass.cool" class="nav-link active" aria-current="page">Documentation de KeePass</a>
+          </li>
+        </ul>
+      </header>
+            <header class="d-flex justify-content-center py-3"></header>
+      <h1>Documentation en français du logiciel libre <a href="https://keepass.info" target="_blank">KeePass</a> (cf. <a href="https://fr.wikipedia.org/wiki/KeePass" target="_blank">Wikipédia</a>) </h1>
+      <h2>(mis à jour le mercredi 13 mai 2026 à 08h08 UTC+2)</h2>
+      <h3>Pourquoi KeePass ?</h3>
+      <p>Aujourd'hui, vous devez mémoriser de nombreux mots de passe. Vous avez besoin d'un mot de passe pour de nombreux sites Web, votre compte de messagerie, votre serveur Web, vos identifiants réseau, etc. La liste est infinie. De plus, vous devez utiliser un mot de passe différent pour chaque compte, car si vous n'utilisez qu'un seul même mot de passe partout et que quelqu'un obtient ce mot de passe, alors vous aurez un problème : le voleur aura accès à tous vos comptes.</p>
+      <p>KeePass est un gestionnaire de mots de passe open source gratuit, qui vous aide à gérer vos mots de passe de manière sécurisée. Vous pouvez stocker tous vos mots de passe dans une base de données, qui est verrouillée avec une clé principale. Vous n'avez donc besoin de mémoriser qu'une seule clé principale pour déverrouiller toute la base de données. Les fichiers de base de données sont chiffrés à l'aide des meilleurs algorithmes de cryptographie les plus sûrs actuellement connus (AES-256, ChaCha20 et Twofish). Pour plus d'informations, consultez la page des <a href="https://keepass-info.translate.goog/features.html?_x_tr_sl=en&_x_tr_tl=fr&_x_tr_hl=fr&_x_tr_pto=wapp">fonctionnalités</a>. </p>
+      <h3>Est-ce vraiment gratuit ?</h3>
+      <p>Oui, KeePass est vraiment gratuit, et plus que cela : il est open source (certifié OSI) ! Vous pouvez consulter son code source dans son intégralité et vérifier si les fonctionnalités de sécurité sont correctement implémentées.</p>
+      <h2>&nbsp;</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th>Version en ligne</th>
+            <th>Version PDF</th>
+            <th>Version hors-ligne <br> (téléchargement KeePass.chm zippé) </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1.43</th>
+            <td>
+              <a href="1.x/1.43/KeePass-1.43.html">ici</a>
+            </td>
+            <td><a href="extra/KeePass-1.43.pdf">901 ko</a></td>
+            <td>
+              <a href="extra/KeePass-1.43-Help-French.zip">688 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">1.42</th>
+            <td>
+              <a href="1.x/1.42/KeePass-1.42.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-1.42-Help-French-e.zip">647 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">1.41</th>
+            <td>
+              <a href="1.x/1.41/KeePass-1.41.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-1.41-Help-French.zip">677 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">1.40</th>
+            <td>
+              <a href="1.x/1.40/KeePass.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-1.40-Help-French.zip">623 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4" id="align-left">1.x Destinée au grand public</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+      <p>&nbsp;
+      <p>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th>Version en ligne</th>
+            <th>Version PDF</th>
+            <th>Version hors-ligne <br> (téléchargement KeePass.chm zippé) </th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">2.61.1</th>
+          <td>
+            <a href="2.x/2.61.1/KeePass-2.61.1.html">ici</a>
+          </td>
+          <td><a href="extra/KeePass-2.61.1.pdf">1 124 ko</a></td>
+          <td>
+            <a href="extra/KeePass-2.61.1-Help-French.zip">868 ko</a>
+          </td>
+        </tr>
+		  <tr>
+            <th scope="row">2.61</th>
+            <td>
+              <a href="2.x/2.61/KeePass-2.61.html">ici</a>
+            </td>
+            <td><a href="extra/KeePass-2.61.pdf">1 114 ko</a></td>
+            <td>
+              <a href="extra/KeePass-2.61-Help-French.zip">867 ko</a>
+            </td>
+          </tr>
+			<tr>
+            <th scope="row">2.60</th>
+            <td>
+              <a href="2.x/2.60/KeePass-2.60.html">ici</a>
+            </td>
+            <td><a href="extra/KeePass-2.60.pdf">1 108 ko</a></td>
+            <td>
+              <a href="extra/KeePass-2.60-Help-French.zip">865 ko</a>
+            </td>
+          </tr>
+		  <tr>
+            <th scope="row">2.59</th>
+            <td>
+              <a href="2.x/2.59/KeePass-2.59.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-2.59-Help-French.zip">702 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2.58</th>
+            <td>
+              <a href="2.x/2.58/KeePass-2.58.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-2.58-Help-French.zip">864 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2.57.1</th>
+            <td>
+              <a href="2.x/2.57.1/KeePass-2.57.1.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-2.57.1-Help-French-f.zip">865 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2.57</th>
+            <td>
+              <a href="2.x/2.57/KeePass-2.57.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-2.57-Help-French.zip">865 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2.56</th>
+            <td>
+              <a href="2.x/2.56/KeePass-2.56.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-2.56-Help-French.zip">864 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2.55</th>
+            <td>
+              <a href="2.x/2.55/KeePass-2.55.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-2.55-Help-French.zip">858 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2.54</th>
+            <td>
+              <a href="2.x/2.54/KeePass-2.54.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-2.54-Help-French.zip">856 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2.53.1</th>
+            <td>
+              <a href="2.x/2.53.1/KeePass-2.53.1.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-2.53.1-Help-French.zip">897 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2.53</th>
+            <td>
+              <a href="2.x/2.53/KeePass-2.53.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-2.53-Help-French.zip">897 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2.52</th>
+            <td>
+              <a href="2.x/2.52/KeePass-2.52.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-2.52-Help-French-b.zip">896 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2.51.1</th>
+            <td>
+              <a href="2.x/2.51.1/KeePass-2.51.1.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-2.51.1-Help-French.zip">895 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2.50</th>
+            <td>
+              <a href="2.x/2.50/KeePass-2.50.html">ici</a>
+            </td>
+            <td>&nbsp;</td>
+            <td>
+              <a href="extra/KeePass-2.50-Help-French-b.zip">807 ko</a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="4" id="align-left">2.x Destinée aux informaticiens</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+      </table>
+      <p>&nbsp;</p>
+      <p>
+        <strong>Pour KeePass 1.x : </strong>placer le fichier d'aide locale en décompressant l'archive ci-dessus dans le répertoire où se situe le fichier KeePass.exe. Puis menu Aide -&gt; Origine de l'aide... -&gt; Fichier d'aide locale. Il ne suffit plus que d'appuyer sur la touche <kbd>F1</kbd> du clavier une fois le logiciel KeePass lancé pour avoir l'aide en local.
+      </p>
+      <hr>
+      <p>
+        <strong>Pour KeePass 2.x : </strong>placer le fichier d'aide locale en décompressant l'archive ci-dessus dans le répertoire où se situe le fichier KeePass.exe. Puis sélectionner le choix <em>'Fichier d'aide locale'</em> dans le logiciel KeePass comme indiqu&eacute; ci-après sur la capture d'écran. Il ne suffit plus que d'appuyer sur la touche <kbd>F1</kbd> du clavier une fois le logiciel KeePass lancé pour avoir l'aide en local.
+      </p>
+      <h2>
+        <a href="images/Capture-aide-en-local-original.png" target=_blank>
+          <img src="images/Capture-aide-en-local-original.png" alt="source de l'aide">
+        </a>
+      </h2>
+      <hr>
+      <p>
+        <strong>N.B. : </strong>penser à débloquer, à l'aide de l'explorateur de fichiers, le fichier KeePass.chm dans ses propriétés, s'il n'est pas correctement lisible à l'écran.
+      </p>
+      <hr>
+      <div>
+  </body>
+</html>

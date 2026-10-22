@@ -1,0 +1,314 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 7.7.0.519">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>La synchronisation</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="La synchronisation">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="La synchronisation" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.55" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.55</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Lasynchronisation"
+		  data-hnd-context="28"
+		  data-hnd-title="La synchronisation"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Lasecurite.html" title="La s&eacute;curit&eacute;" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="LapriseenchargedesNAT.html" title="La prise en charge des NAT" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>La synchronisation</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" border="2" cellpadding="0" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <p class="rvps3"><img width="64" height="64" alt="" style="vertical-align: middle;" src="lib/imagesb64x64_dataexchange1.png"></p>
+  </td>
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">La synchronisation</span></span></h1>
+   <p class="rvps3"><span class="rvts19">Fusionner les modifications apportées de plusieurs copies d'une base de données.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><a class="rvts15" href="Lasynchronisation.html#intro">Introduction et exigences</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lasynchronisation.html#invoke">Appel d'une synchronisation</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lasynchronisation.html#tech">Détails techniques</a></li>
+ <li class="rvps3"><a class="rvts15" href="Lasynchronisation.html#adv">Schémas de synchronisation avancés</a></li>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="intro"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help13.png"><span class="rvts0"><span class="rvts23"> Introduction et exigences</span></span></h2>
+<p class="rvps7"><span class="rvts13">KeePass 2.x dispose d'un puissant mécanisme de synchronisation intégré. Les modifications apportées à plusieurs copies d'un fichier de base de données peuvent être fusionnées en toute sécurité.</span></p>
+<p class="rvps7"><span class="rvts13">Après avoir synchronisé deux fichiers A et B, A et B sont à jour (c'est-à-dire que KeePass enregistre les données fusionnées aux deux emplacements lors de l'exécution d'une synchronisation).</span></p>
+<p class="rvps7"><span class="rvts20">Exigences :</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts13">Si les fichiers à synchroniser sont accessibles via un protocole supporté par défaut par KeePass (par exemple : des fichiers sur un disque dur local ou un partage réseau, FTP, HTTP, HTTPS, WebDAV, etc., voir la page '</span><a class="rvts15" href="ChargerEnregistrerdepuisversunea.html">Charger/Enregistrer depuis/vers une adresse (URL)</a><span class="rvts13">' pour des détails), alors aucun greffon/extension n'est requis.</span></li>
+ <li class="rvps3"><span class="rvts13">Si l'un des fichiers à synchroniser doit être accessible via SCP, SFTP ou FTPS, alors vous avez besoin du greffon </span><a class="rvts15" href="https://keepass.info/plugins.html#ioprotocolext">IOProtocolExt</a><span class="rvts13">, qui ajoute la prise en charge de ces protocoles à KeePass.</span></li>
+ <li class="rvps3"><span class="rvts13">Si l'un des fichiers à synchroniser est stocké dans un stockage en nuage&nbsp;: pour la plupart des stockages en nuage, il existe une intégration avec le système de fichiers local de disponible (c'est-à-dire que vous pouvez accéder à vos fichiers stockés à l'aide de l'Explorateur Windows). Par exemple : Dropbox, Microsoft OneDrive et Google Drive fournissent une telle intégration. Si une telle intégration est disponible, alors il est recommandé d'accéder à votre fichier de base de données de cette façon&nbsp;; cela fonctionne souvent mieux que d'y accéder via un protocole comme FTP ou WebDAV. Si aucune intégration de ce type n'est disponible et que votre stockage en nuage n'est pas non plus accessible via un protocole standard, alors un </span><a class="rvts15" href="https://keepass.info/plugins.html">greffon</a><span class="rvts13"> spécifique de KeePass pour ce stockage en nuage pourrait être disponible.</span></li>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="invoke"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_dataexchange3.png"><span class="rvts0"><span class="rvts23"> Appel d'une synchronisation</span></span></h2>
+<p class="rvps7"><span class="rvts13">Il existe plusieurs manières d'invoquer une synchronisation&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts20">Manuellement :</span><span class="rvts13"> une synchronisation peut être démarrée manuellement en naviguant vers </span><span class="rvts17">'Fichier'</span><span class="rvts13"> → </span><span class="rvts17">'Synchroniser'</span><span class="rvts13"> et en cliquant sur </span><span class="rvts17">'Synchroniser avec le fichier...'</span><span class="rvts13"> ou </span><span class="rvts17">'Synchroniser avec l'adresse (URL)...'</span><span class="rvts13"> (selon que le fichier à synchroniser est stocké sur un lecteur local/partage réseau ou sur un serveur accessible via une URL). Si vous avez déjà ouvert ou synchronisé avec le fichier cible, alors vous pouvez aussi simplement pointer sur 'Fichiers récents' (dans le menu </span><span class="rvts17">'Synchroniser'</span><span class="rvts13">) et sélectionner le fichier. La synchronisation manuelle n'est possible que lorsque la base de données actuellement ouverte est un fichier local (les fichiers sur un partage réseau sont ici considérés comme des fichiers locaux) ; lorsque vous avez ouvert un fichier depuis un serveur à l'aide d'une URL, le menu </span><span class="rvts17">'Synchroniser'</span><span class="rvts13"> est désactivé.</span></li>
+ <li class="rvps3"><span class="rvts20">La commande 'Enregistrer' :</span><span class="rvts13"> lors de l'appel de la commande 'Enregistrer', KeePass vérifie si le fichier sur le disque/serveur a été modifié pendant que vous l'éditiez. S'il a été modifié, alors KeePass vous demande si vous souhaitez écraser ou synchroniser avec le fichier. Remarquez que cela s'applique uniquement à la commande 'Enregistrer', pas à la commande 'Enregistrer sous'. Voir la page </span><a class="rvts15" href="../base/multiuser.html">Utilisateur multiple</a><span class="rvts13"> pour plus de détails (section 'KeePass 2.x : Synchroniser ou écraser').</span></li>
+ <li class="rvps3"><span class="rvts20">Déclencheurs : </span><span class="rvts13">Dans des situations plus complexes, vous pouvez utiliser l'action de déclenchement de synchronisation. Voir la page '</span><a class="rvts15" href="Lesdeclencheurs.html">Déclencheurs</a><span class="rvts13">' pour plus de détails.</span></li>
+ <li class="rvps3"><span class="rvts20">Script :</span><span class="rvts13"> Afin d'effectuer une synchronisation sans ouvrir KeePass, la commande de synchronisation de KPScript peut être utilisée. Consultez la page d'aide de KPScript '</span><a class="rvts15" href="../v2_dev/scr_sc_index.html">Opérations à commande unique</a><span class="rvts13">' pour plus de détails.</span></li>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="tech"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_dataexchange2.png"><span class="rvts0"><span class="rvts23"> Détails techniques</span></span></h2>
+<p class="rvps7"><span class="rvts13">L'algorithme de synchronisation est assez complexe et il faudrait de nombreuses pages pour décrire en détail son fonctionnement. Les développeurs intéressés par cela peuvent consulter le code source de KeePass. Voici les propriétés les plus importantes de l'algorithme de synchronisation&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts13">Afin de décider quelle copie d'un objet est la plus récente, KeePass utilise principalement l'heure de la dernière modification de l'objet (que KeePass met automatiquement à jour à chaque fois que l'objet est modifié).</span></li>
+ <li class="rvps3"><span class="rvts13">La synchronisation est effectuée au niveau de l'entrée. Ceci par exemple signifie qu'une combinaison nom d'utilisateur/mot de passe est toujours cohérente (la synchronisation au niveau du champ ne sera pas mise en œuvre, car les combinaisons pourraient devenir incohérentes avec cela).</span></li>
+ <li class="rvps3"><span class="rvts13">En cas de mises à jour et de collisions parallèles, KeePass essaie de stocker toutes les informations dans un endroit approprié. Par exemple : lorsque vous avez une entrée E dans une base de données A, faites une copie B de A, modifiez E dans B, modifiez E dans A et synchronisez A et B, alors E dans A est traité comme courant et les modifications apportées à E dans B sont stockés comme une entrée d'historique de E (voir l'onglet 'Historique' dans la boîte de dialogue de l'entrée), c'est-à-dire que les modifications apportées dans B ne sont pas perdues.</span></li>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="adv"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_dataexchange1.png"><span class="rvts0"><span class="rvts23"> Schémas de synchronisation avancés</span></span></h2>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><a class="rvts15" href="https://keepass.info/help/kb/trigger_examples.html#dbsync">Synchronisation locale↔Maître</a><span class="rvts13"> :</span><br/><span class="rvts13">Un protocole de synchronisation qui empêche la perte de données lorsque les fichiers de base de données sont écrasés par d'autres applications (par exemple : un logiciel de service de stockage en nuage), à ​​l'aide d'un déclencheur.</span></li>
+ <li class="rvps3"><a class="rvts15" href="https://keepass.info/plugins.html">Greffons</a><span class="rvts13">.</span><br/><span class="rvts13">Il existe des greffons pour des protocoles de synchronisation plus sophistiqués. Par exemple : pour synchroniser seulement un sous-ensemble d'entrées.</span><span class="rvts8"></span></li>
+</ul>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2023 par Ronan Plantec et Dominik Reichl. Tous droits r&eacute;serv&eacute;s.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

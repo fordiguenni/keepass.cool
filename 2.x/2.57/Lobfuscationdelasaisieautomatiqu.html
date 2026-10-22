@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 7.9.0.612">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>L'obfuscation de la saisie automatique</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="L'obfuscation de la saisie automatique">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="L'obfuscation de la saisie automatique" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.57" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.57</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="Lobfuscationdelasaisieautomatiqu"
+		  data-hnd-context="15"
+		  data-hnd-title="L'obfuscation de la saisie automatique"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Lasaisieautomatique.html" title="La saisie automatique" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Lesoptionsdelalignedecommande.html" title="Les options de la ligne de commande" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>L'obfuscation de la saisie automatique</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" border="2" cellpadding="0" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <p class="rvps3"><img width="64" height="64" alt="" style="vertical-align: middle;" src="lib/imagesb64x64_ktouch1.png"></p>
+  </td>
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">L'obfuscation de la saisie automatique à deux canaux</span></span></h1>
+   <p class="rvps3"><span class="rvts19">Description de la fonction d'obfuscation de la saisie automatique à deux canaux dans KeePass 2.x.</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts13">Informations pour les utilisateurs&nbsp;:</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><a class="rvts15" href="Lobfuscationdelasaisieautomatiqu.html#intro">Introduction&nbsp;: qu'est-ce que l'obfuscation de la saisie automatique à deux canaux&nbsp;?</a></li>
+  <li class="rvps3"><a class="rvts15" href="Lobfuscationdelasaisieautomatiqu.html#usage">Quand peut-on utiliser l'obfuscation de la saisie automatique à deux canaux&nbsp;?</a></li>
+  <li class="rvps3"><a class="rvts15" href="Lobfuscationdelasaisieautomatiqu.html#setup">Comment activer/configurer l'obfuscation de la saisie automatique à deux canaux&nbsp;?</a></li>
+ </ul>
+ <li class="rvps3"><span class="rvts13">Informations techniques&nbsp;:</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><a class="rvts15" href="Lobfuscationdelasaisieautomatiqu.html#tech">Aperçu technique</a></li>
+  <li class="rvps3"><a class="rvts15" href="Lobfuscationdelasaisieautomatiqu.html#splittext">Divisant le texte intelligemment</a></li>
+  <li class="rvps3"><a class="rvts15" href="Lobfuscationdelasaisieautomatiqu.html#splitsecret">En divisant les secrets</a></li>
+ </ul>
+</ul>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="intro"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help5.png"><span class="rvts0"><span class="rvts23"> Introduction&nbsp;: qu'est-ce que l'obfuscation de la saisie automatique à deux canaux&nbsp;?</span></span></h2>
+<p class="rvps7"><span class="rvts13">La fonction de </span><a class="rvts15" href="../base/autotype.html">saisie automatique</a><span class="rvts13"> de KeePass est très puissante&nbsp;: elle envoie des touches pressées simulées aux autres applications. Cela fonctionne avec toutes les applications Windows et pour les applications cibles, il est impossible de faire la distinction entre des touches réellement pressées et celles simulées par la saisie automatique. C'est en même temps le principal inconvénient de la saisie automatique, car les enregistreurs de frappe peuvent écouter les touches simulées. C'est à ce moment qu'entre en jeu l'obfuscation de la saisie automatique à deux canaux.</span></p>
+<p class="rvps7"><span class="rvts13">L'obfuscation de la saisie automatique à deux canaux rend les standards d'enregistreurs de frappe inutiles. Ils utilisent le presse-papiers de Windows pour transférer des parties de texte saisies automatiquement dans l'application cible. Les enregistreurs de frappe peuvent voir les touches </span><span class="rvts21">Ctrl</span><span class="rvts22">+</span><span class="rvts21">V</span><span class="rvts13"> pressées, mais n'enregistrent pas le contenu actuellement copié depuis le presse-papiers.</span></p>
+<p class="rvps7"><span class="rvts13">L'espionnage du presse-papiers ne fonctionne plus non plus, parce que seulement les parties de l'information sensible sont transférées de cette manière.</span></p>
+<p class="rvps7"><span class="rvts13">Qu'importe, ils ne sont pas parfaitement sécurisés (et malheureusement ils ne peuvent l'être en théorie). Aucun des enregistreurs de frappe actuels ou espions de presse-papiers actuellement disponible ne peut écouter un processus de saisie automatique obfusquée, mais il est théoriquement possible d'écrire une application d'espionnage dédiée à la journalisation de la saisie automatique obfusquée.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="usage"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help4.png"><span class="rvts0"><span class="rvts23"> Quand peut-on utiliser l'obfuscation de la saisie automatique à deux canaux&nbsp;?</span></span></h2>
+<p class="rvps7"><span class="rvts13">L'obfuscation de la saisie automatique à deux canaux ne peut pas être utilisée avec toutes les fenêtres. La/les fenêtre(s) cible(s) doivent prendre en charge les opérations du presse-papiers et la navigation à l'intérieur des contrôles d'édition en utilisant les touches fléchées. De plus, l'interface de l'utilisateur cible ne doit pas contenir de fonctionnalités d'automatisation comme sauter le focus lorsque la longueur maximale d'une zone de texte est atteinte (par exemple&nbsp;: comme cela a été vu dans les boîtes de dialogue d'enregistrement des numéros).</span></p>
+<p class="rvps7"><span class="rvts13">Les règles de base&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts20">Peut être utilisée dans&nbsp;:</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts13">Les navigateurs.</span></li>
+  <li class="rvps3"><span class="rvts13">Les programmes Windows avec des zones de texte standardes.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts20">Ne peux pas être utilisée dans&nbsp;:</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts13">Les applications basées sur la console (terminaux interactifs, etc.).</span></li>
+  <li class="rvps3"><span class="rvts13">Jeux.</span></li>
+ </ul>
+</ul>
+<p class="rvps7"><span class="rvts13">Parce qu'elle ne fonctionne pas avec toutes les fenêtres, c'est une fonction qui adhère à chaque entrée. Vous devez l'activer explicitement sur la page de l'onglet </span><span class="rvts17">'Saisie automatique'</span><span class="rvts13"> de la boîte de dialogue </span><span class="rvts17">'Modifier l'entrée...'</span><span class="rvts13">.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="setup"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help3.png"><span class="rvts0"><span class="rvts23"> Comment activer/configurer l'obfuscation de la saisie automatique à deux canaux</span></span></h2>
+<p class="rvps7"><span class="rvts13">Tout ce dont vous avez besoin c'est de cocher la case </span><span class="rvts17">"Obfuscation de la saisie automatique à deux canaux"</span><span class="rvts13"> d'une entrée (onglet 'Saisie automatique' de la fenêtre d'édition d'une entrée)&nbsp;; KeePass fera le reste.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="tech"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_help2.png"><span class="rvts0"><span class="rvts23"> Aperçu technique</span></span></h2>
+<p class="rvps7"><span class="rvts13">Plutôt que de simplement envoyer des touches pressées simulées vers l'application cible (comme le fait normalement la saisie automatique), la saisie automatique obfusquée fait ceci&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts13">Elle sauvegarde le contenu actuel du presse-papiers.</span></li>
+ <li class="rvps3"><span class="rvts13">Elle divise intelligemment le texte en plusieurs parties.</span></li>
+ <li class="rvps3"><span class="rvts13">Pour chaque partie&nbsp;: elle vérifie si le presse-papiers peut être utilisé.</span></li>
+ <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: circle;">
+  <li class="rvps3"><span class="rvts17">Si oui&nbsp;:</span><span class="rvts13"> alors elle le divise en deux sous-parties (par caractère, comme deux peignes entrelacés à plat). Copie/colle la première partie, fusionne le reste en envoyant des touches pressées.</span></li>
+  <li class="rvps3"><span class="rvts17">Si non&nbsp;:</span><span class="rvts13"> alors, elle l'envoie normalement en utilisant des touches pressées simulées.</span></li>
+ </ul>
+ <li class="rvps3"><span class="rvts13">Elle restaure le précédent contenu du presse-papiers.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts13">Ces étapes sont décrites en détail ci-dessous.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="splittext"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_kmultiple2.png"><span class="rvts0"><span class="rvts23"> Divisant le texte intelligemment</span></span></h2>
+<p class="rvps7"><span class="rvts13">Le texte à envoyer doit tout d'abord être divisé intelligemment. Toutes les parties de la chaîne ne peuvent pas être envoyées en utilisant le presse-papiers&nbsp;: des codes de touche spéciale et des modifications de clé doivent être transmis inchangés à la fonction </span><span class="rvts22">SendInput</span><span class="rvts13">. Par exemple&nbsp;: regardez la chaîne suivante&nbsp;:</span></p>
+<p class="rvps12"><span class="rvts22">mymail@myprovider.com{TAB}MyTopSecretPassword{TAB} {TAB}{ENTER}</span></p>
+<p class="rvps7"><span class="rvts13">Ceci est un exemple de chaîne typique envoyée par KeePass vers une autre application. Premièrement, il saisit l'adresse de messagerie électronique de l'utilisateur, puis une </span><span class="rvts21">tabulation</span><span class="rvts13">, puis le mot de passe, une </span><span class="rvts21">tabulation</span><span class="rvts13">, bascule la case à cocher, une autre </span><span class="rvts21">tabulation</span><span class="rvts13"> et finalement, appuie sur la touche </span><span class="rvts21">Entrée</span><span class="rvts13">. Cette séquence peut être divisée en les parties suivantes&nbsp;:</span></p>
+<p class="rvps12"><span class="rvts22">mymail@myprovider.com {TAB} MyTopSecretPassword {TAB} ' ' (space) {TAB} {ENTER}</span></p>
+<p class="rvps7"><span class="rvts13">Pour chaque ligne, il est vérifié si le presse-papiers peut être utilisé. Si la ligne contient un '{', '}', '(', ')', '+', '^', '%' ou un </span><a class="rvts15" href="https://en.wikipedia.org/wiki/Whitespace_character">whitespace</a><span class="rvts13"> (espace), elle peut seulement être directement envoyée que par la fonction </span><span class="rvts22">SendInput</span><span class="rvts13">. '+' par exemple presse la touche </span><span class="rvts21">Maj</span><span class="rvts13">, il ne devrait pas être copier/coller en tant que caractère '+'. Les espaces ne peuvent pas non plus être copiés/collés, parce qu'ils sont habituellement utilisés pour cocher les cases.</span></p>
+<p class="rvps7"><span class="rvts13">Dans l'exemple ci-dessus, "mymail@myprovider.com" et "MyTopSecretPassword" peuvent être envoyés en utilisant le presse-papiers.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="splitsecret"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_kmultiple1.png"><span class="rvts0"><span class="rvts23"> En divisant les secrets</span></span></h2>
+<p class="rvps7"><span class="rvts13">Transférons "mymail@myprovider.com" à l'application cible en utilisant de l'obfuscation de la saisie automatique à deux canaux.</span></p>
+<p class="rvps7"><span class="rvts13">Premièrement, la chaîne secrète "mymail@myprovider.com" est aléatoirement divisée en caractères dans deux parties comme deux peignes qui s'entrelacent à plat &nbsp;:</span></p>
+<p class="rvps12"><span class="rvts22">&nbsp;y&nbsp;&nbsp;il&nbsp;m&nbsp;&nbsp;&nbsp;o&nbsp;&nbsp;d&nbsp;&nbsp;.c m&nbsp;ma&nbsp;&nbsp;@&nbsp;ypr&nbsp;vi&nbsp;er&nbsp;&nbsp;om</span></p>
+<p class="rvps7"><span class="rvts13">La première chaîne "yilmod.c" est maintenant copiée vers le presse-papiers. La chaîne qui doit être envoyée par la fonction </span><span class="rvts22">SendInput</span><span class="rvts13"> est maintenant assemblée comme suit&nbsp;:</span></p>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><span class="rvts13">Elle commence par coller depuis le presse-papiers&nbsp;: </span><span class="rvts22">^v</span><span class="rvts13">.</span></li>
+ <li class="rvps3"><span class="rvts13">Elle appuie la touche </span><span class="rvts22">←</span><span class="rvts13"> </span><span class="rvts17">n</span><span class="rvts13"> fois, avec </span><span class="rvts17">n = longueur de la chaîne du presse-papiers</span><span class="rvts13">.</span></li>
+ <li class="rvps3"><span class="rvts13">Elle envoie les caractères restants et appuie la touche </span><span class="rvts22">→</span><span class="rvts13"> pour garder ceux qui sont déjà collés depuis le presse-papiers.</span></li>
+</ul>
+<p class="rvps7"><span class="rvts13">Dans notre exemple ci-dessus, la séquence de touches serait assemblée pour&nbsp;:</span></p>
+<p class="rvps12"><span class="rvts22">^v{LEFT 8}m{RIGHT}ma{RIGHT}{RIGHT}@{RIGHT}ypr{RIGHT}vi{RIGHT}er{RIGHT}{RIGHT}om</span></p>
+<p class="rvps7"><span class="rvts13">Ceci collera premièrement le contenu du presse-papiers, ira à son début et remplira les caractères restants, reconstruisant la chaîne d'origine "mymail@myprovider.com".</span></p>
+<p class="rvps7"><span class="rvts13">Le temps de rétention dans le presse-papiers pour la première partie de chaîne est minimal. Il est copié vers le presse-papiers, collé dans l'application cible et immédiatement effacé. Ce processus ne prend habituellement que quelques millisecondes au maximum.</span></p>
+<p class="rvps7"><span class="rvts20">En savoir plus sur la division de chaîne secrète&nbsp;:</span><br/><span class="rvts13">Dans l'exemple ci-dessus, la chaîne "mymail@myprovider.com" a été divisée et envoyée. Si la chaîne était divisée différemment à chaque fois, alors une application malveillante pourrait rassembler la chaîne en capturant plusieurs saisies automatiques en les combinant. Afin d'éviter cela, KeePass initialise le générateur de nombre aléatoire pour la division basée sur un hachage de la chaîne. Ceci signifie que chaque chaîne est divisée différemment, mais les parties de la chaîne sont déterminées de manière unique. Donc, en invoquant plusieurs fois la saisie automatique, un attaquant ne peut pas rassembler la chaîne d'origine, parce qu'il capture toujours la même moitié.</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2003-2024 par Ronan Plantec &amp; Dominik Reichl. Tous droits r&eacute;serv&eacute;s.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,289 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="HelpNDoc Standard Edition 7.7.0.519">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico"/>
+
+  <title>La prise en charge des NAT</title>
+  <meta name="description" content="" /> 
+  <meta name="keywords" content="">
+
+
+
+  
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="La prise en charge des NAT">
+  <meta name="twitter:description" content="">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="La prise en charge des NAT" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="" />
+  <meta property="og:site_name" content="KeePass-2.52" /> 
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendors/bootstrap-3.4.1/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="vendors/bootstrap-3.4.1/css/ie10-viewport-bug-workaround.css" rel="stylesheet"/>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="vendors/html5shiv-3.7.3/html5shiv.min.js"></script>
+      <script src="vendors/respond-1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- JsTree styles -->
+  <link href="vendors/jstree-3.3.10/themes/default/style.min.css" rel="stylesheet"/>
+
+  <!-- Hnd styles -->
+  <link href="css/layout.min.css" rel="stylesheet" />
+  <link href="css/effects.min.css" rel="stylesheet" />
+  <link href="css/theme-light-blue.min.css" rel="stylesheet" />
+  <link href="css/print.min.css" rel="stylesheet" media="print" />
+  <style type="text/css">nav { width: 350px} @media screen and (min-width:769px) { body.md-nav-expanded div#main { margin-left: 350px} body.md-nav-expanded header { padding-left: 364px} }</style>
+  <style type="text/css">.navigation #inline-toc { width: auto !important}</style>
+
+  <!-- Content style -->
+  <link href="css/hnd.content.css" rel="stylesheet" />
+
+  
+
+
+
+</head>
+
+<body class="md-nav-expanded">
+
+
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible">Skip to main content</a>
+  </div>
+
+  <header class="headroom">
+    <button class="hnd-toggle btn btn-default">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>        
+    </button>
+    <h1>KeePass-2.52</h1>
+    
+  </header>
+
+  <nav id="panel-left" class="md-nav-expanded">
+    <!-- Nav tabs -->
+    <ul class="tab-tabs nav nav-tabs" role="tablist">
+      <li id="nav-close"> 
+        <button class="hnd-toggle btn btn-default">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </li>
+      
+	  
+        <li role="presentation" class="tab active">
+            <a href="#contents" id="tab-contents" aria-controls="contents" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-list"></i>
+                Contents
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#index" id="tab-index" aria-controls="index" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-asterisk"></i>
+                Index
+            </a>
+        </li>
+      
+        <li role="presentation" class="tab">
+            <a href="#search" id="tab-search" aria-controls="search" role="tab" data-toggle="tab">
+                <i class="glyphicon glyphicon-search"></i>
+                Search
+            </a>
+        </li>
+      
+    </ul>  <!-- /Nav tabs -->
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+	  
+      <div role="tabpanel" class="tab-pane active" id="contents">
+        <div id="toc" class="tree-container unselectable"
+            data-url="_toc.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /contents-->
+      
+      <div role="tabpanel" class="tab-pane" id="index">
+        <div id="keywords" class="tree-container unselectable"
+            data-url="_keywords.json"
+            data-openlvl="1"
+        >
+            
+        </div>
+      </div>  <!-- /index-->
+      
+      <div role="tabpanel" class="tab-pane" id="search">
+        <div class="search-content">
+          <div class="search-input">
+            <form id="search-form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>  <!-- /search-input -->
+          <div class="search-result">
+            <div id="search-info"></div>
+            <div class="tree-container unselectable" id="search-tree"></div>
+          </div>  <!-- /search-result -->
+        </div>  <!-- /search-content -->
+      </div>  <!-- /search-->
+      
+    </div>  <!-- /Tab panes -->
+
+  </nav>
+
+  <div id="main">
+
+    <article>
+        <div id="topic-content" class="container-fluid" 
+		  data-hnd-id="LapriseenchargedesNAT"
+		  data-hnd-context="29"
+		  data-hnd-title="La prise en charge des NAT"
+		>
+            
+                <div class="navigation">
+                    <ol class="breadcrumb">
+                        <li><a href="Lesfonctionnalites.html">Les fonctionnalit&eacute;s</a></li>
+                    </ol>
+                    <div class="nav-arrows">
+                        <div class="btn-group btn-group" role="group"><a class="btn btn-default" href="Lesfonctionnalites.html" title="Les fonctionnalit&eacute;s" role="button"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a><a class="btn btn-default" href="Lasynchronisation.html" title="La synchronisation" role="button"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a><a class="btn btn-default" href="Lesdeclencheurs.html" title="Les d&eacute;clencheurs" role="button"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a></div>
+                    </div>
+                </div> 
+            
+
+            <a id="main-content"></a>
+
+            <h2>La prise en charge des NAT</h2>
+
+            <div class="main-content">
+                
+<div class="rvps3">
+<table width="100%" border="2" cellpadding="0" cellspacing="2" style="border-color: #808080; border-style: solid; background-color: #f0f8ff; border-spacing: 2px;">
+ <tr valign="top">
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <p class="rvps3"><img width="64" height="64" alt="" style="vertical-align: middle;" src="lib/imagesb64x64_vcard.png"></p>
+  </td>
+  <td valign="middle" style="border-width : 0px; padding: 0px;">
+   <h1 class="rvps9"><span class="rvts0"><span class="rvts18">La prise en charge des NAT (TANs)</span></span></h1>
+   <p class="rvps3"><span class="rvts19">KeePass prend en charge les Numéros d'Autorisation de Transaction (NAT).</span></p>
+  </td>
+ </tr>
+</table>
+</div>
+<ul style="text-indent: 0px; padding: 0; margin: 0 0 0 40px; list-style-position: outside; list-style-type: disc;">
+ <li class="rvps3"><a class="rvts15" href="LapriseenchargedesNAT.html#wizard">Utilisation de </a><a class="rvts30" href="LapriseenchargedesNAT.html#wizard">l'assistant de NAT</a><a class="rvts15" href="LapriseenchargedesNAT.html#wizard"> pour ajouter des NAT</a></li>
+ <li class="rvps3"><a class="rvts15" href="LapriseenchargedesNAT.html#usage">L'utilisation des NAT</a></li>
+</ul>
+<p class="rvps7"><span class="rvts13">KeePass supporte les NAT, c'est-à-dire des mots de passe qui peuvent être utilisés qu'une seule fois. Ces mots de passe spéciaux sont utilisés par certaines banques : vous devez confirmer les transactions à l'utilisation de ces NAT. Cela offre une sécurité supplémentaire, car un espion ne peut pas effectuer de transaction, même s'il connaît le mot de passe de votre compte bancaire.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="wizard"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_vcard1.png"><span class="rvts0"><span class="rvts23"> Utilisation de </span></span><span class="rvts0"><span class="rvts32">l'assistant de NAT</span></span><span class="rvts0"><span class="rvts23"> pour ajouter des NAT</span></span></h2>
+<p class="rvps7"><span class="rvts13">Vous pouvez utiliser </span><span class="rvts20">l'assistant de NAT</span><span class="rvts13"> de KeePass pour ajouter plusieurs NAT à la fois à votre base de données. Ouvrez simplement la boîte de dialogue de l'assistant NAT (menu </span><span class="rvts17">Outils</span><span class="rvts13"> - </span><span class="rvts17">Assistant NAT (TAN)...</span><span class="rvts13">) et entrez tous vos NAT. Le formatage n'a pas vraiment d'importance, KeePass utilise simplement toutes les chaînes alphanumériques, c'est-à-dire que les caractères comme les sauts de ligne, les tabulations, les espaces, les points, etc. sont interprétés comme des séparateurs.</span></p>
+<p class="rvps7"><span class="rvts13">L'assistant générera ensuite plusieurs entrées de NAT à partir des données que vous avez saisies dans la boîte de dialogue. Chaque NAT est une entrée standard de KeePass. Le titre d'une entrée de NAT est toujours défini sur "</span><span class="rvts22">&lt;TAN&gt;</span><span class="rvts13">". Cela indique à KeePass que l'entrée est une entrée de NAT. Vous ne pouvez pas modifier le titre, le nom d'utilisateur et l'URL d'un NAT. Mais vous pouvez librement ajouter des remarques à une entrée de NAT, si vous le souhaitez.</span></p>
+<p class="rvps3"><span class="rvts13"><br/></span></p>
+<h2 class="rvps10"><a name="usage"></a><img alt="" style="vertical-align: middle; margin : 0px 1px;" src="lib/imagesb16x16_vcard.png"><span class="rvts0"><span class="rvts23"> L'utilisation des NAT</span></span></h2>
+<p class="rvps7"><span class="rvts13">Lorsque vous utilisez le NAT (par exemple : exécutez la commande "Copier le mot de passe" dessus), sa date d'expiration sera définie sur l'heure actuelle, ce qui expire l'entrée. Il obtiendra un </span><span class="rvts43">X</span><span class="rvts13"> rouge comme icône. Si vous voulez savoir plus tard quand vous avez utilisé un NAT spécifique, vous pouvez simplement jeter un œil à sa date d'expiration.</span></p>
+<p class="rvps7"><span class="rvts13">Lors de la copie d'un NAT dans le presse-papiers, la base de données est marquée comme modifiée. Vous devez enregistrer le fichier afin de vous souvenir de l'utilisation d'un NAT.</span></p>
+<p class="rvps7"><span class="rvts13">Si vous avez accidentellement utilisé un NAT sans en avoir besoin, vous pouvez le réinitialiser (c'est-à-dire supprimer le </span><span class="rvts43">X</span><span class="rvts13"> rouge et l'afficher à nouveau comme un NAT valide). Pour ce faire, ouvrez l'entrée de NAT (cliquez dessus avec le bouton droit et choisissez </span><span class="rvts17">'Modifier l'entrée...'</span><span class="rvts13">). Ici, décochez la case </span><span class="rvts17">'Expire le :'</span><span class="rvts13">. Cliquez sur [OK] pour fermer la boîte de dialogue.</span><span class="rvts8"></span></p>
+
+            </div>
+            
+            <div id="topic_footer"><div id="topic_footer_content">Copyright &copy; 2022 par Ronan Plantec &amp; Dominik Reichl. Tous droits r&eacute;serv&eacute;s.</div></div>
+        </div>  <!-- /#topic-content -->
+    </article>
+
+    <footer></footer>
+
+  </div>  <!-- /#main -->
+
+  <div class="mask" data-toggle="sm-nav-expanded"></div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="hndModal" tabindex="-1" role="dialog" aria-labelledby="hndModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="hndModalLabel"></h4>
+        </div>
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary modal-btn-close" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Splitter -->
+  <div id="hnd-splitter" style="left: 350px"></div>  
+
+  <!-- Scripts -->
+  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+  <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
+  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
+  <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
+  <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
+  <script src="vendors/interactjs-1.9.22/interact.min.js"></script>  
+
+  <!-- HelpNDoc scripts -->
+  <script src="js/polyfill.object.min.js"></script>
+  <script src="_translations.js"></script>
+  <script src="js/hndsd.min.js"></script>
+  <script src="js/hndse.min.js"></script>
+  <script src="js/app.min.js"></script>
+
+  <!-- Init script -->
+  <script>
+    $(function() {
+      // Create the app
+      var app = new Hnd.App({
+        searchEngineMinChars: 3
+      });
+      // Update translations
+      hnd_ut(app);
+	  // Instanciate imageMapResizer
+	  imageMapResize();
+	  // Custom JS
+	  
+      // Boot the app
+      app.Boot();
+    });
+  </script>
+
+
+
+</body>
+
+</html>
+
